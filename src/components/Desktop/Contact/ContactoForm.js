@@ -1,7 +1,7 @@
 import React from "react";
-import fondoServicios from "../../images/fondoServicios.png";
-import imagenCurvaContacto from "../../images/imagenCurvaContacto.png";
-import imagenFondo from "../../images/imagenFondo.jpg"
+import fondoServicios from "../../../images/Desktop/fondoServicios.png";
+import imagenCurvaContacto from "../../../images/Desktop/imagenCurvaContacto.png";
+import imagenFondo from "../../../images/Desktop/imagenFondo.jpg"
 
 
 function ContactoForm() {
@@ -384,7 +384,7 @@ function ContactoForm() {
             {/* Primer Mapa */}
             <div style={{ textAlign: "center", marginRight: "20px" }}>
               <img
-                src={require("../../images/mapa.png")}
+                src={require("../../../images/Desktop/mapa.png")}
                 alt="Mapa"
                 style={{
                   position: "relative",
@@ -445,7 +445,7 @@ function ContactoForm() {
             {/* Segundo Mapa */}
             <div style={{ textAlign: "center" }}>
               <img
-                src={require("../../images/mapa.png")}
+                src={require("../../../images/Desktop/mapa.png")}
                 alt="Mapa"
                 style={{
                   position: "relative",

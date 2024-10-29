@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import fondoServicios from "../../images/fondoServicios.png";
-import imagenCurvaServicios from "../../images/imagenCurvaServicios.png";
-import tarjetaServicios from "../../images/tarjetaServicios.png";
-import arbolesProyectos from "../../images/arboles-proyectos.png";
-import imagenFondo from "../../images/imagenFondo.jpg"
+import fondoServicios from "../../../images/Desktop/fondoServicios.png";
+import imagenCurvaServicios from "../../../images/Desktop/imagenCurvaServicios.png";
+import tarjetaServicios from "../../../images/Desktop/tarjetaServicios.png";
+import arbolesProyectos from "../../../images/Desktop/arboles-proyectos.png";
+import imagenFondo from "../../../images/Desktop/imagenFondo.jpg"
 
 
 function ServiciosOfrecidos() {

@@ -1,9 +1,9 @@
 import React from "react";
-import fondoServicios from "../../images/fondoServicios.png";
-import imagenFondo from "../../images/imagenFondo.jpg"
-import logoGarabi from "../../images/logo-garabi.svg"; // Importa el logo
-import logoInstagram from "../../images/instagramNegra.png";
-import logoLinkedin from "../../images/linkedinNegra.png";
+import fondoServicios from "../../../images/Desktop/fondoServicios.png";
+import imagenFondo from "../../../images/Desktop/imagenFondo.jpg"
+import logoGarabi from "../../../images/Desktop/logo-garabi.svg"; // Importa el logo
+import logoInstagram from "../../../images/Desktop/instagramNegra.png";
+import logoLinkedin from "../../../images/Desktop/linkedinNegra.png";
 
 function Footer() {
   // Cálculo del margen izquierdo en porcentaje

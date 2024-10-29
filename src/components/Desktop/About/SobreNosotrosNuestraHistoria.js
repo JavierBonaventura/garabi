@@ -1,7 +1,7 @@
 import React from "react";
-import fondoServicios from "../../images/fondoServicios.png";
-import logoNuestraHistoria from "../../images/logoNuestraHistoria.png"; // Asegúrate de tener esta imagen importada
-import imagenFondo from "../../images/imagenFondo.jpg"
+import fondoServicios from "../../../images/Desktop/fondoServicios.png";
+import logoNuestraHistoria from "../../../images/Desktop/logoNuestraHistoria.png"; // Asegúrate de tener esta imagen importada
+import imagenFondo from "../../../images/Desktop/imagenFondo.jpg"
 
 function SobreNosotrosNuestraHistoria() {
   return (

@@ -1,9 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
-import imagenFondo from "../../images/imagenFondo.jpg";
+import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
 
-import gallery1 from "../../images/gallery1.png";
-import gallery2 from "../../images/gallery2.png";
-import gallery3 from "../../images/gallery3.png";
+import gallery1 from "../../../images/Desktop/gallery1.png";
+import gallery2 from "../../../images/Desktop/gallery2.png";
+import gallery3 from "../../../images/Desktop/gallery3.png";
 
 function Servicios() {
   const [isTransitioning, setIsTransitioning] = useState(false);

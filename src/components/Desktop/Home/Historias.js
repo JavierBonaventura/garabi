@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
-import galleryPersona1 from "../../images/galleryPersona1.png";
-import imagenFondo from "../../images/imagenFondo.jpg";
+import galleryPersona1 from "../../../images/Desktop/galleryPersona1.png";
+import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
 
 function Historias() {
   const initialCards = [

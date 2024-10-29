@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import fondoHome from "../../images/fondo-home.png";
-import imagenFondo from "../../images/imagenFondo.jpg";
-import logoGarabi from "../../images/logo-garabi.svg";
-import logoInstagram from "../../images/logoInstagram.svg";
-import logoLinkedin from "../../images/linkedin.png";
+import fondoHome from "../../../images/Desktop/fondo-home.png";
+import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
+import logoGarabi from "../../../images/Desktop/logo-garabi.svg";
+import logoInstagram from "../../../images/Desktop/logoInstagram.svg";
+import logoLinkedin from "../../../images/Desktop/linkedin.png";
 
 function Header_Home() {
   return (

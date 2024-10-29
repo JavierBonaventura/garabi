@@ -1,7 +1,7 @@
 import React from "react";
-import imagenFondo from "../../images/imagenFondo.jpg";
+import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
 
-import campoDesde from "../../images/campoDesde.png";
+import campoDesde from "../../../images/Desktop/campoDesde.png";
 
 function Desde1976() {
 

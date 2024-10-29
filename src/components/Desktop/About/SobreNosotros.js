@@ -1,7 +1,7 @@
 import React from "react";
-import fondoServicios from "../../images/fondoServicios.png";
-import imagenCurvaSobreNosotros from "../../images/imagenCurvaSobreNosotros.png";
-import imagenFondo from "../../images/imagenFondo.jpg"
+import fondoServicios from "../../../images/Desktop/fondoServicios.png";
+import imagenCurvaSobreNosotros from "../../../images/Desktop/imagenCurvaSobreNosotros.png";
+import imagenFondo from "../../../images/Desktop/imagenFondo.jpg"
 
 function SobreNosotros() {
   // Cálculo del margen izquierdo en porcentaje

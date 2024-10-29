@@ -1,7 +1,7 @@
 import React from "react";
-import imagenFondo from "../../images/imagenFondo.jpg"
-import recuadroUno from "../../images/recuadroUno.png";
-import recuadroDos from "../../images/recuadroDos.png";
+import imagenFondo from "../../../images/Desktop/imagenFondo.jpg"
+import recuadroUno from "../../../images/Desktop/recuadroUno.png";
+import recuadroDos from "../../../images/Desktop/recuadroDos.png";
 
 function Servicios() {
 

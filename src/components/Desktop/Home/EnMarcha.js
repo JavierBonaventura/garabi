@@ -1,6 +1,6 @@
 import React from "react";
-import imagenCurva from "../../images/imagenCurva.png"; // Importa la imagen curva
-import imagenFondo from "../../images/imagenFondo.jpg"
+import imagenCurva from "../../../images/Desktop/imagenCurva.png"; // Importa la imagen curva
+import imagenFondo from "../../../images/Desktop/imagenFondo.jpg"
 
 function EnMarcha() {
 

@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom"; // Importar Link y useLocation
-import fondoTopBar from "../../images/topbar-fondo.png";
-import imagenFondo from "../../images/imagenFondo.jpg"
+import { Link } from "react-router-dom"; // Importar Link
+import fondoTopBar from "../../../images/Desktop/topbar-fondo.png";
+import imagenFondo from "../../../images/Desktop/imagenFondo.jpg"
 
-import logoGarabi from "../../images/logo-garabi.svg";
-import logoInstagram from "../../images/logoInstagram.svg";
-import logoLinkedin from "../../images/linkedin.png";
+import logoGarabi from "../../../images/Desktop/logo-garabi.svg";
+import logoInstagram from "../../../images/Desktop/logoInstagram.svg";
+import logoLinkedin from "../../../images/Desktop/linkedin.png";
 
 function Header() {
   const [fontSize, setFontSize] = useState(14);
   const [letterSpacing, setLetterSpacing] = useState(4);
-  const location = useLocation(); // Obtener la ruta actual
 
   const handleResize = () => {
     const width = window.innerWidth;
@@ -31,16 +30,6 @@ function Header() {
 
   const leftPercentageLogo = (184 / 1440) * 100;
 
-  // Mapeo de las opciones del menú
-  const menuItems = [
-    { text: "HOME", to: "/" },
-    { text: "ABOUT US", to: "/about" },
-    { text: "PROYECTOS", to: "/projects" },
-    { text: "IMPACTO", to: "/impact" },
-    { text: "SERVICIOS", to: "/services" },
-    { text: "CONTACTO", to: "/contact" },
-  ];
-
   return (
     <div className="w-full h-[94px]">
       <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
@@ -49,6 +38,7 @@ function Header() {
         style={{
           backgroundImage: `url(${imagenFondo})`,
           backgroundSize: 'cover',  
+                 
         }}
       >
         <img
@@ -73,7 +63,14 @@ function Header() {
             gap: "24px",
           }}
         >
-          {menuItems.map((item, index) => (
+          {[
+            { text: "HOME", to: "/" },
+            { text: "ABOUT US", to: "/about" },
+            { text: "PROYECTOS", to: "/projects" },
+            { text: "IMPACTO", to: "/impact" },
+            { text: "SERVICIOS", to: "/services" },
+            { text: "CONTACTO", to: "/contact" },
+          ].map((item, index) => (
             <Link
               key={index}
               to={item.to}
@@ -94,7 +91,7 @@ function Header() {
             >
               {item.text}
               <div
-                className={`absolute left-1/2 transform -translate-x-1/2 h-[3.205px] bg-[#00942C] ${location.pathname === item.to ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'} transition-opacity duration-300`}
+                className="absolute left-1/2 transform -translate-x-1/2 h-[3.205px] bg-[#00942C] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 style={{
                   width: "100%",
                   marginTop: "3px",
@@ -122,15 +119,15 @@ function Header() {
                 height: "20px",
                 flexShrink: 0,
                 marginRight: "10px",
-                cursor: "pointer",
-                transition: "transform 0.2s",
+                cursor: "pointer", // Cambia el cursor al pasar el mouse
+                transition: "transform 0.2s", // Suaviza el efecto de escala
               }}
               onMouseEnter={(e) =>
                 (e.currentTarget.style.transform = "scale(1.1)")
-              }
+              } // Escala al pasar el mouse
               onMouseLeave={(e) =>
                 (e.currentTarget.style.transform = "scale(1)")
-              }
+              } // Vuelve al tamaño original
             />
             
             <img
@@ -140,15 +137,15 @@ function Header() {
                 width: "20px",
                 height: "20px",
                 flexShrink: 0,
-                cursor: "pointer",
-                transition: "transform 0.2s",
+                cursor: "pointer", // Cambia el cursor al pasar el mouse
+                transition: "transform 0.2s", // Suaviza el efecto de escala
               }}
               onMouseEnter={(e) =>
                 (e.currentTarget.style.transform = "scale(1.1)")
-              }
+              } // Escala al pasar el mouse
               onMouseLeave={(e) =>
                 (e.currentTarget.style.transform = "scale(1)")
-              }
+              } // Vuelve al tamaño original
             />
           </div>
         </div>

@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import fondoServicios from "../../images/fondoServicios.png";
-import imagenCurvaImpacto from "../../images/imagenCurvaImpacto.png";
-import tarjetaImpacto1 from "../../images/tarjetaImpacto1.png";
-import tarjetaImpacto2 from "../../images/tarjetaImpacto2.png";
-import tarjetaImpacto3 from "../../images/tarjetaImpacto3.png";
-import botonDerecha from "../../images/botonDerecha.png";
-import botonIzquierda from "../../images/botonIzquierda.png";
-import imagenFondo from "../../images/imagenFondo.jpg"
+import fondoServicios from "../../../images/Desktop/fondoServicios.png";
+import imagenCurvaImpacto from "../../../images/Desktop/imagenCurvaImpacto.png";
+import tarjetaImpacto1 from "../../../images/Desktop/tarjetaImpacto1.png";
+import tarjetaImpacto2 from "../../../images/Desktop/tarjetaImpacto2.png";
+import tarjetaImpacto3 from "../../../images/Desktop/tarjetaImpacto3.png";
+import botonDerecha from "../../../images/Desktop/botonDerecha.png";
+import botonIzquierda from "../../../images/Desktop/botonIzquierda.png";
+import imagenFondo from "../../../images/Desktop/imagenFondo.jpg"
 
-import arbolesProyectos from "../../images/arboles-proyectos.png";
+import arbolesProyectos from "../../../images/Desktop/arboles-proyectos.png";
 
 function Imapcto() {
   // Cálculo del margen izquierdo en porcentaje

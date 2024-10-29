@@ -29,7 +29,7 @@ function ProyectosEnMarcha() {
             top: "30px",
           }}
         />
-            <div
+            <div id="verlo"
       className="absolute "
       style={{
         width: "100px",

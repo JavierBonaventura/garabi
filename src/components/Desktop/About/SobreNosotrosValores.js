@@ -1,10 +1,10 @@
 import React from "react";
-import fondoServicios from "../../images/fondoServicios.png";
-import logoCandado from "../../images/logoCandado.png";
-import logoVision from "../../images/logoVision.png";
-import logoTrayectoria from "../../images/logoTrayectoria.png";
-import arbolesProyectos from "../../images/arboles-proyectos.png";
-import imagenFondo from "../../images/imagenFondo.jpg"
+import fondoServicios from "../../../images/Desktop/fondoServicios.png";
+import logoCandado from "../../../images/Desktop/logoCandado.png";
+import logoVision from "../../../images/Desktop/logoVision.png";
+import logoTrayectoria from "../../../images/Desktop/logoTrayectoria.png";
+import arbolesProyectos from "../../../images/Desktop/arboles-proyectos.png";
+import imagenFondo from "../../../images/Desktop/imagenFondo.jpg"
 
 function SobreNosotrosValores() {
   return (

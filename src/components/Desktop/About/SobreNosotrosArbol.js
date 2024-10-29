@@ -1,7 +1,7 @@
 import React from "react";
-import fondoServicios from "../../images/fondoServicios.png";
-import arbolCentral from "../../images/arbolCentral.png";
-import imagenFondo from "../../images/imagenFondo.jpg"
+import fondoServicios from "../../../images/Desktop/fondoServicios.png";
+import arbolCentral from "../../../images/Desktop/arbolCentral.png";
+import imagenFondo from "../../../images/Desktop/imagenFondo.jpg"
 
 function SobreNosotrosArbol() {
   return (

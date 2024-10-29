@@ -1,31 +1,46 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
+
+//////////////////// DESKTOP //////////////////////
 // home
-import Header_Home from "./components/Home/Header_Home";
-import Servicios from "./components/Home/Servicios";
-import Desde1976 from "./components/Home/Desde1976";
-import AlgunosNumeros from "./components/Home/AlgunosNumeros";
-import NuestrosProyectos from "./components/Home/NuestrosProyectos";
-import Historias from "./components/Home/Historias";
-import Impacto from "./components/Home/Impacto";
-import EnMarcha from "./components/Home/EnMarcha";
-import Footer from "./components/Home/Footer";
+import Header_Home from "./components/Desktop/Home/Header_Home";
+import Servicios from "./components/Desktop/Home/Servicios";
+import Desde1976 from "./components/Desktop/Home/Desde1976";
+import AlgunosNumeros from "./components/Desktop/Home/AlgunosNumeros";
+import NuestrosProyectos from "./components/Desktop/Home/NuestrosProyectos";
+import Historias from "./components/Desktop/Home/Historias";
+import Impacto from "./components/Desktop/Home/Impacto";
+import EnMarcha from "./components/Desktop/Home/EnMarcha";
+import Footer from "./components/Desktop/Home/Footer";
 // projects
-import Header from "./components/Projects/Header";
-import ProyectosEnMarcha from "./components/Projects/ProyectosEnMarcha";
+import Header from "./components/Desktop/Projects/Header";
+import ProyectosEnMarcha from "./components/Desktop/Projects/ProyectosEnMarcha";
 // Contact
-import ContactoForm from "./components/Contact/ContactoForm";
+import ContactoForm from "./components/Desktop/Contact/ContactoForm";
 // Sobre Nosotros
-import SobreNosotros from "./components/About/SobreNosotros";
-import SobreNosotrosArbol from "./components/About/SobreNosotrosArbol";
-import SobreNosotrosVideo from "./components/About/SobreNosotrsVideo";
-import SobreNosotrosValores from "./components/About/SobreNosotrosValores";
-import SobreNosotrosNuestraHistoria from "./components/About/SobreNosotrosNuestraHistoria";
+import SobreNosotros from "./components/Desktop/About/SobreNosotros";
+import SobreNosotrosArbol from "./components/Desktop/About/SobreNosotrosArbol";
+import SobreNosotrosVideo from "./components/Desktop/About/SobreNosotrsVideo";
+import SobreNosotrosValores from "./components/Desktop/About/SobreNosotrosValores";
+import SobreNosotrosNuestraHistoria from "./components/Desktop/About/SobreNosotrosNuestraHistoria";
 // Servicios
-import ServiciosOfrecidos from "./components/Services/ServiciosOfrecidos";
+import ServiciosOfrecidos from "./components/Desktop/Services/ServiciosOfrecidos";
 // Impacto
-import Imapcto from "./components/Impacto/Impacto";
+import Imapcto from "./components/Desktop/Impacto/Impacto";
+
+
+
+
+/////////////////// MOBILE ////////////////////////////
+// Home
+import HeaderMobile from "./components/Mobile/Home/HeaderMobile";
+import LideresMobile from "./components/Mobile/Home/LideresMobile";
+
+
+
+
+
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -46,11 +61,11 @@ const WarningMessage = () => (
 );
 
 function App() {
-  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 1280);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 1365);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth < 1280);
+      setIsSmallScreen(window.innerWidth < 1305);
     };
 
     window.addEventListener("resize", handleResize);
@@ -62,7 +77,10 @@ function App() {
       <BrowserRouter>
         <ScrollToTop />
         {isSmallScreen ? (
-          <WarningMessage />
+            <>
+          <HeaderMobile />
+          <LideresMobile />
+          </>
         ) : (
           <Routes>
             <Route

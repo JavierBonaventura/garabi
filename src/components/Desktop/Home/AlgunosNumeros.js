@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
-import imagenFondo from "../../images/imagenFondo.jpg";
-import imagenCirculo1 from "../../images/imagen-circulo-1.png";
-import imagenCirculo2 from "../../images/imagen-circulo-2.png";
-import imagenCirculo3 from "../../images/imagen-circulo-3.png";
-import imagenCirculo4 from "../../images/imagen-circulo-4.png";
+import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
+import imagenCirculo1 from "../../../images/Desktop/imagen-circulo-1.png";
+import imagenCirculo2 from "../../../images/Desktop/imagen-circulo-2.png";
+import imagenCirculo3 from "../../../images/Desktop/imagen-circulo-3.png";
+import imagenCirculo4 from "../../../images/Desktop/imagen-circulo-4.png";
 
 function AlgunosNumeros() {
   const [count1, setCount1] = useState(0);

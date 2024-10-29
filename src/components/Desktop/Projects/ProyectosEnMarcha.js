@@ -1,13 +1,13 @@
 import React from "react";
-import imagenFondo from "../../images/imagenFondo.jpg"
-import imagenCurva from "../../images/imagenCurva.png";
-import tarjeta1Proyectos1 from "../../images/tarjeta1-proyectos.png";
-import tarjeta2Proyectos2 from "../../images/tarjeta2-proyectos.png";
-import tarjeta3Proyectos3 from "../../images/tarjeta3-proyectos.png";
-import tarjeta4Proyectos4 from "../../images/tarjeta4-proyectos.png";
-import tarjeta5Proyectos5 from "../../images/tarjeta5-proyectos.png";
+import imagenFondo from "../../../images/Desktop/imagenFondo.jpg"
+import imagenCurva from "../../../images/Desktop/imagenCurva.png";
+import tarjeta1Proyectos1 from "../../../images/Desktop/tarjeta1-proyectos.png";
+import tarjeta2Proyectos2 from "../../../images/Desktop/tarjeta2-proyectos.png";
+import tarjeta3Proyectos3 from "../../../images/Desktop/tarjeta3-proyectos.png";
+import tarjeta4Proyectos4 from "../../../images/Desktop/tarjeta4-proyectos.png";
+import tarjeta5Proyectos5 from "../../../images/Desktop/tarjeta5-proyectos.png";
 
-import arbolesProyectos from "../../images/arboles-proyectos.png";
+import arbolesProyectos from "../../../images/Desktop/arboles-proyectos.png";
 
 function ProyectosEnMarcha() {
   // Cálculo del margen izquierdo en porcentaje

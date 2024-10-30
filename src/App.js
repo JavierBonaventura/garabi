@@ -36,9 +36,9 @@ import Imapcto from "./components/Desktop/Impacto/Impacto";
 // Home
 import HeaderMobile from "./components/Mobile/Home/HeaderMobile";
 import LideresMobile from "./components/Mobile/Home/LideresMobile";
-
-
-
+import ServiciosMobile from "./components/Mobile/Home/ServiciosMobile";
+import DesdeMobile from "./components/Mobile/Home/DesdeMobile";
+import AlgunosNumerosMobile from "./components/Mobile/Home/AlgunosNumerosMobile";
 
 
 
@@ -80,6 +80,9 @@ function App() {
             <>
           <HeaderMobile />
           <LideresMobile />
+          <ServiciosMobile />
+          <DesdeMobile />
+          <AlgunosNumerosMobile />
           </>
         ) : (
           <Routes>

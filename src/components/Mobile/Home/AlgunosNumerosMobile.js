@@ -56,7 +56,7 @@ function AlgunosNumerosMobile() {
   }, []);
 
   return (
-    <div className="w-full h-[662px]">
+    <div className="w-full h-[632px]">
       <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
       <div
         ref={ref}

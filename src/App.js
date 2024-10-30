@@ -39,7 +39,9 @@ import LideresMobile from "./components/Mobile/Home/LideresMobile";
 import ServiciosMobile from "./components/Mobile/Home/ServiciosMobile";
 import DesdeMobile from "./components/Mobile/Home/DesdeMobile";
 import AlgunosNumerosMobile from "./components/Mobile/Home/AlgunosNumerosMobile";
-
+import NuestrosPoyectosMobile from "./components/Mobile/Home/NuestrosPoyectosMobile";
+import ImpactoMobile from "./components/Mobile/Home/ImpactoMobile";
+import ContactanosMobile from "./components/Mobile/Home/ContactanosMobile";
 
 
 const ScrollToTop = () => {
@@ -83,6 +85,9 @@ function App() {
           <ServiciosMobile />
           <DesdeMobile />
           <AlgunosNumerosMobile />
+          <NuestrosPoyectosMobile />
+          <ImpactoMobile />
+          <ContactanosMobile />
           </>
         ) : (
           <Routes>

@@ -69,7 +69,7 @@ function ServiciosMobile() {
             <img
               src={botonIzquierdo}
               alt="Botón Izquierdo"
-              className="absolute top-1/2 left-[-20px] -mt-4 transform -translate-y-1/2"
+              className="absolute top-1/2 left-[-30px] -mt-4 transform -translate-y-1/2"
               style={{
                 width: "26px",
                 height: "26px",
@@ -157,7 +157,7 @@ function ServiciosMobile() {
             <img
               src={botonDerecho}
               alt="Botón Derecho"
-              className="absolute top-1/2 right-[-20px] -mt-4 transform -translate-y-1/2"
+              className="absolute top-1/2 right-[-30px] -mt-4 transform -translate-y-1/2"
               style={{
                 width: "26px",
                 height: "26px",

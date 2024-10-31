@@ -42,7 +42,7 @@ import AlgunosNumerosMobile from "./components/Mobile/Home/AlgunosNumerosMobile"
 import NuestrosPoyectosMobile from "./components/Mobile/Home/NuestrosPoyectosMobile";
 import ImpactoMobile from "./components/Mobile/Home/ImpactoMobile";
 import ContactanosMobile from "./components/Mobile/Home/ContactanosMobile";
-
+import FooterMobile from "./components/Mobile/Home/FooterMobile";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -88,6 +88,7 @@ function App() {
           <NuestrosPoyectosMobile />
           <ImpactoMobile />
           <ContactanosMobile />
+          <FooterMobile />
           </>
         ) : (
           <Routes>

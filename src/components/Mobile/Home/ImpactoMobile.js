@@ -1,28 +1,25 @@
-import React, { useState } from "react"; // Import useState for managing selected state
+import React, { useState } from "react"; 
 import fondoMobile from "../../../images/Mobile/fondoMobile.png";
 import impacto from "../../../images/Mobile/impacto.png";
-import sustentabilidad from "../../../images/Desktop/sustentabilidad.png"; // Imagen de sustentabilidad
-import seguridad from "../../../images/Desktop/seguridad.png"; // Imagen de seguridad
-import comunidad from "../../../images/Desktop/comunidad.png"; // Imagen de comunidad
+import sustentabilidad from "../../../images/Desktop/sustentabilidad.png"; 
+import seguridad from "../../../images/Desktop/seguridad.png"; 
+import comunidad from "../../../images/Desktop/comunidad.png"; 
 
 function ImpactoMobile() {
-  // State to track selected image
   const [selectedImage, setSelectedImage] = useState("sustentabilidad");
 
-  // Function to handle image selection
   const handleImageSelect = (imageName) => {
     setSelectedImage(imageName);
   };
 
-  // Array of images with their properties, including margin
   const images = [
-    { name: "sustentabilidad", src: sustentabilidad, marginLeft: "0px" }, // No margin
-    { name: "seguridad", src: seguridad, marginLeft: "-60px" }, // Custom margin for seguridad
-    { name: "comunidad", src: comunidad, marginLeft: "-120px" }, // Custom margin for comunidad
+    { name: "sustentabilidad", src: sustentabilidad, marginLeft: "0px", textAlign: "left" }, 
+    { name: "seguridad", src: seguridad, marginLeft: "-60px", textAlign: "center" }, 
+    { name: "comunidad", src: comunidad, marginLeft: "-120px", textAlign: "right" }, 
   ];
 
   return (
-    <div className="w-full h-[560px]">
+    <div className="w-full h-[580px]">
       <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
       <div
         className="relative z-10 flex flex-col items-center justify-start h-full px-0"
@@ -31,9 +28,7 @@ function ImpactoMobile() {
           backgroundSize: "cover",
         }}
       >
-        {/* Contenedor de texto alineado en la parte superior */}
         <div className="mt-8 w-full">
-          {/* Título "Impacto medio ambiente" */}
           <div
             className="flex-shrink-0 ml-8"
             style={{
@@ -51,7 +46,6 @@ function ImpactoMobile() {
             Impacto medio ambiente
           </div>
 
-          {/* Imagen "impacto.png" */}
           <img
             src={impacto}
             alt="Grupo Garabí en Corrientes"
@@ -62,27 +56,26 @@ function ImpactoMobile() {
             }}
           />
 
-          {/* Contenedor de imágenes como botones */}
           <div className="flex justify-around mt-8">
             {images.map((image) => (
               <div
                 key={image.name}
-                onClick={() => handleImageSelect(image.name)} // Set selected image on click
+                onClick={() => handleImageSelect(image.name)} 
                 className="relative cursor-pointer"
                 style={{
-                  opacity: selectedImage === image.name ? 1 : 0.5, // Change opacity based on selection
+                  opacity: selectedImage === image.name ? 1 : 0.5,
                 }}
               >
                 <img
                   src={image.src}
                   alt={image.name}
                   style={{
-                    width: "45px", // Adjust the size as needed
-                    height: "45px", // Adjust the size as needed
+                    width: "45px",
+                    height: "45px",
                   }}
                 />
                 {selectedImage === image.name && (
-                  <div className="absolute mt-4 w-full -ml-4" > 
+                  <div className="absolute mt-4 w-full -ml-4"> 
                     <div
                       style={{
                         width: "156px",
@@ -94,10 +87,10 @@ function ImpactoMobile() {
                         fontSize: "16px",
                         fontStyle: "normal",
                         fontWeight: "600",
-                        lineHeight: "32px", // 200%
+                        lineHeight: "32px", 
                       }}
                     >
-                      {image.name.charAt(0).toUpperCase() + image.name.slice(1)} {/* Capitalizing first letter */}
+                      {image.name.charAt(0).toUpperCase() + image.name.slice(1)} 
                     </div>
                     <div className="mt-2" 
                       style={{
@@ -111,7 +104,8 @@ function ImpactoMobile() {
                         fontSize: "12px",
                         fontStyle: "normal",
                         fontWeight: "400",
-                        lineHeight: "15px", // 125%
+                        lineHeight: "15px",
+                        textAlign: image.textAlign, // Agregar alineación de texto
                       }}
                     >
                       Proof-of-Work protocols are slow, expensive, unscalable, and environmentally harmful. And we have solved that problem.

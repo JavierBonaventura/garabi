@@ -29,9 +29,6 @@ import ServiciosOfrecidos from "./components/Desktop/Services/ServiciosOfrecidos
 // Impacto
 import Imapcto from "./components/Desktop/Impacto/Impacto";
 
-
-
-
 /////////////////// MOBILE ////////////////////////////
 // Home
 import HeaderMobile from "./components/Mobile/Home/HeaderMobile";
@@ -43,6 +40,10 @@ import NuestrosPoyectosMobile from "./components/Mobile/Home/NuestrosPoyectosMob
 import ImpactoMobile from "./components/Mobile/Home/ImpactoMobile";
 import ContactanosMobile from "./components/Mobile/Home/ContactanosMobile";
 import FooterMobile from "./components/Mobile/Home/FooterMobile";
+// Proyectos
+import ProyectosActivosMobile from "./components/Mobile/Proyectos/ProyectosActivosMobile";
+
+
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -55,10 +56,9 @@ const ScrollToTop = () => {
 };
 
 const WarningMessage = () => (
-  <div style={{ textAlign: "center", padding: "20px",  color: "#333" }}>
+  <div style={{ textAlign: "center", padding: "20px", color: "#333" }}>
     <h2>Este proyecto está diseñado para resoluciones mayores a 1280px.</h2>
     su resulucion es de : {window.innerWidth}
-    
   </div>
 );
 
@@ -79,25 +79,42 @@ function App() {
       <BrowserRouter>
         <ScrollToTop />
         {isSmallScreen ? (
-            <>
-          <HeaderMobile />
-          <LideresMobile />
-          <ServiciosMobile />
-          <DesdeMobile />
-          <AlgunosNumerosMobile />
-          <NuestrosPoyectosMobile />
-          <ImpactoMobile />
-          <ContactanosMobile />
-          <FooterMobile />
-          </>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <HeaderMobile />
+                  <LideresMobile />
+                  <ServiciosMobile />
+                  <DesdeMobile />
+                  <AlgunosNumerosMobile />
+                  <NuestrosPoyectosMobile />
+                  <ImpactoMobile />
+                  <ContactanosMobile />
+                  <FooterMobile />
+                </>
+              }
+            />
+             <Route
+              path="/projects"
+              element={
+                <>
+                  <HeaderMobile />
+                 <ProyectosActivosMobile />
+                  <FooterMobile />
+                </>
+              }
+            />
+          </Routes>
         ) : (
           <Routes>
             <Route
               path="/"
               element={
                 <>
-                   <Header />
-                  <Header_Home />               
+                  <Header />
+                  <Header_Home />
                   <Servicios />
                   <Desde1976 />
                   <AlgunosNumeros />

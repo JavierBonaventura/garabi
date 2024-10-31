@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'; // Asegúrate de importar Link
 import fondoMobile from "../../../images/Mobile/fondoMobile.png";
 import logoGarabi from "../../../images/Desktop/logo-garabi.svg";
 import logoInstagram from "../../../images/Desktop/instagramNegra.png";
@@ -40,10 +41,11 @@ function FooterMobile() {
               letterSpacing: "2.409px",
               textTransform: "uppercase",
               marginBottom: "4px",
-                textAlign: "left"
+              textAlign: "left",
             }}
           >
-            Home
+            {/* Cambiado a Link */}
+            <Link to="/" className="mt-2 block cursor-pointer">Home</Link>
           </div>
           <div className="mt-4"
             style={{
@@ -52,12 +54,13 @@ function FooterMobile() {
               fontSize: "10.841px",
               fontWeight: 400,
               lineHeight: "16.864px",
-               textAlign: "left"
+              textAlign: "left",
             }}
           >
-            <p className="mt-2 cursor-pointer">Nosotros</p>
-            <p className=" mt-2 cursor-pointer">Proyectos</p>
-            <p className="mt-2 cursor-pointer">Medio Ambiente</p>
+            {/* Cambiar p por Link y agregar display block */}
+            <Link to="/nosotros" className="mt-2 block cursor-pointer">Nosotros</Link>
+            <Link to="/projects" className="mt-2 block cursor-pointer">Proyectos</Link>
+            <Link to="/medio-ambiente" className="mt-2 block cursor-pointer">Medio Ambiente</Link>
           </div>
         </div>
 
@@ -72,10 +75,10 @@ function FooterMobile() {
               letterSpacing: "2.409px",
               textTransform: "uppercase",
               marginBottom: "4px",
-                  textAlign: "left"
+              textAlign: "left",
             }}
           >
-            Servicios
+            <Link to="/servicios" className="mt-2 block cursor-pointer">Servicios</Link>
           </div>
           <div className="mt-4"
             style={{
@@ -84,7 +87,7 @@ function FooterMobile() {
               fontSize: "10.841px",
               fontWeight: 400,
               lineHeight: "16.864px",
-                  textAlign: "left"
+              textAlign: "left",
             }}
           >
             <p className="mt-2 cursor-pointer">Servicio 01</p>
@@ -106,7 +109,7 @@ function FooterMobile() {
               marginBottom: "4px",
             }}
           >
-            Contacto
+            <Link to="/contacto" className="mt-2 block cursor-pointer">Contacto</Link>
           </div>
           <div className="flex flex-col items-center space-y-2 mt-6">
             {/* First row of icons */}
@@ -144,17 +147,17 @@ function FooterMobile() {
 
       {/* Copyright Section */}
       <div
-       style={{
-        color: "#000",
-        fontFamily: "Fira Sans",
-        fontSize: "5.977px",
-        fontStyle: "normal",
-        fontWeight: 500,
-        lineHeight: "normal",
-        letterSpacing: "1.708px",
-        textTransform: "uppercase",
-        textAlign: "center", // Retaining this to ensure centered alignment if needed
-      }}
+        style={{
+          color: "#000",
+          fontFamily: "Fira Sans",
+          fontSize: "5.977px",
+          fontStyle: "normal",
+          fontWeight: 500,
+          lineHeight: "normal",
+          letterSpacing: "1.708px",
+          textTransform: "uppercase",
+          textAlign: "center", // Retaining this to ensure centered alignment if needed
+        }}
       >
         © 2024 AW Visual Studio. All rights reserved.
       </div>

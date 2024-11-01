@@ -48,6 +48,11 @@ import AdvertisingMobile from "./components/Mobile/SingleProject/AdvertisingMobi
 import NombreDeProyectoMobile from "./components/Mobile/SingleProject/NombreDeProyectoMobile";
 //Contacto
 import QuedemosEnContactoMobile from "./components/Mobile/Contacto/QuedemosEnContactoMobile";
+// Sobre Nosotrs
+import SobreNosotrosMobile from "./components/Mobile/SobreNosotros/SobreNosotrosMobile";
+import SobreNosotrosArbolMobile from "./components/Mobile/SobreNosotros/SobreNosotrosArbolMobile";
+import VideoMobile from "./components/Mobile/SobreNosotros/VideoMobile";
+import ValoresMobile from "./components/Mobile/SobreNosotros/ValoresMobile";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -128,6 +133,19 @@ function App() {
                 <>
                   <HeaderMobile />
                   <QuedemosEnContactoMobile />
+                  <FooterMobile />
+                </>
+              }
+            />
+             <Route
+              path="/about"
+              element={
+                <>
+                  <HeaderMobile />
+<SobreNosotrosMobile />
+<SobreNosotrosArbolMobile />
+<VideoMobile />
+<ValoresMobile />
                   <FooterMobile />
                 </>
               }

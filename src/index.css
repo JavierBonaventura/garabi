@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.no-max-width {
+  max-width: none; /* Elimina el límite de max-width */
+}
+
 @font-face {
   font-family: "Fira Sans";
   src: url("../src/fonts/Fira_Sans/FiraSans-Regular.ttf") format("truetype");

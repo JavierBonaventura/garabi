@@ -109,7 +109,7 @@ function FooterMobile() {
               marginBottom: "4px",
             }}
           >
-            <Link to="/contacto" className="mt-2 block cursor-pointer">Contacto</Link>
+            <Link to="/contact" className="mt-2 block cursor-pointer">Contacto</Link>
           </div>
           <div className="flex flex-col items-center space-y-2 mt-6">
             {/* First row of icons */}

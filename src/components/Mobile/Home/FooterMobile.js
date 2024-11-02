@@ -78,7 +78,7 @@ function FooterMobile() {
               textAlign: "left",
             }}
           >
-            <Link to="/servicios" className="mt-2 block cursor-pointer">Servicios</Link>
+            <Link to="/services" className="mt-2 block cursor-pointer">Servicios</Link>
           </div>
           <div className="mt-4"
             style={{

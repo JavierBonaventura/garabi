@@ -43,13 +43,13 @@ function HeaderMobile() {
 
       {/* Menú desplegable */}
       <div
-        className={`absolute top-[70px] right-0 w-64 h-[300px] bg-white shadow-lg transition-transform transform ${
-          menuAbierto ? "translate-x-0" : "translate-x-full"
+        className={`absolute top-[76px] right-0 w-64 h-[300px] bg-white shadow-lg transition-transform duration-300 ${
+          menuAbierto ? "block" : "hidden" // Usa block y hidden para mostrar u ocultar el menú
         }`}
         style={{
           backgroundImage: `url(${fondoMobile})`,
           backgroundSize: "cover",
-          zIndex: 40, // Asegúrate de que el z-index sea mayor que otros elementos
+          zIndex: 40,
         }}
       >
         <div className="flex flex-col items-center justify-center h-full py-4">

@@ -118,7 +118,7 @@ function ImpactoMobileMain() {
                 alt="Tarjeta Medio Ambiente"
                 style={{
                   margin: "0 auto",
-                  width: "328px",
+                  width: "83%",
                   height: "143px",
                   borderRadius: "8px",
                   marginTop: "40px",
@@ -132,7 +132,7 @@ function ImpactoMobileMain() {
                 style={{
                   position: "absolute",
                   top: "50%",
-                  left: "50px",
+                  left: "12%",
                   transform: "translateY(-50%) ",
                   width: "24px",
                   height: "24px",
@@ -147,7 +147,7 @@ function ImpactoMobileMain() {
                 style={{
                   position: "absolute",
                   top: "50%",
-                  right: "50px",
+                  right: "12%",
                   transform: "translateY(-50%) ",
                   width: "24px",
                   height: "24px",
@@ -198,7 +198,7 @@ function ImpactoMobileMain() {
                 alt="Tarjeta Medio Ambiente"
                 style={{
                   margin: "0 auto",
-                  width: "328px",
+                  width: "83%",
                   height: "143px",
                   borderRadius: "8px",
                   marginTop: "40px",
@@ -212,7 +212,7 @@ function ImpactoMobileMain() {
                 style={{
                   position: "absolute",
                   top: "50%",
-                  left: "50px",
+                  left: "12%",
                   transform: "translateY(-50%) ",
                   width: "24px",
                   height: "24px",
@@ -227,7 +227,7 @@ function ImpactoMobileMain() {
                 style={{
                   position: "absolute",
                   top: "50%",
-                  right: "50px",
+                  right: "12%",
                   transform: "translateY(-50%) ",
                   width: "24px",
                   height: "24px",
@@ -236,8 +236,8 @@ function ImpactoMobileMain() {
               />
             </div>
           </div>
-                    {/* tarjeta 3 */}
-                    <div>
+          {/* tarjeta 3 */}
+          <div>
             <div
               className="ml-8 w-[327px] h-[30px] flex-shrink-0 mt-6"
               style={{
@@ -266,7 +266,11 @@ function ImpactoMobileMain() {
               className="mt-6 ml-8"
             >
               <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                nisl augue, finibus sed magna varius, egestas varius ex. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl
+                augue, finibus sed magna varius, egestas varius ex. Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit. Donec nisl augue.
               </p>
             </div>
             <div style={{ position: "relative" }}>
@@ -275,7 +279,7 @@ function ImpactoMobileMain() {
                 alt="Tarjeta Medio Ambiente"
                 style={{
                   margin: "0 auto",
-                  width: "328px",
+                  width: "83%",
                   height: "143px",
                   borderRadius: "8px",
                   marginTop: "40px",
@@ -289,7 +293,7 @@ function ImpactoMobileMain() {
                 style={{
                   position: "absolute",
                   top: "50%",
-                  left: "50px",
+                  left: "12%",
                   transform: "translateY(-50%) ",
                   width: "24px",
                   height: "24px",
@@ -304,7 +308,7 @@ function ImpactoMobileMain() {
                 style={{
                   position: "absolute",
                   top: "50%",
-                  right: "50px",
+                  right: "12%",
                   transform: "translateY(-50%) ",
                   width: "24px",
                   height: "24px",
@@ -313,7 +317,6 @@ function ImpactoMobileMain() {
               />
             </div>
           </div>
-
         </div>
       </div>
     </div>

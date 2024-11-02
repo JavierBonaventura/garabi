@@ -53,6 +53,7 @@ import SobreNosotrosMobile from "./components/Mobile/SobreNosotros/SobreNosotros
 import SobreNosotrosArbolMobile from "./components/Mobile/SobreNosotros/SobreNosotrosArbolMobile";
 import VideoMobile from "./components/Mobile/SobreNosotros/VideoMobile";
 import ValoresMobile from "./components/Mobile/SobreNosotros/ValoresMobile";
+import NuestraHistoriaMobile from "./components/Mobile/SobreNosotros/NuestraHistoriaMobile";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -146,6 +147,7 @@ function App() {
 <SobreNosotrosArbolMobile />
 <VideoMobile />
 <ValoresMobile />
+<NuestraHistoriaMobile />
                   <FooterMobile />
                 </>
               }

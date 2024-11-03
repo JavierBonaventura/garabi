@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
-import galleryPersona1 from "../../../images/Desktop/galleryPersona1.png";
-import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
+import { useSwipeable } from 'react-swipeable'; // Importa el hook de swipeable
 import fondoMobile from "../../../images/Mobile/fondoMobile.png";
 import servicios from "../../../images/Mobile/servicios.png";
 import botonIzquierdo from "../../../images/Mobile/botonIzquierdo.png";
@@ -10,24 +9,19 @@ function Historias() {
   const initialCards = [
     {
       image: servicios,
-      testimonial:
-        "Desde 1983 gestionado con éxito más de 18.000 hectáreas de bosques",
+      testimonial: "Desde 1983 gestionado con éxito más de 18.000 hectáreas de bosques",
       name: "Asesoramiento Productivo",
       position: "Owner of CF INVESTMENTS",
     },
     {
       image: servicios,
-      testimonial:
-        "Desde 1983 gestionado con éxito más de 18.000 hectáreas de bosques",
-
+      testimonial: "Desde 1983 gestionado con éxito más de 18.000 hectáreas de bosques",
       name: "Asesoramiento Productivo",
       position: "Owner of CF INVESTMENTS",
     },
     {
       image: servicios,
-      testimonial:
-        "Desde 1983 gestionado con éxito más de 18.000 hectáreas de bosques",
-
+      testimonial: "Desde 1983 gestionado con éxito más de 18.000 hectáreas de bosques",
       name: "Asesoramiento Productivo",
       position: "Owner of CF INVESTMENTS",
     },
@@ -43,7 +37,6 @@ function Historias() {
     if (isSliding) return;
 
     setIsSliding(true);
-
     carouselRef.current.style.transition = "transform 0.5s ease-in-out";
     carouselRef.current.style.transform = `translateX(-${cardWidth}px)`;
 
@@ -59,18 +52,13 @@ function Historias() {
     if (isSliding) return;
 
     setIsSliding(true);
-
-    // Mover la última tarjeta al inicio antes de iniciar la animación
     setCards((prevCards) => [
       prevCards[prevCards.length - 1],
       ...prevCards.slice(0, -1),
     ]);
-
-    // Posicionar el carrusel al final (en -cardWidth) sin transición
     carouselRef.current.style.transition = "none";
     carouselRef.current.style.transform = `translateX(-${cardWidth}px)`;
 
-    // Esperar un ciclo para aplicar la transición hacia 0
     setTimeout(() => {
       carouselRef.current.style.transition = "transform 0.5s ease-in-out";
       carouselRef.current.style.transform = "translateX(0)";
@@ -80,6 +68,14 @@ function Historias() {
       setIsSliding(false);
     }, 500);
   };
+
+  // Configura los manejadores de swipe
+  const handlers = useSwipeable({
+    onSwipedLeft: handleNext, // Deslizar a la izquierda para avanzar
+    onSwipedRight: handlePrev, // Deslizar a la derecha para retroceder
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true, // Esto permite el seguimiento del mouse para pruebas
+  });
 
   return (
     <div className="w-full h-[580px] relative">
@@ -92,7 +88,6 @@ function Historias() {
         }}
       >
         <div className="mt-8">
-          {/* Div principal con layout y tipografía para "Servicios" */}
           <div
             className="flex-shrink-0 ml-8"
             style={{
@@ -109,8 +104,6 @@ function Historias() {
           >
             Servicios
           </div>
-
-          {/* Div secundario con layout y tipografía para el texto debajo */}
           <div
             className="mt-4 flex-shrink-0 ml-8 "
             style={{
@@ -128,21 +121,21 @@ function Historias() {
           >
             Desde 1983 gestionado con éxito más de 18.000 hectáreas de bosques
           </div>
-
-          <div className="relative w-full flex items-center justify-center ">
+          <div className="relative w-full flex items-center justify-center">
             <button
               onClick={handlePrev}
-              className="absolute left-[10px] w-[26px] h-[26px] flex items-center justify-center  z-10  "
+              className="absolute left-[10px] w-[26px] h-[26px] flex items-center justify-center z-10"
             >
               <img src={botonIzquierdo}></img>
             </button>
 
             <div className="relative w-[393px] overflow-x-hidden">
-              <div className="py-12">              
+              <div className="py-12">
                 <div
                   ref={carouselRef}
                   className="flex"
                   style={{ width: `${cards.length * cardWidth}px` }}
+                  {...handlers} // Aplica los manejadores de swipe aquí
                 >
                   {cards.map((card, index) => (
                     <div
@@ -156,13 +149,11 @@ function Historias() {
                           height: "296px",
                           borderRadius: "10px",
                           background: "#DAD8CB",
-                          boxShadow:
-                            "13.327px 13.327px 23.322px 6.663px rgba(2, 2, 2, 0.30)",
+                          boxShadow: "13.327px 13.327px 23.322px 6.663px rgba(2, 2, 2, 0.30)",
                         }}
                       >
-                        {/* Imagen en la parte superior de la tarjeta */}
                         <img
-                          src={card.image} // Cambia esto a card.image o la imagen deseada
+                          src={card.image}
                           alt="Servicios"
                           style={{
                             width: "258px",
@@ -171,8 +162,6 @@ function Historias() {
                             borderTopRightRadius: "10px",
                           }}
                         />
-
-                        {/* Texto de "Asesoramiento Productivo" */}
                         <div
                           className="mt-2 flex-shrink-0 text-center"
                           style={{
@@ -188,10 +177,8 @@ function Historias() {
                             letterSpacing: "-1.333px",
                           }}
                         >
-                          {card.name} {/* Puedes personalizar el texto aquí */}
+                          {card.name}
                         </div>
-
-                        {/* Descripción */}
                         <div
                           className="mt-0 flex-shrink-0 text-center"
                           style={{
@@ -207,11 +194,8 @@ function Historias() {
                             letterSpacing: "-1px",
                           }}
                         >
-                          {card.testimonial}{" "}
-                          {/* Puedes personalizar el texto aquí */}
+                          {card.testimonial}
                         </div>
-
-                        {/* Botón "VER" */}
                         <button
                           className="mt-2 flex items-center justify-center"
                           style={{
@@ -244,7 +228,7 @@ function Historias() {
             </div>
             <button
               onClick={handleNext}
-              className="absolute right-[10px] w-[26px] h-[26px] flex items-center justify-center z-10 "
+              className="absolute right-[10px] w-[26px] h-[26px] flex items-center justify-center z-10"
             >
               <img src={botonDerecho}></img>
             </button>

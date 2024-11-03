@@ -1,12 +1,10 @@
 import React, { useRef, useState } from "react";
-import galleryPersona1 from "../../../images/Desktop/galleryPersona1.png";
-import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
 import fondoMobile from "../../../images/Mobile/fondoMobile.png";
 import servicios from "../../../images/Mobile/servicios.png";
 import botonIzquierdo from "../../../images/Mobile/botonIzquierdo.png";
 import botonDerecho from "../../../images/Mobile/botonDerecho.png";
 
-function Historias() {
+function ServiciosMobile() {
   const initialCards = [
     {
       image: servicios,
@@ -81,6 +79,28 @@ function Historias() {
     }, 500);
   };
 
+  // Swipe detection variables
+  const startX = useRef(0);
+  const endX = useRef(0);
+
+  const handleTouchStart = (e) => {
+    startX.current = e.touches[0].clientX; // Get initial touch position
+  };
+
+  const handleTouchMove = (e) => {
+    endX.current = e.touches[0].clientX; // Update position on move
+  };
+
+  const handleTouchEnd = () => {
+    if (startX.current - endX.current > 50) {
+      // Swipe left
+      handleNext();
+    } else if (endX.current - startX.current > 50) {
+      // Swipe right
+      handlePrev();
+    }
+  };
+
   return (
     <div className="w-full h-[580px] relative">
       <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
@@ -90,6 +110,9 @@ function Historias() {
           backgroundImage: `url(${fondoMobile})`,
           backgroundSize: "cover",
         }}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
       >
         <div className="mt-8">
           {/* Div principal con layout y tipografía para "Servicios" */}
@@ -138,7 +161,7 @@ function Historias() {
             </button>
 
             <div className="relative w-[393px] overflow-x-hidden">
-              <div className="py-12">              
+              <div className="py-12">
                 <div
                   ref={carouselRef}
                   className="flex"
@@ -255,4 +278,4 @@ function Historias() {
   );
 }
 
-export default Historias;
+export default ServiciosMobile;

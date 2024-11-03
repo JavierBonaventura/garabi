@@ -1,14 +1,110 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import fondoMobile from "../../../images/Mobile/fondoMobile.png";
 import logoCandado from "../../../images/Desktop/logoCandado.png";
 import logoVision from "../../../images/Desktop/logoVision.png";
 import logoTrayectoria from "../../../images/Desktop/logoTrayectoria.png";
 
 function ValoresMobile() {
+  const initialCards = [
+    {
+      logo: logoCandado,
+      title: "Confianza",
+      description:
+        "This product's simple design focuses on videos and standout quotes from customers.",
+    },
+    {
+      logo: logoVision,
+      title: "Visión",
+      description:
+        "Vision focuses on the core aspects of the business and customer needs.",
+    },
+    {
+      logo: logoTrayectoria,
+      title: "Trayectoria",
+      description:
+        "A proven track record of success in delivering quality products.",
+    },
+    {
+      logo: logoCandado,
+      title: "Confianza",
+      description:
+        "This product's simple design focuses on videos and standout quotes from customers.",
+    },
+    {
+      logo: logoVision,
+      title: "Visión",
+      description:
+        "Vision focuses on the core aspects of the business and customer needs.",
+    },
+  ];
+
+  const [cards, setCards] = useState(initialCards);
+  const carouselRef = useRef(null);
+  const [isSliding, setIsSliding] = useState(false);
+
+  const cardWidth = 270; // Width for centering logic, adjust as needed
+
+  const handleNext = () => {
+    if (isSliding) return;
+
+    setIsSliding(true);
+
+    carouselRef.current.style.transition = "transform 0.5s ease-in-out";
+    carouselRef.current.style.transform = `translateX(-${cardWidth}px)`;
+
+    setTimeout(() => {
+      setCards((prevCards) => [...prevCards.slice(1), prevCards[0]]);
+      carouselRef.current.style.transition = "none";
+      carouselRef.current.style.transform = "translateX(0)";
+      setIsSliding(false);
+    }, 500);
+  };
+
+  const handlePrev = () => {
+    if (isSliding) return;
+
+    setIsSliding(true);
+
+    setCards((prevCards) => [
+      prevCards[prevCards.length - 1],
+      ...prevCards.slice(0, -1),
+    ]);
+
+    carouselRef.current.style.transition = "none";
+    carouselRef.current.style.transform = `translateX(-${cardWidth}px)`;
+
+    setTimeout(() => {
+      carouselRef.current.style.transition = "transform 0.5s ease-in-out";
+      carouselRef.current.style.transform = "translateX(0)";
+    }, 50);
+
+    setTimeout(() => {
+      setIsSliding(false);
+    }, 500);
+  };
+
+  // Swipe detection variables
+  const startX = useRef(0);
+  const endX = useRef(0);
+
+  const handleTouchStart = (e) => {
+    startX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e) => {
+    endX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    if (startX.current - endX.current > 50) {
+      handleNext();
+    } else if (endX.current - startX.current > 50) {
+      handlePrev();
+    }
+  };
+
   return (
     <div style={{ overflow: "hidden" }}>
-      {" "}
-      {/* Prevent scrolling */}
       <div className="w-full h-auto relative">
         <div
           className="relative z-10 flex flex-col h-full"
@@ -18,10 +114,9 @@ function ValoresMobile() {
             backgroundPosition: "top center",
             backgroundRepeat: "repeat-y",
             backgroundSize: "cover",
-            paddingBottom: "30px", // Optional: Add space below text for aesthetics
+            paddingBottom: "30px",
           }}
         >
-          {/* Centered text container */}
           <div
             style={{
               width: "150px",
@@ -31,242 +126,90 @@ function ValoresMobile() {
               textAlign: "center",
               fontFamily: "Fira Sans",
               fontSize: "24px",
-              fontStyle: "normal",
               fontWeight: 700,
-              lineHeight: "30px" /* 125% */,
               margin: "0 auto",
-              marginTop: "20px" // Center the text horizontally
+              marginTop: "20px",
             }}
           >
             Valores
           </div>
 
-          {/* Container for the cards */}
           <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              marginTop: "20px",
-              position: "relative",
-              overflow: "hidden",
-            }}
+            className="relative w-full flex items-center justify-center overflow-hidden mt-8"
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
           >
-            {/* Left card */}
             <div
+              ref={carouselRef}
+              className="flex"
               style={{
-                width: "232.995px",
-                height: "155.33px",
-                flexShrink: 0,
-                borderRadius: "14.182px",
-                background: "#00942C",
-                position: "absolute",
-                left: "-43%",
-                filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                width: `${cards.length * cardWidth}px`,
+                transition: "transform 0.5s ease-in-out",
               }}
             >
-              {/* Logo Candado */}
-              <img
-                src={logoCandado}
-                alt="Logo Candado"
-                style={{
-                  position: "absolute",
-                  top: "22px",
-                  left: "20px",
-                  width: "34px",
-                  height: "40px",
-                  flexShrink: 0,
-                  fill: "#FFF",
-                }}
-              />
-
-              {/* Texto "Confianza" */}
-              <div
-                style={{
-                  position: "absolute",
-                  top: "35px", // Alineado con el candado
-                  left: "75px", // 34px + 41px (ancho del logo) + 35px de separación
-                  width: "102.849px",
-                  height: "32px",
-                  flexShrink: 0,
-                  color: "#FFF",
-                  fontFamily: "Fira Sans",
-                  fontSize: "14px",
-                  fontStyle: "normal",
-                  fontWeight: 500,
-                  lineHeight: "21px", // 145.455%
-                }}
-              >
-                Confianza
-              </div>
-
-              {/* Texto debajo del logo y "Confianza" */}
-              <div
-                style={{
-                  position: "absolute",
-                  top: "76px", // 35px (top margin) + 47px (logo height) + space
-                  left: "20px",
-                  width: "202px",
-                  height: "56px",
-                  flexShrink: 0,
-                  color: "#FFF",
-                  fontFamily: "Fira Sans",
-                  fontSize: "12px",
-                  fontStyle: "normal",
-                  fontWeight: 400,
-                  lineHeight: "18px", // 155.556%
-                  fontFeatureSettings: "'liga' off, 'clig' off",
-                }}
-              >
-                This product's simple design focuses on videos and standout
-                quotes from customers.
-              </div>
-            </div>
-
-            {/* Center card */}
-
-            <div
-              style={{
-                width: "232.995px",
-                height: "155.33px",
-                flexShrink: 0,
-                borderRadius: "14.182px",
-                background: "#00942C",
-                position: "relative",
-                filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
-              }}
-            >
-              {/* Logo Candado */}
-              <img
-                src={logoVision}
-                alt="Logo Candado"
-                style={{
-                  position: "absolute",
-                  top: "22px",
-                  left: "20px",
-                  width: "34px",
-                  height: "40px",
-                  flexShrink: 0,
-                  fill: "#FFF",
-                }}
-              />
-
-              {/* Texto "Confianza" */}
-              <div
-                style={{
-                  position: "absolute",
-                  top: "35px", // Alineado con el candado
-                  left: "75px", // 34px + 41px (ancho del logo) + 35px de separación
-                  width: "102.849px",
-                  height: "32px",
-                  flexShrink: 0,
-                  color: "#FFF",
-                  fontFamily: "Fira Sans",
-                  fontSize: "14px",
-                  fontStyle: "normal",
-                  fontWeight: 500,
-                  lineHeight: "21px", // 145.455%
-                }}
-              >
-                Visión
-              </div>
-
-              {/* Texto debajo del logo y "Confianza" */}
-              <div
-                style={{
-                  position: "absolute",
-                  top: "76px", // 35px (top margin) + 47px (logo height) + space
-                  left: "20px",
-                  width: "202px",
-                  height: "56px",
-                  flexShrink: 0,
-                  color: "#FFF",
-                  fontFamily: "Fira Sans",
-                  fontSize: "12px",
-                  fontStyle: "normal",
-                  fontWeight: 400,
-                  lineHeight: "18px", // 155.556%
-                  fontFeatureSettings: "'liga' off, 'clig' off",
-                }}
-              >
-                This product's simple design focuses on videos and standout
-                quotes from customers.
-              </div>
-            </div>
-
-            {/* Right card */}
-
-            <div
-              style={{
-                width: "232.995px",
-                height: "155.33px",
-                flexShrink: 0,
-                borderRadius: "14.182px",
-                background: "#00942C",
-                position: "absolute",
-                right: "-43%",
-                filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
-              }}
-            >
-              {/* Logo Candado */}
-              <img
-                src={logoCandado}
-                alt="Logo Candado"
-                style={{
-                  position: "absolute",
-                  top: "22px",
-                  left: "20px",
-                  width: "34px",
-                  height: "40px",
-                  flexShrink: 0,
-                  fill: "#FFF",
-                }}
-              />
-
-              {/* Texto "Confianza" */}
-              <div
-                style={{
-                  position: "absolute",
-                  top: "35px", // Alineado con el candado
-                  left: "75px", // 34px + 41px (ancho del logo) + 35px de separación
-                  width: "102.849px",
-                  height: "32px",
-                  flexShrink: 0,
-                  color: "#FFF",
-                  fontFamily: "Fira Sans",
-                  fontSize: "14px",
-                  fontStyle: "normal",
-                  fontWeight: 500,
-                  lineHeight: "21px", // 145.455%
-                }}
-              >
-                Confianza
-              </div>
-
-              {/* Texto debajo del logo y "Confianza" */}
-              <div
-                style={{
-                  position: "absolute",
-                  top: "76px", // 35px (top margin) + 47px (logo height) + space
-                  left: "20px",
-                  width: "202px",
-                  height: "56px",
-                  flexShrink: 0,
-                  color: "#FFF",
-                  fontFamily: "Fira Sans",
-                  fontSize: "12px",
-                  fontStyle: "normal",
-                  fontWeight: 400,
-                  lineHeight: "18px", // 155.556%
-                  fontFeatureSettings: "'liga' off, 'clig' off",
-                }}
-              >
-                This product's simple design focuses on videos and standout
-                quotes from customers.
-              </div>
+              {cards.map((card, index) => (
+                <div
+                  key={index}
+                  className="flex-shrink-0 flex flex-col items-center justify-center"
+                  style={{
+                    width: "232px",
+                    height: "155px",
+                    margin: "0 20px",
+                    background: "#00942C",
+                    borderRadius: "14px",
+                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                    padding: "10px", // Añadido para un mejor espaciado
+                  }}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      marginBottom: "10px",
+                    }}
+                  >
+                    <img
+                      src={card.logo}
+                      alt={card.title}
+                      style={{
+                        width: "34px",
+                        height: "40px",
+                        marginRight: "10px",
+                     
+                      }}
+                    />
+                    <div
+                      style={{
+                        color: "#FFF",
+                        fontFamily: "Fira Sans",
+                        fontSize: "14px",
+                        fontWeight: 500,
+                        textAlign: "left", // Cambiado a 'left' para que se alinee correctamente
+                      }}
+                    >
+                      {card.title}
+                    </div>
+                  </div>
+                  <div
+                    style={{
+                      color: "#FFF",
+                      fontFamily: "Fira Sans",
+                      fontSize: "12px",
+                      fontWeight: 400,
+                      textAlign: "center",
+                      padding: "0 10px",
+                    }}
+                  >
+                    {card.description}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
-                    {/* Círculos debajo de las tarjetas */}
-                    <div
+
+          {/* Círculos debajo de las tarjetas */}
+          <div
             style={{
               display: "flex",
               justifyContent: "center",
@@ -278,10 +221,10 @@ function ValoresMobile() {
               style={{
                 display: "flex",
                 justifyContent: "space-between",
-                width: "75px", // Ajusta este valor para controlar la separación horizontal
+                width: "75px",
               }}
             >
-              {[...Array(4)].map((_, index) => (
+              {[...Array(cards.length)].map((_, index) => (
                 <div
                   key={index}
                   style={{
@@ -294,7 +237,7 @@ function ValoresMobile() {
                 />
               ))}
             </div>
-            </div>
+          </div>
         </div>
       </div>
     </div>

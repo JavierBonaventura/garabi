@@ -1,10 +1,16 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import fondoMobile from "../../../images/Mobile/fondoMobile.png";
-import serviciosOfrecidos from "../../../images/Mobile/serviciosOfrecidos.png";
 import imagenAsesoramiento from "../../../images/Mobile/imagenAsesoramiento.png";
 
 function AsesoramientoMobile() {
+  // Estado para manejar la pestaña activa
+  const [activeTab, setActiveTab] = useState("ASESORAMIENTO PRODUCTIVO");
+
+  // Función para manejar el clic en las pestañas
+  const handleTabClick = (tab) => {
+    setActiveTab(tab);
+  };
+
   return (
     <div>
       <div className="w-full h-[auto] relative">
@@ -23,59 +29,30 @@ function AsesoramientoMobile() {
           {/* Green Tab and Section Titles */}
           <div className="w-[327px] mx-auto mt-4 flex flex-col items-center">
             <div className="flex space-x-[13px]">
-              {/* Pestaña Activa */}
-              <div
-                className="flex justify-center items-center text-white text-xs font-fira-sans"
-                style={{
-                  width: "101px",
-                  height: "38px",
-                  borderRadius: "7px 7px 0 0",
-                  backgroundColor: "#00942C",
-                  textAlign: "center",
-                  fontWeight: 400,
-                  fontSize: "9px",
-                  lineHeight: "12px",
-                  letterSpacing: "2px",
-                  textTransform: "uppercase",
-                }}
-              >
-                ASESORAMIENTO PRODUCTIVO
-              </div>
-              {/* Pestañas Inactivas */}
-              <div
-                className="flex justify-center items-center text-white text-xs font-fira-sans"
-                style={{
-                  width: "101px",
-                  height: "38px",
-                  borderRadius: "7px 7px 0 0",
-                  backgroundColor: "#00942C",
-                  textAlign: "center",
-                  fontWeight: 400,
-                  fontSize: "9px",
-                  lineHeight: "12px",
-                  letterSpacing: "2px",
-                  textTransform: "uppercase",
-                }}
-              >
-                ASESORAMIENTO INTEGRAL
-              </div>
-              <div
-                className="flex justify-center items-center text-white text-xs font-fira-sans"
-                style={{
-                  width: "101px",
-                  height: "38px",
-                  borderRadius: "7px 7px 0 0",
-                  backgroundColor: "#00942C",
-                  textAlign: "center",
-                  fontWeight: 400,
-                  fontSize: "9px",
-                  lineHeight: "12px",
-                  letterSpacing: "2px",
-                  textTransform: "uppercase",
-                }}
-              >
-                DESARROLLO DE PRODUCTO
-              </div>
+              {/* Pestañas */}
+              {["ASESORAMIENTO PRODUCTIVO", "ASESORAMIENTO INTEGRAL", "DESARROLLO DE PRODUCTO"].map((tab) => (
+                <div
+                  key={tab}
+                  onClick={() => handleTabClick(tab)}
+                  className="flex justify-center items-center text-white text-xs font-fira-sans cursor-pointer"
+                  style={{
+                    width: "101px",
+                    height: "38px",
+                    borderRadius: "7px 7px 0 0",
+                    backgroundColor: activeTab === tab ? "#00942C" : "transparent",
+                    opacity: activeTab === tab ? 1 : 0.24,
+                    textAlign: "center",
+                    fontWeight: 400,
+                    fontSize: "9px",
+                    lineHeight: "12px",
+                    letterSpacing: "2px",
+                    textTransform: "uppercase",
+                    color: activeTab === tab ? "white" : "black", 
+                  }}
+                >
+                  {tab}
+                </div>
+              ))}
             </div>
             {/* Línea debajo del recuadro verde */}
             <div
@@ -102,7 +79,7 @@ function AsesoramientoMobile() {
               fontFeatureSettings: "'liga' off, 'clig' off",
             }}
           >
-            Asesoramiento productivo
+            {activeTab}
           </div>
 
           {/* Description */}

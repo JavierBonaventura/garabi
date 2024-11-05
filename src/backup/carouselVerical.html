@@ -1,0 +1,100 @@
+<section>
+    <div class="carousel-container">
+      <button class="arrow-button top-arrow">&#9650;</button>
+      <div class="carousel">
+        <img src="https://picsum.photos/id/23/500" alt="Image 1" class='carousel-image'>
+        <img src="https://picsum.photos/id/2/500" alt="Image 2" class='carousel-image'>
+        <img src="https://picsum.photos/id/12/500" alt="Image 3" class='carousel-image'>
+        <img src="https://picsum.photos/id/23/500" alt="Image 4" class='carousel-image'>
+        <img src="https://picsum.photos/id/2/500" alt="Image 5" class='carousel-image'>
+        <img src="https://picsum.photos/id/12/500" alt="Image 6" class='carousel-image'>
+      </div>
+      <button class="arrow-button bottom-arrow">&#9660;</button>
+    </div>
+</section>
+
+<style>
+  body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel-container {
+    position: relative;
+    width: 520px; /* Ancho de las imágenes */
+    height: 1560px; /* Altura para mostrar 3 imágenes de 520px cada una */
+    overflow: hidden;
+  }
+
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel-image {
+    width: 520px;
+    height: 520px; /* Altura de cada imagen */
+  }
+
+  .arrow-button {
+    padding: 10px;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; /* Hace que las flechas estén por encima de las imágenes */
+  }
+
+  .top-arrow {
+    top: 10px;
+  }
+
+  .bottom-arrow {
+    bottom: 10px;
+  }
+</style>
+
+<script>
+  const carousel = document.querySelector(".carousel");
+  const topArrow = document.querySelector(".top-arrow");
+  const bottomArrow = document.querySelector(".bottom-arrow");
+
+  const images = document.querySelectorAll(".carousel-image");
+  const totalImages = images.length;
+  const imageHeight = 520;
+  
+  let currentIndex = 0;
+
+  topArrow.addEventListener("click", () => {
+    // Mover al inicio la última imagen
+    carousel.insertBefore(carousel.lastElementChild, carousel.firstElementChild);
+    carousel.style.transition = "none"; // Elimina la transición para el ajuste rápido
+    carousel.style.transform = `translateY(-${imageHeight}px)`;
+
+    // Forzar el reflujo antes de aplicar la animación
+    setTimeout(() => {
+      carousel.style.transition = "transform 0.5s ease-in-out";
+      carousel.style.transform = `translateY(0)`;
+    }, 10);
+  });
+
+  bottomArrow.addEventListener("click", () => {
+    carousel.style.transition = "transform 0.5s ease-in-out";
+    carousel.style.transform = `translateY(-${imageHeight}px)`;
+
+    // Al completar el movimiento, mover la primera imagen al final
+    setTimeout(() => {
+      carousel.appendChild(carousel.firstElementChild);
+      carousel.style.transition = "none";
+      carousel.style.transform = "translateY(0)";
+    }, 500); // La duración debe coincidir con la transición
+  });
+</script>

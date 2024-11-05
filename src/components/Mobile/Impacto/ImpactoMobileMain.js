@@ -1,13 +1,234 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useRef, useState } from "react";
 import fondoMobile from "../../../images/Mobile/fondoMobile.png";
 import imagenCurvaImpacto from "../../../images/Mobile/imagenCurvaImpacto.png";
-import botonDerecha from "../../../images/Desktop/botonDerecha.png";
 import botonIzquierda from "../../../images/Desktop/botonIzquierda.png";
+import botonDerecha from "../../../images/Desktop/botonDerecha.png";
 
-import medioAmbiente from "../../../images/Mobile/medioAmbiente.png";
-import economico from "../../../images/Mobile/economico.png";
-import social from "../../../images/Mobile/social.png";
+import medioAmbiente1 from "../../../images/Mobile/medioAmbiente.png";
+import medioAmbiente2 from "../../../images/Mobile/medioAmbiente.png";
+import medioAmbiente3 from "../../../images/Mobile/medioAmbiente.png";
+
+import economico1 from "../../../images/Mobile/economico.png";
+import economico2 from "../../../images/Mobile/economico.png";
+import economico3 from "../../../images/Mobile/economico.png";
+
+import social1 from "../../../images/Mobile/social.png";
+import social2 from "../../../images/Mobile/social.png";
+import social3 from "../../../images/Mobile/social.png";
+
+const cardsData = [
+  {
+    title: "Medio ambiente",
+    content: (
+      <>
+        <p>
+          Preservación y promoción de especies nativas y bosques naturales
+          (fotos de bosques nativos + fotos de viveros de árboles)
+        </p>
+        <ul className="list-disc pl-5 mt-2">
+          <li>Preservación y promoción del entorno natural de la fauna local</li>
+          <li>
+            Captura de carbón, como consecuencia de las plantaciones continuas de
+            bosques para uso comercial y bosques naturales
+          </li>
+          <li>
+            Diseño de un sistema de gestión de residuos y optimización del uso de
+            productos residuales en nuevas industrias
+          </li>
+        </ul>
+      </>
+    ),
+    images: [medioAmbiente1, medioAmbiente2, medioAmbiente3],
+  },
+  {
+    title: "Económico",
+    content: (
+      <p>
+        Es nuestro fin de aportar al crecimiento económico en la zona y en el
+        país, creando operaciones con un alto valor agregado y un potencial
+        importante de exportación así contribuyendo a la apertura del país al
+        resto del mundo.
+      </p>
+    ),
+    images: [economico1, economico2, economico3],
+  },
+  {
+    title: "Social",
+    content: (
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl
+        augue, finibus sed magna varius, egestas varius ex. Lorem ipsum dolor
+        sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed
+        magna varius, egestas varius ex. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Donec nisl augue.
+      </p>
+    ),
+    images: [social1, social2, social3],
+  },
+];
+
+function Card({ title, content, images }) {
+  const initialCards = images.map((image) => ({ image }));
+  const [cards, setCards] = useState(initialCards);
+  const carouselRef = useRef(null);
+  const [isSliding, setIsSliding] = useState(false);
+  
+  const cardWidth = 329; // Ancho de cada tarjeta, ajusta según el tamaño real
+
+  const handleNext = () => {
+    if (isSliding) return;
+    setIsSliding(true);
+
+    carouselRef.current.style.transition = "transform 0.5s ease-in-out";
+    carouselRef.current.style.transform = `translateX(-${cardWidth}px)`;
+
+    setTimeout(() => {
+      setCards((prevCards) => [...prevCards.slice(1), prevCards[0]]);
+      carouselRef.current.style.transition = "none";
+      carouselRef.current.style.transform = "translateX(0)";
+      setIsSliding(false);
+    }, 500);
+  };
+
+  const handlePrev = () => {
+    if (isSliding) return;
+    setIsSliding(true);
+
+    setCards((prevCards) => [
+      prevCards[prevCards.length - 1],
+      ...prevCards.slice(0, -1),
+    ]);
+
+    carouselRef.current.style.transition = "none";
+    carouselRef.current.style.transform = `translateX(-${cardWidth}px)`;
+
+    setTimeout(() => {
+      carouselRef.current.style.transition = "transform 0.5s ease-in-out";
+      carouselRef.current.style.transform = "translateX(0)";
+    }, 50);
+
+    setTimeout(() => {
+      setIsSliding(false);
+    }, 500);
+  };
+
+  // Swipe detection variables
+  const startX = useRef(0);
+  const endX = useRef(0);
+
+  const handleTouchStart = (e) => {
+    startX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e) => {
+    endX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    if (startX.current - endX.current > 50) {
+      handleNext();
+    } else if (endX.current - startX.current > 50) {
+      handlePrev();
+    }
+  };
+
+  return (
+    <div>
+     <div
+        className="w-[327px] h-[30px] flex-shrink-0 "
+        style={{
+          color: "#000",
+          fontFamily: "Fira Sans",
+          fontSize: "24px",
+          fontWeight: "700",
+          lineHeight: "50px",
+          letterSpacing: "-1px",
+          fontFeatureSettings: "'liga' off, 'clig' off",
+          margin: "0 auto", 
+        }}
+      >
+        {title}
+      </div>
+      <div
+        className=" "
+        style={{
+          width: "329px",
+          height: "auto",
+          flexShrink: 0,
+          color: "#000",
+          fontFamily: "Fira Sans",
+          fontSize: "12px",
+          fontWeight: "400",
+          lineHeight: "17px",
+          margin: "0 auto", 
+          marginTop: "20px"
+        }}
+      >
+        {content}
+      </div>
+      
+      {/* Contenedor principal del carrusel */}
+      <div className="relative w-full flex items-center justify-center">
+        
+        {/* Contenedor de las imágenes con botones fijos */}
+        <div className="relative w-[329px] overflow-hidden">
+          {/* Botón de navegación izquierda - posición fija en relación a la imagen */}
+          <button
+            onClick={handlePrev}
+            className="absolute z-10"
+            style={{
+              left: "10px", // Ajusta la distancia desde el borde izquierdo
+              top: "57%", // Centrado verticalmente
+              transform: "translateY(-50%)",
+            }}
+          >
+            <img src={botonIzquierda} alt="Botón Izquierda" className="w-[24px] h-[24px]" />
+          </button>
+
+          {/* Carrusel de imágenes */}
+          <div
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+          >
+            <div
+              ref={carouselRef}
+              className="flex"
+              style={{ width: `${cards.length * cardWidth}px` }}
+            >
+              {cards.map((card, index) => (
+                <div key={index} className="flex-shrink-0">
+                  <img
+                    src={card.image}
+                    alt={`Tarjeta ${title} ${index + 1}`}
+                    style={{
+                      width: "329px",
+                      height: "143px",
+                      borderRadius: "8px",
+                      marginTop: "40px",
+                    }}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Botón de navegación derecha - posición fija en relación a la imagen */}
+          <button
+            onClick={handleNext}
+            className="absolute z-10"
+            style={{
+              right: "10px", // Ajusta la distancia desde el borde derecho
+              top: "57%", // Centrado verticalmente
+              transform: "translateY(-50%)",
+            }}
+          >
+            <img src={botonDerecha} alt="Botón Derecha" className="w-[24px] h-[24px]" />
+          </button>
+        </div>
+      </div>
+    </div>
+  );;}
 
 function ImpactoMobileMain() {
   return (
@@ -26,7 +247,7 @@ function ImpactoMobileMain() {
         />
 
         <div
-          className="relative z-10 flex flex-col h-full "
+          className="relative z-10 flex flex-col h-full"
           style={{
             zIndex: "10",
             backgroundImage: `url(${fondoMobile})`,
@@ -35,7 +256,6 @@ function ImpactoMobileMain() {
             backgroundSize: "cover",
           }}
         >
-          {/* Texto "Quedemos en contacto" */}
           <div
             className="ml-8 w-[260px] h-[88px] flex-shrink-0 mt-[30px]"
             style={{
@@ -51,7 +271,7 @@ function ImpactoMobileMain() {
             Impacto{" "}
           </div>
           <div
-            className="ml-8 w-[315px] h-[72px] flex-shrink-0 mt-36"
+            className=" w-[315px] h-[72px] flex-shrink-0 mt-36"
             style={{
               color: "#000",
               fontFamily: "Fira Sans",
@@ -59,263 +279,19 @@ function ImpactoMobileMain() {
               fontWeight: "400",
               lineHeight: "17px",
               letterSpacing: "-1px",
+              margin: "0 auto", 
+              marginTop: "136px", 
             }}
           >
             Descubrí cómo nuestra empresa se enfoca en reducir su impacto
             ambiental y fomentar un cambio positivo para el medio ambiente y la
             comunidad, desde lo economico hasta lo social{" "}
           </div>
-          {/* tarjeta 1 */}
-          <div>
-            <div
-              className="ml-8 w-[327px] h-[30px] flex-shrink-0"
-              style={{
-                color: "#000",
-                fontFamily: "Fira Sans",
-                fontSize: "24px",
-                fontWeight: "700",
-                lineHeight: "50px",
-                letterSpacing: "-1px",
-                fontFeatureSettings: "'liga' off, 'clig' off",
-              }}
-            >
-              Medio ambiente
-            </div>
-            <div
-              style={{
-                width: "329px",
-                height: "167px",
-                flexShrink: 0,
-                color: "#000",
-                fontFamily: "Fira Sans",
-                fontSize: "12px",
-                fontWeight: "400",
-                lineHeight: "17px",
-              }}
-              className="mt-6 ml-8"
-            >
-              <p>
-                Preservación y promoción de especies nativas y bosques naturales
-                (fotos de bosques nativos + fotos de viveros de árboles)
-              </p>
-              <ul className="list-disc pl-5 mt-2">
-                <li>
-                  Preservación y promoción del entorno natural de la fauna local
-                </li>
-                <li>
-                  Captura de carbón, como consecuencia de las plantaciones
-                  continuas de bosques para uso comercial y bosques naturales
-                </li>
-                <li>
-                  Diseño de un sistema de gestión de residuos y optimización del
-                  uso de productos residuales en nuevas industrias
-                </li>
-              </ul>
-            </div>
-            <div style={{ position: "relative" }}>
-              <img
-                src={medioAmbiente}
-                alt="Tarjeta Medio Ambiente"
-                style={{
-                  margin: "0 auto",
-                  width: "83%",
-                  height: "143px",
-                  borderRadius: "8px",
-                  marginTop: "40px",
-                }}
-              />
 
-              {/* Botón izquierda */}
-              <img
-                src={botonIzquierda}
-                alt="Botón Izquierda"
-                style={{
-                  position: "absolute",
-                  top: "50%",
-                  left: "12%",
-                  transform: "translateY(-50%) ",
-                  width: "24px",
-                  height: "24px",
-                  flexShrink: 0,
-                }}
-              />
-
-              {/* Botón derecha */}
-              <img
-                src={botonDerecha}
-                alt="Botón Derecha"
-                style={{
-                  position: "absolute",
-                  top: "50%",
-                  right: "12%",
-                  transform: "translateY(-50%) ",
-                  width: "24px",
-                  height: "24px",
-                  flexShrink: 0,
-                }}
-              />
-            </div>
-          </div>
-          {/* tarjeta 2 */}
-          <div>
-            <div
-              className="ml-8 w-[327px] h-[30px] flex-shrink-0 mt-6"
-              style={{
-                color: "#000",
-                fontFamily: "Fira Sans",
-                fontSize: "24px",
-                fontWeight: "700",
-                lineHeight: "50px",
-                letterSpacing: "-1px",
-                fontFeatureSettings: "'liga' off, 'clig' off",
-              }}
-            >
-              Económico
-            </div>
-            <div
-              style={{
-                width: "329px",
-                height: "68px",
-                flexShrink: 0,
-                color: "#000",
-                fontFamily: "Fira Sans",
-                fontSize: "12px",
-                fontWeight: "400",
-                lineHeight: "17px",
-              }}
-              className="mt-6 ml-8"
-            >
-              <p>
-                Es nuestro fin de aportar al crecimiento económico en la zona y
-                en el país, creando operaciones con un alto valor agregado y un
-                potencial importante de exportación así contribuyendo a la
-                apertura del país al resto del mundo.
-              </p>
-            </div>
-            <div style={{ position: "relative" }}>
-              <img
-                src={economico}
-                alt="Tarjeta Medio Ambiente"
-                style={{
-                  margin: "0 auto",
-                  width: "83%",
-                  height: "143px",
-                  borderRadius: "8px",
-                  marginTop: "40px",
-                }}
-              />
-
-              {/* Botón izquierda */}
-              <img
-                src={botonIzquierda}
-                alt="Botón Izquierda"
-                style={{
-                  position: "absolute",
-                  top: "50%",
-                  left: "12%",
-                  transform: "translateY(-50%) ",
-                  width: "24px",
-                  height: "24px",
-                  flexShrink: 0,
-                }}
-              />
-
-              {/* Botón derecha */}
-              <img
-                src={botonDerecha}
-                alt="Botón Derecha"
-                style={{
-                  position: "absolute",
-                  top: "50%",
-                  right: "12%",
-                  transform: "translateY(-50%) ",
-                  width: "24px",
-                  height: "24px",
-                  flexShrink: 0,
-                }}
-              />
-            </div>
-          </div>
-          {/* tarjeta 3 */}
-          <div>
-            <div
-              className="ml-8 w-[327px] h-[30px] flex-shrink-0 mt-6"
-              style={{
-                color: "#000",
-                fontFamily: "Fira Sans",
-                fontSize: "24px",
-                fontWeight: "700",
-                lineHeight: "50px",
-                letterSpacing: "-1px",
-                fontFeatureSettings: "'liga' off, 'clig' off",
-              }}
-            >
-              Social
-            </div>
-            <div
-              style={{
-                width: "329px",
-                height: "102px",
-                flexShrink: 0,
-                color: "#000",
-                fontFamily: "Fira Sans",
-                fontSize: "12px",
-                fontWeight: "400",
-                lineHeight: "17px",
-              }}
-              className="mt-6 ml-8"
-            >
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                nisl augue, finibus sed magna varius, egestas varius ex. Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl
-                augue, finibus sed magna varius, egestas varius ex. Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit. Donec nisl augue.
-              </p>
-            </div>
-            <div style={{ position: "relative" }}>
-              <img
-                src={social}
-                alt="Tarjeta Medio Ambiente"
-                style={{
-                  margin: "0 auto",
-                  width: "83%",
-                  height: "143px",
-                  borderRadius: "8px",
-                  marginTop: "40px",
-                }}
-              />
-
-              {/* Botón izquierda */}
-              <img
-                src={botonIzquierda}
-                alt="Botón Izquierda"
-                style={{
-                  position: "absolute",
-                  top: "50%",
-                  left: "12%",
-                  transform: "translateY(-50%) ",
-                  width: "24px",
-                  height: "24px",
-                  flexShrink: 0,
-                }}
-              />
-
-              {/* Botón derecha */}
-              <img
-                src={botonDerecha}
-                alt="Botón Derecha"
-                style={{
-                  position: "absolute",
-                  top: "50%",
-                  right: "12%",
-                  transform: "translateY(-50%) ",
-                  width: "24px",
-                  height: "24px",
-                  flexShrink: 0,
-                }}
-              />
-            </div>
+          <div className="flex flex-col mt-2">
+            {cardsData.map((card, index) => (
+              <Card key={index} title={card.title} content={card.content} images={card.images} />
+            ))}
           </div>
         </div>
       </div>

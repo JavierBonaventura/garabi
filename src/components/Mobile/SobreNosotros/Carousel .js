@@ -5,25 +5,22 @@ import arbolesProyectos from "../../../images/Mobile/arbolesProyectos.png";
 
 function NuestraHistoriaMobile() {
   const carouselRef = useRef(null);
-  const [activeIndex, setActiveIndex] = useState(1);
-  const cardHeight = 103;
-  const totalCards = 4;
+  const [activeIndex, setActiveIndex] = useState(1); 
+  const cardHeight = 103; 
+  const totalCards = 4; 
 
   const startY = useRef(0);
   const endY = useRef(0);
 
   const handleTouchStart = (e) => {
-    startY.current = e.touches[0].clientY;
-    document.body.style.overflow = "hidden"; // Desactiva el scroll del body
+    startY.current = e.touches[0].clientY; 
   };
 
   const handleTouchMove = (e) => {
-    e.preventDefault(); // Previene el scroll del sitio
-    endY.current = e.touches[0].clientY;
+    endY.current = e.touches[0].clientY; 
   };
 
   const handleTouchEnd = () => {
-    document.body.style.overflow = "auto"; // Restaura el scroll del body
     if (startY.current - endY.current > 50) {
       handleNext();
     } else if (endY.current - startY.current > 50) {
@@ -65,7 +62,6 @@ function NuestraHistoriaMobile() {
       }, 10);
     }
   };
-
 
   return (
     <div style={{ overflow: "hidden" }}>

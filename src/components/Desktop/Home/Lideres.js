@@ -1,12 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import fondoHome from "../../../images/Desktop/fondo-home.png";
-import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
-import logoGarabi from "../../../images/Desktop/logo-garabi.svg";
-import logoInstagram from "../../../images/Desktop/logoInstagram.svg";
-import logoLinkedin from "../../../images/Desktop/linkedin.png";
 
-function Header_Home() {
+function Lideres() {
   return (
     <div
       className="relative h-[666px] bg-cover bg-center"
@@ -49,4 +44,4 @@ function Header_Home() {
   );
 }
 
-export default Header_Home;
+export default Lideres;

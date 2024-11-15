@@ -3,8 +3,11 @@ import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 
 //////////////////// DESKTOP //////////////////////
+// general
+import Header from "./components/Desktop/General/Header";
+import Footer from "./components/Desktop/General/Footer";
 // home
-import Header_Home from "./components/Desktop/Home/Header_Home";
+import Lideres from "./components/Desktop/Home/Lideres";
 import Servicios from "./components/Desktop/Home/Servicios";
 import Desde1976 from "./components/Desktop/Home/Desde1976";
 import AlgunosNumeros from "./components/Desktop/Home/AlgunosNumeros";
@@ -12,9 +15,7 @@ import NuestrosProyectos from "./components/Desktop/Home/NuestrosProyectos";
 import Historias from "./components/Desktop/Home/Historias";
 import Impacto from "./components/Desktop/Home/Impacto";
 import EnMarcha from "./components/Desktop/Home/EnMarcha";
-import Footer from "./components/Desktop/Home/Footer";
 // projects
-import Header from "./components/Desktop/Projects/Header";
 import ProyectosEnMarcha from "./components/Desktop/Projects/ProyectosEnMarcha";
 // Contact
 import ContactoForm from "./components/Desktop/Contact/ContactoForm";
@@ -81,11 +82,11 @@ const WarningMessage = () => (
 );
 
 function App() {
-  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 1365);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 1204);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth < 1305);
+      setIsSmallScreen(window.innerWidth < 1024);
     };
 
     window.addEventListener("resize", handleResize);
@@ -191,7 +192,7 @@ function App() {
               element={
                 <>
                   <Header />
-                  <Header_Home />
+                  <Lideres />
                   <Servicios />
                   <Desde1976 />
                   <AlgunosNumeros />

@@ -18,18 +18,18 @@ function AlgunosNumeros() {
   const finalCount4 = 123;
 
   // Tiempo total de referencia (en milisegundos)
-  const totalDuration = 2000; // 2 segundos
+  const totalDuration = 2000;
 
   // Función para contar hasta el número final
   const countUp = (target, setCount) => {
     let start = 0;
-    const increment = Math.ceil(target / (totalDuration / 100)); // Calcula cuánto incrementar por cada 100 ms
+    const increment = Math.ceil(target / (totalDuration / 100));
     const timer = setInterval(() => {
       if (start >= target) {
         clearInterval(timer);
       } else {
         start += increment;
-        if (start > target) start = target; // Evita que pase el objetivo
+        if (start > target) start = target;
         setCount(start);
       }
     }, 35); // Se ejecuta cada 35 ms
@@ -71,80 +71,20 @@ function AlgunosNumeros() {
             backgroundPosition: "center",
           }}
         >
-          <div
-            style={{
-              position: "absolute",
-              top: "-150px",
-              left: "50%",
-              transform: "translateX(-50%)",
-              width: "648px",
-              height: "76px",
-              color: "#000",
-              textAlign: "center",
-              fontFeatureSettings: "'liga' off, 'clig' off",
-              fontFamily: "Fira Sans",
-              fontSize: "60px",
-              fontStyle: "normal",
-              fontWeight: 900,
-              lineHeight: "60px",
-              letterSpacing: "-1px",
-            }}
-          >
+          <div className="absolute top-[-110px] left-1/2 transform -translate-x-1/2 w-[648px] h-[76px] text-black text-center font-fira-sans text-[60px] font-extrabold leading-[60px] tracking-[-1px]">
             Algunos números
           </div>
-          <div
-            style={{
-              position: "absolute",
-              top: "-70px",
-              left: "50%",
-              transform: "translateX(-50%)",
-              width: "290px",
-              height: "32px",
-              color: "#000",
-              textAlign: "center",
-              fontFeatureSettings: "'liga' off, 'clig' off",
-              fontFamily: "Fira Sans",
-              fontSize: "24px",
-              fontStyle: "normal",
-              fontWeight: 400,
-              lineHeight: "32px",
-              letterSpacing: "-1px",
-              flexShrink: 0,
-            }}
-          >
+          <div className="absolute top-[-30px] left-1/2 transform -translate-x-1/2 w-[290px] h-[32px] text-black text-center font-fira-sans text-[24px] font-normal leading-[32px] tracking-[-1px] flex-shrink-0">
             Esto logramos en nuestros 20 años de trayectoria
           </div>
 
-          <div
-            style={{
-              position: "absolute",
-              top: "50px",
-              left: "50%",
-              transform: "translateX(-50%)",
-              display: "flex",
-              gap: "100px",
-              justifyContent: "center",
-            }}
-          >
+          <div className="absolute top-[100px] left-1/2 transform -translate-x-1/2 flex gap-[100px] justify-center">
             {/* Bloque de imagen 1 */}
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-              }}
-            >
+            <div className="flex flex-col items-center">
               <img
+                className="w-[198px] h-[198px] rounded-full object-cover transition-transform duration-300 ease-in-out cursor-pointer"
                 src={imagenCirculo1}
                 alt="Imagen 1"
-                style={{
-                  width: "198px",
-                  height: "198px",
-                  borderRadius: "50%",
-                  objectFit: "cover",
-                  transition: "transform 0.3s ease",
-                  cursor: "pointer",
-                }}
                 onMouseEnter={(e) =>
                   (e.currentTarget.style.transform = "scale(1.1)")
                 }
@@ -153,69 +93,22 @@ function AlgunosNumeros() {
                 }
                 onClick={() => resetCounter(setCount1, finalCount1)} // Reinicia el contador al hacer clic
               />
-              <div
-                style={{
-                  width: "219px",
-                  height: "130.083px",
-                  flexShrink: 0,
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  paddingTop: "55px",
-                }}
-              >
-                <div
-                  style={{
-                    color: "#00942C",
-                    textAlign: "center",
-                    fontFamily: "Fira Sans",
-                    fontSize: "62.133px",
-                    fontStyle: "normal",
-                    fontWeight: 900,
-                    lineHeight: "41.422px",
-                  }}
-                >
+              <div className="w-[219px] h-[130.083px] flex-shrink-0 flex flex-col justify-center items-center pt-[55px]">
+                <div className="text-[#00942C] text-center font-fira-sans text-[62.133px] font-extrabold leading-[41.422px] pt-8">
                   {count1}
                 </div>
-                <div
-                  style={{
-                    color: "#000",
-                    textAlign: "center",
-                    fontFamily: "Fira Sans",
-                    fontSize: "20.711px",
-                    fontStyle: "normal",
-                    fontWeight: 500,
-                    letterSpacing: "5.178px",
-                    textTransform: "uppercase",
-                    paddingTop: "20px",
-                    lineHeight: "1",
-                  }}
-                >
+                <div className="text-[#000] text-center font-fira-sans text-[20.711px] font-medium tracking-[5.178px] uppercase pt-[20px] leading-none">
                   hectáreas administradas
                 </div>
               </div>
             </div>
 
             {/* Bloque de imagen 2 */}
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-              }}
-            >
+            <div className="flex flex-col items-center">
               <img
+                className="w-[198px] h-[198px] rounded-full object-cover transition-transform duration-300 ease-in-out cursor-pointer"
                 src={imagenCirculo2}
                 alt="Imagen 2"
-                style={{
-                  width: "198px",
-                  height: "198px",
-                  borderRadius: "50%",
-                  objectFit: "cover",
-                  transition: "transform 0.3s ease",
-                  cursor: "pointer",
-                }}
                 onMouseEnter={(e) =>
                   (e.currentTarget.style.transform = "scale(1.1)")
                 }
@@ -224,69 +117,22 @@ function AlgunosNumeros() {
                 }
                 onClick={() => resetCounter(setCount2, finalCount2)} // Reinicia el contador al hacer clic
               />
-              <div
-                style={{
-                  width: "219px",
-                  height: "130.083px",
-                  flexShrink: 0,
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  paddingTop: "55px",
-                }}
-              >
-                <div
-                  style={{
-                    color: "#00942C",
-                    textAlign: "center",
-                    fontFamily: "Fira Sans",
-                    fontSize: "62.133px",
-                    fontStyle: "normal",
-                    fontWeight: 900,
-                    lineHeight: "41.422px",
-                  }}
-                >
+              <div className="w-[219px] h-[130.083px] flex-shrink-0 flex flex-col justify-center items-center pt-[55px]">
+                <div className="text-[#00942C] text-center font-fira-sans text-[62.133px] font-extrabold leading-[41.422px] pt-8">
                   {count2}
                 </div>
-                <div
-                  style={{
-                    color: "#000",
-                    textAlign: "center",
-                    fontFamily: "Fira Sans",
-                    fontSize: "20.711px",
-                    fontStyle: "normal",
-                    fontWeight: 500,
-                    letterSpacing: "5.178px",
-                    textTransform: "uppercase",
-                    paddingTop: "20px",
-                    lineHeight: "1",
-                  }}
-                >
+                <div className="text-[#000] text-center font-fira-sans text-[20.711px] font-medium tracking-[5.178px] uppercase pt-[20px] leading-none">
                   hectáreas forestadas
                 </div>
               </div>
             </div>
 
             {/* Bloque de imagen 3 */}
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-              }}
-            >
+            <div className="flex flex-col items-center">
               <img
+                className="w-[198px] h-[198px] rounded-full object-cover transition-transform duration-300 ease-in-out cursor-pointer"
                 src={imagenCirculo3}
                 alt="Imagen 3"
-                style={{
-                  width: "198px",
-                  height: "198px",
-                  borderRadius: "50%",
-                  objectFit: "cover",
-                  transition: "transform 0.3s ease",
-                  cursor: "pointer",
-                }}
                 onMouseEnter={(e) =>
                   (e.currentTarget.style.transform = "scale(1.1)")
                 }
@@ -295,68 +141,22 @@ function AlgunosNumeros() {
                 }
                 onClick={() => resetCounter(setCount3, finalCount3)} // Reinicia el contador al hacer clic
               />
-              <div
-                style={{
-                  width: "262px",
-                  height: "130.083px",
-                  flexShrink: 0,
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  paddingTop: "55px",
-                }}
-              >
-                <div
-                  style={{
-                    color: "#00942C",
-                    textAlign: "center",
-                    fontFamily: "Fira Sans",
-                    fontSize: "62.133px",
-                    fontStyle: "normal",
-                    fontWeight: 900,
-                    lineHeight: "41.422px",
-                  }}
-                >
+              <div className="w-[219px] h-[130.083px] flex-shrink-0 flex flex-col justify-center items-center pt-[55px]">
+                <div className="text-[#00942C] text-center font-fira-sans text-[62.133px] font-extrabold leading-[41.422px] pt-12">
                   {count3} M.
                 </div>
-                <div
-                  style={{
-                    color: "#000",
-                    textAlign: "center",
-                    fontFamily: "Fira Sans",
-                    fontSize: "20.711px",
-                    fontStyle: "normal",
-                    fontWeight: 500,
-                    letterSpacing: "5.178px",
-                    textTransform: "uppercase",
-                    paddingTop: "20px",
-                    lineHeight: "1",
-                  }}
-                >
+                <div className="text-[#000] text-center font-fira-sans text-[20.711px] font-medium tracking-[5.178px] uppercase pt-[20px] leading-none">
                   USD en activos administrados
                 </div>
               </div>
             </div>
 
             {/* Bloque de imagen 4 */}
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-              }}
-            >
+            <div className="flex flex-col items-center">
               <img
+                className="w-[198px] h-[198px] rounded-full object-cover transition-transform duration-300 ease-in-out cursor-pointer"
                 src={imagenCirculo4}
                 alt="Imagen 4"
-                style={{
-                  width: "198px",
-                  height: "198px",
-                  borderRadius: "50%",
-                  transition: "transform 0.3s ease",
-                  cursor: "pointer",
-                }}
                 onMouseEnter={(e) =>
                   (e.currentTarget.style.transform = "scale(1.1)")
                 }
@@ -365,45 +165,11 @@ function AlgunosNumeros() {
                 }
                 onClick={() => resetCounter(setCount4, finalCount4)} // Reinicia el contador al hacer clic
               />
-              <div
-                style={{
-                  width: "219px",
-                  height: "130.083px",
-                  flexShrink: 0,
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  paddingTop: "55px",
-                }}
-              >
-                <div
-                  style={{
-                    color: "#00942C",
-                    textAlign: "center",
-                    fontFamily: "Fira Sans",
-                    fontSize: "62.133px",
-                    fontStyle: "normal",
-                    fontWeight: 900,
-                    lineHeight: "41.422px",
-                  }}
-                >
+              <div className="w-[219px] h-[130.083px] flex-shrink-0 flex flex-col justify-center items-center pt-[55px]">
+                <div className="text-[#00942C] text-center font-fira-sans text-[62.133px] font-extrabold leading-[41.422px] pt-12">
                   {count4}
                 </div>
-                <div
-                  style={{
-                    color: "#000",
-                    textAlign: "center",
-                    fontFamily: "Fira Sans",
-                    fontSize: "20.711px",
-                    fontStyle: "normal",
-                    fontWeight: 500,
-                    letterSpacing: "5.178px",
-                    textTransform: "uppercase",
-                    paddingTop: "20px",
-                    lineHeight: "1",
-                  }}
-                >
+                <div className="text-[#000] text-center font-fira-sans text-[20.711px] font-medium tracking-[5.178px] uppercase pt-[20px] leading-none">
                   empleados directos e indirectos
                 </div>
               </div>

@@ -7,7 +7,7 @@ import gallery3 from "../../../images/Desktop/gallery3.png";
 
 function Servicios() {
   const [isTransitioning, setIsTransitioning] = useState(false);
-  const [buttonZIndex, setButtonZIndex] = useState(30); // Estado para controlar el z-index
+  const [buttonZIndex, setButtonZIndex] = useState(30);
   const carouselRef = useRef(null);
 
   const cards = [
@@ -95,10 +95,7 @@ function Servicios() {
   };
 
   const animateButtons = () => {
-    // Cambiar el z-index a 10
     setButtonZIndex(10);
-
-    // Restaurar el z-index a 30 después de 500ms
     setTimeout(() => {
       setButtonZIndex(30);
     }, 500);
@@ -112,38 +109,14 @@ function Servicios() {
           className="relative  flex flex-col items-center justify-center h-full px-4"
           style={{
             backgroundImage: `url(${imagenFondo})`,
-            backgroundSize: "cover", // Asegura que la imagen cubra todo el ancho
-            backgroundPosition: "center", // Centra la imagen
+            backgroundSize: "cover",
+            backgroundPosition: "center",
           }}
         >
-          <div
-            className="w-[624px] h-[76px] flex-shrink-0 mt-[-50px]"
-            style={{
-              color: "#000",
-              fontFamily: "Fira Sans",
-              fontSize: "60px",
-              fontWeight: "900",
-              lineHeight: "60px",
-              letterSpacing: "-1px",
-              fontFeatureSettings: "'liga' off, 'clig' off",
-              textAlign: "center",
-            }}
-          >
+          <div className="w-[624px] h-[76px] flex-shrink-0 mt-[-30px] text-center text-[#000] font-fira-sans text-[60px] font-extrabold leading-[60px] tracking-[-1px]">
             Nuestros proyectos
           </div>
-          <div
-            className="w-[535px] h-[70px] flex-shrink-0 mt-[15px]"
-            style={{
-              color: "#000",
-              fontFamily: "Fira Sans",
-              fontSize: "24px",
-              fontWeight: "400",
-              lineHeight: "32px",
-              letterSpacing: "-1px",
-              fontFeatureSettings: "'liga' off, 'clig' off",
-              textAlign: "center",
-            }}
-          >
+          <div className="w-[535px] h-[70px] flex-shrink-0 mt-[15px] text-center text-[#000] font-fira-sans text-[24px] font-normal leading-[32px] tracking-[-1px]">
             Esta es una selección de todos los proyectos en los cuales venimos
             trabajando hace más de 40 años.
           </div>
@@ -200,73 +173,23 @@ function Servicios() {
                   />
 
                   {/* Título de la tarjeta */}
-                  <div
-                    style={{
-                      width: "389.793px",
-                      height: "65.268px",
-                      color: "#464646",
-                      textAlign: "center",
-                      fontFamily: "TT Norms Pro",
-                      fontSize: "28.132px",
-                      fontWeight: 450,
-                      lineHeight: "28.132px",
-                      letterSpacing: "-1.758px",
-                      position: "absolute",
-                      top: "280px",
-                      width: "100%",
-                    }}
-                  >
-                    {card.title}
+                  <div className="absolute top-[280px] w-full text-center text-[#464646] font-tt-norms-pro text-[28.132px]  leading-[28.132px] tracking-[-1.758px]">
+                    <span className="font-[450]">
+                      {card.title.split(" ")[0]}
+                    </span>
+                    <div className="font-[600]">
+                      {card.title.split(" ").slice(1).join(" ")}
+                    </div>
                   </div>
 
                   {/* Descripción de la tarjeta */}
-                  <div
-                    style={{
-                      paddingLeft: "20px",
-                      paddingRight: "20px",
-                      width: "351.72px",
-                      height: "70.707px",
-                      color: "#464646",
-                      textAlign: "center",
-                      fontFamily: "TT Norms Pro",
-                      fontSize: "17.583px",
-                      fontWeight: 400,
-                      lineHeight: "22.858px",
-                      letterSpacing: "-1.758px",
-                      position: "absolute",
-                      top: "330px",
-                      width: "100%",
-                    }}
-                  >
+                  <div className="absolute top-[350px] w-full text-center text-[#464646] font-tt-norms-pro text-[17.583px] font-[400] leading-[22.858px] tracking-[-1.758px] px-[20px]">
                     {card.description}
                   </div>
 
                   {/* Botón de la tarjeta */}
-                  <div
-                    className="bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5 transform translate-x-[-50%]"
-                    style={{
-                      width: "217px",
-                      height: "50px",
-                      borderRadius: "5px",
-                      position: "absolute",
-                      bottom: "30px",
-                      left: "50%",
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                    }}
-                  >
-                    <div
-                      style={{
-                        color: "#FFF",
-                        textAlign: "center",
-                        fontFamily: "Fira Sans",
-                        fontSize: "14px",
-                        fontWeight: 400,
-                        letterSpacing: "4px",
-                        textTransform: "uppercase",
-                      }}
-                    >
+                  <div className="absolute bottom-[20px] left-[50%] transform -translate-x-[50%] w-[217px] h-[50px] bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5 flex justify-center items-center rounded-[5px]">
+                    <div className="text-white text-center font-fira-sans text-[14px] font-normal tracking-[4px] uppercase">
                       ver más
                     </div>
                   </div>

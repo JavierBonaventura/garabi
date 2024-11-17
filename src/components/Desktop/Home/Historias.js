@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import galleryPersona1 from "../../../images/Desktop/galleryPersona1.png";
-import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
+import imagenFondo from "../../../images/Desktop/imagenFondoRecortada.jpg";
 
 function Historias() {
   const initialCards = [
@@ -75,11 +75,11 @@ function Historias() {
         className="absolute inset-0 flex flex-col items-center justify-center h-full px-4"
         style={{
           backgroundImage: `url(${imagenFondo})`,
-          backgroundSize: "cover",
+          backgroundSize: "contain",
           backgroundPosition: "center",
         }}
       >
-        <div className="relative w-full flex items-center justify-center mt-[50px]">
+        <div className="relative w-full flex items-center justify-center mt-[30px]">
           <button
             onClick={handlePrev}
             className="absolute left-24 w-[40px] h-[40px] flex items-center justify-center rounded-full bg-[#00942C] text-white z-10 cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5 transform"

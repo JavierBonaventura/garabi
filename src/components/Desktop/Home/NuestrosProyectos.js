@@ -124,7 +124,7 @@ function Servicios() {
           <div className="flex items-center justify-center mt-[50px] relative z-10">
             {/* Botón de navegación izquierda */}
             <button
-              className=" absolute left-1/2 transform -translate-x-[300px] w-[40px] h-[40px] flex items-center justify-center rounded-full text-white  bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5"
+              className=" absolute left-1/2 top-[255px] transform -translate-x-[300px] w-[40px] h-[40px] flex items-center justify-center rounded-full text-white  bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5"
               onClick={handlePrev}
               style={{ zIndex: buttonZIndex }}
             >
@@ -199,7 +199,7 @@ function Servicios() {
 
             {/* Botón de navegación derecha */}
             <button
-              className=" absolute left-1/2 transform -translate-x-[-260px] w-[40px] h-[40px] flex items-center justify-center rounded-full text-white  bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5"
+              className=" absolute left-1/2 top-[255px] transform -translate-x-[-260px] w-[40px] h-[40px] flex items-center justify-center rounded-full text-white  bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5"
               onClick={handleNext}
               style={{ zIndex: buttonZIndex }}
             >

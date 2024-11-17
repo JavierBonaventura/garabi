@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
+import imagenFondo from "../../../images/Desktop/imagenFondoRecortada.jpg";
 import logoGarabi from "../../../images/Desktop/logo-garabi.svg"; // Importa el logo
 import logoInstagram from "../../../images/Desktop/instagramNegra.png";
 import logoLinkedin from "../../../images/Desktop/linkedinNegra.png";
@@ -8,19 +8,19 @@ import logoLinkedin from "../../../images/Desktop/linkedinNegra.png";
 function Footer() {
   return (
     <div>
-      <div className="w-full h-[325px] relative">
+      <div className="w-full h-[380px] relative">
         {/* Fondo y contenedor principal */}
         <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
         <div
           className="relative z-10 flex flex-col h-full px-4"
           style={{
             backgroundImage: `url(${imagenFondo})`,
-            backgroundSize: "cover",
+            backgroundSize: "contain",
             backgroundPosition: "center",
           }}
         >
           <div
-            className="flex justify-between"
+            className="flex justify-between mt-[-10px]"
             style={{
               marginLeft: `12%`,
             }}
@@ -41,7 +41,7 @@ function Footer() {
             </div>
 
             {/* Segunda columna */}
-            <div className="flex flex-col top-20px mt-8">
+            <div className="flex flex-col top-20px mt-16">
               <div className="text-black font-fira-sans text-[14px] font-medium uppercase tracking-[4px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
                 HOME
               </div>
@@ -59,7 +59,7 @@ function Footer() {
             </div>
 
             {/* Tercera columna */}
-            <div className="flex flex-col top-20px mt-8">
+            <div className="flex flex-col top-20px mt-16">
               <div className="text-black font-fira-sans text-[14px] font-medium uppercase tracking-[4px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
                 SERVICIOS
               </div>
@@ -77,7 +77,7 @@ function Footer() {
             </div>
 
             {/* Cuarta columna */}
-            <div className="flex flex-col top-20px mt-8">
+            <div className="flex flex-col top-20px mt-16">
               <div className="text-black font-fira-sans text-[14px] font-medium uppercase tracking-[4px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
                 CONTACTO
               </div>

@@ -5,7 +5,7 @@ import campoDesde from "../../../images/Desktop/campoDesde.png";
 function Desde1976() {
   return (
     <div>
-      <div className="w-full h-[58vw]">
+      <div className="w-full h-[45vw]">
         <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
         <div
           className="relative z-10 flex h-full"
@@ -26,7 +26,7 @@ function Desde1976() {
 
             {/* Recuadro a la derecha, rotado 90 grados */}
             <div
-              className="absolute w-[30vw] h-[44vw] right-[calc(46%-0px)]"
+              className="absolute w-[30vw] h-[44vw] right-[calc(50%-0px)]"
               style={{
                 background:
                   "linear-gradient(90deg, rgba(229, 235, 225, 0.00) 0%, #E5EBE1 100%)",
@@ -47,7 +47,7 @@ function Desde1976() {
 
               {/* Nuevo recuadro debajo */}
               <div className="w-[510px] h-[485px] flex-shrink-0 flex flex-col justify-start">
-                <div className="absolute w-[510px] top-[8vw] right-[-10vw] text-black text-right font-tt-norms-pro text-[1.46vw] font-[450] leading-[32px] tracking-[-1px]">
+                <div className="absolute w-[510px] top-[7vw] right-[-10vw] text-black text-right font-tt-norms-pro text-[1.46vw] font-[450] leading-[32px] tracking-[-1px]">
                   <span className="font-bold">Grupo Garabí</span> comienza su
                   actividad en la provincia de Corrientes con la administración
                   de dos establecimientos forestales ubicados en el centro norte

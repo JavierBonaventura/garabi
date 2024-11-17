@@ -61,24 +61,24 @@ function AlgunosNumeros() {
 
   return (
     <div ref={ref}>
-      <div className="w-full h-[500px]">
+      <div className="w-full h-[700px]">
         <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
         <div
-          className="relative z-10 flex h-full px-4"
+          className="relative z-10 flex h-full"
           style={{
             backgroundImage: `url(${imagenFondo})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >
-          <div className="absolute top-[-110px] left-1/2 transform -translate-x-1/2 w-[648px] h-[76px] text-black text-center font-fira-sans text-[60px] font-extrabold leading-[60px] tracking-[-1px]">
+          <div className="absolute top-[70px] left-1/2 transform -translate-x-1/2 w-[648px] h-[76px] text-black text-center font-fira-sans text-[60px] font-extrabold leading-[60px] tracking-[-1px]">
             Algunos números
           </div>
-          <div className="absolute top-[-30px] left-1/2 transform -translate-x-1/2 w-[290px] h-[32px] text-black text-center font-fira-sans text-[24px] font-normal leading-[32px] tracking-[-1px] flex-shrink-0">
+          <div className="absolute top-[150px] left-1/2 transform -translate-x-1/2 w-[290px] h-[32px] text-black text-center font-fira-sans text-[24px] font-normal leading-[32px] tracking-[-1px] flex-shrink-0">
             Esto logramos en nuestros 20 años de trayectoria
           </div>
 
-          <div className="absolute top-[100px] left-1/2 transform -translate-x-1/2 flex gap-[100px] justify-center">
+          <div className="absolute top-[280px] left-1/2 transform -translate-x-1/2 flex gap-[100px] justify-center">
             {/* Bloque de imagen 1 */}
             <div className="flex flex-col items-center">
               <img

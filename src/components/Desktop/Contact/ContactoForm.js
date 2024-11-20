@@ -1,355 +1,132 @@
 import React from "react";
-import fondoServicios from "../../../images/Desktop/fondoServicios.png";
 import imagenCurvaContacto from "../../../images/Desktop/imagenCurvaContacto.png";
-import imagenFondo from "../../../images/Desktop/imagenFondo.jpg"
-
+import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
 
 function ContactoForm() {
-  // Cálculo del margen izquierdo en porcentaje
-  const leftPercentageLogo = (180 / 1440) * 100;
-
   return (
     <div>
-      <div className="w-full h-[1420px]">
+      <div className="w-full h-[1348px]">
         <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
         <div
           className="relative z-10 flex flex-col h-full px-4"
           style={{
             backgroundImage: `url(${imagenFondo})`,
-            backgroundSize: 'contain',  
-            backgroundPosition: 'center top',              
+            backgroundSize: "contain",
+            backgroundPosition: "center top",
           }}
         >
-          {/* Texto "Servicios" con margen superior de 120px */}
-          <div
-            className="w-[707px] h-[72px] flex-shrink-0 mt-[120px]"
-            style={{
-              marginLeft: `${leftPercentageLogo}%`,
-              color: "#000",
-              fontFamily: "Fira Sans",
-              fontSize: "60px",
-              fontWeight: "900",
-              lineHeight: "60px",
-              letterSpacing: "-1px",
-              fontFeatureSettings: "'liga' off, 'clig' off",
-            }}
-          >
+          <div class="w-[707px] h-[72px] flex-shrink-0 mt-[50px] ml-[12%] text-black font-fira-sans text-[60px] font-extrabold leading-[60px] tracking-[-1px] [font-feature-settings:'liga'_off,'clig'_off]">
             Quedemos en contacto
           </div>
-
           {/* Contenedor principal con flex para organizar campos */}
-          <div
-            className="flex mt-8"
-            style={{
-              marginLeft: `${leftPercentageLogo}%`,
-              justifyContent: "flex-start", // Para crear espacio entre las dos secciones
-            }}
-          >
-            {/* Sección de campos input */}
+          <div class="flex mt-8 ml-[12%] justify-start">
             <div>
               {/* Sección de formulario */}
-              <div
-                className="flex flex-wrap"
-                style={{
-                  gap: "39px",
-                }}
-              >
+              <div class="flex flex-wrap gap-[39px]">
                 {/* Input NOMBRE */}
                 <div>
-                  <label
-                    htmlFor="nombre"
-                    style={{
-                      display: "block",
-                      width: "336.444px",
-                      height: "16px",
-                      color: "#000",
-                      fontFamily: "Fira Sans",
-                      fontSize: "14px",
-                      fontWeight: "500",
-                      letterSpacing: "4px",
-                      textTransform: "uppercase",
-                      marginBottom: "8px",
-                    }}
-                  >
+                  <label class="block w-[336.444px] h-[16px] text-black font-fira-sans text-[14px] font-medium tracking-[4px] uppercase mb-2">
                     Nombre
                   </label>
                   <input
                     type="text"
                     id="nombre"
-                    style={{
-                      width: "336.444px",
-                      height: "50px",
-                      borderRadius: "4px",
-                      border: "2px solid #000",
-                      background: "rgba(218, 218, 218, 0.00)",
-                      padding: "10px",
-                    }}
+                    class="w-[336.444px] h-[50px] rounded-[4px] border-2 border-black bg-transparent p-2.5"
                   />
                 </div>
 
                 {/* Input EMAIL */}
                 <div>
                   <label
-                    htmlFor="email"
-                    style={{
-                      display: "block",
-                      width: "336.444px",
-                      height: "16px",
-                      color: "#000",
-                      fontFamily: "Fira Sans",
-                      fontSize: "14px",
-                      fontWeight: "500",
-                      letterSpacing: "4px",
-                      textTransform: "uppercase",
-                      marginBottom: "8px",
-                    }}
+                    for="email"
+                    class="block w-[336.444px] h-[16px] text-black font-fira-sans text-[14px] font-medium tracking-[4px] uppercase mb-2"
                   >
                     Email
                   </label>
                   <input
                     type="email"
                     id="email"
-                    style={{
-                      width: "336.444px",
-                      height: "50px",
-                      borderRadius: "4px",
-                      border: "2px solid #000",
-                      background: "rgba(218, 218, 218, 0.00)",
-                      padding: "10px",
-                    }}
+                    class="w-[336.444px] h-[50px] rounded-[4px] border-2 border-black bg-transparent p-2.5"
                   />
                 </div>
               </div>
 
               {/* Sección de Servicio y Teléfono */}
-              <div
-                className="flex flex-wrap mt-8"
-                style={{
-                  gap: "39px",
-                }}
-              >
+              <div class="flex flex-wrap mt-8 gap-[39px]">
                 {/* Input SERVICIO */}
                 <div>
-                  <label
-                    htmlFor="servicio"
-                    style={{
-                      display: "block",
-                      width: "336.444px",
-                      height: "16px",
-                      color: "#000",
-                      fontFamily: "Fira Sans",
-                      fontSize: "14px",
-                      fontWeight: "500",
-                      letterSpacing: "4px",
-                      textTransform: "uppercase",
-                      marginBottom: "8px",
-                    }}
-                  >
+                  <label class="block w-[336.444px] h-[16px] text-black font-fira-sans text-[14px] font-medium tracking-[4px] uppercase mb-2">
                     Servicio
                   </label>
                   <input
                     type="text"
                     id="servicio"
-                    style={{
-                      width: "336.444px",
-                      height: "50px",
-                      borderRadius: "4px",
-                      border: "2px solid #000",
-                      background: "rgba(218, 218, 218, 0.00)",
-                      padding: "10px",
-                    }}
+                    class="w-[336.444px] h-[50px] rounded-[4px] border-2 border-black bg-transparent p-2.5"
                   />
                 </div>
 
                 {/* Input TELÉFONO */}
                 <div>
-                  <label
-                    htmlFor="telefono"
-                    style={{
-                      display: "block",
-                      width: "336.444px",
-                      height: "16px",
-                      color: "#000",
-                      fontFamily: "Fira Sans",
-                      fontSize: "14px",
-                      fontWeight: "500",
-                      letterSpacing: "4px",
-                      textTransform: "uppercase",
-                      marginBottom: "8px",
-                    }}
-                  >
+                  <label class="block w-[336.444px] h-[16px] text-black font-fira-sans text-[14px] font-medium tracking-[4px] uppercase mb-2">
                     Teléfono
                   </label>
                   <input
                     type="tel"
                     id="telefono"
-                    style={{
-                      width: "336.444px",
-                      height: "50px",
-                      borderRadius: "4px",
-                      border: "2px solid #000",
-                      background: "rgba(218, 218, 218, 0.00)",
-                      padding: "10px",
-                    }}
+                    class="w-[336.444px] h-[50px] rounded-[4px] border-2 border-black bg-transparent p-2.5"
                   />
                 </div>
               </div>
 
               {/* Input MENSAJE */}
               <div className="mt-8">
-                <label
-                  htmlFor="mensaje"
-                  style={{
-                    display: "block",
-                    width: "114.338px",
-                    color: "#000",
-                    fontFamily: "Fira Sans",
-                    fontSize: "14px",
-                    fontWeight: "500",
-                    letterSpacing: "4px",
-                    textTransform: "uppercase",
-                    marginBottom: "8px",
-                  }}
-                >
+                <label class="block w-[114.338px] text-black font-fira-sans text-[14px] font-medium tracking-[4px] uppercase mb-2">
                   Mensaje
                 </label>
                 <textarea
                   id="mensaje"
-                  style={{
-                    width: "711px",
-                    height: "136px",
-                    borderRadius: "4px",
-                    border: "2px solid #000",
-                    background: "rgba(218, 218, 218, 0.00)",
-                    padding: "10px",
-                  }}
+                  class="w-[711px] h-[136px] rounded-[4px] border-2 border-black bg-transparent p-2.5"
                 />
               </div>
               {/* Contenedor del botón "Enviar" */}
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "flex-end",
-                  marginTop: "20px",
-                }}
-              >
-                <button
-                  className="bg-[#000] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#292929] hover:-translate-y-0.5"
-                  style={{
-                    width: "227.846px",
-                    height: "50px",
-                    flexShrink: 0,
-                    borderRadius: "5px",
-                    color: "#FFF",
-                    textAlign: "center",
-                    fontFamily: "Fira Sans",
-                    fontSize: "14px",
-                    fontWeight: "500",
-                    letterSpacing: "4px",
-                    textTransform: "uppercase",
-                    zIndex: 20
-                  }}
-                >
+              <div class="flex justify-end mt-5">
+                <button class="bg-black cursor-pointer transition-transform duration-500 ease-out hover:bg-[#292929] hover:-translate-y-0.5 w-[227.846px] h-[50px] flex-shrink-0 rounded-[5px] text-white text-center font-fira-sans text-[14px] font-medium tracking-[4px] uppercase z-20">
                   Enviar
                 </button>
               </div>
             </div>
 
             {/* Sección de campos textos */}
-            <div style={{ marginLeft: "85px", marginTop: "0px" }}>
+            <div class="ml-[85px] mt-0">
               {/* Texto 1 - Dirección */}
               <div>
-                <p
-                  style={{
-                    color: "#000",
-                    fontFamily: "Fira Sans",
-                    fontSize: "14px",
-                    fontWeight: "900",
-                    letterSpacing: "4px",
-                    textTransform: "uppercase",
-                    marginBottom: "8px",
-                  }}
-                >
+                <p class="text-black font-fira-sans text-[14px] font-extrabold tracking-[4px] uppercase mb-2">
                   Dirección
                 </p>
-                <p
-                  style={{
-                    width: "216px",
-                    color: "#000",
-                    fontFamily: "Fira Sans",
-                    fontSize: "18px",
-                    fontWeight: "400",
-                    lineHeight: "28px",
-                  }}
-                >
+                <p class="w-[216px] text-black font-fira-sans text-[18px] font-normal leading-[28px]">
                   Chubut 991, San Isidro, Buenos Aires
                 </p>
               </div>
 
               {/* Texto 2 - Teléfono */}
               <div style={{ marginTop: "16px" }}>
-                <p
-                  style={{
-                    color: "#000",
-                    fontFamily: "Fira Sans",
-                    fontSize: "14px",
-                    fontWeight: "900",
-                    letterSpacing: "4px",
-                    textTransform: "uppercase",
-                    marginBottom: "8px",
-                  }}
-                >
+                <p class="text-black font-fira-sans text-[14px] font-extrabold tracking-[4px] uppercase mb-2">
                   Teléfono
                 </p>
-                <p
-                  style={{
-                    width: "216px",
-                    color: "#000",
-                    fontFamily: "Fira Sans",
-                    fontSize: "18px",
-                    fontWeight: "400",
-                    lineHeight: "28px",
-                  }}
-                >
+                <p class="w-[216px] text-black font-fira-sans text-[18px] font-normal leading-[28px]">
                   +54 11 4723 6967
                 </p>
               </div>
 
               {/* Texto 3 - Email */}
               <div style={{ marginTop: "16px" }}>
-                <p
-                  style={{
-                    color: "#000",
-                    fontFamily: "Fira Sans",
-                    fontSize: "14px",
-                    fontWeight: "900",
-                    letterSpacing: "4px",
-                    textTransform: "uppercase",
-                    marginBottom: "8px",
-                  }}
-                >
+                <p class="text-black font-fira-sans text-[14px] font-extrabold tracking-[4px] uppercase mb-2">
                   Email
                 </p>
-                <p
-                  style={{
-                    color: "#000",
-                    fontFamily: "Fira Sans",
-                    fontSize: "18px",
-                    fontWeight: "400",
-                    lineHeight: "28px",
-                  }}
-                >
+                <p class="text-black font-fira-sans text-[18px] font-normal leading-[28px]">
                   Escribinos a:
                 </p>
-                <p
-                  style={{
-                    color: "#000",
-                    fontFamily: "Fira Sans",
-                    fontSize: "18px",
-                    fontWeight: "400",
-                    lineHeight: "28px",
-                  }}
-                >
+                <p class="text-black font-fira-sans text-[18px] font-normal leading-[28px]">
                   contacto@grupogarabi.com.ar
                 </p>
               </div>
@@ -358,18 +135,9 @@ function ContactoForm() {
           {/* Imagen que se superpone al contenedor superior */}
           <div className=" w-screen">
             <img
-              src={imagenCurvaContacto} // Asegúrate de que la ruta sea correcta
+              src={imagenCurvaContacto}
               alt="Curva de contacto"
-              style={{
-                position: "relative",
-                maxHeight: "650px",
-                top: "-140px", // Ajusta este valor según sea necesario para la superposición
-                width: "100vw", // Ajusta el ancho como necesites
-                height: "auto", // Mantiene la proporción de la imagen
-                display: "block",
-                marginLeft: "-20px", // Cambiado a 0
-                marginRight: "0", // Cambiado a 0
-              }}
+              class="relative max-h-[650px] -top-[140px] w-screen h-auto block -ml-[20px] mr-0"
             />
           </div>
 
@@ -382,122 +150,40 @@ function ContactoForm() {
             }}
           >
             {/* Primer Mapa */}
-            <div style={{ textAlign: "center", marginRight: "20px" }}>
+            <div class="text-center mr-[20px]">
               <img
                 src={require("../../../images/Desktop/mapa.png")}
                 alt="Mapa"
-                style={{
-                  position: "relative",
-                  top: "-260px", // Ajusta este valor según sea necesario para la superposición
-                  width: "519px",
-                  height: "262px",
-                  flexShrink: 0,
-                }}
+                class="relative -top-[260px] w-[519px] h-[262px] flex-shrink-0"
               />
-              <div className="mt-[-220px]">
-                <div
-                  style={{
-                    width: "144px",
-                    margin: "0 auto",
-                    color: "#000",
-                    fontFamily: "Fira Sans",
-                    fontSize: "22px",
-                    fontWeight: 600,
-                    lineHeight: "32px",
-                    marginTop: "5px",
-                  }}
-                >
+              <div class="mt-[-240px]">
+                <div class="w-[144px] mx-auto text-black font-fira-sans text-[22px] font-semibold leading-[32px] mt-[15px]">
                   Grupo Garabí
                 </div>
-
-                <div
-                  style={{
-                    width: "216.933px",
-                    margin: "0 auto",
-                    color: "#000",
-                    fontFamily: "Fira Sans",
-                    fontSize: "18px",
-                    fontWeight: 400,
-                    lineHeight: "28px",
-                    marginTop: "5px",
-                  }}
-                >
+                <div class="w-[216.933px] mx-auto text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-[10px]">
                   Chubut 991
                 </div>
-
-                <div
-                  style={{
-                    width: "237.926px",
-                    margin: "0 auto",
-                    color: "#000",
-                    fontFamily: "Fira Sans",
-                    fontSize: "18px",
-                    fontWeight: 400,
-                    lineHeight: "28px",
-                    marginTop: "5px",
-                  }}
-                >
+                <div class="w-[237.926px] mx-auto text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-[10px]">
                   San Isidro, Buenos Aires
                 </div>
               </div>
             </div>
 
             {/* Segundo Mapa */}
-            <div style={{ textAlign: "center" }}>
+            <div class="text-center">
               <img
                 src={require("../../../images/Desktop/mapa.png")}
                 alt="Mapa"
-                style={{
-                  position: "relative",
-                  top: "-260px", // Ajusta este valor según sea necesario para la superposición
-                  width: "519px",
-                  height: "262px",
-                  flexShrink: 0,
-                }}
+                class="relative -top-[260px] w-[519px] h-[262px] flex-shrink-0"
               />
-              <div className="mt-[-220px]">
-                <div
-                  style={{
-                    width: "144px",
-                    margin: "0 auto",
-                    color: "#000",
-                    fontFamily: "Fira Sans",
-                    fontSize: "22px",
-                    fontWeight: 600,
-                    lineHeight: "32px",
-                    marginTop: "5px",
-                  }}
-                >
+              <div class="mt-[-240px]">
+                <div class="w-[144px] mx-auto text-black font-fira-sans text-[22px] font-semibold leading-[32px] mt-[15px]">
                   Grupo Garabí
                 </div>
-
-                <div
-                  style={{
-                    width: "216.933px",
-                    margin: "0 auto",
-                    color: "#000",
-                    fontFamily: "Fira Sans",
-                    fontSize: "18px",
-                    fontWeight: 400,
-                    lineHeight: "28px",
-                    marginTop: "5px",
-                  }}
-                >
+                <div class="w-[216.933px] mx-auto text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-[10px]">
                   Chubut 991
                 </div>
-
-                <div
-                  style={{
-                    width: "237.926px",
-                    margin: "0 auto",
-                    color: "#000",
-                    fontFamily: "Fira Sans",
-                    fontSize: "18px",
-                    fontWeight: 400,
-                    lineHeight: "28px",
-                    marginTop: "5px",
-                  }}
-                >
+                <div class="w-[237.926px] mx-auto text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-[10px]">
                   San Isidro, Buenos Aires
                 </div>
               </div>

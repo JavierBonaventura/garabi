@@ -1,15 +1,10 @@
 import React, { useState } from "react";
-import fondoServicios from "../../../images/Desktop/fondoServicios.png";
 import imagenCurvaServicios from "../../../images/Desktop/imagenCurvaServicios.png";
 import tarjetaServicios from "../../../images/Desktop/tarjetaServicios.png";
 import arbolesProyectos from "../../../images/Desktop/arboles-proyectos.png";
-import imagenFondo from "../../../images/Desktop/imagenFondo.jpg"
-
+import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
 
 function ServiciosOfrecidos() {
-  // Cálculo del margen izquierdo en porcentaje
-  const leftPercentageLogo = (184 / 1440) * 100;
-  
   // Estado para el índice del tab seleccionado
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [hoveredIndex, setHoveredIndex] = useState(null); // Estado para el índice del hover
@@ -24,24 +19,27 @@ function ServiciosOfrecidos() {
   const contenidoServicios = [
     {
       titulo: "Asesoramiento productivo",
-      descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. ",
+      descripcion:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. ",
       imagen: tarjetaServicios,
     },
     {
       titulo: "Asesoramiento integral",
-      descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. ",
+      descripcion:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. ",
       imagen: tarjetaServicios,
     },
     {
       titulo: "Desarrollo de producto",
-      descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. ",
+      descripcion:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. ",
       imagen: tarjetaServicios,
     },
   ];
 
   return (
     <div>
-      <div className="w-full h-[1745px] relative">
+      <div className="w-full h-auto relative">
         <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
         <img
           src={imagenCurvaServicios}
@@ -49,7 +47,7 @@ function ServiciosOfrecidos() {
           className="absolute top-0 left-0 w-full h-auto z-20"
           style={{
             mixBlendMode: "normal",
-            top: "30px",
+            top: "50px",
             maxHeight: "650px",
           }}
         />
@@ -57,55 +55,15 @@ function ServiciosOfrecidos() {
           className="relative z-10 flex flex-col h-full"
           style={{
             backgroundImage: `url(${imagenFondo})`,
-            backgroundSize: 'contain',  
-            backgroundPosition: 'center top',              
+            backgroundSize: "contain",
+            backgroundPosition: "center top",
           }}
         >
-                      <div id="verlo"
-      className="absolute "
-      style={{
-        zIndex: "9",
-        width: "100px",
-        height: "100vw",
-        transform: "rotate(90deg)", // Mantén la rotación
-        flexShrink: 0,
-        background:
-          "linear-gradient(90deg, rgba(237, 242, 232, 0.00) 0%, #dfe8e0 100%)", // Cambia el degradado a 270 grados
-        top: "56%", // Ajusta según necesites
-        left: "100%", // Ajusta según necesites
-        transformOrigin: "top left", // Asegura que la rotación sea desde la esquina superior izquierda
-      }}
-    />
-          
-          <div
-            className="w-[546px] h-[72px] flex-shrink-0 mt-[40px]"
-            style={{
-              marginLeft: `${leftPercentageLogo}%`,
-              color: "#000",
-              fontFamily: "Fira Sans",
-              fontSize: "60px",
-              fontWeight: "900",
-              lineHeight: "60px",
-              letterSpacing: "-1px",
-              fontFeatureSettings: "'liga' off, 'clig' off",
-            }}
-          >
+          <div className="w-[546px] h-[72px] flex-shrink-0 mt-[50px] ml-[12%] text-[#000] font-fira-sans text-[60px] font-black leading-[60px] tracking-[-1px] [font-feature-settings:'liga_off','clig_off']">
             Servicios ofrecidos
           </div>
 
-          <div
-            className="w-[452px] h-[64px] flex-shrink-0 mt-[20px]"
-            style={{
-              marginLeft: `${leftPercentageLogo}%`,
-              color: "#000",
-              fontFamily: "Fira Sans",
-              fontSize: "24px",
-              fontWeight: "400",
-              lineHeight: "28px",
-              letterSpacing: "-1px",
-              fontFeatureSettings: "'liga' off, 'clig' off",
-            }}
-          >
+          <div className="w-[452px] h-[64px] flex-shrink-0 mt-[20px] ml-[12%] text-[#000] font-fira-sans text-[24px] font-normal leading-[28px] tracking-[-1px] [font-feature-settings:'liga_off','clig_off']">
             Enter dark mode. Oft referred to as night mode, high contrast, or
             inverted colors, the setting has grown popular with those who claim
             to experience eye fatigue from a deluge of white.
@@ -120,51 +78,18 @@ function ServiciosOfrecidos() {
             {servicios.map((servicio, index) => (
               <div
                 key={index}
-                className="text-center"
-                style={{
-                  width: "326px",
-                  color: "#000",
-                  fontFamily: "Fira Sans",
-                  fontSize: "24px",
-                  fontWeight: "700",
-                  lineHeight: "50px",
-                  position: "relative",
-                  cursor: "pointer",
-                }}
+                className="text-center w-[326px] text-black font-fira-sans text-[24px] font-bold leading-[50px] relative cursor-pointer"
                 // Cambiamos el tab seleccionado al hacer clic
                 onClick={() => setSelectedIndex(index)}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
                 {servicio}
-                {(selectedIndex === index) && (
-                  <div
-                    style={{
-                      position: "absolute",
-                      bottom: "-20px",
-                      left: "50%",
-                      transform: "translateX(-50%)",
-                      width: "361.768px",
-                      height: "5px",
-                      background:
-                        "linear-gradient(0deg, #00942C 0%, #00942C 100%), #00942C",
-                    }}
-                  />
+                {selectedIndex === index && (
+                  <div className="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 w-[361.768px] h-[5px] bg-gradient-to-t from-[#00942C] to-[#00942C]" />
                 )}
-                            {hoveredIndex === index && (
-                  <div
-                    style={{
-                      position: "absolute",
-                      bottom: "-20px",
-                      left: "50%",
-                      transform: "translateX(-50%)",
-                      width: "361.768px",
-                      height: "5px",
-                      background:
-                        "linear-gradient(0deg, #00942C 0%, #00942C 100%), #00942C",
-                      transition: "height 0.3s ease", // Efecto de suavizado para la línea
-                    }}
-                  />
+                {hoveredIndex === index && (
+                  <div className="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 w-[361.768px] h-[5px] bg-gradient-to-t from-[#00942C] to-[#00942C] bg-[#00942C] transition-all duration-300 ease-in-out" />
                 )}
               </div>
             ))}
@@ -184,37 +109,7 @@ function ServiciosOfrecidos() {
           {/* Aquí comienza la sección de dos columnas */}
           <div className="relative w-full h-full">
             {/* Bloque de fondo que se debe mostrar detrás */}
-            <div className="relative w-full" style={{ top: "300px" }}>
-              {/* Contenedor de la imagen */}
-              <div className="absolute z-0 w-full">
-                <img
-                  src={arbolesProyectos}
-                  alt="Árboles Proyectos"
-                  style={{
-                    width: "100vw",
-                    height: "678px",
-                    objectFit: "cover",
-                  }} // Asegúrate de que la imagen cubra el contenedor sin deformarse
-                />
-              </div>
-
-              {/* Capa de degradado */}
-              <div
-                className="absolute"
-                style={{
-                  width: "571px",
-                  height: "100vw", // Considera si necesitas ajustar esta altura para que el degradado cubra adecuadamente la imagen
-                  transform: "rotate(90deg)",
-                  flexShrink: 0,
-                  background:
-                    "linear-gradient(90deg, #dfe8e0 0%, rgba(237, 242, 232, 0.00) 100%)",
-                  top: "0%",
-                  left: "100%",
-                  transformOrigin: "top left",
-                  pointerEvents: "none", // Esto asegura que el degradado no interfiere con otros eventos del mouse, como clicks
-                }}
-              />
-            </div>
+            <div className="relative w-full" style={{ top: "300px" }}></div>
 
             {/* Sección de dos columnas dinámicas */}
             <div
@@ -228,96 +123,62 @@ function ServiciosOfrecidos() {
             >
               {/* Columna izquierda: título y descripción según la selección */}
               <div className="mr-4" style={{ width: "468.214px" }}>
-                <div
-                  style={{
-                    width: "468.214px",
-                    height: "32px",
-                    flexShrink: 0,
-                    color: "#000",
-                    fontFamily: "Fira Sans",
-                    fontSize: "24px",
-                    fontWeight: "600",
-                    lineHeight: "32px",
-                  }}
-                >
+              <div className="w-[468.214px] h-[32px] flex-shrink-0 text-black font-fira-sans text-[24px] font-semibold leading-[32px]">
                   {contenidoServicios[selectedIndex].titulo}
                 </div>
-                <div
-                  style={{
-                    width: "526px",
-                    height: "206px",
-                    flexShrink: 0,
-                    color: "#000",
-                    fontFamily: "Fira Sans",
-                    fontSize: "18px",
-                    fontWeight: "400",
-                    lineHeight: "28px",
-                  }}
-                  className="mt-8"
-                >
+                <div className="w-[526px] h-[206px] flex-shrink-0 text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-8">
                   {contenidoServicios[selectedIndex].descripcion}
                 </div>
               </div>
 
               {/* Columna derecha: imagen según la selección */}
               <div style={{ width: "528px" }}>
-                <img
-                  src={contenidoServicios[selectedIndex].imagen}
-                  alt="Imagen del Servicio"
-                  style={{
-                    width: "528px",
-                    height: "352px",
-                    borderRadius: "20px",
-                  }}
-                />
+              <img
+  src={contenidoServicios[selectedIndex].imagen}
+  alt="Imagen del Servicio"
+  className="w-[528px] h-[352px] rounded-[20px]"
+/>
               </div>
             </div>
-
-            {/* Contenido adicional, botones, etc. */}
+          </div>
+          <div className="relative w-full pb-20 mt-[-13%]">
+            {/* Gradiente superior */}
             <div
-              className="absolute z-10 w-full"
-              style={{ top: "300px", position: "relative" }}
-            >
-              <div className="absolute inset-0 flex flex-col justify-center items-center">
-                <div
-                  className="text-center"
-                  style={{
-                    color: "#00942C",
-                    fontFamily: "Fira Sans",
-                    fontSize: "40px",
-                    fontWeight: "700",
-                    lineHeight: "50px",
-                    maxWidth: "615px",
-                  }}
-                >
-                  Contáctanos ahora para darle forma a tu futuro verde
-                </div>
+              className="absolute z-20 w-full h-[21%] top-[-20%] left-0 origin-top-left"
+              style={{
+                zIndex: "1",
+                background:
+                  "linear-gradient(00deg, #dfe8e0 0%, rgba(237, 242, 232, 0.00) 100%)",
+              }}
+            />
 
-                <button
-                  className="mt-6 flex justify-center items-center bg-white cursor-pointer transition-transform duration-500 ease-out hover:bg-[#D1D1D1] hover:-translate-y-0.5"
-                  style={{
-                    width: "245.25px",
-                    height: "50px",
-                    flexShrink: 0,
-                    borderRadius: "5px",
-                    border: "1px solid #00942C",
-                  }}
-                >
-                  <span
-                    style={{
-                      color: "#00942C",
-                      textAlign: "center",
-                      fontFamily: "Fira Code",
-                      fontSize: "14px",
-                      fontWeight: "400",
-                      letterSpacing: "4px",
-                      textTransform: "uppercase",
-                    }}
-                  >
-                    Contáctanos
-                  </span>
-                </button>
+            {/* Imagen */}
+            <img
+              className="z-10 w-full"
+              src={arbolesProyectos}
+              alt="Árboles Proyectos"
+            />
+
+            {/* Gradiente inferior */}
+            <div
+              className="absolute top-0 right-0 w-full h-[300px] origin-top-left"
+              style={{
+                background:
+                  "linear-gradient(00deg, rgba(237, 242, 232, 0.00) 0%, #dfe8e0 100%)",
+              }}
+            />
+
+            {/* Contenido central */}
+            <div className="relative flex flex-col justify-center items-center text-center">
+              <div className="text-center text-[#00942C] font-fira-sans text-[40px] font-bold leading-[50px] max-w-[615px] mt-[-40%]">
+                Contáctanos ahora para darle forma a tu futuro verde
               </div>
+
+              <button className="mt-12 flex justify-center items-center bg-white border border-[#00942C] rounded-[5px] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#D1D1D1] hover:-translate-y-0.5 w-[245.25px] h-[50px]">
+                <span className="text-[#00942C] text-center font-fira-code text-[14px] font-normal uppercase tracking-[4px]">
+                  Contáctanos
+                </span>
+              </button>
             </div>
           </div>
         </div>

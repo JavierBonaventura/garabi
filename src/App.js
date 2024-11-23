@@ -29,6 +29,10 @@ import SobreNosotrosNuestraHistoria from "./components/Desktop/About/SobreNosotr
 import ServiciosOfrecidos from "./components/Desktop/Services/ServiciosOfrecidos";
 // Impacto
 import Imapcto from "./components/Desktop/Impacto/Impacto";
+// SingleProject
+import Fideicomiso from "./components/Desktop/SingleProject/Fideicomiso";
+import Advertising from "./components/Desktop/SingleProject/Advertising";
+import OtrosProyectos from "./components/Desktop/SingleProject/OtrosProyectos";
 
 /////////////////// MOBILE ////////////////////////////
 // Home
@@ -61,8 +65,6 @@ import AsesoramientoMobile from "./components/Mobile/Servicios/AsesoramientoMobi
 import ArbolesMobile from "./components/Mobile/Servicios/ArbolesMobile";
 // Impacto
 import ImpactoMobileMain from "./components/Mobile/Impacto/ImpactoMobileMain";
-
-
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -254,6 +256,18 @@ function App() {
                 <>
                   <Header />
                   <Imapcto />
+                  <Footer />
+                </>
+              }
+            />
+            <Route
+              path="/singleproject"
+              element={
+                <>
+                  <Header />
+                  <Fideicomiso />
+                  <Advertising />
+                  <OtrosProyectos />
                   <Footer />
                 </>
               }

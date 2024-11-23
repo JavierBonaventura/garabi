@@ -67,248 +67,108 @@ function AlgunosNumerosMobile() {
         }}
       >
         <div className="mt-8 w-full">
-          <div
-            className="flex-shrink-0 ml-8"
-            style={{
-              width: "274px",
-              height: "88px",
-              color: "#000",
-              fontFeatureSettings: "'liga' off, 'clig' off",
-              fontFamily: "'Fira Sans', sans-serif",
-              fontSize: "41px",
-              fontStyle: "normal",
-              fontWeight: "900",
-              lineHeight: "39px",
-            }}
-          >
+          <div className="flex-shrink-0 ml-8 w-[274px] h-[88px] text-black font-fira-sans text-[41px] font-extrabold leading-[39px] tracking-normal">
             Algunos números
           </div>
 
-          <div
-            className="mt-2 flex-shrink-0 ml-8"
-            style={{
-              width: "329px",
-              height: "52px",
-              color: "#000",
-              fontFeatureSettings: "'liga' off, 'clig' off",
-              fontFamily: "'Fira Sans', sans-serif",
-              fontSize: "20px",
-              fontStyle: "normal",
-              fontWeight: "400",
-              lineHeight: "24px",
-              letterSpacing: "-1px",
-            }}
-          >
+          <div className="mt-2 flex-shrink-0 ml-8 w-[329px] h-[52px] text-black font-fira-sans text-[20px] font-normal leading-[24px] tracking-[-1px]">
             Esto logramos en nuestros 20 años de trayectoria
           </div>
 
           {/* Contenedor de círculos */}
-{/* Contenedor de círculos */}
-<div className="flex flex-col items-center mt-6">
-  <div className="flex justify-center gap-6 mb-4">
-    {/* Círculo 1 */}
-    <div className="flex flex-col items-center w-[167px]">
-      <img
-        src={imagenCirculo1}
-        alt="Imagen 1"
-        style={{
-          width: "110px",
-          height: "110px",
-          borderRadius: "50%",
-          objectFit: "cover",
-          transition: "transform 0.3s ease",
-          cursor: "pointer",
-          boxShadow: "4px 5px 10px rgba(0, 0, 0, 0.3)", // Sombra
-        }}
-        onMouseEnter={(e) =>
-          (e.currentTarget.style.transform = "scale(1.1)")
-        }
-        onMouseLeave={(e) =>
-          (e.currentTarget.style.transform = "scale(1)")
-        }
-        onClick={() => resetCounter(setCount1, finalCount1)}
-      />
-      <div className="mt-2"
-        style={{
-          color: "#00942C",
-          textAlign: "center",
-          fontFamily: "Fira Sans",
-          fontSize: "30px",
-          fontWeight: 900,
-          lineHeight: "35px",
-        }}
-      >
-        {count1}
-      </div>
-      <div
-        style={{
-          width: "105px",
-          color: "#000",
-          textAlign: "center",
-          fontFamily: "Fira Sans",
-          fontSize: "12px",
-          fontWeight: 500,
-          textTransform: "uppercase",
-          paddingTop: "5px",
-        }}
-      >
-        hectáreas administradas
-      </div>
-    </div>
+          <div className="flex flex-col items-center mt-6">
+            <div className="flex justify-center gap-6 mb-4">
+              {/* Círculo 1 */}
+              <div className="flex flex-col items-center w-[167px]">
+                <img
+                  className="w-[110px] h-[110px] rounded-full object-cover transition-transform duration-300 ease-in-out cursor-pointer shadow-[4px_5px_10px_rgba(0,0,0,0.3)]"
+                  src={imagenCirculo1}
+                  alt="Imagen 1"
+                  onMouseEnter={(e) =>
+                    (e.currentTarget.style.transform = "scale(1.1)")
+                  }
+                  onMouseLeave={(e) =>
+                    (e.currentTarget.style.transform = "scale(1)")
+                  }
+                  onClick={() => resetCounter(setCount1, finalCount1)}
+                />
+                <div className="mt-2 text-[#00942C] text-center font-fira-sans text-[30px] font-extrabold leading-[35px]">
+                  {count1}
+                </div>
+                <div className="w-[105px] text-black text-center font-fira-sans text-[12px] font-medium uppercase pt-[5px]">
+                  hectáreas administradas
+                </div>
+              </div>
 
-    {/* Círculo 2 */}
-    <div className="flex flex-col items-center w-[167px]">
-      <img
-        src={imagenCirculo2}
-        alt="Imagen 2"
-        style={{
-          width: "110px",
-          height: "110px",
-          borderRadius: "50%",
-          objectFit: "cover",
-          transition: "transform 0.3s ease",
-          cursor: "pointer",
-          boxShadow: "4px 5px 10px rgba(0, 0, 0, 0.3)", // Sombra
-        }}
-        onMouseEnter={(e) =>
-          (e.currentTarget.style.transform = "scale(1.1)")
-        }
-        onMouseLeave={(e) =>
-          (e.currentTarget.style.transform = "scale(1)")
-        }
-        onClick={() => resetCounter(setCount2, finalCount2)}
-      />
-      <div className="mt-2"
-        style={{
-          color: "#00942C",
-          textAlign: "center",
-          fontFamily: "Fira Sans",
-          fontSize: "30px",
-          fontWeight: 900,
-          lineHeight: "35px",
-        }}
-      >
-        {count2}
-      </div>
-      <div
-        style={{
-          width: "83px",
-          color: "#000",
-          textAlign: "center",
-          fontFamily: "Fira Sans",
-          fontSize: "12px",
-          fontWeight: 500,
-          textTransform: "uppercase",
-          paddingTop: "5px",
-        }}
-      >
-        hectáreas forestadas
-      </div>
-    </div>
-  </div>
+              {/* Círculo 2 */}
+              <div className="flex flex-col items-center w-[167px]">
+                <img
+                  className="w-[110px] h-[110px] rounded-full object-cover transition-transform duration-300 ease-in-out cursor-pointer shadow-[4px_5px_10px_rgba(0,0,0,0.3)]"
+                  src={imagenCirculo2}
+                  alt="Imagen 2"
+                  onMouseEnter={(e) =>
+                    (e.currentTarget.style.transform = "scale(1.1)")
+                  }
+                  onMouseLeave={(e) =>
+                    (e.currentTarget.style.transform = "scale(1)")
+                  }
+                  onClick={() => resetCounter(setCount2, finalCount2)}
+                />
+                <div className="mt-2 text-[#00942C] text-center font-fira-sans text-[30px] font-extrabold leading-[35px]">
+                  {count2}
+                </div>
+                <div className="w-[83px] text-black text-center font-fira-sans text-[12px] font-medium uppercase pt-[5px]">
+                  hectáreas forestadas
+                </div>
+              </div>
+            </div>
 
-  <div className="flex justify-center gap-6">
-    {/* Círculo 3 */}
-    <div className="flex flex-col items-center w-[167px]">
-      <img
-        src={imagenCirculo3}
-        alt="Imagen 3"
-        style={{
-          width: "110px",
-          height: "110px",
-          borderRadius: "50%",
-          objectFit: "cover",
-          transition: "transform 0.3s ease",
-          cursor: "pointer",
-          boxShadow: "4px 5px 10px rgba(0, 0, 0, 0.3)", // Sombra
-        }}
-        onMouseEnter={(e) =>
-          (e.currentTarget.style.transform = "scale(1.1)")
-        }
-        onMouseLeave={(e) =>
-          (e.currentTarget.style.transform = "scale(1)")
-        }
-        onClick={() => resetCounter(setCount3, finalCount3)}
-      />
-      <div className="mt-2"
-        style={{
-          color: "#00942C",
-          textAlign: "center",
-          fontFamily: "Fira Sans",
-          fontSize: "30px",
-          fontWeight: 900,
-          lineHeight: "35px",
-        }}
-      >
-        {count3} M.
-      </div>
-      <div
-        style={{
-          width: "127px",
-          color: "#000",
-          textAlign: "center",
-          fontFamily: "Fira Sans",
-          fontSize: "12px",
-          fontWeight: 500,
-          textTransform: "uppercase",
-          paddingTop: "5px",
-        }}
-      >
-        USD en activos administrados
-      </div>
-    </div>
+            <div className="flex justify-center gap-6">
+              {/* Círculo 3 */}
+              <div className="flex flex-col items-center w-[167px]">
+                <img
+                  className="w-[110px] h-[110px] rounded-full object-cover transition-transform duration-300 ease-in-out cursor-pointer shadow-[4px_5px_10px_rgba(0,0,0,0.3)]"
+                  src={imagenCirculo3}
+                  alt="Imagen 3"
+                  onMouseEnter={(e) =>
+                    (e.currentTarget.style.transform = "scale(1.1)")
+                  }
+                  onMouseLeave={(e) =>
+                    (e.currentTarget.style.transform = "scale(1)")
+                  }
+                  onClick={() => resetCounter(setCount3, finalCount3)}
+                />
+                <div className="mt-2 text-[#00942C] text-center font-fira-sans text-[30px] font-extrabold leading-[35px]">
+                  {count3} M.
+                </div>
+                <div className="w-[127px] text-black text-center font-fira-sans text-[12px] font-medium uppercase pt-[5px]">
+                  USD en activos administrados
+                </div>
+              </div>
 
-    {/* Círculo 4 */}
-    <div className="flex flex-col items-center w-[167px]">
-      <img
-        src={imagenCirculo4}
-        alt="Imagen 4"
-        style={{
-          width: "110px",
-          height: "110px",
-          borderRadius: "50%",
-          objectFit: "cover",
-          transition: "transform 0.3s ease",
-          cursor: "pointer",
-          boxShadow: "4px 5px 10px rgba(0, 0, 0, 0.3)", // Sombra
-        }}
-        onMouseEnter={(e) =>
-          (e.currentTarget.style.transform = "scale(1.1)")
-        }
-        onMouseLeave={(e) =>
-          (e.currentTarget.style.transform = "scale(1)")
-        }
-        onClick={() => resetCounter(setCount4, finalCount4)}
-      />
-      <div className="mt-2"
-        style={{
-          color: "#00942C",
-          textAlign: "center",
-          fontFamily: "Fira Sans",
-          fontSize: "30px",
-          fontWeight: 900,
-          lineHeight: "35px",
-        }}
-      >
-        {count4}
-      </div>
-      <div
-        style={{
-          width: "167px",
-          color: "#000",
-          textAlign: "center",
-          fontFamily: "Fira Sans",
-          fontSize: "12px",
-          fontWeight: 500,
-          textTransform: "uppercase",
-          paddingTop: "5px",
-        }}
-      >
-        EMPLEADOS DIRECTOS E INDIRECTOS
-      </div>
-    </div>
-  </div>
-</div>
+              {/* Círculo 4 */}
+              <div className="flex flex-col items-center w-[167px]">
+                <img
+                  className="w-[110px] h-[110px] rounded-full object-cover transition-transform duration-300 ease-in-out cursor-pointer shadow-[4px_5px_10px_rgba(0,0,0,0.3)]"
+                  src={imagenCirculo4}
+                  alt="Imagen 4"
+                  onMouseEnter={(e) =>
+                    (e.currentTarget.style.transform = "scale(1.1)")
+                  }
+                  onMouseLeave={(e) =>
+                    (e.currentTarget.style.transform = "scale(1)")
+                  }
+                  onClick={() => resetCounter(setCount4, finalCount4)}
+                />
+                <div className="mt-2 text-[#00942C] text-center font-fira-sans text-[30px] font-extrabold leading-[35px]">
+                  {count4}
+                </div>
+                <div className="w-[167px] text-black text-center font-fira-sans text-[12px] font-medium uppercase pt-[5px]">
+                  EMPLEADOS DIRECTOS E INDIRECTOS
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

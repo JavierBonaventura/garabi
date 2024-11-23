@@ -55,7 +55,7 @@ function NavBarMobile({ menuAbierto, toggleMenu }) {
           <div
             className="flex items-center mt-6 px-4"
             style={{
-              background: "linear-gradient(270deg, #B6BCB2 0%, #D9DED4 100%)", // Degradado de derecha a izquierda
+              background: "linear-gradient(270deg, #B6BCB2 0%, #D9DED4 100%)", 
               width: "257px",
               height: "51px",
               flexShrink: 0,
@@ -85,7 +85,7 @@ function NavBarMobile({ menuAbierto, toggleMenu }) {
           <div
             className="flex items-center mt-[9px] px-6"
             style={{
-              background: "linear-gradient(270deg, #B6BCB2 0%, #D9DED4 100%)", // Degradado de derecha a izquierda
+              background: "linear-gradient(270deg, #B6BCB2 0%, #D9DED4 100%)", 
               width: "257px",
               height: "51px",
               flexShrink: 0,
@@ -115,7 +115,7 @@ function NavBarMobile({ menuAbierto, toggleMenu }) {
           <div
             className="flex items-center mt-[9px] px-6"
             style={{
-              background: "linear-gradient(270deg, #B6BCB2 0%, #D9DED4 100%)", // Degradado de derecha a izquierda
+              background: "linear-gradient(270deg, #B6BCB2 0%, #D9DED4 100%)", 
               width: "257px",
               height: "51px",
               flexShrink: 0,
@@ -145,7 +145,7 @@ function NavBarMobile({ menuAbierto, toggleMenu }) {
           <div
             className="flex items-center mt-[9px] px-4"
             style={{
-              background: "linear-gradient(270deg, #B6BCB2 0%, #D9DED4 100%)", // Degradado de derecha a izquierda
+              background: "linear-gradient(270deg, #B6BCB2 0%, #D9DED4 100%)", 
               width: "257px",
               height: "51px",
               flexShrink: 0,
@@ -175,7 +175,7 @@ function NavBarMobile({ menuAbierto, toggleMenu }) {
           <div
             className="flex items-center mt-[9px] px-[20px]"
             style={{
-              background: "linear-gradient(270deg, #B6BCB2 0%, #D9DED4 100%)", // Degradado de derecha a izquierda
+              background: "linear-gradient(270deg, #B6BCB2 0%, #D9DED4 100%)", 
               width: "257px",
               height: "51px",
               flexShrink: 0,
@@ -205,7 +205,7 @@ function NavBarMobile({ menuAbierto, toggleMenu }) {
           <div
             className="flex items-center mt-[9px] px-4"
             style={{
-              background: "linear-gradient(270deg, #B6BCB2 0%, #D9DED4 100%)", // Degradado de derecha a izquierda
+              background: "linear-gradient(270deg, #B6BCB2 0%, #D9DED4 100%)", 
               width: "257px",
               height: "51px",
               flexShrink: 0,

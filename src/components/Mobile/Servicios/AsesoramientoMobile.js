@@ -3,7 +3,7 @@ import fondoMobile from "../../../images/Mobile/fondoMobile.png";
 import imagenAsesoramiento from "../../../images/Mobile/imagenAsesoramiento.png";
 
 function AsesoramientoMobile() {
-  // Estado para manejar la pestaña activa
+
   const [activeTab, setActiveTab] = useState("ASESORAMIENTO PRODUCTIVO");
 
   // Función para manejar el clic en las pestañas

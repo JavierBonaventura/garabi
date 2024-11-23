@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import fondoMobile from "../../../images/Mobile/fondoMobile.png";
 import imagenCurva from "../../../images/Desktop/imagenCurva.png";
 import imagenCurvaContacto from "../../../images/Mobile/imagenCurvaContacto.png"; // New image
@@ -320,122 +319,127 @@ function QuedemosEnContactoMobile() {
             }}
           />
 
-        {/* Mapa */}
-<img
-  src={mapa}
-  alt="Mapa"
-  className="w-[146px] mx-auto"
-  style={{
-    position: "absolute",
-    bottom: "314px",
-    left: "50%",
-    transform: "translateX(-50%)",
-    zIndex: 1,
-  }}
-/>
+          {/* Mapa */}
+          <a
+            href="https://www.google.com/maps?q=Chubut+991,+San+Isidro,+Buenos+Aires"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={mapa}
+              alt="Mapa"
+              className="w-[146px] mx-auto"
+              style={{
+                position: "absolute",
+                bottom: "314px",
+                left: "50%",
+                transform: "translateX(-50%)",
+                zIndex: 1,
+              }}
+            />
+          </a>
 
-{/* Texto debajo del mapa */}
-<div
-  style={{
-    position: "absolute",
-    bottom: "235px", // Ajusta para posicionar justo debajo del mapa
-    left: "50%",
-    transform: "translateX(-50%)",
-    textAlign: "center",
-    zIndex: 1,
-  }}
->
-  {/* Oficina Central */}
-  <div
-    style={{
-      color: "#000",
-      fontFamily: "Fira Sans",
-      fontSize: "10.237px",
-      fontWeight: "600",
-      lineHeight: "14.891px",
-    }}
-  >
-    Oficina Central
-  </div>
+          {/* Texto debajo del mapa */}
+          <div
+            style={{
+              position: "absolute",
+              bottom: "235px", // Ajusta para posicionar justo debajo del mapa
+              left: "50%",
+              transform: "translateX(-50%)",
+              textAlign: "center",
+              zIndex: 1,
+            }}
+          >
+            {/* Oficina Central */}
+            <div
+              style={{
+                color: "#000",
+                fontFamily: "Fira Sans",
+                fontSize: "10.237px",
+                fontWeight: "600",
+                lineHeight: "14.891px",
+              }}
+            >
+              Oficina Central
+            </div>
 
-  {/* Dirección */}
-  <div 
-    style={{
-      color: "#000",
-      fontFamily: "Fira Sans",
-      fontSize: "10.237px",
-      fontWeight: "500",
-      lineHeight: "14.891px",
-      marginTop: "12px", // Pequeño espacio entre los textos
-    }}
-  >
-    Chubut 991
-    <br></br>
-    
-    San Isidro, Buenos Aires
-    
-  </div>
-</div>
+            {/* Dirección */}
+            <div
+              style={{
+                color: "#000",
+                fontFamily: "Fira Sans",
+                fontSize: "10.237px",
+                fontWeight: "500",
+                lineHeight: "14.891px",
+                marginTop: "12px", // Pequeño espacio entre los textos
+              }}
+            >
+              Chubut 991
+              <br></br>
+              San Isidro, Buenos Aires
+            </div>
+          </div>
 
+          {/* Mapa */}
+          <a
+            href="https://www.google.com/maps?q=Chubut+991,+San+Isidro,+Buenos+Aires"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={mapa}
+              alt="Mapa"
+              className="w-[146px] mx-auto"
+              style={{
+                position: "absolute",
+                bottom: "77px",
+                left: "50%",
+                transform: "translateX(-50%)",
+                zIndex: 1,
+              }}
+            />
+          </a>
 
+          {/* Texto debajo del mapa */}
+          <div
+            style={{
+              position: "absolute",
+              bottom: "0px", // Ajusta para posicionar justo debajo del mapa
+              left: "50%",
+              transform: "translateX(-50%)",
+              textAlign: "center",
+              zIndex: 1,
+            }}
+          >
+            {/* Oficina Central */}
+            <div
+              style={{
+                color: "#000",
+                fontFamily: "Fira Sans",
+                fontSize: "10.237px",
+                fontWeight: "600",
+                lineHeight: "14.891px",
+              }}
+            >
+              Oficina Central
+            </div>
 
- {/* Mapa */}
- <img
-  src={mapa}
-  alt="Mapa"
-  className="w-[146px] mx-auto"
-  style={{
-    position: "absolute",
-    bottom: "77px",
-    left: "50%",
-    transform: "translateX(-50%)",
-    zIndex: 1,
-  }}
-/>
-
-{/* Texto debajo del mapa */}
-<div
-  style={{
-    position: "absolute",
-    bottom: "0px", // Ajusta para posicionar justo debajo del mapa
-    left: "50%",
-    transform: "translateX(-50%)",
-    textAlign: "center",
-    zIndex: 1,
-  }}
->
-  {/* Oficina Central */}
-  <div
-    style={{
-      color: "#000",
-      fontFamily: "Fira Sans",
-      fontSize: "10.237px",
-      fontWeight: "600",
-      lineHeight: "14.891px",
-    }}
-  >
-    Oficina Central
-  </div>
-
-  {/* Dirección */}
-  <div 
-    style={{
-      color: "#000",
-      fontFamily: "Fira Sans",
-      fontSize: "10.237px",
-      fontWeight: "500",
-      lineHeight: "14.891px",
-      marginTop: "12px", // Pequeño espacio entre los textos
-    }}
-  >
-    Chubut 991
-    <br></br>
-    
-    San Isidro, Buenos Aires
-    
-  </div>
-</div>
-
+            {/* Dirección */}
+            <div
+              style={{
+                color: "#000",
+                fontFamily: "Fira Sans",
+                fontSize: "10.237px",
+                fontWeight: "500",
+                lineHeight: "14.891px",
+                marginTop: "12px", // Pequeño espacio entre los textos
+              }}
+            >
+              Chubut 991
+              <br></br>
+              San Isidro, Buenos Aires
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -8,7 +8,7 @@ function ContactoForm() {
       <div className="w-full h-[1348px]">
         <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
         <div
-          className="relative z-10 flex flex-col h-full px-4"
+          className="relative z-10 flex flex-col h-full "
           style={{
             backgroundImage: `url(${imagenFondo})`,
             backgroundSize: "contain",
@@ -133,11 +133,11 @@ function ContactoForm() {
             </div>
           </div>
           {/* Imagen que se superpone al contenedor superior */}
-          <div className=" w-screen">
+          <div className="w-full">
             <img
               src={imagenCurvaContacto}
               alt="Curva de contacto"
-              class="relative max-h-[650px] -top-[140px] w-screen h-auto block -ml-[20px] mr-0"
+              class="relative max-h-[650px] -top-[140px] w-screen h-auto block"
             />
           </div>
 
@@ -150,40 +150,52 @@ function ContactoForm() {
             }}
           >
             {/* Primer Mapa */}
-            <div class="text-center mr-[20px]">
-              <img
-                src={require("../../../images/Desktop/mapa.png")}
-                alt="Mapa"
-                class="relative -top-[260px] w-[519px] h-[262px] flex-shrink-0"
-              />
-              <div class="mt-[-240px]">
-                <div class="w-[144px] mx-auto text-black font-fira-sans text-[22px] font-semibold leading-[32px] mt-[15px]">
+            <div className="text-center mr-[20px]">
+              <a
+                href="https://www.google.com/maps?q=Chubut+991,+San+Isidro,+Buenos+Aires"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={require("../../../images/Desktop/mapa.png")}
+                  alt="Mapa"
+                  className="relative -top-[260px] w-[519px] h-[262px] flex-shrink-0 cursor-pointer"
+                />
+              </a>
+              <div className="mt-[-240px]">
+                <div className="w-[144px] mx-auto text-black font-fira-sans text-[22px] font-semibold leading-[32px] mt-[15px]">
                   Grupo Garabí
                 </div>
-                <div class="w-[216.933px] mx-auto text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-[10px]">
+                <div className="w-[216.933px] mx-auto text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-[10px]">
                   Chubut 991
                 </div>
-                <div class="w-[237.926px] mx-auto text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-[10px]">
+                <div className="w-[237.926px] mx-auto text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-[10px]">
                   San Isidro, Buenos Aires
                 </div>
               </div>
             </div>
 
             {/* Segundo Mapa */}
-            <div class="text-center">
-              <img
-                src={require("../../../images/Desktop/mapa.png")}
-                alt="Mapa"
-                class="relative -top-[260px] w-[519px] h-[262px] flex-shrink-0"
-              />
-              <div class="mt-[-240px]">
-                <div class="w-[144px] mx-auto text-black font-fira-sans text-[22px] font-semibold leading-[32px] mt-[15px]">
+            <div className="text-center">
+              <a
+                href="https://www.google.com/maps?q=Chubut+991,+San+Isidro,+Buenos+Aires"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={require("../../../images/Desktop/mapa.png")}
+                  alt="Mapa"
+                  className="relative -top-[260px] w-[519px] h-[262px] flex-shrink-0 cursor-pointer"
+                />
+              </a>
+              <div className="mt-[-240px]">
+                <div className="w-[144px] mx-auto text-black font-fira-sans text-[22px] font-semibold leading-[32px] mt-[15px]">
                   Grupo Garabí
                 </div>
-                <div class="w-[216.933px] mx-auto text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-[10px]">
+                <div className="w-[216.933px] mx-auto text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-[10px]">
                   Chubut 991
                 </div>
-                <div class="w-[237.926px] mx-auto text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-[10px]">
+                <div className="w-[237.926px] mx-auto text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-[10px]">
                   San Isidro, Buenos Aires
                 </div>
               </div>

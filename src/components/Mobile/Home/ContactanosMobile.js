@@ -1,6 +1,5 @@
 import React from "react";
 import fondoMobile from "../../../images/Mobile/fondoMobile.png";
-import fotoDesde from "../../../images/Mobile/fotoDesde.png";
 import imagenCurvaContactanos from "../../../images/Mobile/imagenCurvaContactanos.png";
 
 function ContactanosMobile() {
@@ -16,20 +15,7 @@ function ContactanosMobile() {
       >
         {/* Contenedor de texto alineado en la parte superior */}
         <div className="-mt-2 w-full">
-          <div
-            className="flex-shrink-0 ml-8"
-            style={{
-              width: "318px",
-              height: "88px",
-              color: "#000",
-              fontFeatureSettings: "'liga' off, 'clig' off",
-              fontFamily: "'Fira Sans', sans-serif",
-              fontSize: "41px",
-              fontStyle: "normal",
-              fontWeight: "900",
-              lineHeight: "39px",
-            }}
-          >
+          <div className="flex-shrink-0 ml-8 w-[318px] h-[88px] text-black font-fira-sans text-[41px] font-extrabold leading-[39px]">
             Contactanos ahora para darle forma a tu futuro verde
           </div>
         </div>
@@ -39,58 +25,21 @@ function ContactanosMobile() {
           src={imagenCurvaContactanos}
           alt="Curva decorativa de Contactanos"
           className="mt-12 w-full"
-          style={{ maxHeight: '200px' }}
+          style={{ maxHeight: "200px" }}
         />
 
         {/* Contenedor de botones sobre la imagen */}
         <div className="absolute mt-8 left-10 top-[65%] flex space-x-4">
           {/* Primer botón - Email */}
-          <button
-            style={{
-              width: "99px",
-              height: "26.322px",
-              borderRadius: "5px",
-              backgroundColor: "#00942C",
-            }}
-            className="flex items-center justify-center"
-          >
-            <span
-              style={{
-                color: "#FFF",
-                fontFamily: "Fira Sans, sans-serif",
-                fontSize: "12px",
-                fontWeight: "400",
-                textAlign: "center",
-                letterSpacing: "4px",
-                textTransform: "uppercase",
-              }}
-            >
+          <button className="w-[99px] h-[26.322px] rounded-[5px] bg-[#00942C] flex items-center justify-center">
+            <span className="text-white font-fira-sans text-[12px] font-normal text-center tracking-[4px] uppercase">
               Email
             </span>
           </button>
 
           {/* Segundo botón - WSP */}
-          <button
-            style={{
-              width: "99px",
-              height: "26.322px",
-              borderRadius: "5px",
-              backgroundColor: "#FFF",
-              border: "1px solid #00942C",
-            }}
-            className="flex items-center justify-center"
-          >
-            <span
-              style={{
-                color: "#00942C",
-                fontFamily: "Fira Sans, sans-serif",
-                fontSize: "12px",
-                fontWeight: "400",
-                textAlign: "center",
-                letterSpacing: "4px",
-                textTransform: "uppercase",
-              }}
-            >
+          <button className="w-[99px] h-[26.322px] rounded-[5px] bg-white border-[1px] border-[#00942C] flex items-center justify-center">
+            <span className="text-[#00942C] font-fira-sans text-[12px] font-normal text-center tracking-[4px] uppercase">
               WSP
             </span>
           </button>

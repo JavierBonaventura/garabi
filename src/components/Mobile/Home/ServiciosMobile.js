@@ -116,39 +116,12 @@ function ServiciosMobile() {
       >
         <div className="mt-8">
           {/* Div principal con layout y tipografía para "Servicios" */}
-          <div
-            className="flex-shrink-0 ml-8"
-            style={{
-              width: "274px",
-              height: "48px",
-              color: "#000",
-              fontFeatureSettings: "'liga' off, 'clig' off",
-              fontFamily: "'Fira Sans', sans-serif",
-              fontSize: "41px",
-              fontStyle: "normal",
-              fontWeight: "900",
-              lineHeight: "39px",
-            }}
-          >
+          <div className="flex-shrink-0 ml-8 w-[274px] h-[48px] text-black font-fira-sans text-[41px] font-extrabold leading-[39px]">
             Servicios
           </div>
 
           {/* Div secundario con layout y tipografía para el texto debajo */}
-          <div
-            className="mt-4 flex-shrink-0 ml-8 "
-            style={{
-              width: "329px",
-              height: "52px",
-              color: "#000",
-              fontFeatureSettings: "'liga' off, 'clig' off",
-              fontFamily: "'Fira Sans', sans-serif",
-              fontSize: "20px",
-              fontStyle: "normal",
-              fontWeight: "400",
-              lineHeight: "24px",
-              letterSpacing: "-1px",
-            }}
-          >
+          <div className="mt-4 flex-shrink-0 ml-8 w-[329px] h-[52px] text-black font-fira-sans text-[20px] font-normal leading-[24px] tracking-[-1px]">
             Desde 1983 gestionado con éxito más de 18.000 hectáreas de bosques
           </div>
 
@@ -185,7 +158,7 @@ function ServiciosMobile() {
                       >
                         {/* Imagen en la parte superior de la tarjeta */}
                         <img
-                          src={card.image} // Cambia esto a card.image o la imagen deseada
+                          src={card.image}
                           alt="Servicios"
                           style={{
                             width: "258px",
@@ -196,66 +169,18 @@ function ServiciosMobile() {
                         />
 
                         {/* Texto de "Asesoramiento Productivo" */}
-                        <div
-                          className="mt-2 flex-shrink-0 text-center"
-                          style={{
-                            width: "246.069px",
-                            height: "36.393px",
-                            color: "#464646",
-                            fontFeatureSettings: "'liga' off, 'clig' off",
-                            fontFamily: "'Fira Sans', sans-serif",
-                            fontSize: "22px",
-                            fontStyle: "normal",
-                            fontWeight: "400",
-                            lineHeight: "21.323px",
-                            letterSpacing: "-1.333px",
-                          }}
-                        >
-                          {card.name} {/* Puedes personalizar el texto aquí */}
+                        <div className="mt-2 flex-shrink-0 text-center w-[246.069px] h-[36.393px] text-[#464646] font-fira-sans text-[22px] font-normal leading-[21.323px] tracking-[-1.333px]">
+                          {card.name}
                         </div>
 
                         {/* Descripción */}
-                        <div
-                          className="mt-0 flex-shrink-0 text-center"
-                          style={{
-                            width: "230px",
-                            height: "52px",
-                            color: "#000",
-                            fontFeatureSettings: "'liga' off, 'clig' off",
-                            fontFamily: "'Fira Sans', sans-serif",
-                            fontSize: "14px",
-                            fontStyle: "normal",
-                            fontWeight: "400",
-                            lineHeight: "24px",
-                            letterSpacing: "-1px",
-                          }}
-                        >
-                          {card.testimonial}{" "}
-                          {/* Puedes personalizar el texto aquí */}
+                        <div className="mt-0 flex-shrink-0 text-center w-[230px] h-[52px] text-[#000] font-fira-sans text-[14px] font-normal leading-[24px] tracking-[-1px]">
+                          {card.testimonial}
                         </div>
 
                         {/* Botón "VER" */}
-                        <button
-                          className="mt-2 flex items-center justify-center"
-                          style={{
-                            width: "99px",
-                            height: "26px",
-                            borderRadius: "5px",
-                            background: "#00942C",
-                          }}
-                        >
-                          <span
-                            style={{
-                              color: "#FFF",
-                              textAlign: "center",
-                              fontFamily: "'Fira Sans', sans-serif",
-                              fontSize: "12px",
-                              fontStyle: "normal",
-                              fontWeight: "400",
-                              letterSpacing: "4px",
-                              textTransform: "uppercase",
-                            }}
-                          >
+                        <button className="mt-2 flex items-center justify-center w-[99px] h-[26px] rounded-[5px] bg-[#00942C]">
+                          <span className="text-[#FFF] text-center font-fira-sans text-[12px] font-normal tracking-[4px] uppercase">
                             VER
                           </span>
                         </button>

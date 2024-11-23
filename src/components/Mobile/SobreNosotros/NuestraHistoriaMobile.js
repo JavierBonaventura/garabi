@@ -14,16 +14,16 @@ function NuestraHistoriaMobile() {
 
   const handleTouchStart = (e) => {
     startY.current = e.touches[0].clientY;
-    document.body.style.overflow = "hidden"; // Desactiva el scroll del body
+    document.body.style.overflow = "hidden"; 
   };
 
   const handleTouchMove = (e) => {
-    e.preventDefault(); // Previene el scroll del sitio
+    e.preventDefault(); 
     endY.current = e.touches[0].clientY;
   };
 
   const handleTouchEnd = () => {
-    document.body.style.overflow = "auto"; // Restaura el scroll del body
+    document.body.style.overflow = "auto"; 
     if (startY.current - endY.current > 50) {
       handleNext();
     } else if (endY.current - startY.current > 50) {
@@ -92,7 +92,7 @@ function NuestraHistoriaMobile() {
               fontSize: "24px",
               fontStyle: "normal",
               fontWeight: 700,
-              lineHeight: "30px" /* 125% */,
+              lineHeight: "30px",
               margin: "0 auto",
             }}
           >
@@ -109,7 +109,7 @@ function NuestraHistoriaMobile() {
               fontSize: "12px",
               fontStyle: "normal",
               fontWeight: 400,
-              lineHeight: "17px" /* 125% */,
+              lineHeight: "17px" ,
               margin: "0 auto",
               marginTop: "20px",
             }}
@@ -258,7 +258,7 @@ function NuestraHistoriaMobile() {
                     height: "6px",
                     borderRadius: "50%",
                     border: "1px solid #00942C",
-                    backgroundColor: index === activeIndex ? "#00942C" : "#FFF", // Cambia el color de fondo
+                    backgroundColor: index === activeIndex ? "#00942C" : "#FFF", 
                   }}
                 />
               ))}
@@ -282,9 +282,9 @@ function NuestraHistoriaMobile() {
                 flexShrink: 0,
                 background:
                   "linear-gradient(90deg, #dfe8e0 0%, rgba(237, 242, 232, 0.00) 100%)",
-                top: "0%", // Ajusta según necesites
-                left: "100%", // Ajusta según necesites
-                transformOrigin: "top left", // Asegura que la rotación sea desde la esquina superior izquierda
+                top: "0%", 
+                left: "100%", 
+                transformOrigin: "top left", 
               }}
             />
 
@@ -300,7 +300,7 @@ function NuestraHistoriaMobile() {
                   fontSize: "24px",
                   fontWeight: "700",
                   lineHeight: "27px",
-                  maxWidth: "379px", // Limitar el ancho máximo del texto
+                  maxWidth: "379px", 
                 }}
               >
                 Contáctanos ahora para darle forma a tu futuro verde

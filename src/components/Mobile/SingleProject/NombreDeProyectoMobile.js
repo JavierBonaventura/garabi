@@ -1,11 +1,10 @@
 import React from "react";
 import fondoMobile from "../../../images/Mobile/fondoMobile.png";
-import fotoDesde from "../../../images/Mobile/fotoDesde.png";
 import proyectos1 from "../../../images/Mobile/proyectos1.png";
 import proyectos2 from "../../../images/Mobile/proyectos2.png";
 import proyectos3 from "../../../images/Mobile/proyectos3.png";
 import proyectos4 from "../../../images/Mobile/proyectos4.png";
-import flechaAbajo from "../../../images/Mobile/flechaAbajo.png"; // Import the arrow image
+import flechaAbajo from "../../../images/Mobile/flechaAbajo.png"; 
 
 function NombreDeProyectoMobile() {
   return (
@@ -62,7 +61,7 @@ function NombreDeProyectoMobile() {
                 <img
                   src={project}
                   alt={`Proyecto ${index + 1}`}
-                  style={{ height: "230px", width: "100%" }} // Ensuring the image fills the container width
+                  style={{ height: "230px", width: "100%" }} 
                 />
                 {/* Contenedor del degradado */}
                 <div
@@ -72,8 +71,8 @@ function NombreDeProyectoMobile() {
                     flexShrink: 0,
                     background: "linear-gradient(181deg, rgba(0, 46, 14, 0.00) 13.29%, #002E0E 99.55%)",
                     position: "absolute",
-                    bottom: "0", // Position at the bottom of the image
-                    left: "0",   // Align to the left
+                    bottom: "0", 
+                    left: "0",   
                   }}
                 >
                   {/* Texto sobre el degradado */}
@@ -89,11 +88,11 @@ function NombreDeProyectoMobile() {
                       fontSize: "14px",
                       fontStyle: "normal",
                       fontWeight: "300",
-                      lineHeight: "39px", // 278.571%
+                      lineHeight: "39px", 
                       position: "absolute",
-                      bottom: "40px", // Position text a bit above the bottom
-                      left: "50%",    // Center the text
-                      transform: "translateX(-50%)" // Correcting centering
+                      bottom: "40px", 
+                      left: "50%",   
+                      transform: "translateX(-50%)" 
                     }}
                   >
                     Proyecto ABC
@@ -102,15 +101,15 @@ function NombreDeProyectoMobile() {
                   <div
                     style={{
                       position: "absolute",
-                      bottom: "12px", // Adjust to position the arrow below the text
-                      left: "50%",     // Center the arrow
-                      transform: "translateX(-50%)" // Correcting centering
+                      bottom: "12px", 
+                      left: "50%",   
+                      transform: "translateX(-50%)"
                     }}
                   >
                     <img
                       src={flechaAbajo}
                       alt="Flecha hacia abajo"
-                      style={{ width: "12.5px", height: "7.15px", flexShrink: 0 }} // Set the size of the arrow
+                      style={{ width: "12.5px", height: "7.15px", flexShrink: 0 }} 
                     />
                   </div>
                 </div>
@@ -135,7 +134,7 @@ function NombreDeProyectoMobile() {
                 textTransform: "uppercase",
                 boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)"
               }}
-              className="flex items-center justify-center" // Center text inside button
+              className="flex items-center justify-center" 
             >
               Ver todos
             </button>

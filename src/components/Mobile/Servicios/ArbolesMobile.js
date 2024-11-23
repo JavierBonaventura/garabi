@@ -19,13 +19,13 @@ function ArbolesMobile() {
             zIndex: "10",
             width: "100px",
             height: "100vw",
-            transform: "rotate(90deg)", // Mantén la rotación
+            transform: "rotate(90deg)", 
             flexShrink: 0,
             background:
-              "linear-gradient(90deg, rgba(237, 242, 232, 0.00) 0%, #dfe8e0 100%)", // Cambia el degradado a 270 grados
-            top: "72.5%", // Ajusta según necesites
-            left: "100%", // Ajusta según necesites
-            transformOrigin: "top left", // Asegura que la rotación sea desde la esquina superior izquierda
+              "linear-gradient(90deg, rgba(237, 242, 232, 0.00) 0%, #dfe8e0 100%)", 
+            top: "72.5%",
+            left: "100%", 
+            transformOrigin: "top left", 
           }}
         />
 
@@ -47,9 +47,9 @@ function ArbolesMobile() {
               flexShrink: 0,
               background:
                 "linear-gradient(90deg, #dfe8e0 0%, rgba(237, 242, 232, 0.00) 100%)",
-              top: "0%", // Ajusta según necesites
-              left: "100%", // Ajusta según necesites
-              transformOrigin: "top left", // Asegura que la rotación sea desde la esquina superior izquierda
+              top: "0%", 
+              left: "100%", 
+              transformOrigin: "top left", 
             }}
           />
 
@@ -65,7 +65,7 @@ function ArbolesMobile() {
                 fontSize: "24px",
                 fontWeight: "700",
                 lineHeight: "27px",
-                maxWidth: "379px", // Limitar el ancho máximo del texto
+                maxWidth: "379px",
               }}
             >
               Contáctanos ahora para darle forma a tu futuro verde

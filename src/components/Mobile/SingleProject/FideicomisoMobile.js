@@ -44,7 +44,7 @@ function FideicomisoMobile() {
               width: "2px",
               height: "33px",
               background: "#FFF",
-              marginRight: "8px", // Add space between the line and text
+              marginRight: "8px", 
             }}
           />
           <div className="text-white">
@@ -67,7 +67,7 @@ function FideicomisoMobile() {
                 fontSize: "12px",
                 fontStyle: "normal",
                 fontWeight: 400,
-                lineHeight: "18px", // 150%
+                lineHeight: "18px", 
               }}
             >
               Forestal
@@ -101,8 +101,8 @@ function FideicomisoMobile() {
             </div>
             <div
               style={{
-                width: "100px",     // Set the width
-                height: "14px",     // Set the height
+                width: "100px",   
+                height: "14px",    
                 fontFamily: "Fira Sans",
                 fontSize: "12px",
                 fontStyle: "normal",

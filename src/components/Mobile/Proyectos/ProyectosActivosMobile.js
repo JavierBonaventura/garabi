@@ -1,14 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import fondoMobile from "../../../images/Mobile/fondoMobile.png";
-
 import imagenCurva from "../../../images/Desktop/imagenCurva.png";
 import tarjetaProyectos1 from "../../../images/Mobile/tarjetaProyectos1.png";
 import tarjetaProyectos2 from "../../../images/Mobile/tarjetaProyectos2.png";
 import tarjetaProyectos3 from "../../../images/Mobile/tarjetaProyectos3.png";
 import tarjetaProyectos4 from "../../../images/Mobile/tarjetaProyectos4.png";
 import tarjetaProyectos5 from "../../../images/Mobile/tarjetaProyectos5.png";
-
 import arbolesProyectos from "../../../images/Mobile/arbolesProyectos.png";
 
 function ProyectosActivosMobile() {
@@ -35,39 +33,27 @@ function ProyectosActivosMobile() {
             zIndex: "20",
             width: "100px",
             height: "100vw",
-            transform: "rotate(90deg)", // Mantén la rotación
+            transform: "rotate(90deg)",
             flexShrink: 0,
             background:
-              "linear-gradient(90deg, rgba(237, 242, 232, 0.00) 0%, #dfe8e0 100%)", // Cambia el degradado a 270 grados
-            top: "72.5%", // Ajusta según necesites
-            left: "100%", // Ajusta según necesites
-            transformOrigin: "top left", // Asegura que la rotación sea desde la esquina superior izquierda
+              "linear-gradient(90deg, rgba(237, 242, 232, 0.00) 0%, #dfe8e0 100%)",
+            top: "72.5%",
+            left: "100%",
+            transformOrigin: "top left",
           }}
         />
         <div
-          className="relative z-10 flex flex-col h-full px-4" // Cambia z-index aquí para menor prioridad que la tarjeta
+          className="relative z-10 flex flex-col h-full px-4"
           style={{
             zIndex: "10",
             backgroundImage: `url(${fondoMobile})`,
             backgroundSize: "contain",
             backgroundPosition: "top center",
-            backgroundRepeat: "repeat-y", // Repetir la imagen verticalmente
+            backgroundRepeat: "repeat-y",
           }}
         >
           {/* Texto "Proyectos activos" */}
-          <div
-            className="w-[250px] h-[88px] flex-shrink-0 mt-[50px]"
-            style={{
-              marginLeft: `2%`,
-              color: "#000",
-              fontFamily: "Fira Sans",
-              fontSize: "36px",
-              fontWeight: "900",
-              lineHeight: "41px",
-              letterSpacing: "-1px",
-              fontFeatureSettings: "'liga' off, 'clig' off",
-            }}
-          >
+          <div className="w-[250px] h-[88px] flex-shrink-0 mt-[50px] ml-[2%] text-black font-fira-sans text-[36px] font-[900] leading-[41px] tracking-[-1px]">
             Proyectos activos
           </div>
         </div>
@@ -79,18 +65,7 @@ function ProyectosActivosMobile() {
         >
           {" "}
           {/* Centra la tarjeta horizontalmente */}
-          <div
-            className="flex"
-            style={{
-              width: "326px",
-              height: "177px",
-              flexShrink: 0,
-              borderRadius: "6.15px",
-              background: "#DAD8CB",
-              boxShadow: "3.822px 3.822px 6.688px 1.911px rgba(2, 2, 2, 0.30)",
-              position: "relative",
-            }}
-          >
+          <div className="flex w-[326px] h-[177px] shrink-0 rounded-[6.15px] bg-[#DAD8CB] shadow-[3.822px_3.822px_6.688px_1.911px_rgba(2,2,2,0.30)] relative">
             {/* Parte izquierda con imagen */}
             <div className="flex items-center justify-center w-1/2">
               <img
@@ -112,60 +87,23 @@ function ProyectosActivosMobile() {
               style={{ borderRadius: "0 21.323px 21.323px 0" }}
             >
               {/* Primer contenedor - Título */}
-              <div
-                className="flex items-center mt-6"
-                style={{
-                  width: "114px",
-                  height: "37px",
-                  flexShrink: 0,
-                  color: "#464646",
-                  fontFamily: "Fira Sans",
-                  fontSize: "17px",
-                  fontWeight: "700",
-                  lineHeight: "16px",
-                  letterSpacing: "-0.382px",
-                }}
-              >
+              <div className="flex items-center mt-6 w-[114px] h-[37px] text-[#464646] font-fira-sans text-[17px] font-[700] leading-[16px] tracking-[-0.382px]">
                 Fideicomiso San Antonio
               </div>
 
               {/* Segundo contenedor - Texto */}
-              <div
-                className="mt-4"
-                style={{
-                  width: "114px",
-                  height: "47px",
-                  flexShrink: 0,
-                  color: "#464646",
-                  fontFamily: "Fira Sans",
-                  fontSize: "12px",
-                  fontWeight: "400",
-                  lineHeight: "14px",
-                  letterSpacing: "-0.382px",
-                  fontFeatureSettings: "'liga' off, 'clig' off",
-                  marginBottom: "17px",
-                }}
-              >
+              <div className="mt-4 w-[114px] h-[47px] text-[#464646] font-fira-sans text-[12px] font-[400] leading-[14px] tracking-[-0.382px] mb-[17px]">
                 Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit
                 praesent ornare eu.
               </div>
 
               {/* Tercer contenedor - Botón */}
               <div
-                className="flex items-center cursor-pointer mt-2 mb-6" // Agregamos la clase cursor-pointer para indicar que es un botón
+                className="flex items-center cursor-pointer mt-2 mb-6 text-[#000] font-fira-sans text-[12px] font-[300] leading-[16px] tracking-[-0.382px] underline"
                 style={{
                   width: "68px",
                   height: "16px",
                   flexShrink: 0,
-                  color: "#000",
-                  fontFeatureSettings: "'liga' off, 'clig' off",
-                  fontFamily: "Fira Sans",
-                  fontSize: "12px",
-                  fontStyle: "normal",
-                  fontWeight: "300",
-                  lineHeight: "16px", // 133.333%
-                  letterSpacing: "-0.382px",
-                  textDecorationLine: "underline",
                 }}
               >
                 Ver proyecto
@@ -184,78 +122,30 @@ function ProyectosActivosMobile() {
           }}
         >
           {/* Centra la tarjeta horizontalmente */}
-          <div
-            className="flex"
-            style={{
-              width: "326px",
-              height: "177px",
-              flexShrink: 0,
-              borderRadius: "6.15px",
-              background: "#DAD8CB",
-              boxShadow: "3.822px 3.822px 6.688px 1.911px rgba(2, 2, 2, 0.30)",
-              position: "relative",
-            }}
-          >
+          <div className="flex w-[326px] h-[177px] shrink-0 rounded-[6.15px] bg-[#DAD8CB] shadow-[3.822px_3.822px_6.688px_1.911px_rgba(2,2,2,0.30)] relative">
             {/* Parte derecha con texto */}
             <div
               className="flex flex-col justify-center w-1/2 px-6"
-              style={{ borderRadius: "21.323px 0 0 21.323px" }} // Cambia el radio de la esquina superior izquierda y inferior izquierda
+              style={{ borderRadius: "21.323px 0 0 21.323px" }}
             >
               {/* Primer contenedor - Título */}
-              <div
-                className="flex items-center mt-6"
-                style={{
-                  width: "114px",
-                  height: "37px",
-                  flexShrink: 0,
-                  color: "#464646",
-                  fontFamily: "Fira Sans",
-                  fontSize: "17px",
-                  fontWeight: "700",
-                  lineHeight: "16px",
-                  letterSpacing: "-0.382px",
-                }}
-              >
+              <div className="flex items-center mt-6 w-[114px] h-[37px] text-[#464646] font-fira-sans text-[17px] font-[700] leading-[16px] tracking-[-0.382px]">
                 Fideicomiso San Antonio
               </div>
 
               {/* Segundo contenedor - Texto */}
-              <div
-                className="mt-4"
-                style={{
-                  width: "114px",
-                  height: "47px",
-                  flexShrink: 0,
-                  color: "#464646",
-                  fontFamily: "Fira Sans",
-                  fontSize: "12px",
-                  fontWeight: "400",
-                  lineHeight: "14px",
-                  letterSpacing: "-0.382px",
-                  fontFeatureSettings: "'liga' off, 'clig' off",
-                  marginBottom: "17px",
-                }}
-              >
+              <div className="mt-4 w-[114px] h-[47px] text-[#464646] font-fira-sans text-[12px] font-[400] leading-[14px] tracking-[-0.382px] mb-[17px]">
                 Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit
                 praesent ornare eu.
               </div>
 
               {/* Tercer contenedor - Botón */}
               <div
-                className="flex items-center cursor-pointer mt-2 mb-6" // Agregamos la clase cursor-pointer para indicar que es un botón
+                className="flex items-center cursor-pointer mt-2 mb-6 text-[#000] font-fira-sans text-[12px] font-[300] leading-[16px] tracking-[-0.382px] underline"
                 style={{
                   width: "68px",
                   height: "16px",
                   flexShrink: 0,
-                  color: "#000",
-                  fontFeatureSettings: "'liga' off, 'clig' off",
-                  fontFamily: "Fira Sans",
-                  fontSize: "12px",
-                  fontStyle: "normal",
-                  fontWeight: "300",
-                  lineHeight: "16px", // 133.333%
-                  letterSpacing: "-0.382px",
-                  textDecorationLine: "underline",
                 }}
               >
                 Ver proyecto
@@ -269,7 +159,7 @@ function ProyectosActivosMobile() {
                 alt="Tarjeta Proyectos"
                 className="object-cover"
                 style={{
-                  borderRadius: "0 6px 6px 0", // Cambia el radio de la esquina superior derecha y inferior derecha
+                  borderRadius: "0 6px 6px 0", 
                   height: "100%",
                   width: "100%",
                   objectFit: "cover",
@@ -289,18 +179,7 @@ function ProyectosActivosMobile() {
           }}
         >
           {/* Centra la tarjeta horizontalmente */}
-          <div
-            className="flex"
-            style={{
-              width: "326px",
-              height: "177px",
-              flexShrink: 0,
-              borderRadius: "6.15px",
-              background: "#DAD8CB",
-              boxShadow: "3.822px 3.822px 6.688px 1.911px rgba(2, 2, 2, 0.30)",
-              position: "relative",
-            }}
-          >
+          <div className="flex w-[326px] h-[177px] shrink-0 rounded-[6.15px] bg-[#DAD8CB] shadow-[3.822px_3.822px_6.688px_1.911px_rgba(2,2,2,0.30)] relative">
             {/* Parte izquierda con imagen */}
             <div className="flex items-center justify-center w-1/2">
               <img
@@ -322,60 +201,23 @@ function ProyectosActivosMobile() {
               style={{ borderRadius: "0 21.323px 21.323px 0" }}
             >
               {/* Primer contenedor - Título */}
-              <div
-                className="flex items-center mt-6"
-                style={{
-                  width: "114px",
-                  height: "37px",
-                  flexShrink: 0,
-                  color: "#464646",
-                  fontFamily: "Fira Sans",
-                  fontSize: "17px",
-                  fontWeight: "700",
-                  lineHeight: "16px",
-                  letterSpacing: "-0.382px",
-                }}
-              >
+              <div className="flex items-center mt-6 w-[114px] h-[37px] text-[#464646] font-fira-sans text-[17px] font-[700] leading-[16px] tracking-[-0.382px]">
                 Fideicomiso San Antonio
               </div>
 
               {/* Segundo contenedor - Texto */}
-              <div
-                className="mt-4"
-                style={{
-                  width: "114px",
-                  height: "47px",
-                  flexShrink: 0,
-                  color: "#464646",
-                  fontFamily: "Fira Sans",
-                  fontSize: "12px",
-                  fontWeight: "400",
-                  lineHeight: "14px",
-                  letterSpacing: "-0.382px",
-                  fontFeatureSettings: "'liga' off, 'clig' off",
-                  marginBottom: "17px",
-                }}
-              >
+              <div className="mt-4 w-[114px] h-[47px] text-[#464646] font-fira-sans text-[12px] font-[400] leading-[14px] tracking-[-0.382px] mb-[17px]">
                 Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit
                 praesent ornare eu.
               </div>
 
               {/* Tercer contenedor - Botón */}
               <div
-                className="flex items-center cursor-pointer mt-2 mb-6" // Agregamos la clase cursor-pointer para indicar que es un botón
+                className="flex items-center cursor-pointer mt-2 mb-6 text-[#000] font-fira-sans text-[12px] font-[300] leading-[16px] tracking-[-0.382px] underline"
                 style={{
                   width: "68px",
                   height: "16px",
                   flexShrink: 0,
-                  color: "#000",
-                  fontFeatureSettings: "'liga' off, 'clig' off",
-                  fontFamily: "Fira Sans",
-                  fontSize: "12px",
-                  fontStyle: "normal",
-                  fontWeight: "300",
-                  lineHeight: "16px", // 133.333%
-                  letterSpacing: "-0.382px",
-                  textDecorationLine: "underline",
                 }}
               >
                 Ver proyecto
@@ -384,7 +226,7 @@ function ProyectosActivosMobile() {
           </div>
         </Link>
         {/* Tarjeta superpuesta foto derecha 4*/}
-       <Link
+        <Link
           to="/singleproject"
           className="absolute z-30"
           style={{
@@ -394,78 +236,30 @@ function ProyectosActivosMobile() {
           }}
         >
           {/* Centra la tarjeta horizontalmente */}
-          <div
-            className="flex"
-            style={{
-              width: "326px",
-              height: "177px",
-              flexShrink: 0,
-              borderRadius: "6.15px",
-              background: "#DAD8CB",
-              boxShadow: "3.822px 3.822px 6.688px 1.911px rgba(2, 2, 2, 0.30)",
-              position: "relative",
-            }}
-          >
+          <div className="flex w-[326px] h-[177px] shrink-0 rounded-[6.15px] bg-[#DAD8CB] shadow-[3.822px_3.822px_6.688px_1.911px_rgba(2,2,2,0.30)] relative">
             {/* Parte derecha con texto */}
             <div
               className="flex flex-col justify-center w-1/2 px-6"
-              style={{ borderRadius: "21.323px 0 0 21.323px" }} // Cambia el radio de la esquina superior izquierda y inferior izquierda
+              style={{ borderRadius: "21.323px 0 0 21.323px" }}
             >
               {/* Primer contenedor - Título */}
-              <div
-                className="flex items-center mt-6"
-                style={{
-                  width: "114px",
-                  height: "37px",
-                  flexShrink: 0,
-                  color: "#464646",
-                  fontFamily: "Fira Sans",
-                  fontSize: "17px",
-                  fontWeight: "700",
-                  lineHeight: "16px",
-                  letterSpacing: "-0.382px",
-                }}
-              >
+              <div className="flex items-center mt-6 w-[114px] h-[37px] text-[#464646] font-fira-sans text-[17px] font-[700] leading-[16px] tracking-[-0.382px]">
                 Fideicomiso San Antonio
               </div>
 
               {/* Segundo contenedor - Texto */}
-              <div
-                className="mt-4"
-                style={{
-                  width: "114px",
-                  height: "47px",
-                  flexShrink: 0,
-                  color: "#464646",
-                  fontFamily: "Fira Sans",
-                  fontSize: "12px",
-                  fontWeight: "400",
-                  lineHeight: "14px",
-                  letterSpacing: "-0.382px",
-                  fontFeatureSettings: "'liga' off, 'clig' off",
-                  marginBottom: "17px",
-                }}
-              >
+              <div className="mt-4 w-[114px] h-[47px] text-[#464646] font-fira-sans text-[12px] font-[400] leading-[14px] tracking-[-0.382px] mb-[17px]">
                 Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit
                 praesent ornare eu.
               </div>
 
               {/* Tercer contenedor - Botón */}
               <div
-                className="flex items-center cursor-pointer mt-2 mb-6" // Agregamos la clase cursor-pointer para indicar que es un botón
+                className="flex items-center cursor-pointer mt-2 mb-6 text-[#000] font-fira-sans text-[12px] font-[300] leading-[16px] tracking-[-0.382px] underline"
                 style={{
                   width: "68px",
                   height: "16px",
                   flexShrink: 0,
-                  color: "#000",
-                  fontFeatureSettings: "'liga' off, 'clig' off",
-                  fontFamily: "Fira Sans",
-                  fontSize: "12px",
-                  fontStyle: "normal",
-                  fontWeight: "300",
-                  lineHeight: "16px", // 133.333%
-                  letterSpacing: "-0.382px",
-                  textDecorationLine: "underline",
                 }}
               >
                 Ver proyecto
@@ -479,7 +273,7 @@ function ProyectosActivosMobile() {
                 alt="Tarjeta Proyectos"
                 className="object-cover"
                 style={{
-                  borderRadius: "0 6px 6px 0", // Cambia el radio de la esquina superior derecha y inferior derecha
+                  borderRadius: "0 6px 6px 0", 
                   height: "100%",
                   width: "100%",
                   objectFit: "cover",
@@ -499,18 +293,7 @@ function ProyectosActivosMobile() {
           }}
         >
           {/* Centra la tarjeta horizontalmente */}
-          <div
-            className="flex"
-            style={{
-              width: "326px",
-              height: "177px",
-              flexShrink: 0,
-              borderRadius: "6.15px",
-              background: "#DAD8CB",
-              boxShadow: "3.822px 3.822px 6.688px 1.911px rgba(2, 2, 2, 0.30)",
-              position: "relative",
-            }}
-          >
+          <div className="flex w-[326px] h-[177px] shrink-0 rounded-[6.15px] bg-[#DAD8CB] shadow-[3.822px_3.822px_6.688px_1.911px_rgba(2,2,2,0.30)] relative">
             {/* Parte izquierda con imagen */}
             <div className="flex items-center justify-center w-1/2">
               <img
@@ -532,60 +315,23 @@ function ProyectosActivosMobile() {
               style={{ borderRadius: "0 21.323px 21.323px 0" }}
             >
               {/* Primer contenedor - Título */}
-              <div
-                className="flex items-center mt-6"
-                style={{
-                  width: "114px",
-                  height: "37px",
-                  flexShrink: 0,
-                  color: "#464646",
-                  fontFamily: "Fira Sans",
-                  fontSize: "17px",
-                  fontWeight: "700",
-                  lineHeight: "16px",
-                  letterSpacing: "-0.382px",
-                }}
-              >
+              <div className="flex items-center mt-6 w-[114px] h-[37px] text-[#464646] font-fira-sans text-[17px] font-[700] leading-[16px] tracking-[-0.382px]">
                 Fideicomiso San Antonio
               </div>
 
               {/* Segundo contenedor - Texto */}
-              <div
-                className="mt-4"
-                style={{
-                  width: "114px",
-                  height: "47px",
-                  flexShrink: 0,
-                  color: "#464646",
-                  fontFamily: "Fira Sans",
-                  fontSize: "12px",
-                  fontWeight: "400",
-                  lineHeight: "14px",
-                  letterSpacing: "-0.382px",
-                  fontFeatureSettings: "'liga' off, 'clig' off",
-                  marginBottom: "17px",
-                }}
-              >
+              <div className="mt-4 w-[114px] h-[47px] text-[#464646] font-fira-sans text-[12px] font-[400] leading-[14px] tracking-[-0.382px] mb-[17px]">
                 Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit
                 praesent ornare eu.
               </div>
 
               {/* Tercer contenedor - Botón */}
               <div
-                className="flex items-center cursor-pointer mt-2 mb-6" // Agregamos la clase cursor-pointer para indicar que es un botón
+                className="flex items-center cursor-pointer mt-2 mb-6 text-[#000] font-fira-sans text-[12px] font-[300] leading-[16px] tracking-[-0.382px] underline"
                 style={{
                   width: "68px",
                   height: "16px",
                   flexShrink: 0,
-                  color: "#000",
-                  fontFeatureSettings: "'liga' off, 'clig' off",
-                  fontFamily: "Fira Sans",
-                  fontSize: "12px",
-                  fontStyle: "normal",
-                  fontWeight: "300",
-                  lineHeight: "16px", // 133.333%
-                  letterSpacing: "-0.382px",
-                  textDecorationLine: "underline",
                 }}
               >
                 Ver proyecto

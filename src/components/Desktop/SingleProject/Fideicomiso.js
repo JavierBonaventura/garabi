@@ -6,7 +6,7 @@ import iconocasa from "../../../images/Desktop/iconocasa.png";
 function Fideicomiso() {
   return (
     <div
-      className="relative h-[47vw] bg-cover bg-center"
+      className="relative h-[670px] bg-cover bg-center"
       style={{
         backgroundImage: `url(${fideicomiso}), linear-gradient(rgba(0, 148, 44, 0.08), rgba(0, 148, 44, 0.08))`,
       }}

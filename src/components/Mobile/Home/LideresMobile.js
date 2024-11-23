@@ -12,45 +12,12 @@ function LideresMobile() {
       }}
     >
       {/* Primer div para "Líderes en forestación" */}
-      <div
-        className="ml-8 mt-12"
-        style={{
-          width: "274px",
-          height: "88px",
-          flexShrink: 0,
-          color: "#FFF",
-          fontFeatureSettings: "'liga' off, 'clig' off",
-          fontFamily: "Fira Sans",
-          fontSize: "41px",
-          fontStyle: "normal",
-          fontWeight: 900,
-          lineHeight: "39px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
+      <div className="ml-8 mt-12 w-[274px] h-[88px] text-white font-fira-sans text-[41px] font-extrabold leading-[39px] flex items-center justify-center">
         Líderes en forestación
       </div>
 
       {/* Segundo div para el texto adicional */}
-      <div
-        className="ml-8 mt-4"
-        style={{
-          width: "264px",
-          height: "52px",
-          flexShrink: 0,
-          color: "#FFF",
-          fontFeatureSettings: "'liga' off, 'clig' off",
-          fontFamily: "Fira Sans",
-          fontSize: "20px",
-          fontStyle: "normal",
-          fontWeight: 400,
-          lineHeight: "24px",
-          letterSpacing: "-1px",
-          textAlign: "left",
-        }}
-      >
+      <div className="ml-8 mt-4 w-[264px] h-[52px] text-white font-fira-sans text-[20px] font-normal leading-[24px] tracking-[-1px] text-left">
         Desde 1983 gestionando con éxito más de 18.000 hectáreas de bosques
       </div>
 
@@ -62,44 +29,12 @@ function LideresMobile() {
         }}
       >
         {/* Primer botón */}
-        <button
-          style={{
-            width: "104.608px",
-            height: "36.322px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            borderRadius: "5px",
-            background: "#00942C",
-            color: "#FFF",
-            fontFamily: "Fira Sans",
-            fontSize: "12px",
-            fontWeight: 400,
-            letterSpacing: "4px",
-            textTransform: "uppercase",
-          }}
-        >
+        <button className="w-[104.608px] h-[36.322px] flex justify-center items-center rounded-[5px] bg-[#00942C] text-white font-fira-sans text-[12px] font-normal tracking-[4px] uppercase">
           Nosotros
         </button>
 
         {/* Segundo botón */}
-        <button
-          style={{
-            width: "112.608px",
-            height: "36.322px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            borderRadius: "5px",
-            background: "#FFF",
-            color: "#00942C",
-            fontFamily: "Fira Sans",
-            fontSize: "12px",
-            fontWeight: 400,
-            letterSpacing: "4px",
-            textTransform: "uppercase",
-          }}
-        >
+        <button className="w-[112.608px] h-[36.322px] flex justify-center items-center rounded-[5px] bg-white text-[#00942C] font-fira-sans text-[12px] font-normal tracking-[4px] uppercase">
           Proyectos
         </button>
       </div>

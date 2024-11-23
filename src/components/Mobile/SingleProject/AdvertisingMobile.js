@@ -1,7 +1,6 @@
 import React from "react";
 import fondoMobile from "../../../images/Mobile/fondoMobile.png";
-import fotoDesde from "../../../images/Mobile/fotoDesde.png"; // Assuming this is the advertising image
-import casaImage from "../../../images/Mobile/casa.png"; // Assuming this is the house image
+import casaImage from "../../../images/Mobile/casa.png"; 
 import advertising from "../../../images/Mobile/advertising.png";
 
 function AdvertisingMobile() {

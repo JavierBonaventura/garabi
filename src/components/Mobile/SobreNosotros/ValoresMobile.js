@@ -39,17 +39,17 @@ function ValoresMobile() {
   ];
 
   const [cards, setCards] = useState(initialCards);
-  const [activeIndex, setActiveIndex] = useState(0); // Estado para el índice activo
+  const [activeIndex, setActiveIndex] = useState(0); 
   const carouselRef = useRef(null);
   const [isSliding, setIsSliding] = useState(false);
 
-  const cardWidth = 270; // Width for centering logic, adjust as needed
+  const cardWidth = 270; 
 
   const handleNext = () => {
     if (isSliding) return;
 
     setIsSliding(true);
-    setActiveIndex((prevIndex) => (prevIndex + 1) % cards.length); // Actualiza el índice activo
+    setActiveIndex((prevIndex) => (prevIndex + 1) % cards.length); 
 
     carouselRef.current.style.transition = "transform 0.5s ease-in-out";
     carouselRef.current.style.transform = `translateX(-${cardWidth}px)`;
@@ -66,7 +66,7 @@ function ValoresMobile() {
     if (isSliding) return;
 
     setIsSliding(true);
-    setActiveIndex((prevIndex) => (prevIndex - 1 + cards.length) % cards.length); // Actualiza el índice activo
+    setActiveIndex((prevIndex) => (prevIndex - 1 + cards.length) % cards.length); 
 
     setCards((prevCards) => [
       prevCards[prevCards.length - 1],
@@ -237,7 +237,7 @@ function ValoresMobile() {
                     height: "6px",
                     borderRadius: "50%",
                     border: "1px solid #00942C",
-                    backgroundColor: activeIndex === index ? "#00942C" : "#FFF", // Cambiar color según el índice activo
+                    backgroundColor: activeIndex === index ? "#00942C" : "#FFF",
                   }}
                 />
               ))}

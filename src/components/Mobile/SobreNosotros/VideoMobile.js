@@ -11,8 +11,8 @@ function VideoMobile() {
           top: 0,
           left: 0,
           right: 0,
-          height: "1px", // Altura de la línea
-          zIndex: 1, // Asegúrate de que esté por encima de la imagen
+          height: "1px", 
+          zIndex: 1, 
         }}
       />
       {/* Imagen */}
@@ -23,8 +23,8 @@ function VideoMobile() {
           width: "100%",  
           height: "227px",
           flexShrink: 0,
-          position: "relative", // Asegura que la imagen esté posicionada correctamente
-          zIndex: 0, // Para que la imagen esté detrás de la línea
+          position: "relative", 
+          zIndex: 0, 
         }}
       />
     </div>

@@ -32,8 +32,8 @@ function SobreNosotrosArbolMobile() {
                 src={arbolCentral}
                 alt="Árbol Central"
                 style={{
-                  left: "-52%", // Mueve la imagen 50% a la izquierda
-                  position: "relative", // Asegúrate de que tenga position: relative para que left funcione
+                  left: "-52%", 
+                  position: "relative", 
                   maxWidth: "none !important",
                 }}
               />
@@ -80,7 +80,7 @@ function SobreNosotrosArbolMobile() {
                 className="absolute right-[-13.5vw] w-[63vw] h-[1px] bg-[#00942C]  transform -translate-y-1/2 mt-4"
                 style={{
                   top: "15%",
-                  left: "32%", // Mueve la imagen 50% a la izquierda
+                  left: "32%",
                 }}
               ></div>
               {/* segundo texto */}
@@ -125,7 +125,7 @@ function SobreNosotrosArbolMobile() {
                 className="absolute right-[-13.5vw] w-[44vw] h-[1px] bg-[#00942C]  transform -translate-y-1/2 mt-4"
                 style={{
                   top: "42%",
-                  left: "52%", // Mueve la imagen 50% a la izquierda
+                  left: "52%", 
                 }}
               ></div>
 
@@ -171,7 +171,7 @@ function SobreNosotrosArbolMobile() {
                 className="absolute right-[-13.5vw] w-[73vw] h-[1px] bg-[#00942C]  transform -translate-y-1/2 mt-4"
                 style={{
                   top: "69%",
-                  left: "21%", // Mueve la imagen 50% a la izquierda
+                  left: "21%", 
                 }}
               ></div>
 

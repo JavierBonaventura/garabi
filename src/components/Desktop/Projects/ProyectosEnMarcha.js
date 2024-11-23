@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
 import imagenCurva from "../../../images/Desktop/imagenCurva.png";
 import tarjeta1Proyectos1 from "../../../images/Desktop/tarjeta1-proyectos.png";
@@ -16,7 +17,8 @@ const tarjetas = [
     description:
       "Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit praesent ornare eu.",
     buttonText: "Ver Proyecto",
-    reverseOrder: false, // Si se debe invertir la imagen y texto
+    reverseOrder: false,
+    route: "/singleproject",
   },
   {
     id: 2,
@@ -26,6 +28,7 @@ const tarjetas = [
       "Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit praesent ornare eu.",
     buttonText: "Ver Proyecto",
     reverseOrder: true,
+    route: "/singleproject",
   },
   {
     id: 3,
@@ -35,6 +38,7 @@ const tarjetas = [
       "Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit praesent ornare eu.",
     buttonText: "Ver Proyecto",
     reverseOrder: false,
+    route: "/singleproject",
   },
   {
     id: 4,
@@ -44,6 +48,7 @@ const tarjetas = [
       "Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit praesent ornare eu.",
     buttonText: "Ver Proyecto",
     reverseOrder: true,
+    route: "/singleproject",
   },
   {
     id: 5,
@@ -53,9 +58,9 @@ const tarjetas = [
       "Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit praesent ornare eu.",
     buttonText: "Ver Proyecto",
     reverseOrder: false,
+    route: "/singleproject",
   },
 ];
-
 function ProyectosEnMarcha() {
   return (
     <div>
@@ -97,8 +102,6 @@ function ProyectosEnMarcha() {
             inverted colors, the setting has grown popular with those who claim
             to experience eye fatigue from a deluge of white.
           </div>
-
-       
         </div>
 
         {/* Mapeo del arreglo de tarjetas */}
@@ -106,7 +109,7 @@ function ProyectosEnMarcha() {
           <div
             key={tarjeta.id}
             className="absolute z-30 top-[680px] left-1/2 transform -translate-x-1/2 transition-transform duration-300"
-            style={{ top: `${720 + index * 320}px` }} 
+            style={{ top: `${720 + index * 320}px` }}
             onMouseEnter={(e) =>
               (e.currentTarget.style.transform = "translateX(-50%) scale(1.02)")
             }
@@ -115,7 +118,6 @@ function ProyectosEnMarcha() {
             }
           >
             <div className="flex w-[1074px] h-[268px] flex-shrink-0 rounded-[21.323px] bg-[#DAD8CB] shadow-[13.327px_13.327px_23.322px_6.663px_rgba(2,2,2,0.3)] relative">
-              {/* Parte izquierda con imagen o texto según reverseOrder */}
               <div
                 className={`flex items-center justify-center w-1/2 ${
                   tarjeta.reverseOrder ? "order-last" : ""
@@ -128,7 +130,6 @@ function ProyectosEnMarcha() {
                 />
               </div>
 
-              {/* Parte derecha con texto */}
               <div
                 className={`flex flex-col justify-center w-1/2 px-6 ${
                   tarjeta.reverseOrder ? "order-first" : ""
@@ -145,11 +146,13 @@ function ProyectosEnMarcha() {
                 <div className="mt-4 w-[447px] h-[47px] flex-shrink-0 text-[#464646] font-fira-sans text-[24px] font-normal leading-[23px] tracking-[-1.333px] mb-[17px]">
                   {tarjeta.description}
                 </div>
-                <button className="mt-6 flex justify-center items-center w-[217px] h-[50px] bg-[#00942C] rounded-[5px] flex-shrink-0 cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5">
-                  <span className="text-white text-center font-[400] text-[14px] tracking-[4px] uppercase font-fira-sans">
-                    {tarjeta.buttonText}
-                  </span>
-                </button>
+                <Link to={tarjeta.route}>
+                  <button className="mt-6 flex justify-center items-center w-[217px] h-[50px] bg-[#00942C] rounded-[5px] flex-shrink-0 cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5">
+                    <span className="text-white text-center font-[400] text-[14px] tracking-[4px] uppercase font-fira-sans">
+                      {tarjeta.buttonText}
+                    </span>
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

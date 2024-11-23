@@ -1,9 +1,9 @@
-import React, { useState } from "react"; 
+import React, { useState } from "react";
 import fondoMobile from "../../../images/Mobile/fondoMobile.png";
 import impacto from "../../../images/Mobile/impacto.png";
-import sustentabilidad from "../../../images/Desktop/sustentabilidad.png"; 
-import seguridad from "../../../images/Desktop/seguridad.png"; 
-import comunidad from "../../../images/Desktop/comunidad.png"; 
+import sustentabilidad from "../../../images/Desktop/sustentabilidad.png";
+import seguridad from "../../../images/Desktop/seguridad.png";
+import comunidad from "../../../images/Desktop/comunidad.png";
 
 function ImpactoMobile() {
   const [selectedImage, setSelectedImage] = useState("sustentabilidad");
@@ -13,9 +13,24 @@ function ImpactoMobile() {
   };
 
   const images = [
-    { name: "sustentabilidad", src: sustentabilidad, marginLeft: "0px", textAlign: "left" }, 
-    { name: "seguridad", src: seguridad, marginLeft: "-60px", textAlign: "center" }, 
-    { name: "comunidad", src: comunidad, marginLeft: "-120px", textAlign: "right" }, 
+    {
+      name: "sustentabilidad",
+      src: sustentabilidad,
+      marginLeft: "0px",
+      textAlign: "left",
+    },
+    {
+      name: "seguridad",
+      src: seguridad,
+      marginLeft: "-60px",
+      textAlign: "center",
+    },
+    {
+      name: "comunidad",
+      src: comunidad,
+      marginLeft: "-120px",
+      textAlign: "right",
+    },
   ];
 
   return (
@@ -29,20 +44,7 @@ function ImpactoMobile() {
         }}
       >
         <div className="mt-8 w-full">
-          <div
-            className="flex-shrink-0 ml-8"
-            style={{
-              width: "328px",
-              height: "88px",
-              color: "#000",
-              fontFeatureSettings: "'liga' off, 'clig' off",
-              fontFamily: "'Fira Sans', sans-serif",
-              fontSize: "41px",
-              fontStyle: "normal",
-              fontWeight: "900",
-              lineHeight: "39px",
-            }}
-          >
+          <div className="flex-shrink-0 ml-8 text-black font-fira-sans text-[41px] font-extrabold leading-[39px]">
             Impacto medio ambiente
           </div>
 
@@ -56,17 +58,18 @@ function ImpactoMobile() {
             }}
           />
 
-          <div className="flex justify-around mt-8">
+          <div className="flex justify-around mt-8 ">
             {images.map((image) => (
               <div
                 key={image.name}
-                onClick={() => handleImageSelect(image.name)} 
+                onClick={() => handleImageSelect(image.name)}
                 className="relative cursor-pointer"
                 style={{
                   opacity: selectedImage === image.name ? 1 : 0.5,
                 }}
               >
                 <img
+                  className=""
                   src={image.src}
                   alt={image.name}
                   style={{
@@ -75,24 +78,13 @@ function ImpactoMobile() {
                   }}
                 />
                 {selectedImage === image.name && (
-                  <div className="absolute mt-4 w-full -ml-4"> 
-                    <div
-                      style={{
-                        width: "156px",
-                        height: "30px",
-                        flexShrink: 0,
-                        color: "#443838",
-                        fontFeatureSettings: "'liga' off, 'clig' off",
-                        fontFamily: "Fira Sans",
-                        fontSize: "16px",
-                        fontStyle: "normal",
-                        fontWeight: "600",
-                        lineHeight: "32px", 
-                      }}
-                    >
-                      {image.name.charAt(0).toUpperCase() + image.name.slice(1)} 
+                  <div className="absolute mt-4 w-full -ml-4">
+                    <div className=" h-[30px] flex-shrink-0 text-[#443838]  font-fira-sans text-[16px] font-semibold leading-[32px] ">
+                      {image.name.charAt(0).toUpperCase() + image.name.slice(1)}
                     </div>
-                    <div className="mt-2" 
+
+                    <div
+                      className="mt-2 "
                       style={{
                         marginLeft: image.marginLeft,
                         width: "213.35px",
@@ -105,10 +97,12 @@ function ImpactoMobile() {
                         fontStyle: "normal",
                         fontWeight: "400",
                         lineHeight: "15px",
-                        textAlign: image.textAlign, // Agregar alineación de texto
+                        textAlign: image.textAlign,
                       }}
                     >
-                      Proof-of-Work protocols are slow, expensive, unscalable, and environmentally harmful. And we have solved that problem.
+                      Proof-of-Work protocols are slow, expensive, unscalable,
+                      and environmentally harmful. And we have solved that
+                      problem.
                     </div>
                   </div>
                 )}

@@ -26,14 +26,16 @@ const cardsData = [
           (fotos de bosques nativos + fotos de viveros de árboles)
         </p>
         <ul className="list-disc pl-5 mt-2">
-          <li>Preservación y promoción del entorno natural de la fauna local</li>
           <li>
-            Captura de carbón, como consecuencia de las plantaciones continuas de
-            bosques para uso comercial y bosques naturales
+            Preservación y promoción del entorno natural de la fauna local
           </li>
           <li>
-            Diseño de un sistema de gestión de residuos y optimización del uso de
-            productos residuales en nuevas industrias
+            Captura de carbón, como consecuencia de las plantaciones continuas
+            de bosques para uso comercial y bosques naturales
+          </li>
+          <li>
+            Diseño de un sistema de gestión de residuos y optimización del uso
+            de productos residuales en nuevas industrias
           </li>
         </ul>
       </>
@@ -59,8 +61,8 @@ const cardsData = [
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl
         augue, finibus sed magna varius, egestas varius ex. Lorem ipsum dolor
         sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed
-        magna varius, egestas varius ex. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Donec nisl augue.
+        magna varius, egestas varius ex. Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Donec nisl augue.
       </p>
     ),
     images: [social1, social2, social3],
@@ -72,7 +74,7 @@ function Card({ title, content, images }) {
   const [cards, setCards] = useState(initialCards);
   const carouselRef = useRef(null);
   const [isSliding, setIsSliding] = useState(false);
-  
+
   const cardWidth = 329; // Ancho de cada tarjeta, ajusta según el tamaño real
 
   const handleNext = () => {
@@ -134,55 +136,30 @@ function Card({ title, content, images }) {
 
   return (
     <div>
-     <div
-        className="w-[327px] h-[30px] flex-shrink-0 "
-        style={{
-          color: "#000",
-          fontFamily: "Fira Sans",
-          fontSize: "24px",
-          fontWeight: "700",
-          lineHeight: "50px",
-          letterSpacing: "-1px",
-          fontFeatureSettings: "'liga' off, 'clig' off",
-          margin: "0 auto", 
-        }}
-      >
+      {/* Título */}
+      <div className="w-[327px] h-[30px] flex-shrink-0 text-black font-fira-sans text-[24px] font-[700] leading-[50px] tracking-[-1px] mx-auto">
         {title}
       </div>
-      <div
-        className=" "
-        style={{
-          width: "329px",
-          height: "auto",
-          flexShrink: 0,
-          color: "#000",
-          fontFamily: "Fira Sans",
-          fontSize: "12px",
-          fontWeight: "400",
-          lineHeight: "17px",
-          margin: "0 auto", 
-          marginTop: "20px"
-        }}
-      >
+
+      {/* Contenido */}
+      <div className="w-[329px] h-auto flex-shrink-0 text-black font-fira-sans text-[12px] font-normal leading-[17px] mx-auto mt-[20px]">
         {content}
       </div>
-      
+
       {/* Contenedor principal del carrusel */}
       <div className="relative w-full flex items-center justify-center">
-        
         {/* Contenedor de las imágenes con botones fijos */}
         <div className="relative w-[329px] overflow-hidden">
-          {/* Botón de navegación izquierda - posición fija en relación a la imagen */}
+          {/* Botón de navegación izquierda */}
           <button
             onClick={handlePrev}
-            className="absolute z-10"
-            style={{
-              left: "10px", // Ajusta la distancia desde el borde izquierdo
-              top: "57%", // Centrado verticalmente
-              transform: "translateY(-50%)",
-            }}
+            className="absolute z-10 left-[10px] top-[57%] transform -translate-y-[50%]"
           >
-            <img src={botonIzquierda} alt="Botón Izquierda" className="w-[24px] h-[24px]" />
+            <img
+              src={botonIzquierda}
+              alt="Botón Izquierda"
+              className="w-[24px] h-[24px]"
+            />
           </button>
 
           {/* Carrusel de imágenes */}
@@ -201,34 +178,29 @@ function Card({ title, content, images }) {
                   <img
                     src={card.image}
                     alt={`Tarjeta ${title} ${index + 1}`}
-                    style={{
-                      width: "329px",
-                      height: "143px",
-                      borderRadius: "8px",
-                      marginTop: "40px",
-                    }}
+                    className="w-[329px] h-[143px] rounded-[8px] mt-[40px]"
                   />
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Botón de navegación derecha - posición fija en relación a la imagen */}
+          {/* Botón de navegación derecha */}
           <button
             onClick={handleNext}
-            className="absolute z-10"
-            style={{
-              right: "10px", // Ajusta la distancia desde el borde derecho
-              top: "57%", // Centrado verticalmente
-              transform: "translateY(-50%)",
-            }}
+            className="absolute z-10 right-[10px] top-[57%] transform -translate-y-[50%]"
           >
-            <img src={botonDerecha} alt="Botón Derecha" className="w-[24px] h-[24px]" />
+            <img
+              src={botonDerecha}
+              alt="Botón Derecha"
+              className="w-[24px] h-[24px]"
+            />
           </button>
         </div>
       </div>
     </div>
-  );;}
+  );
+}
 
 function ImpactoMobileMain() {
   return (
@@ -256,41 +228,24 @@ function ImpactoMobileMain() {
             backgroundSize: "cover",
           }}
         >
-          <div
-            className="ml-8 w-[260px] h-[88px] flex-shrink-0 mt-[30px]"
-            style={{
-              color: "#000",
-              fontFamily: "Fira Sans",
-              fontSize: "36px",
-              fontWeight: "900",
-              lineHeight: "32px",
-              letterSpacing: "-1px",
-              fontFeatureSettings: "'liga' off, 'clig' off",
-            }}
-          >
-            Impacto{" "}
+          <div className="ml-8 w-[260px] h-[88px] flex-shrink-0 mt-[30px] text-black font-fira-sans text-[36px] font-[900] leading-[32px] tracking-[-1px]">
+            Impacto
           </div>
-          <div
-            className=" w-[315px] h-[72px] flex-shrink-0 mt-36"
-            style={{
-              color: "#000",
-              fontFamily: "Fira Sans",
-              fontSize: "12px",
-              fontWeight: "400",
-              lineHeight: "17px",
-              letterSpacing: "-1px",
-              margin: "0 auto", 
-              marginTop: "136px", 
-            }}
-          >
+
+          <div className="w-[315px] h-[72px] flex-shrink-0 mt-[136px] text-black font-fira-sans text-[12px] font-normal leading-[17px] tracking-[-1px] mx-auto">
             Descubrí cómo nuestra empresa se enfoca en reducir su impacto
             ambiental y fomentar un cambio positivo para el medio ambiente y la
-            comunidad, desde lo economico hasta lo social{" "}
+            comunidad, desde lo económico hasta lo social
           </div>
 
           <div className="flex flex-col mt-2">
             {cardsData.map((card, index) => (
-              <Card key={index} title={card.title} content={card.content} images={card.images} />
+              <Card
+                key={index}
+                title={card.title}
+                content={card.content}
+                images={card.images}
+              />
             ))}
           </div>
         </div>

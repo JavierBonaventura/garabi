@@ -59,7 +59,7 @@ function ProyectosActivosMobile() {
         </div>
         {/* Tarjeta superpuesta 1 */}
         <Link
-          to="/singleproject"
+          to="/proyectosimple"
           className="absolute z-30"
           style={{ top: "210px", left: "50%", transform: "translateX(-50%)" }}
         >
@@ -113,7 +113,7 @@ function ProyectosActivosMobile() {
         </Link>
         {/* Tarjeta superpuesta foto derecha 2*/}
         <Link
-          to="/singleproject"
+          to="/proyectosimple"
           className="absolute z-30"
           style={{
             top: "410px",
@@ -170,7 +170,7 @@ function ProyectosActivosMobile() {
         </Link>
         {/* Tarjeta superpuesta 3 */}
         <Link
-          to="/singleproject"
+          to="/proyectosimple"
           className="absolute z-30"
           style={{
             top: "610px",
@@ -227,7 +227,7 @@ function ProyectosActivosMobile() {
         </Link>
         {/* Tarjeta superpuesta foto derecha 4*/}
         <Link
-          to="/singleproject"
+          to="/proyectosimple"
           className="absolute z-30"
           style={{
             top: "810px",
@@ -284,7 +284,7 @@ function ProyectosActivosMobile() {
         </Link>
         {/* Tarjeta superpuesta foto derecha 5*/}
         <Link
-          to="/singleproject"
+          to="/proyectosimple"
           className="absolute z-30"
           style={{
             top: "1010px",

@@ -57,11 +57,11 @@ function Header() {
         <nav className="absolute top-[38px] left-[29.3%] flex items-center gap-8">
           {[
             { text: "HOME", to: "/" },
-            { text: "ABOUT US", to: "/about" },
-            { text: "PROYECTOS", to: "/projects" },
-            { text: "IMPACTO", to: "/impact" },
-            { text: "SERVICIOS", to: "/services" },
-            { text: "CONTACTO", to: "/contact" },
+            { text: "ABOUT US", to: "/nosotros" },
+            { text: "PROYECTOS", to: "/proyectos" },
+            { text: "IMPACTO", to: "/impacto" },
+            { text: "SERVICIOS", to: "/servicios" },
+            { text: "CONTACTO", to: "/contacto" },
           ].map((item, index) => (
             <Link
               key={index}

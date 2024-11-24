@@ -51,39 +51,51 @@ function SobreNosotrosNuestraHistoria() {
                 </button>
               </div>
 
-              {/* Columna derecha con las tarjetas */}
-              <div className="flex flex-col space-y-8 z-20">
-                {/* Espaciado entre las tarjetas */}
-                {[2009, 2009, 2009].map((year, index) => (
-                  <div
-                    key={index}
-                    className="w-[427.385px] h-[132px] rounded-[4px] border-2 border-[#00942C] bg-[#F5F4FF] flex items-center p-2"
-                  >
-                    {/* Imagen a la izquierda */}
-                    <img
-                      src={logoNuestraHistoria}
-                      alt="Logo Nuestra Historia"
-                      className="w-[79px] h-[88.545px] flex-shrink-0 mr-2"
-                    />
-                    {/* Contenido a la derecha */}
-                    <div className="flex flex-col">
-                      <span className="text-[#000] font-fira-sans text-[22px] font-medium leading-[32px]">
-                        {year}
-                      </span>
-                      <p className="w-[269.034px] h-[49px] text-[#000] font-fira-sans text-[18px] font-normal leading-[28px]">
-                        Esto es lo que hicimos en el año y los logros que
-                        conseguimos.
-                      </p>
+              {/* Columna derecha con las tarjetas y puntos */}
+              <div className="flex">
+                {/* Contenedor de tarjetas */}
+                <div className="flex flex-col space-y-8 z-20">
+                  {[2009, 2009, 2009].map((year, index) => (
+                    <div
+                      key={index}
+                      className="w-[427.385px] h-[132px] rounded-[4px] border-2 border-[#00942C] bg-[#F5F4FF] flex items-center p-2"
+                    >
+                      {/* Imagen a la izquierda */}
+                      <img
+                        src={logoNuestraHistoria}
+                        alt="Logo Nuestra Historia"
+                        className="w-[79px] h-[88.545px] flex-shrink-0 mr-2"
+                      />
+                      {/* Contenido a la derecha */}
+                      <div className="flex flex-col">
+                        <span className="text-[#000] font-fira-sans text-[22px] font-medium leading-[32px]">
+                          {year}
+                        </span>
+                        <p className="w-[269.034px] h-[49px] text-[#000] font-fira-sans text-[18px] font-normal leading-[28px]">
+                          Esto es lo que hicimos en el año y los logros que
+                          conseguimos.
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
+
+                {/* Contenedor de puntos */}
+                <div className="flex flex-col justify-center items-center ml-12 mt-6">
+                  {[...Array(4)].map((_, index) => (
+                    <div
+                      key={index}
+                      className="w-[10px] h-[10px] rounded-full border-2 border-[#00942C] bg-white mb-6"
+                    />
+                  ))}
+                </div>
               </div>
             </div>
           </div>
           <div className="relative w-full pb-20 mt-2">
             {/* Gradiente superior */}
             <div
-              className="absolute z-30 w-full h-[21%] top-[-20%] left-0 origin-top-left"
+              className="absolute z-30 w-full h-[18%] top-[-16%] left-0 origin-top-left"
               style={{
                 background:
                   "linear-gradient(00deg, #dfe8e0 0%, rgba(237, 242, 232, 0.00) 100%)",

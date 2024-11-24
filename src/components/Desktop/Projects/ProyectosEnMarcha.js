@@ -18,7 +18,7 @@ const tarjetas = [
       "Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit praesent ornare eu.",
     buttonText: "Ver Proyecto",
     reverseOrder: false,
-    route: "/singleproject",
+    route: "/proyectosimple",
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const tarjetas = [
       "Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit praesent ornare eu.",
     buttonText: "Ver Proyecto",
     reverseOrder: true,
-    route: "/singleproject",
+    route: "/proyectosimple",
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ const tarjetas = [
       "Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit praesent ornare eu.",
     buttonText: "Ver Proyecto",
     reverseOrder: false,
-    route: "/singleproject",
+    route: "/proyectosimple",
   },
   {
     id: 4,
@@ -48,7 +48,7 @@ const tarjetas = [
       "Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit praesent ornare eu.",
     buttonText: "Ver Proyecto",
     reverseOrder: true,
-    route: "/singleproject",
+    route: "/proyectosimple",
   },
   {
     id: 5,
@@ -58,7 +58,7 @@ const tarjetas = [
       "Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit praesent ornare eu.",
     buttonText: "Ver Proyecto",
     reverseOrder: false,
-    route: "/singleproject",
+    route: "/proyectosimple",
   },
 ];
 function ProyectosEnMarcha() {

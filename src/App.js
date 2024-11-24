@@ -118,7 +118,7 @@ function App() {
               }
             />
             <Route
-              path="/projects"
+              path="/proyectos"
               element={
                 <>
                   <HeaderMobile />
@@ -128,7 +128,7 @@ function App() {
               }
             />
             <Route
-              path="/singleproject"
+              path="/proyectosimple"
               element={
                 <>
                   <HeaderMobile />
@@ -140,7 +140,7 @@ function App() {
               }
             />
             <Route
-              path="/contact"
+              path="/contacto"
               element={
                 <>
                   <HeaderMobile />
@@ -150,7 +150,7 @@ function App() {
               }
             />
             <Route
-              path="/about"
+              path="/nosotros"
               element={
                 <>
                   <HeaderMobile />
@@ -164,7 +164,7 @@ function App() {
               }
             />
             <Route
-              path="/services"
+              path="/servicios"
               element={
                 <>
                   <HeaderMobile />
@@ -176,7 +176,7 @@ function App() {
               }
             />
             <Route
-              path="/impact"
+              path="/impacto"
               element={
                 <>
                   <HeaderMobile />
@@ -207,7 +207,7 @@ function App() {
               }
             />
             <Route
-              path="/projects"
+              path="/proyectos"
               element={
                 <>
                   <Header />
@@ -217,7 +217,7 @@ function App() {
               }
             />
             <Route
-              path="/contact"
+              path="/contacto"
               element={
                 <>
                   <Header />
@@ -227,7 +227,7 @@ function App() {
               }
             />
             <Route
-              path="/about"
+              path="/nosotros"
               element={
                 <>
                   <Header />
@@ -241,7 +241,7 @@ function App() {
               }
             />
             <Route
-              path="/services"
+              path="/servicios"
               element={
                 <>
                   <Header />
@@ -251,7 +251,7 @@ function App() {
               }
             />
             <Route
-              path="/impact"
+              path="/impacto"
               element={
                 <>
                   <Header />
@@ -261,7 +261,7 @@ function App() {
               }
             />
             <Route
-              path="/singleproject"
+              path="/proyectosimple"
               element={
                 <>
                   <Header />

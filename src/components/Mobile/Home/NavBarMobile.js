@@ -81,7 +81,7 @@ function NavBarMobile({ menuAbierto, toggleMenu }) {
           </div>
         </Link>
 
-        <Link to="/projects">
+        <Link to="/proyectos">
           <div
             className="flex items-center mt-[9px] px-6"
             style={{
@@ -111,7 +111,7 @@ function NavBarMobile({ menuAbierto, toggleMenu }) {
           </div>
         </Link>
 
-        <Link to="/services">
+        <Link to="/servicios">
           <div
             className="flex items-center mt-[9px] px-6"
             style={{
@@ -141,7 +141,7 @@ function NavBarMobile({ menuAbierto, toggleMenu }) {
           </div>
         </Link>
 
-        <Link to="/impact">
+        <Link to="/impacto">
           <div
             className="flex items-center mt-[9px] px-4"
             style={{
@@ -171,7 +171,7 @@ function NavBarMobile({ menuAbierto, toggleMenu }) {
           </div>
         </Link>
 
-        <Link to="/about">
+        <Link to="/nosotros">
           <div
             className="flex items-center mt-[9px] px-[20px]"
             style={{
@@ -201,7 +201,7 @@ function NavBarMobile({ menuAbierto, toggleMenu }) {
           </div>
         </Link>
 
-        <Link to="/contact">
+        <Link to="/contacto">
           <div
             className="flex items-center mt-[9px] px-4"
             style={{

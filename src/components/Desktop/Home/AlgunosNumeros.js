@@ -10,6 +10,7 @@ function AlgunosNumeros() {
   const [count2, setCount2] = useState(0);
   const [count3, setCount3] = useState(0);
   const [count4, setCount4] = useState(0);
+  const [hasStarted, setHasStarted] = useState(false);
   const ref = useRef(null);
 
   const finalCount1 = 35500;
@@ -37,27 +38,30 @@ function AlgunosNumeros() {
 
   // Función para reiniciar el contador
   const resetCounter = (setCount, finalCount) => {
-    setCount(0); // Reinicia el contador
-    countUp(finalCount, setCount); // Comienza el conteo nuevamente
+    setCount(0); 
+    countUp(finalCount, setCount); 
   };
 
   // Manejar el scroll para iniciar el conteo solo una vez
   useEffect(() => {
     const handleScroll = () => {
       const rect = ref.current.getBoundingClientRect();
-      const inView = rect.top >= 0 && rect.bottom <= window.innerHeight;
-      if (inView) {
+      const inView =
+        rect.top < window.innerHeight && rect.bottom > 0; // Parcialmente visible
+
+      if (inView && !hasStarted) {
+        setHasStarted(true); // Evita reiniciar múltiples veces
         countUp(finalCount1, setCount1);
         countUp(finalCount2, setCount2);
         countUp(finalCount3, setCount3);
         countUp(finalCount4, setCount4);
-        window.removeEventListener("scroll", handleScroll); // Para que no se dispare varias veces
       }
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [hasStarted]);
+
 
   return (
     <div ref={ref}>

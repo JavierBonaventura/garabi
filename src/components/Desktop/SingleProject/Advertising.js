@@ -1,15 +1,15 @@
 import React, { useState, useRef, useEffect } from "react";
 import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
-import advertisingImg from "../../../images/Desktop/advertising.png"; // Imagen principal
-import singleprojectslider1 from "../../../images/Desktop/singleprojectslider1.png"; // Imágenes adicionales
+import advertisingImg from "../../../images/Desktop/advertising.png"; 
+import singleprojectslider1 from "../../../images/Desktop/singleprojectslider1.png"; 
 import singleprojectslider2 from "../../../images/Desktop/singleprojectslider2.png";
 import singleprojectslider3 from "../../../images/Desktop/singleprojectslider3.png";
 import singleprojectslider4 from "../../../images/Desktop/singleprojectslider1.png";
 import singleprojectslider5 from "../../../images/Desktop/singleprojectslider2.png";
 import singleprojectslider6 from "../../../images/Desktop/singleprojectslider3.png";
 
-import botonDerecha from "../../../images/Desktop/botonDerecha.png"; // Flecha derecha
-import botonIzquierda from "../../../images/Desktop/botonIzquierda.png"; // Flecha izquierda
+import botonDerecha from "../../../images/Desktop/botonDerecha.png"; 
+import botonIzquierda from "../../../images/Desktop/botonIzquierda.png"; 
 
 const tarjetas = [
   {
@@ -59,26 +59,25 @@ const tarjetas = [
 function Advertising() {
   const carouselRef = useRef(null);
   const [isTransitioning, setIsTransitioning] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex] = useState(0);
 
-  const maxIndex = tarjetas.length - 3; // Ahora hay 3 tarjetas visibles, así que el índice máximo es el total - 3
-  const cardWidth = 323; // Ancho de una tarjeta (ajusta según tu diseño)
+  const cardWidth = 323; 
 
   
   // Manejar el siguiente carrusel
   const handleNext = () => {
 
-    if (isTransitioning || !carouselRef.current) return; // Comprobar que carouselRef no es null
+    if (isTransitioning || !carouselRef.current) return; 
     setIsTransitioning(true);
 
     const carousel = carouselRef.current;
     carousel.style.transition = "transform 0.5s ease-in-out";
-    carousel.style.transform = `translateX(-${cardWidth}px)`; // Mover hacia la izquierda
+    carousel.style.transform = `translateX(-${cardWidth}px)`; 
 
     setTimeout(() => {
       carousel.style.transition = "none";
-      carousel.style.transform = "translateX(0)"; // Volver al inicio
-      carousel.appendChild(carousel.firstChild); // Mover la tarjeta al final
+      carousel.style.transform = "translateX(0)"; 
+      carousel.appendChild(carousel.firstChild); 
       setIsTransitioning(false);
     }, 500);
   };
@@ -86,23 +85,22 @@ function Advertising() {
   // Manejar el anterior carrusel
   const handlePrev = () => {
 
-    if (isTransitioning || !carouselRef.current) return; // Comprobar que carouselRef no es null
+    if (isTransitioning || !carouselRef.current) return; 
     setIsTransitioning(true);
 
     const carousel = carouselRef.current;
     carousel.style.transition = "none";
-    carousel.style.transform = `translateX(-${cardWidth}px)`; // Preparar el desplazamiento
+    carousel.style.transform = `translateX(-${cardWidth}px)`; 
 
-    carousel.insertBefore(carousel.lastChild, carousel.firstChild); // Mover la tarjeta al inicio
+    carousel.insertBefore(carousel.lastChild, carousel.firstChild); 
 
     setTimeout(() => {
       carousel.style.transition = "transform 0.5s ease-in-out";
-      carousel.style.transform = "translateX(0)"; // Mover a la posición original
+      carousel.style.transform = "translateX(0)"; 
       setIsTransitioning(false);
     }, 10);
   };
 
-  // Asegurarnos de que el ref está disponible después de que el componente se haya montado
   useEffect(() => {
     if (carouselRef.current) {
       console.log("Carrusel montado y ref disponible");

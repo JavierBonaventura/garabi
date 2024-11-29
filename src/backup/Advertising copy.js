@@ -4,6 +4,10 @@ import advertisingImg from "../../../images/Desktop/advertising.png"; // Imagen 
 import singleprojectslider1 from "../../../images/Desktop/singleprojectslider1.png"; // Imágenes adicionales
 import singleprojectslider2 from "../../../images/Desktop/singleprojectslider2.png";
 import singleprojectslider3 from "../../../images/Desktop/singleprojectslider3.png";
+import singleprojectslider4 from "../../../images/Desktop/singleprojectslider1.png";
+import singleprojectslider5 from "../../../images/Desktop/singleprojectslider2.png";
+import singleprojectslider6 from "../../../images/Desktop/singleprojectslider3.png";
+
 import botonDerecha from "../../../images/Desktop/botonDerecha.png"; // Flecha derecha
 import botonIzquierda from "../../../images/Desktop/botonIzquierda.png"; // Flecha izquierda
 

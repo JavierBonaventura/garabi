@@ -42,49 +42,44 @@ const tarjetas = [
 function OtrosProyectos() {
   const carouselRef = useRef(null);
   const [isTransitioning, setIsTransitioning] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const maxIndex = tarjetas.length - 2;
-  const cardWidth = 499; // Ancho de una tarjeta (ajusta según tu diseño)
+  const cardWidth = 499; 
 
-  // Manejar el siguiente carrusel
   const handleNext = () => {
 
-    if (isTransitioning || !carouselRef.current) return; // Comprobar que carouselRef no es null
+    if (isTransitioning || !carouselRef.current) return; 
     setIsTransitioning(true);
 
     const carousel = carouselRef.current;
     carousel.style.transition = "transform 0.5s ease-in-out";
-    carousel.style.transform = `translateX(-${cardWidth}px)`; // Mover hacia la izquierda
+    carousel.style.transform = `translateX(-${cardWidth}px)`; 
 
     setTimeout(() => {
       carousel.style.transition = "none";
-      carousel.style.transform = "translateX(0)"; // Volver al inicio
-      carousel.appendChild(carousel.firstChild); // Mover la tarjeta al final
+      carousel.style.transform = "translateX(0)"; 
+      carousel.appendChild(carousel.firstChild); 
       setIsTransitioning(false);
     }, 500);
   };
 
-  // Manejar el anterior carrusel
   const handlePrev = () => {
 
-    if (isTransitioning || !carouselRef.current) return; // Comprobar que carouselRef no es null
+    if (isTransitioning || !carouselRef.current) return; 
     setIsTransitioning(true);
 
     const carousel = carouselRef.current;
     carousel.style.transition = "none";
-    carousel.style.transform = `translateX(-${cardWidth}px)`; // Preparar el desplazamiento
+    carousel.style.transform = `translateX(-${cardWidth}px)`; 
 
-    carousel.insertBefore(carousel.lastChild, carousel.firstChild); // Mover la tarjeta al inicio
+    carousel.insertBefore(carousel.lastChild, carousel.firstChild);
 
     setTimeout(() => {
       carousel.style.transition = "transform 0.5s ease-in-out";
-      carousel.style.transform = "translateX(0)"; // Mover a la posición original
+      carousel.style.transform = "translateX(0)"; 
       setIsTransitioning(false);
     }, 10);
   };
 
-  // Asegurarnos de que el ref está disponible después de que el componente se haya montado
   useEffect(() => {
     if (carouselRef.current) {
       console.log("Carrusel montado y ref disponible");

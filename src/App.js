@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 
+import Politicas from "./components/Desktop/Home/Politicas";
+
 //////////////////// DESKTOP //////////////////////
 // general
 import Header from "./components/Desktop/General/Header";
@@ -112,6 +114,7 @@ function App() {
                   <AlgunosNumerosMobile />
                   <NuestrosPoyectosMobile />
                   <ImpactoMobile />
+                  <Politicas />
                   <ContactanosMobile />
                   <FooterMobile />
                 </>
@@ -201,6 +204,7 @@ function App() {
                   <NuestrosProyectos />
                   <Historias />
                   <Impacto />
+                  <Politicas />
                   <EnMarcha />
                   <Footer />
                 </>

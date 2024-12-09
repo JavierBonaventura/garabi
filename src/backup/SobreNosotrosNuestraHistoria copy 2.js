@@ -4,38 +4,6 @@ import logoNuestraHistoria from "../../../images/Desktop/logoNuestraHistoria.png
 import arbolesProyectos from "../../../images/Desktop/arboles-proyectos-cortada.png";
 
 function SobreNosotrosNuestraHistoria() {
-  const [isDragging, setIsDragging] = useState(false);
-  const [startY, setStartY] = useState(0);
-  const [currentTranslate, setCurrentTranslate] = useState(0);
-
-  const handleMouseDown = (e) => {
-    e.preventDefault();
-    setIsDragging(true);
-    setStartY(e.clientY);
-  };
-
-  const handleMouseMove = (e) => {
-    if (!isDragging) return;
-
-    const distance = e.clientY - startY;
-    setCurrentTranslate(distance); // Actualiza el desplazamiento mientras arrastras.
-  };
-
-  const handleMouseUp = () => {
-    if (!isDragging) return;
-
-    setIsDragging(false);
-
-    // Decide el desplazamiento basado en la distancia arrastrada.
-    if (currentTranslate > 50) {
-      handlePrev(); // Arrastrar hacia abajo.
-    } else if (currentTranslate < -50) {
-      handleNext(); // Arrastrar hacia arriba.
-    }
-
-    setCurrentTranslate(0); // Resetea el desplazamiento.
-  };
-
   const carouselRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(1);
   const cardHeight = 162;
@@ -49,6 +17,28 @@ function SobreNosotrosNuestraHistoria() {
       handleNext(); // Desplazamiento hacia abajo
     } else {
       handlePrev(); // Desplazamiento hacia arriba
+    }
+  };
+
+  const startY = useRef(0);
+  const endY = useRef(0);
+
+  const handleTouchStart = (e) => {
+    startY.current = e.touches[0].clientY;
+    document.body.style.overflow = "hidden";
+  };
+
+  const handleTouchMove = (e) => {
+    e.preventDefault();
+    endY.current = e.touches[0].clientY;
+  };
+
+  const handleTouchEnd = () => {
+    document.body.style.overflow = "auto";
+    if (startY.current - endY.current > 50) {
+      handleNext();
+    } else if (endY.current - startY.current > 50) {
+      handlePrev();
     }
   };
 
@@ -99,7 +89,7 @@ function SobreNosotrosNuestraHistoria() {
         }}
       >
         <div
-          className="absolute z-30 w-[40vw] h-[24%] top-[8%] left-[56%] origin-top-left  "
+          className="absolute z-30 w-[40vw] h-[24%] -top-[0%] left-[56%] origin-top-left"
           style={{
             background:
               "linear-gradient(0deg, rgba(237, 242, 232, 0.00) 0%, #dfe8e0 130%)",
@@ -134,7 +124,7 @@ function SobreNosotrosNuestraHistoria() {
             </div>
 
             <div
-              className=""
+              className="border-black border-2"
               style={{
                 margin: 0,
                 display: "flex",
@@ -150,10 +140,9 @@ function SobreNosotrosNuestraHistoria() {
                   height: "460px",
                   overflow: "hidden",
                 }}
-                onMouseDown={handleMouseDown}
-                onMouseMove={handleMouseMove}
-                onMouseUp={handleMouseUp}
-                onMouseLeave={handleMouseUp}
+       
+
+               
               >
                 <div ref={carouselRef} className="flex flex-col space-y-8 z-20">
                   {[2009, 2010, 2011, 2012].map((year, index) => {
@@ -184,51 +173,81 @@ function SobreNosotrosNuestraHistoria() {
                   })}
                 </div>
               </div>
-              <div
-                  className=""
-                  style={{
-                    position: "absolute",
-                    right: "6%",
-                    top: "49%",
-                    transform: "translateY(-50%)",
-                  }}
-                >
-                  <div className=""
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      justifyContent: "space-between",
-                      height: "100px",
-                    }}
-                  >
-                    {[...Array(totalCards)].map((_, index) => (
-                      <div
-                        key={index}
-                        style={{
-                          width: "10px",
-                          height: "10px",
-                          borderRadius: "50%",
-                          border: "2px solid #00942C",
-                          backgroundColor:
-                            index === activeIndex ? "#00942C" : "#FFF",
-                        }}
-                      />
-                    ))}
-                  </div>
-                </div>
+            </div>
 
+            <div
+              className=""
+              style={{
+                position: "absolute",
+                right: "4%",
+                top: "25%",
+                transform: "translateY(-50%)",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                  height: "100px",
+                }}
+              >
+                {[...Array(totalCards)].map((_, index) => (
+                  <div
+                    key={index}
+                    style={{
+                      width: "10px",
+                      height: "10px",
+                      borderRadius: "50%",
+                      border: "2px solid #00942C",
+                      backgroundColor:
+                        index === activeIndex ? "#00942C" : "#FFF",
+                    }}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>
-        <div className="relative w-full pb-20 mt-2  ">
+
+        <div className="relative w-full pb-20 mt-2">
           {/* Gradiente superior */}
           <div
-            className="absolute z-30 w-full h-[150%] top-[-86%] left-0 origin-top-left "
+            className="absolute z-30 w-full h-[18%] top-[-16%] left-0 origin-top-left"
             style={{
               background:
                 "linear-gradient(00deg, #dfe8e0 0%, rgba(237, 242, 232, 0.00) 100%)",
             }}
           />
+
+          {/* Imagen */}
+          <img
+            className="z-10 w-full"
+            src={arbolesProyectos}
+            alt="Árboles Proyectos"
+          />
+
+          {/* Gradiente inferior */}
+          <div
+            className="absolute top-0 right-0 w-full h-[300px] origin-top-left"
+            style={{
+              background:
+                "linear-gradient(00deg, rgba(237, 242, 232, 0.00) 0%, #dfe8e0 100%)",
+            }}
+          />
+
+          {/* Contenido central */}
+          <div className="relative flex flex-col justify-center items-center text-center">
+            <div className="text-center text-[#00942C] font-fira-sans text-[40px] font-bold leading-[50px] max-w-[615px] mt-[-40%]">
+              Contáctanos ahora para darle forma a tu futuro verde
+            </div>
+
+            <button className="mt-12 flex justify-center items-center bg-white border border-[#00942C] rounded-[5px] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#D1D1D1] hover:-translate-y-0.5 w-[245.25px] h-[50px]">
+              <span className="text-[#00942C] text-center font-fira-code text-[14px] font-normal uppercase tracking-[4px]">
+                Contáctanos
+              </span>
+            </button>
+          </div>
         </div>
       </div>
     </div>

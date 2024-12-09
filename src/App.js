@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 
-import Politicas from "./components/Desktop/Home/Politicas";
 
 //////////////////// DESKTOP //////////////////////
 // general
@@ -27,6 +26,7 @@ import SobreNosotrosArbol from "./components/Desktop/About/SobreNosotrosArbol";
 import SobreNosotrosVideo from "./components/Desktop/About/SobreNosotrsVideo";
 import SobreNosotrosValores from "./components/Desktop/About/SobreNosotrosValores";
 import SobreNosotrosNuestraHistoria from "./components/Desktop/About/SobreNosotrosNuestraHistoria";
+import SobreNosotrosNuestraHistoriaArboles from "./components/Desktop/About/SobreNosotrosNuestraHistoriaArboles"
 // Servicios
 import ServiciosOfrecidos from "./components/Desktop/Services/ServiciosOfrecidos";
 // Impacto
@@ -35,6 +35,8 @@ import Imapcto from "./components/Desktop/Impacto/Impacto";
 import Fideicomiso from "./components/Desktop/SingleProject/Fideicomiso";
 import Advertising from "./components/Desktop/SingleProject/Advertising";
 import OtrosProyectos from "./components/Desktop/SingleProject/OtrosProyectos";
+// Politicas
+import Politicas from "./components/Desktop/Home/Politicas";
 
 /////////////////// MOBILE ////////////////////////////
 // Home
@@ -67,6 +69,7 @@ import AsesoramientoMobile from "./components/Mobile/Servicios/AsesoramientoMobi
 import ArbolesMobile from "./components/Mobile/Servicios/ArbolesMobile";
 // Impacto
 import ImpactoMobileMain from "./components/Mobile/Impacto/ImpactoMobileMain";
+
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -240,6 +243,7 @@ function App() {
                   <SobreNosotrosVideo />
                   <SobreNosotrosValores />
                   <SobreNosotrosNuestraHistoria />
+                  <SobreNosotrosNuestraHistoriaArboles />
                   <Footer />
                 </>
               }

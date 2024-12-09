@@ -18,13 +18,13 @@ function Servicios() {
         >
           <div>
             <div className="relative mt-[100px] h-[76px]">
-              <div className="absolute left-[12%] text-black text-[60px] font-fira-sans font-black leading-[60px] tracking-[-1px]">
+              <div className="absolute right-1/2 transform translate-x-[12px] w-[550px] text-black text-[60px] font-fira-sans font-black leading-[60px] tracking-[-1px]">
                 Servicios
               </div>
             </div>
 
             <div className="relative mt-[15px] h-[70px]">
-              <div className="absolute left-[12%]  w-[711px]  text-black font-fira-sans text-[18px] font-normal leading-[28px]">
+              <div className="absolute right-1/2 transform translate-x-[172px]   w-[711px]  text-black font-fira-sans text-[18px] font-normal leading-[28px]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
                 interdum erat nec. Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit. Aliquam interdum erat nec.

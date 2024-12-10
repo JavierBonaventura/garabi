@@ -1,19 +1,26 @@
 import React from "react";
-import fondoHome from "../../../images/Desktop/fondo-home.png";
+import Video from "../../../images/Desktop/hero-garabi-alta.mp4";
 
 function Lideres() {
   return (
-    <div
-      className="relative h-[666px] bg-cover bg-center"
-      style={{
-        backgroundImage: `url(${fondoHome}), linear-gradient(rgba(0, 148, 44, 0.08), rgba(0, 148, 44, 0.08))`,
-      }}
-    >
+    <div className="relative h-[666px]">
+      {/* Video de fondo */}
+      <video
+        className="absolute top-0 left-0 w-full h-full object-cover object-top"
+        src={Video}
+        autoPlay
+        loop
+        muted
+        playsInline
+      ></video>
+
+      {/* Overlay oscuro */}
+      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-25"></div>
 
       {/* Contenedor para el texto "Líderes en forestación" */}
-      <div className="absolute flex items-center justify-center w-[356px] h-[126px] left-[12%] top-[168px]">
+      <div className="absolute flex items-center justify-center h-[126px] left-[12%] top-[168px]">
         <h1 className="text-white font-fira-sans text-[60px] font-black leading-[60px] tracking-[-1px] text-left">
-          Líderes en forestación
+          Generamos valor creando <br /> un mundo más verde
         </h1>
       </div>
 

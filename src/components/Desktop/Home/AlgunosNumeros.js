@@ -13,10 +13,10 @@ function AlgunosNumeros() {
   const [hasStarted, setHasStarted] = useState(false);
   const ref = useRef(null);
 
-  const finalCount1 = 35500;
-  const finalCount2 = 7204;
-  const finalCount3 = 437;
-  const finalCount4 = 123;
+  const finalCount1 = 47865;
+  const finalCount2 = 25926;
+  const finalCount3 = 1840;
+  const finalCount4 = 150;
 
   // Tiempo total de referencia (en milisegundos)
   const totalDuration = 2000;
@@ -38,16 +38,15 @@ function AlgunosNumeros() {
 
   // Función para reiniciar el contador
   const resetCounter = (setCount, finalCount) => {
-    setCount(0); 
-    countUp(finalCount, setCount); 
+    setCount(0);
+    countUp(finalCount, setCount);
   };
 
   // Manejar el scroll para iniciar el conteo solo una vez
   useEffect(() => {
     const handleScroll = () => {
       const rect = ref.current.getBoundingClientRect();
-      const inView =
-        rect.top < window.innerHeight && rect.bottom > 0; // Parcialmente visible
+      const inView = rect.top < window.innerHeight && rect.bottom > 0; // Parcialmente visible
 
       if (inView && !hasStarted) {
         setHasStarted(true); // Evita reiniciar múltiples veces
@@ -61,7 +60,6 @@ function AlgunosNumeros() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [hasStarted]);
-
 
   return (
     <div ref={ref}>
@@ -150,7 +148,7 @@ function AlgunosNumeros() {
                   {count3} M.
                 </div>
                 <div className="text-[#000] text-center font-fira-sans text-[20.711px] font-medium tracking-[5.178px] uppercase pt-[20px] leading-none">
-                  USD en activos administrados
+                  hectáreas con yerba mate
                 </div>
               </div>
             </div>
@@ -171,7 +169,7 @@ function AlgunosNumeros() {
               />
               <div className="w-[219px] h-[130.083px] flex-shrink-0 flex flex-col justify-center items-center pt-[55px]">
                 <div className="text-[#00942C] text-center font-fira-sans text-[62.133px] font-extrabold leading-[41.422px] pt-12">
-                  {count4}
+                  + {count4}
                 </div>
                 <div className="text-[#000] text-center font-fira-sans text-[20.711px] font-medium tracking-[5.178px] uppercase pt-[20px] leading-none">
                   empleados directos e indirectos

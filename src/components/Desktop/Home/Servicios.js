@@ -1,7 +1,7 @@
 import React from "react";
 import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
-import recuadroUno from "../../../images/Desktop/recuadroUno.png";
-import recuadroDos from "../../../images/Desktop/recuadroDos.png";
+import recuadroUno from "../../../images/Desktop/asesoramiento-integral.jpg";
+import recuadroDos from "../../../images/Desktop/asesoramiento-productivo.jpg";
 
 function Servicios() {
   return (
@@ -24,22 +24,23 @@ function Servicios() {
             </div>
 
             <div className="relative mt-[15px] h-[70px]">
-              <div className="absolute right-1/2 transform translate-x-[172px]   w-[711px]  text-black font-fira-sans text-[18px] font-normal leading-[28px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                interdum erat nec. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Aliquam interdum erat nec.
+              <div className="absolute right-1/2 transform translate-x-[172px] w-[711px]  text-black font-fira-sans text-[18px] font-normal leading-[28px]">
+                La flexibilidad, agilidad de nuestra organización sumado a la
+                experiencia de más de 40 años en el sector forestal nos permite
+                planificar y ejecutar proyectos a la medida y necesidades de
+                cada uno de nuestros clientes.
               </div>
             </div>
 
             {/* Contenedor de los dos rectángulos centrados horizontalmente */}
-            <div className="flex justify-center mt-[50px] space-x-[30px]">
+            <div className="flex justify-center mt-[80px] space-x-[30px]">
               {/* Primer rectángulo */}
               <div className="relative w-[527px] h-[453.484px] flex-shrink-0 rounded-[21.323px] bg-[#DAD8CB] shadow-[13.327px_13.327px_23.322px_6.663px_rgba(2,2,2,0.30)] ">
                 {/* Imagen en la parte superior del rectángulo */}
                 <img
                   src={recuadroUno}
                   alt="Recuadro uno"
-                  className="absolute top-[-30px] left-1/2 transform -translate-x-1/2"
+                  className="absolute top-[-30px] left-1/2 transform -translate-x-1/2 rounded-t-2xl"
                 />
 
                 {/* Texto debajo de la imagen */}
@@ -50,9 +51,9 @@ function Servicios() {
 
                 {/* Texto adicional debajo de "Asesoramiento " */}
                 <div className="text-[#464646] text-center  text-[20px] font-normal leading-[23px] tracking-[-1.333px] absolute top-[270px] left-1/2 transform -translate-x-1/2 w-[452.381px] h-[62.274px]">
-                  Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit
-                  praesent ornare eu. Vehicula feugiat vel porttitor pretium
-                  nisl facilisi. Pellentesque pharetra id placerat.
+                  Nuestros clientes obtienen los beneficios de ser los dueños de
+                  las forestaciones sin ninguna de las responsabilidades de la
+                  administración y el manejo.
                 </div>
 
                 {/* Botón debajo del texto */}
@@ -69,7 +70,7 @@ function Servicios() {
                 <img
                   src={recuadroDos}
                   alt="Recuadro uno"
-                  className="absolute top-[-30px] left-1/2 transform -translate-x-1/2"
+                  className="absolute top-[-30px] left-1/2 transform -translate-x-1/2  rounded-t-2xls"
                 />
 
                 {/* Texto debajo de la imagen */}
@@ -80,9 +81,9 @@ function Servicios() {
 
                 {/* Texto adicional debajo de "Asesoramiento " */}
                 <div className="text-[#464646] text-center  text-[20px] font-normal leading-[23px] tracking-[-1.333px] absolute top-[270px] left-1/2 transform -translate-x-1/2 w-[452.381px] h-[62.274px]">
-                  Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit
-                  praesent ornare eu. Vehicula feugiat vel porttitor pretium
-                  nisl facilisi. Pellentesque pharetra id placerat.
+                  Nuestros clientes obtienen los beneficios de ser los dueños de
+                  las forestaciones sin ninguna de las responsabilidades de la
+                  administración y el manejo.
                 </div>
 
                 {/* Botón debajo del texto */}

@@ -35,8 +35,8 @@ function Footer() {
               </Link>
 
               <div className="w-[304.457px] text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-[20px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                nisl augue, finibus sed magna varius, egestas varius ex.
+                Especialistas en Forestación. Administramos y asesoramos
+                proyectos forestales de nuestros clientes.
               </div>
             </div>
 
@@ -81,15 +81,36 @@ function Footer() {
               <div className="text-black font-fira-sans text-[14px] font-medium uppercase tracking-[4px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
                 CONTACTO
               </div>
-              <div className="w-[213px] h-[139px] text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-[20px]">
+              <div className="w-[350px] h-[139px] text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-[20px]">
+                <a
+                  href="https://api.whatsapp.com/send?phone=541130254376"
+                  target="_blank"
+                >
+                  <p className="mb-[10px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
+                    +54 9 11 3025-4376
+                  </p>
+                </a>
                 <p className="mb-[10px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
-                  {" "}
-                  +72 699 241-395
+                  contacto@grupogarabi.com.ar
                 </p>
-                <p className="mb-[10px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
-                  alexei@getcraftwork.com
-                </p>
-                <div className="absolute flex items-center">
+                <a
+                  href="https://maps.app.goo.gl/ZweJ6Q1BHQyBzHFW6"
+                  target="_blank"
+                >
+                  <p className="mb-[10px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
+                    Dardo Rocha 986, Oficina 104, Martinez
+                  </p>
+                </a>
+
+                <a
+                  href="https://maps.app.goo.gl/qvvduCztbkSRDXUv6"
+                  target="_blank"
+                >
+                  <p className="mb-[10px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
+                    Ruta Nac. 120 - Km 2, Gobernador Virasoro - Corrientes
+                  </p>
+                </a>
+                <div className="absolute flex items-center hidden">
                   <div className="flex items-center">
                     <a
                       href="https://www.linkedin.com"

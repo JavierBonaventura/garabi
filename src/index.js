@@ -1,12 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import wapp from "../src/images/Desktop/whatsapp.png";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    <a
+      href="https://api.whatsapp.com/send?phone=541130254376"
+      target="_blank"
+      className="fixed right-10 bottom-10 z-40"
+    >
+      <img
+        src={wapp}
+        className="w-16 hover:scale-110 transition-all ease-in-out duration-300"
+      ></img>
+    </a>
     <App />
   </React.StrictMode>
 );

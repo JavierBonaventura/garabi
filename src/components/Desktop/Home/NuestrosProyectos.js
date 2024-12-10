@@ -13,37 +13,45 @@ function Servicios() {
   const cards = [
     {
       id: 1,
-      title: "Proyecto Ciriaco Agro Alba",
-      description:
-        "Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit praesent ornare eu. Vehicula feugiat vel porttitor pretium nisl facilisi. Pellentesque pharetra id placerat.",
+      title: "Proyecto Fideicomiso San Antonio",
+      description: "Forestación y Yerba Mate",
       image: gallery1,
     },
     {
       id: 2,
-      title: "Proyecto Fideicomiso San Antonio.",
-      description:
-        "Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit praesent ornare eu. Vehicula feugiat vel porttitor pretium nisl facilisi. Pellentesque pharetra id placerat.",
+      title: "Proyecto Fideicomiso Garavi Eidico",
+      description: "Forestación",
       image: gallery2,
     },
     {
       id: 3,
-      title: "Proyecto Biocor.",
-      description:
-        "Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit praesent ornare eu. Vehicula feugiat vel porttitor pretium nisl facilisi. Pellentesque pharetra id placerat.",
+      title: "Proyecto Forestal San Vicente",
+      description: "Forestación",
       image: gallery3,
     },
     {
-      id: 1,
-      title: "Proyecto Ciriaco Agro Alba",
-      description:
-        "Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit praesent ornare eu. Vehicula feugiat vel porttitor pretium nisl facilisi. Pellentesque pharetra id placerat.",
+      id: 4,
+      title: "Proyecto Fideicomiso Sylvestree",
+      description: "Forestación",
       image: gallery1,
     },
     {
-      id: 2,
-      title: "Proyecto Fideicomiso San Antonio.",
-      description:
-        "Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit praesent ornare eu. Vehicula feugiat vel porttitor pretium nisl facilisi. Pellentesque pharetra id placerat.",
+      id: 5,
+      title: "Proyecto Fideicomiso Ecoyerba",
+      description: "Yerba Mate",
+      image: gallery2,
+    },
+    {
+      id: 6,
+      title: "Proyecto Rincón Chico",
+      description: "Forestación, Yerba Mate, Arroz y Ganadería",
+      image: gallery2,
+    },
+    ,
+    {
+      id: 7,
+      title: "Proyecto Fideicomiso Agrogarabi",
+      description: "Yerba Mate",
       image: gallery2,
     },
   ];
@@ -153,7 +161,7 @@ function Servicios() {
               {cards.map((card, index) => (
                 <div
                   key={index}
-                  className="relative w-[409.736px] h-[514.89px] flex-shrink-0 transition-transform duration-500"
+                  className="relative w-[409.736px] h-[480px] flex-shrink-0 transition-transform duration-500"
                   style={{
                     borderRadius: "28.132px",
                     background: "#DAD8CB",

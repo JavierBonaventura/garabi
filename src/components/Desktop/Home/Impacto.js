@@ -24,9 +24,10 @@ function Impacto() {
           </div>
 
           <div className="w-[794px] h-[70px] flex-shrink-0 mt-[5px] text-black font-fira-sans text-[24px] font-normal leading-[28px] text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            interdum erat nec. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Aliquam interdum erat nec.
+            En Grupo Garabí, buscamos gestionar proyectos forestales que
+            promuevan la conservación del medio ambiente, fomenten la
+            biodiversidad y generen un impacto positivo y sostenible en las
+            comunidades locales. Hacemos foco en estos tres pilares.
           </div>
 
           {/* Imagen centrada */}
@@ -51,11 +52,12 @@ function Impacto() {
               </div>
               <div className="flex flex-col w-1/2 p-2">
                 <div className="flex-shrink-0 w-[271.171px] h-[30px] text-[#443838] text-[18px] font-fira-sans font-semibold leading-[28px] tracking-tight">
-                  Sustentabilidad
+                  Medio ambiente
                 </div>
                 <div className="flex-shrink-0 mt-2 w-[270.203px] h-[112px] text-[#443838] text-[18px] font-fira-sans font-normal leading-[28px]">
-                  Proof-of-Work protocols are slow, expensive, unscalable, and
-                  environmentally harmful. And we have solved that problem.
+                  Implementamos prácticas de manejo forestal sostenible,
+                  haciendo un uso eficiente de los recursos naturales y
+                  protegiendo la biodiversidad de la zona.
                 </div>
               </div>
             </div>
@@ -72,11 +74,11 @@ function Impacto() {
               </div>
               <div className="flex flex-col w-1/2 p-2">
                 <div className="flex-shrink-0 w-[271.171px] h-[30px] text-[#443838] text-[22px] font-fira-sans font-semibold leading-[32px]">
-                  Seguridad
+                  Social
                 </div>
                 <div className="flex-shrink-0 mt-2 w-[270.203px] h-[112px] text-[#443838] text-[18px] font-fira-sans font-normal leading-[28px]">
-                  Blockchain applications are complex and difficult to
-                  understand for developers. But we will make it clear.
+                  Trabajamos estrechamente con las comunidades locales,
+                  promoviendo su desarrollo social y económico.
                 </div>
               </div>
             </div>
@@ -93,11 +95,11 @@ function Impacto() {
               </div>
               <div className="flex flex-col w-1/2 p-2">
                 <div className="flex-shrink-0 w-[271.171px] h-[30px] text-[#443838] text-[22px] font-fira-sans font-semibold leading-[32px]">
-                  Comunidad
+                  Económico
                 </div>
                 <div className="flex-shrink-0 mt-2 w-[270.203px] h-[112px] text-[#443838] text-[18px] font-fira-sans font-normal leading-[28px]">
-                  Blockchain economies are slices and cannot transfer assets
-                  between each other. Created agreement now allows it.
+                  Impulsamos la economía circular y la creación de cadenas de
+                  valor que generen ingresos de manera responsable.
                 </div>
               </div>
             </div>

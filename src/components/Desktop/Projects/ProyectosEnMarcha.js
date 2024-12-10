@@ -14,8 +14,7 @@ const tarjetas = [
     id: 1,
     imageSrc: tarjeta1Proyectos1,
     title: "Fideicomiso San Antonio",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit praesent ornare eu.",
+    description: "Forestación y Yerba Mate",
     buttonText: "Ver Proyecto",
     reverseOrder: false,
     route: "/proyectosimple",
@@ -23,9 +22,8 @@ const tarjetas = [
   {
     id: 2,
     imageSrc: tarjeta2Proyectos2,
-    title: "Fideicomiso San Antonio",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit praesent ornare eu.",
+    title: "Fideicomiso Garavi Eidico",
+    description: "Forestación",
     buttonText: "Ver Proyecto",
     reverseOrder: true,
     route: "/proyectosimple",
@@ -33,9 +31,8 @@ const tarjetas = [
   {
     id: 3,
     imageSrc: tarjeta3Proyectos3,
-    title: "Fideicomiso San Antonio",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit praesent ornare eu.",
+    title: "Forestal San Vicente",
+    description: "Forestación",
     buttonText: "Ver Proyecto",
     reverseOrder: false,
     route: "/proyectosimple",
@@ -43,9 +40,8 @@ const tarjetas = [
   {
     id: 4,
     imageSrc: tarjeta4Proyectos4,
-    title: "Fideicomiso San Antonio",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit praesent ornare eu.",
+    title: "Fideicomiso Sylvestree",
+    description: "Forestación",
     buttonText: "Ver Proyecto",
     reverseOrder: true,
     route: "/proyectosimple",
@@ -53,9 +49,27 @@ const tarjetas = [
   {
     id: 5,
     imageSrc: tarjeta5Proyectos5,
-    title: "Fideicomiso San Antonio",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit praesent ornare eu.",
+    title: "Fideicomiso Ecoyerba",
+    description: "Yerba Mate",
+    buttonText: "Ver Proyecto",
+    reverseOrder: false,
+    route: "/proyectosimple",
+  },
+
+  {
+    id: 6,
+    imageSrc: tarjeta5Proyectos5,
+    title: "Rincón Chico",
+    description: "Forestación, Yerba Mate, Arroz y Ganadería",
+    buttonText: "Ver Proyecto",
+    reverseOrder: true,
+    route: "/proyectosimple",
+  },
+  {
+    id: 7,
+    imageSrc: tarjeta5Proyectos5,
+    title: "Fideicomiso Agrogarabi",
+    description: "Yerba Mate",
     buttonText: "Ver Proyecto",
     reverseOrder: false,
     route: "/proyectosimple",

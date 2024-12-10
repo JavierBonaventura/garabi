@@ -203,7 +203,6 @@ function App() {
                   <Desde1976 />
                   <AlgunosNumeros />
                   <NuestrosProyectos />
-
                   <Impacto />
                   <Politicas />
                   <EnMarcha />

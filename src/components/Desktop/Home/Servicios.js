@@ -70,7 +70,7 @@ function Servicios() {
                 <img
                   src={recuadroDos}
                   alt="Recuadro uno"
-                  className="absolute top-[-30px] left-1/2 transform -translate-x-1/2  rounded-t-2xls"
+                  className="absolute top-[-30px] left-1/2 transform -translate-x-1/2  rounded-t-2xl"
                 />
 
                 {/* Texto debajo de la imagen */}
@@ -81,9 +81,9 @@ function Servicios() {
 
                 {/* Texto adicional debajo de "Asesoramiento " */}
                 <div className="text-[#464646] text-center  text-[20px] font-normal leading-[23px] tracking-[-1.333px] absolute top-[270px] left-1/2 transform -translate-x-1/2 w-[452.381px] h-[62.274px]">
-                  Nuestros clientes obtienen los beneficios de ser los dueños de
-                  las forestaciones sin ninguna de las responsabilidades de la
-                  administración y el manejo.
+                  Buscamos optimizar el manejo de los bosques, promoviendo el
+                  uso sostenible de los productos forestales, maximizando la
+                  rentabilidad de nuestros clientes.
                 </div>
 
                 {/* Botón debajo del texto */}

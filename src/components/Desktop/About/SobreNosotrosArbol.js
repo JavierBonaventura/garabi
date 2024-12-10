@@ -43,16 +43,19 @@ function SobreNosotrosArbol() {
 
               {/* Texto de descripción bajo "Visión" */}
               <p className="absolute left-[-16vw] transform -translate-y-1/2 top-[80%] font-fira-sans translate-x-1/2 z-20 pb-2 text-black text-[1.25vw] leading-[2vw] w-[17.5vw]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                interdum erat nec commodo imperdiet. Duis libero nisi, mollis
-                quis urna ornare, feugiat egestas nunc.
+                Convertirnos en una empresa líder y referente dentro del sector.
+                Brindando la mejor calidad en la gestión forestal. Sostener este
+                prestigio a lo largo del tiempo manteniendo nuestro compromiso
+                con la preservación del medio ambiente. Y mejorando la calidad
+                de vida de las comunidades locales actuales y futuras.
               </p>
 
               {/* Texto de descripción bajo "Trayectoria" (justificado a la derecha) */}
               <p className="absolute right-[-5vw] transform -translate-y-1/2 top-[32%] font-fira-sans translate-x-1/2 z-20 pb-2 text-black text-[1.25vw] leading-[2vw] w-[18vw] text-right">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                interdum erat nec commodo imperdiet. Duis libero nisi, mollis
-                quis urna ornare, feugiat egestas nunc.
+                Hace más de 40 años Grupo Garabí brinda un servicio
+                personalizado, adecuado a las necesidades de sus clientes
+                buscando maximizar de manera eficiente y sustentable el
+                rendimiento de sus proyectos agro forestales.
               </p>
 
               {/* Línea a la derecha */}

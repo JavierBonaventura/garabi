@@ -13,46 +13,37 @@ function Servicios() {
   const cards = [
     {
       id: 1,
-      title: "Proyecto Fideicomiso San Antonio",
-      description: "Forestación y Yerba Mate",
+      title: "Proyectos Forestales",
+      description:
+        "Plantaciones de pino y/o eucaliptus en campos propios o arrendados. Con la posibilidad de incorporar hacienda propia o de terceros como complemento.",
       image: gallery1,
     },
     {
       id: 2,
-      title: "Proyecto Fideicomiso Garavi Eidico",
-      description: "Forestación",
+      title: "Proyectos Yerbatero/Forestal",
+      description:
+        "Se trata de proyectos de plantaciones de pino y/o eucaliptus combinado con yerba mate en las lomas coloradas.",
       image: gallery2,
     },
     {
       id: 3,
-      title: "Proyecto Forestal San Vicente",
-      description: "Forestación",
+      title: "Proyectos Yerba Mate",
+      description: "Son 100% plantaciones de yerba mate.",
       image: gallery3,
     },
     {
       id: 4,
-      title: "Proyecto Fideicomiso Sylvestree",
-      description: "Forestación",
+      title: "Proyectos Mixtos",
+      description:
+        "De acuerdo a las características propias del campo y del suelo se pueden incorporar más actividades además de la forestación y la yerba, como el arroz y la ganadería.",
       image: gallery1,
     },
     {
-      id: 5,
-      title: "Proyecto Fideicomiso Ecoyerba",
-      description: "Yerba Mate",
-      image: gallery2,
-    },
-    {
-      id: 6,
-      title: "Proyecto Rincón Chico",
-      description: "Forestación, Yerba Mate, Arroz y Ganadería",
-      image: gallery2,
-    },
-    ,
-    {
-      id: 7,
-      title: "Proyecto Fideicomiso Agrogarabi",
-      description: "Yerba Mate",
-      image: gallery2,
+      id: 1,
+      title: "Proyectos Forestales",
+      description:
+        "Plantaciones de pino y/o eucaliptus en campos propios o arrendados. Con la posibilidad de incorporar hacienda propia o de terceros como complemento.",
+      image: gallery1,
     },
   ];
 
@@ -161,7 +152,7 @@ function Servicios() {
               {cards.map((card, index) => (
                 <div
                   key={index}
-                  className="relative w-[409.736px] h-[480px] flex-shrink-0 transition-transform duration-500"
+                  className="relative w-[409.736px] h-[520px] flex-shrink-0 transition-transform duration-500"
                   style={{
                     borderRadius: "28.132px",
                     background: "#DAD8CB",

@@ -5,25 +5,24 @@ import logoTrayectoria from "../../../images/Desktop/logoTrayectoria.png";
 import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
 import arbolesProyectos from "../../../images/Desktop/arboles-proyectos.png";
 
-
 const tarjetas = [
   {
     logo: logoCandado,
-    titulo: "Confianza",
+    titulo: "GESTIÓN FORESTAL SOSTENIBLE",
     descripcion:
-      "This product's simple design focuses on videos and standout quotes from customers.",
+      "La empresa prioriza prácticas sostenibles que garanticen la salud y la productividad a largo plazo de los bosques.",
   },
   {
     logo: logoVision,
-    titulo: "Visión",
+    titulo: "CONSERVACIÓN AMBIENTAL",
     descripcion:
-      "This product's simple design focuses on videos and standout quotes from customers.",
+      "La empresa tiene como objetivo proteger la biodiversidad, preservar los ecosistemas y mitigar el cambio climático a través de sus buenas prácticas forestales.",
   },
   {
     logo: logoTrayectoria,
-    titulo: "Trayectoria",
+    titulo: "DESARROLLO LOCAL",
     descripcion:
-      "This product's simple design focuses on videos and standout quotes from customers.",
+      "La empresa da prioridad al bienestar de las comunidades locales, los pueblos originarios y los trabajadores involucrados en las operaciones forestales. ",
   },
 ];
 
@@ -91,5 +90,3 @@ function SobreNosotrosValores() {
 }
 
 export default SobreNosotrosValores;
-
-

@@ -124,7 +124,7 @@ function SobreNosotrosNuestraHistoria() {
                 quis urna ornare, feugiat egestas nunc.
               </p>
 
-              <button className="w-[245.25px] h-[50px] bg-[#00942C] rounded-[5px] mt-[50px] flex justify-center items-center cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5">
+              <button className="w-[245.25px] hidden h-[50px] bg-[#00942C] rounded-[5px] mt-[50px] flex justify-center items-center cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5">
                 <div className="z-30 w-[245.25px] h-[16px] flex flex-col justify-center">
                   <span className="text-white text-center font-fira-sans text-[14px] font-normal uppercase tracking-[4px]">
                     Ver video
@@ -156,67 +156,84 @@ function SobreNosotrosNuestraHistoria() {
                 onMouseLeave={handleMouseUp}
               >
                 <div ref={carouselRef} className="flex flex-col space-y-8 z-20">
-                  {[2009, 2010, 2011, 2012].map((year, index) => {
-                    const opacity = index === activeIndex ? 1 : 0.5;
-                    return (
-                      <div
-                        key={index}
-                        className="w-[427.385px] h-[132px] rounded-[4px] border-2 border-[#00942C] bg-[#F5F4FF] flex items-center p-2"
-                      >
-                        <img
-                          src={logoNuestraHistoria}
-                          alt="Logo Nuestra Historia"
-                          className="w-[79px] h-[88.545px] flex-shrink-0 mr-8"
-                        />
+                  {[1976, 1983, 2001, 2012, 2014, 2015, 2018, 2021, 2023].map(
+                    (year, index) => {
+                      const opacity = index === activeIndex ? 1 : 0.5;
+
+                      // Define los textos por año
+                      const yearTexts = {
+                        1976: "Grupo Garabí comienza su actividad con la administración de dos establecimientos forestales, las localidades de Loreto y Santa Rosa.",
+                        1983: "La empresa incorpora a su administración dos nuevas sociedades en la localidad de Gobernador Virasoro. Cabe destacar que tres de estas empresas continúan bajo la administración de GG.",
+                        2001: "Alianza estratégica con el grupo Eidico en el manejo de proyectos productivos.",
+                        2012: "Captación de los primeros proyectos “family funds” de origen europeo y primeros clientes con administración integral por parte de grupo Garabi.",
+                        2014: "Alianza con establecimiento Las Marías y primeros proyectos de plantación de yerba mate.",
+                        2015: "Gran crecimientos clientes europeos .",
+                        2018: "Incorporación socio belga a Grupo Garabi.",
+                        2021: " Se duplica la superficie administrada con el ingreso de un grupo austriaco a GG. Sociedad estratégica con grupo industrial austriaco - belga ",
+                        2023: "Sociedad estratégica con grupo industrial de origen francés y belga.",
+                      };
+
+                      return (
                         <div
-                          style={{ display: "flex", flexDirection: "column" }}
+                          key={index}
+                          className="w-[427.385px] h-[132px] rounded-[4px] border-2 border-[#00942C] bg-[#F5F4FF] flex items-center p-2"
+                          style={{ opacity }}
                         >
-                          <span className="text-[#000] font-fira-sans text-[22px] font-medium leading-[32px]">
-                            {year}
-                          </span>
-                          <p className="w-[269.034px] h-[49px] text-[#000] font-fira-sans text-[18px] font-normal leading-[28px]">
-                            Esto es lo que hicimos en el año y los logros que
-                            conseguimos.
-                          </p>
+                          <img
+                            src={logoNuestraHistoria}
+                            alt="Logo Nuestra Historia"
+                            className="w-[79px] h-[88.545px] flex-shrink-0 mr-8"
+                          />
+                          <div
+                            style={{ display: "flex", flexDirection: "column" }}
+                          >
+                            <span className="text-[#000] font-fira-sans text-[22px] font-medium leading-[32px]">
+                              {year}
+                            </span>
+                            <p className="w-[269.034px] h-[49px] text-[#000] font-fira-sans text-[18px] font-normal leading-[28px]">
+                              {yearTexts[year] ||
+                                "Logros y actividades destacadas de este año."}
+                            </p>
+                          </div>
                         </div>
-                      </div>
-                    );
-                  })}
+                      );
+                    }
+                  )}
                 </div>
               </div>
               <div
+                className=""
+                style={{
+                  position: "absolute",
+                  right: "6%",
+                  top: "49%",
+                  transform: "translateY(-50%)",
+                }}
+              >
+                <div
                   className=""
                   style={{
-                    position: "absolute",
-                    right: "6%",
-                    top: "49%",
-                    transform: "translateY(-50%)",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "space-between",
+                    height: "100px",
                   }}
                 >
-                  <div className=""
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      justifyContent: "space-between",
-                      height: "100px",
-                    }}
-                  >
-                    {[...Array(totalCards)].map((_, index) => (
-                      <div
-                        key={index}
-                        style={{
-                          width: "10px",
-                          height: "10px",
-                          borderRadius: "50%",
-                          border: "2px solid #00942C",
-                          backgroundColor:
-                            index === activeIndex ? "#00942C" : "#FFF",
-                        }}
-                      />
-                    ))}
-                  </div>
+                  {[...Array(totalCards)].map((_, index) => (
+                    <div
+                      key={index}
+                      style={{
+                        width: "10px",
+                        height: "10px",
+                        borderRadius: "50%",
+                        border: "2px solid #00942C",
+                        backgroundColor:
+                          index === activeIndex ? "#00942C" : "#FFF",
+                      }}
+                    />
+                  ))}
                 </div>
-
+              </div>
             </div>
           </div>
         </div>

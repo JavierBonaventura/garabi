@@ -184,9 +184,11 @@ function Imapcto() {
           </div>
 
           <div className="w-[400px] h-[64px] flex-shrink-0 mt-[30px] ml-[12%] text-black font-fira-sans text-[24px] font-normal leading-[28px] tracking-[-1px] [font-feature-settings:'liga' 'off','clig' 'off']">
-            Descubrí cómo nuestra empresa se enfoca en reducir su impacto
-            ambiental y fomentar un cambio positivo para el medio ambiente y la
-            comunidad, desde lo economico hasta lo social
+            En Grupo Garabí, buscamos gestionar proyectos forestales que
+            promuevan la conservación del medio ambiente, fomenten la
+            biodiversidad y generen un impacto positivo y sostenible en las
+            comunidades locales. Hacemos foco en estos tres pilares de la
+            siguiente manera
           </div>
 
           <div className="relative w-full h-full">
@@ -252,25 +254,29 @@ function Imapcto() {
                 <div className="w-[344px] h-[32px] shrink-0 text-black font-fira-sans text-[40px] font-bold leading-[50px]">
                   Medio ambiente
                 </div>
-                <div className="w-[464px] h-[206px] shrink-0 text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-12">
-                  <p>
-                    Preservación y promoción de especies nativas y bosques
-                    naturales (fotos de bosques nativos + fotos de viveros de
-                    árboles)
-                  </p>
-                  <ul className="list-disc pl-5 mt-2">
+                <div className="w-[464px] h-[446px] shrink-0 text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-12">
+                  <ul className="list-disc pl-5 mt-2 space-y-2">
+                    <li>
+                      Preservación y promoción de especies nativas y bosques
+                      naturales.
+                    </li>
                     <li>
                       Preservación y promoción del entorno natural de la fauna
-                      local
+                      local.
                     </li>
                     <li>
-                      Captura de carbón, como consecuencia de las plantaciones
-                      continuas de bosques para uso comercial y bosques
-                      naturales
+                      Implementar sistemas de prevención y control de incendios,
+                      como la creación de cortafuegos, monitoreos y campañas de
+                      sensibilización en las comunidades locales sobre cómo
+                      prevenir incendios.
                     </li>
                     <li>
-                      Diseño de un sistema de gestión de residuos y optimización
-                      del uso de productos residuales en nuevas industrias
+                      Diseño de un sistema de gestión de residuos Conservación
+                      de fuentes de agua: Crear zonas de protección alrededor de
+                      ríos, arroyos y lagos dentro del bosque, protegiendo las
+                      cuencas hidrográficas de la contaminación y el sobreuso.
+                      Estas áreas pueden ser declaradas "zonas de conservación"
+                      donde no se permite la actividad comercial intensiva.
                     </li>
                   </ul>
                 </div>
@@ -293,13 +299,25 @@ function Imapcto() {
                 <div className="w-[344px] h-[32px] shrink-0 text-black font-fira-sans text-[40px] font-bold leading-[50px]">
                   Economico
                 </div>
-                <div className="w-[449px] h-[206px] shrink-0 text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-12">
-                  <p>
-                    Es nuestro fin de aportar al crecimiento económico en la
-                    zona y en el país, creando operaciones con un alto valor
-                    agregado y un potencial importante de exportación así
-                    contribuyendo a la apertura del país al resto del mundo.
-                  </p>
+                <div className="w-[464px] h-[426px] shrink-0 text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-12">
+                  <ul className="list-disc pl-5 mt-2 space-y-2">
+                    <li>
+                      Creación de empleos directos e indirectos: La empresa
+                      puede contratar a trabajadores locales para actividades
+                      que requieran los diferentes proyectos.
+                    </li>
+                    <li>
+                      La empresa puede contribuir a la sostenibilidad económica
+                      mediante la diversificación de productos forestales, el
+                      impulso a la economía circular y la creación de cadenas de
+                      valor que generen ingresos de manera responsable. Además,
+                      puede establecer acuerdos comerciales que promuevan el uso
+                      eficiente de los recursos, la reducción de residuos y el
+                      apoyo a prácticas que fortalezcan la viabilidad económica
+                      a largo plazo, sin comprometer la salud de los
+                      ecosistemas.
+                    </li>
+                  </ul>
                 </div>
               </div>
 
@@ -402,20 +420,38 @@ function Imapcto() {
               {/* Columna derecha */}
 
               <div className="mr-4" style={{ width: "468.214px" }}>
-                <div className="w-[461px] h-[32px] text-black font-fira-sans text-[40px] font-extrabold leading-[50px] text-right">
+                <div className="w-[461px] h-[32px] text-black font-fira-sans text-[40px] font-extrabold leading-[50px] text-left">
                   Social
                 </div>
 
-                <div className="w-[461px] h-[206px] shrink-0 font-fira-sans text-black text-[18px] font-normal leading-[28px] text-right mt-12">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec nisl augue, finibus sed magna varius, egestas varius
-                    ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec nisl augue, finibus sed magna varius, egestas varius
-                    ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec nisl augue, finibus sed magna varius, egestas varius
-                    ex.
-                  </p>
+                <div className="w-[464px] h-[446px] shrink-0 text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-12">
+                  <ul className="list-disc pl-5 mt-2 space-y-2">
+                    <li>
+                      Consultas comunitarias y participación: Involucrar a las
+                      comunidades locales en la toma de decisiones sobre la
+                      gestión del bosque, mediante consultas públicas o la
+                      creación de comités de gestión comunitarios, para que las
+                      actividades forestales estén alineadas con sus intereses y
+                      necesidades.
+                    </li>
+                    <li>
+                      Colaboración establecimientos educativos de diferentes
+                      maneras: mediante el dictado de cursos, capacitaciones en
+                      ciertos temas, colaboración en algunos proyectos
+                      particulares, ofrecer posibilidad de pasantías.
+                    </li>
+                    <li>
+                      Promoción de salud y seguridad: Asegurar que los
+                      trabajadores forestales reciban capacitación en seguridad
+                      laboral, uso de equipos de protección y primeros auxilios.
+                    </li>
+                    <li>
+                      Establecer alianzas con organizaciones no gubernamentales
+                      locales para apoyar iniciativas que beneficien a las
+                      comunidades, como proyectos educativos, de salud o de
+                      desarrollo económico
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>

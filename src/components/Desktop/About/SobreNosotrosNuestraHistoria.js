@@ -184,13 +184,13 @@ function SobreNosotrosNuestraHistoria() {
                             alt="Logo Nuestra Historia"
                             className="w-[79px] h-[88.545px] flex-shrink-0 mr-8"
                           />
-                          <div
+                          <div className="-mt-12 -ml-6"
                             style={{ display: "flex", flexDirection: "column" }}
                           >
-                            <span className="text-[#000] font-fira-sans text-[22px] font-medium leading-[32px]">
+                            <span className="text-[#000] font-fira-sans text-[16px] font-medium leading-[32px]">
                               {year}
                             </span>
-                            <p className="w-[269.034px] h-[49px] text-[#000] font-fira-sans text-[18px] font-normal leading-[28px]">
+                            <p className="w-[320px] h-[49px] text-[#000] font-fira-sans text-[14px] font-normal leading-[20px]">
                               {yearTexts[year] ||
                                 "Logros y actividades destacadas de este año."}
                             </p>
@@ -216,7 +216,7 @@ function SobreNosotrosNuestraHistoria() {
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
-                    height: "100px",
+                    height: "200px",
                   }}
                 >
                   {[...Array(totalCards)].map((_, index) => (

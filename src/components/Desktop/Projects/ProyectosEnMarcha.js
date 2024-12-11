@@ -78,7 +78,7 @@ const tarjetas = [
 function ProyectosEnMarcha() {
   return (
     <div>
-      <div className="w-full h-[2800px] relative">
+      <div className="w-full h-[3560px] relative">
         <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
         <img
           src={imagenCurva}
@@ -91,7 +91,7 @@ function ProyectosEnMarcha() {
         />
         <div
           id="verlo"
-          className="absolute z-[20] w-[100px] h-[100vw] bg-gradient-to-r from-transparent to-[#dfe8e0] rotate-90 top-[69.6%] left-[100%]"
+          className="absolute z-[20] w-[100px] h-[100vw] bg-gradient-to-r from-transparent to-[#dfe8e0] rotate-90 top-[77.6%] left-[100%]"
           style={{
             transformOrigin: "top left",
           }}
@@ -172,7 +172,7 @@ function ProyectosEnMarcha() {
           </div>
         ))}
 
-        <div className="absolute z-10 w-full" style={{ top: "2040px" }}>
+        <div className="absolute z-10 w-full" style={{ top: "2860px" }}>
           <img
             src={arbolesProyectos}
             alt="Árboles Proyectos"

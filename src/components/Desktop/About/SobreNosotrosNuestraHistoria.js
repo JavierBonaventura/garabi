@@ -39,7 +39,7 @@ function SobreNosotrosNuestraHistoria() {
   const carouselRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(1);
   const cardHeight = 162;
-  const totalCards = 4;
+  const totalCards = 9;
 
   const handleScroll = (e) => {
     e.stopPropagation(); // Evita que el evento se propague al scroll de la página.

@@ -50,7 +50,7 @@ function SobreNosotrosValores() {
             {tarjetas.map((tarjeta, index) => (
               <div
                 key={index}
-                className="relative w-[345px] h-[230px] flex-shrink-0 rounded-[21px] bg-[#00942C] drop-shadow-[0px_4px_4px_rgba(0,0,0,0.25)]"
+                className="relative w-[400px] h-[230px] flex-shrink-0 rounded-[21px] bg-[#00942C] drop-shadow-[0px_4px_4px_rgba(0,0,0,0.25)]"
               >
                 {/* Logo */}
                 <img
@@ -60,12 +60,12 @@ function SobreNosotrosValores() {
                 />
 
                 {/* Titulo de la tarjeta */}
-                <div className="absolute top-[42px] left-[109px] w-[102.849px] h-[32px] text-white font-sans text-[22px] font-medium leading-[32px]">
+                <div className="absolute top-[42px] left-[109px] w-[250px] h-[32px] text-white font-sans text-[22px] font-medium leading-[32px]">
                   {tarjeta.titulo}
                 </div>
 
                 {/* Descripción debajo del logo y el título */}
-                <div className="absolute top-[110px] left-[34px] w-[300px] h-[84px] text-white font-sans text-[18px] font-normal leading-[28px]">
+                <div className="absolute top-[110px] left-[34px] w-[350px] h-[84px] text-white font-sans text-[18px] font-normal leading-[28px]">
                   {tarjeta.descripcion}
                 </div>
               </div>

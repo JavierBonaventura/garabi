@@ -257,11 +257,7 @@ function NavBarMobile({ menuAbierto, toggleMenu }) {
 
           {/* Línea horizontal debajo de los íconos */}
           <div
-            style={{
-              width: "329px",
-              height: "0.427px",
-              background: "#000",
-            }}
+           
           />
 
           {/* Texto de dirección */}

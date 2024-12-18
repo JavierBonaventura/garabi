@@ -6,7 +6,7 @@ import seguridad from "../../../images/Desktop/seguridad.png";
 import comunidad from "../../../images/Desktop/comunidad.png";
 
 function ImpactoMobile() {
-  const [selectedImage, setSelectedImage] = useState("sustentabilidad");
+  const [selectedImage, setSelectedImage] = useState("Medio ambiente");
 
   const handleImageSelect = (imageName) => {
     setSelectedImage(imageName);
@@ -14,22 +14,30 @@ function ImpactoMobile() {
 
   const images = [
     {
-      name: "sustentabilidad",
+      name: "Medio ambiente",
       src: sustentabilidad,
       marginLeft: "0px",
+      marginLeftTitle: "0px",
       textAlign: "left",
+      text: "Implementamos prácticas de manejo forestal sostenible, haciendo un uso eficiente de los recursos naturales y protegiendo la biodiversidad de la zona.",
     },
     {
-      name: "seguridad",
+      name: "Social",
       src: seguridad,
-      marginLeft: "-60px",
+      marginLeft: "-70px",
+      marginLeftTitle: "-25px",
+
       textAlign: "center",
+      text: "Trabajamos estrechamente con las comunidades locales, promoviendo su desarrollo social y económico",
     },
     {
-      name: "comunidad",
+      name: "Económico",
       src: comunidad,
       marginLeft: "-120px",
+      marginLeftTitle: "-40px",
+
       textAlign: "right",
+      text: "Impulsamos la economía circular y la creación de cadenas de valor que generen ingresos de manera responsable.",
     },
   ];
 
@@ -58,7 +66,7 @@ function ImpactoMobile() {
             }}
           />
 
-          <div className="flex justify-around mt-8 ">
+          <div className="flex justify-around mt-8">
             {images.map((image) => (
               <div
                 key={image.name}
@@ -79,12 +87,18 @@ function ImpactoMobile() {
                 />
                 {selectedImage === image.name && (
                   <div className="absolute mt-4 w-full -ml-4">
-                    <div className=" h-[30px] flex-shrink-0 text-[#443838]  font-fira-sans text-[16px] font-semibold leading-[32px] ">
+                    <div
+                      className=" w-32 h-[30px] flex-shrink-0 text-[#443838] font-fira-sans text-[16px] font-semibold leading-[32px]"
+                      style={{
+                        textAlign: image.textAlign,
+                        marginLeft: image.marginLeftTitle
+                      }}
+                    >
                       {image.name.charAt(0).toUpperCase() + image.name.slice(1)}
                     </div>
 
                     <div
-                      className="mt-2 "
+                      className="mt-2"
                       style={{
                         marginLeft: image.marginLeft,
                         width: "213.35px",
@@ -100,9 +114,7 @@ function ImpactoMobile() {
                         textAlign: image.textAlign,
                       }}
                     >
-                      Proof-of-Work protocols are slow, expensive, unscalable,
-                      and environmentally harmful. And we have solved that
-                      problem.
+                      {image.text}
                     </div>
                   </div>
                 )}

@@ -35,16 +35,20 @@ function Lideres() {
       <div className="absolute flex gap-[10px] left-[12%] top-[431px]">
         {/* Botón 1 */}
         <div className="w-[217px] h-[50px] bg-[#00942C] rounded-[5px] flex items-center justify-center cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5">
-          <span className="text-white text-center font-fira-sans text-[14px] font-normal tracking-[4px] uppercase">
-            SOBRE NOSOTROS
-          </span>
+          <a href="/nosotros">
+            <span className="text-white text-center font-fira-sans text-[14px] font-normal tracking-[4px] uppercase">
+              NOSOTROS
+            </span>
+          </a>
         </div>
 
         {/* Botón 2 */}
         <div className="w-[187.875px] h-[50px] bg-white border border-[#00942C] rounded-[5px] flex items-center justify-center cursor-pointer transition-transform duration-500 ease-out hover:bg-[#D1D1D1] hover:-translate-y-0.5">
-          <span className="text-[#00942C] text-center font-fira-sans text-[14px] font-normal tracking-[4px] uppercase">
-            PROYECTOS
-          </span>
+          <a href="/proyectos">
+            <span className="text-[#00942C] text-center font-fira-sans text-[14px] font-normal tracking-[4px] uppercase">
+              PROYECTOS
+            </span>
+          </a>
         </div>
       </div>
     </div>

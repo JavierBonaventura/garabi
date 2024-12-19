@@ -115,7 +115,6 @@ function App() {
                   <AlgunosNumerosMobile />
                   <NuestrosPoyectosMobile />
                   <ImpactoMobile />
-                  <Politicas />
                   <ContactanosMobile />
                   <FooterMobile />
                 </>
@@ -204,7 +203,7 @@ function App() {
                   <AlgunosNumeros />
                   <NuestrosProyectos />
                   <Impacto />
-                  <Politicas />
+
                   <EnMarcha />
                   <Footer />
                 </>

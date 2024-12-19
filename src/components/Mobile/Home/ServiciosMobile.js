@@ -26,7 +26,7 @@ function ServiciosMobile() {
     {
       image: recuadroUno,
       testimonial:
-      " Nuestros clientes obtienen los beneficios de ser los dueños de las forestaciones sin ninguna de las responsabilidades de la administración y el manejo.",
+        " Nuestros clientes obtienen los beneficios de ser los dueños de las forestaciones sin ninguna de las responsabilidades de la administración y el manejo.",
 
       name: "Asesoramiento Integral",
       position: "Owner of CF INVESTMENTS",
@@ -112,7 +112,7 @@ function ServiciosMobile() {
   };
 
   return (
-    <div className="w-full h-[580px] relative">
+    <div className="w-full h-[650px] relative">
       <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
       <div
         className="relative z-10 flex flex-col items-center justify-start h-full px-4"
@@ -131,11 +131,14 @@ function ServiciosMobile() {
           </div>
 
           {/* Div secundario con layout y tipografía para el texto debajo */}
-          <div className="mt-4 flex-shrink-0 ml-8 w-[329px] h-[52px] text-black font-fira-sans text-[20px] font-normal leading-[24px] tracking-[-1px]">
-            Desde 1983 gestionado con éxito más de 18.000 hectáreas de bosques
+          <div className="mt-4 flex-shrink-0 ml-8 w-[329px] h-[130px] text-black font-fira-sans text-[20px] font-normal leading-[24px] tracking-[-1px]">
+            La flexibilidad, agilidad de nuestra organización sumado a la
+            experiencia de más de 40 años en el sector forestal nos permite
+            planificar y ejecutar proyectos a la medida y necesidades de cada
+            uno de nuestros clientes.
           </div>
 
-          <div className="relative w-full flex items-center justify-center ">
+          <div className="relative w-full flex items-center justify-center">
             <button
               onClick={handlePrev}
               className="absolute left-[10px] w-[26px] h-[26px] flex items-center justify-center  z-10  "
@@ -191,7 +194,7 @@ function ServiciosMobile() {
                         {/* Botón "VER" */}
                         <button className="mt-8 flex items-center justify-center w-[99px] h-[26px] rounded-[5px] bg-[#00942C]">
                           <span className="text-[#FFF] text-center font-fira-sans text-[12px] font-normal tracking-[4px] uppercase">
-                            VER
+                            VER MÁS
                           </span>
                         </button>
                       </div>

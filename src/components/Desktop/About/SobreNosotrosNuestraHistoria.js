@@ -164,13 +164,15 @@ function SobreNosotrosNuestraHistoria() {
                       const yearTexts = {
                         1976: "Grupo Garabí comienza su actividad con la administración de dos establecimientos forestales, las localidades de Loreto y Santa Rosa.",
                         1983: "La empresa incorpora a su administración dos nuevas sociedades en la localidad de Gobernador Virasoro. Cabe destacar que tres de estas empresas continúan bajo la administración de GG.",
-                        2001: "Alianza estratégica con el grupo Eidico en el manejo de proyectos productivos.",
+                        2002: "Primeros proyectos productivos en conjunto con el grupo Eidico en la zona de Virasoro.",
+                        2007: "Gestión de nuevos emprendimiento de  inversores locales.",
                         2012: "Captación de los primeros proyectos “family funds” de origen europeo y primeros clientes con administración integral por parte de grupo Garabi.",
                         2014: "Alianza con establecimiento Las Marías y primeros proyectos de plantación de yerba mate.",
-                        2015: "Gran crecimientos clientes europeos .",
+                        2015: "Gran crecimiento de administraciones de la mano de clientes europeos.",
                         2018: "Incorporación socio belga a Grupo Garabi.",
-                        2021: " Se duplica la superficie administrada con el ingreso de un grupo austriaco a GG. Sociedad estratégica con grupo industrial austriaco - belga ",
-                        2023: "Sociedad estratégica con grupo industrial de origen francés y belga.",
+                        2021: "Alianza estratégica con grupo industrial austriaco - belga.",
+                        2021: "Se duplica la superficie administrada con el ingreso de un grupo austriaco a GG.",
+                        2023: "Alianza estratégica con grupo industrial de origen francés y belga.",
                       };
 
                       return (
@@ -184,7 +186,8 @@ function SobreNosotrosNuestraHistoria() {
                             alt="Logo Nuestra Historia"
                             className="w-[79px] h-[88.545px] flex-shrink-0 mr-8"
                           />
-                          <div className="-mt-12 -ml-6"
+                          <div
+                            className="-mt-12 -ml-6"
                             style={{ display: "flex", flexDirection: "column" }}
                           >
                             <span className="text-[#000] font-fira-sans text-[16px] font-medium leading-[32px]">

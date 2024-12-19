@@ -32,8 +32,8 @@ function SobreNosotrosArbolMobile() {
                 src={arbolCentral}
                 alt="Árbol Central"
                 style={{
-                  left: "-52%", 
-                  position: "relative", 
+                  left: "-52%",
+                  position: "relative",
                   maxWidth: "none !important",
                 }}
               />
@@ -70,9 +70,10 @@ function SobreNosotrosArbolMobile() {
                   lineHeight: "12px",
                 }}
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                interdum erat nec commodo imperdiet. Duis libero nisi, mollis
-                quis urna ornare, feugiat egestas nunc.
+                Hace más de 40 años Grupo Garabí brinda un servicio
+                personalizado, adecuado a las necesidades de sus clientes
+                buscando maximizar de manera eficiente y sustentable el
+                rendimiento de sus proyectos agro forestales.
               </p>
 
               {/* Línea a la derecha */}
@@ -85,7 +86,7 @@ function SobreNosotrosArbolMobile() {
               ></div>
               {/* segundo texto */}
               <h1
-                className="w-[107px] absolute right-[0vw] transform  z-20 pb-2 "
+                className="w-[107px] absolute right-[0vw] transform  z-20 pb-2 pt-10"
                 style={{
                   color: "#000",
                   fontFeatureSettings: "'liga' off, 'clig' off",
@@ -98,11 +99,11 @@ function SobreNosotrosArbolMobile() {
                   textAlign: "right",
                 }}
               >
-                Misión
+                Visión
               </h1>
 
               <p
-                className="absolute right-[-5vw] right-[0vw]  z-20 pb-2 text-right "
+                className="absolute right-[-5vw] right-[0vw]  z-20 pb-2 text-right pt-10  "
                 style={{
                   color: "#000",
                   fontSize: "10px",
@@ -115,23 +116,25 @@ function SobreNosotrosArbolMobile() {
                   lineHeight: "12px",
                 }}
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                interdum erat nec commodo imperdiet. Duis libero nisi, mollis
-                quis urna ornare, feugiat egestas nunc.
+                Convertirnos en una empresa líder y referente dentro del sector.
+                Brindando la mejor calidad en la gestión forestal. Sostener este
+                prestigio a lo largo del tiempo manteniendo nuestro compromiso
+                con la preservación del medio ambiente. Y mejorando la calidad
+                de vida de las comunidades locales actuales y futuras.
               </p>
 
               {/* Línea a la derecha */}
               <div
-                className="absolute right-[-13.5vw] w-[44vw] h-[1px] bg-[#00942C]  transform -translate-y-1/2 mt-4"
+                className="absolute right-[-13.5vw] w-[44vw] h-[1px] bg-[#00942C]  transform -translate-y-1/2 mt-14 "
                 style={{
                   top: "42%",
-                  left: "52%", 
+                  left: "52%",
                 }}
               ></div>
 
               {/* tercer texto */}
               <h1
-                className="w-[107px] absolute right-[0vw] transform  z-20 pb-2 "
+                className="w-[107px] absolute right-[0vw] transform  z-20 pb-2 hidden "
                 style={{
                   color: "#000",
                   fontFeatureSettings: "'liga' off, 'clig' off",
@@ -148,7 +151,7 @@ function SobreNosotrosArbolMobile() {
               </h1>
 
               <p
-                className="absolute right-[-5vw] right-[0vw]  z-20 pb-2 text-right "
+                className="absolute right-[-5vw] right-[0vw]  z-20 pb-2 text-right hidden "
                 style={{
                   color: "#000",
                   fontSize: "10px",
@@ -161,20 +164,21 @@ function SobreNosotrosArbolMobile() {
                   lineHeight: "12px",
                 }}
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                interdum erat nec commodo imperdiet. Duis libero nisi, mollis
-                quis urna ornare, feugiat egestas nunc.
+                Convertirnos en una empresa líder y referente dentro del sector.
+                Brindando la mejor calidad en la gestión forestal. Sostener este
+                prestigio a lo largo del tiempo manteniendo nuestro compromiso
+                con la preservación del medio ambiente. Y mejorando la calidad
+                de vida de las comunidades locales actuales y futuras.
               </p>
 
               {/* Línea a la derecha */}
               <div
-                className="absolute right-[-13.5vw] w-[73vw] h-[1px] bg-[#00942C]  transform -translate-y-1/2 mt-4"
+                className="absolute right-[-13.5vw] w-[73vw] h-[1px] bg-[#00942C]  transform -translate-y-1/2 mt-4 hidden"
                 style={{
                   top: "69%",
-                  left: "21%", 
+                  left: "21%",
                 }}
               ></div>
-
             </div>
           </div>
         </div>

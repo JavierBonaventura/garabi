@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom"; 
+import { Link, useLocation } from "react-router-dom";
 import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
 import logoGarabi from "../../../images/Desktop/logo-garabi.svg";
 import logoInstagram from "../../../images/Desktop/logoInstagram.svg";
@@ -8,8 +8,8 @@ import logoLinkedin from "../../../images/Desktop/linkedin.png";
 function Header() {
   const [fontSize, setFontSize] = useState(14);
   const [letterSpacing, setLetterSpacing] = useState(4);
-  const location = useLocation(); 
-  const [selected, setSelected] = useState(location.pathname); 
+  const location = useLocation();
+  const [selected, setSelected] = useState(location.pathname);
 
   const handleResize = () => {
     const width = window.innerWidth;
@@ -29,7 +29,7 @@ function Header() {
   }, []);
 
   useEffect(() => {
-    setSelected(location.pathname); 
+    setSelected(location.pathname);
   }, [location]);
 
   return (
@@ -57,7 +57,7 @@ function Header() {
         <nav className="absolute top-[38px] left-[29.3%] flex items-center gap-8">
           {[
             { text: "HOME", to: "/" },
-            { text: "ABOUT US", to: "/nosotros" },
+            { text: "NOSOTROS", to: "/nosotros" },
             { text: "PROYECTOS", to: "/proyectos" },
             { text: "IMPACTO", to: "/impacto" },
             { text: "SERVICIOS", to: "/servicios" },
@@ -86,33 +86,25 @@ function Header() {
           ))}
         </nav>
 
-{/* Contenedor de iconos sociales */}
-<div className="absolute top-[36px] right-[5vw] flex items-center gap-4">
-  <a
-    href="https://www.linkedin.com/" 
-    target="_blank"
-    rel="noopener noreferrer"
-    className="transition-transform transform hover:scale-110"
-  >
-    <img
-      src={logoLinkedin}
-      alt="LinkedIn"
-      className="w-6 h-6" 
-    />
-  </a>
-  <a
-    href="https://www.instagram.com/" 
-    target="_blank"
-    rel="noopener noreferrer"
-    className="transition-transform transform hover:scale-110"
-  >
-    <img
-      src={logoInstagram}
-      alt="Instagram"
-      className="w-6 h-6" 
-    />
-  </a>
-</div>
+        {/* Contenedor de iconos sociales */}
+        <div className="absolute top-[36px] right-[5vw] flex items-center gap-4">
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-transform transform hover:scale-110"
+          >
+            <img src={logoLinkedin} alt="LinkedIn" className="w-6 h-6" />
+          </a>
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-transform transform hover:scale-110"
+          >
+            <img src={logoInstagram} alt="Instagram" className="w-6 h-6" />
+          </a>
+        </div>
       </div>
     </header>
   );

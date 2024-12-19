@@ -8,48 +8,55 @@ function ValoresMobile() {
   const initialCards = [
     {
       logo: logoCandado,
-      title: "Confianza",
+      title: "GESTIÓN FORESTAL SOSTENIBLE",
       description:
-        "This product's simple design focuses on videos and standout quotes from customers.",
+        "La empresa prioriza prácticas sostenibles que garanticen la salud y la productividad a largo plazo de los bosques.",
     },
     {
       logo: logoVision,
-      title: "Visión",
+      title: "CONSERVACIÓN AMBIENTAL",
       description:
-        "Vision focuses on the core aspects of the business and customer needs.",
+        "La empresa tiene como objetivo proteger la biodiversidad, preservar los ecosistemas y mitigar el cambio climático a través de sus buenas prácticas forestales.",
     },
     {
       logo: logoTrayectoria,
-      title: "Trayectoria",
+      title: "DESARROLLO LOCAL",
       description:
-        "A proven track record of success in delivering quality products.",
+        "La empresa da prioridad al bienestar de las comunidades locales, los pueblos originarios y los trabajadores involucrados en las operaciones forestales. ",
     },
     {
       logo: logoCandado,
-      title: "Confianza",
+      title: "INNOVACIÓN",
       description:
-        "This product's simple design focuses on videos and standout quotes from customers.",
+        "Estar a la vanguardia en cuanto a nuevas técnicas y tecnologías de gestión forestal. Buscar siempre mejorar la eficiencia y efectividad de los proyectos a través de la innovación y la implementación de prácticas modernas.",
     },
     {
       logo: logoVision,
-      title: "Visión",
+      title: "TRANSPARENCIA Y HONESTIDAD",
       description:
-        "Vision focuses on the core aspects of the business and customer needs.",
+        "La empresa se compromete con la transparencia en sus operaciones, incluida la divulgación de información sobre sus prácticas forestales, impactos ambientales e iniciativas sociales.",
+    },
+
+    {
+      logo: logoVision,
+      title: "COMPROMISO CON LA CALIDAD",
+      description:
+        "Asegurar que todos los proyectos se lleven a cabo con los más altos estándares de calidad, desde la planificación hasta la ejecución, para garantizar resultados exitosos y duraderos.",
     },
   ];
 
   const [cards, setCards] = useState(initialCards);
-  const [activeIndex, setActiveIndex] = useState(0); 
+  const [activeIndex, setActiveIndex] = useState(0);
   const carouselRef = useRef(null);
   const [isSliding, setIsSliding] = useState(false);
 
-  const cardWidth = 270; 
+  const cardWidth = 270;
 
   const handleNext = () => {
     if (isSliding) return;
 
     setIsSliding(true);
-    setActiveIndex((prevIndex) => (prevIndex + 1) % cards.length); 
+    setActiveIndex((prevIndex) => (prevIndex + 1) % cards.length);
 
     carouselRef.current.style.transition = "transform 0.5s ease-in-out";
     carouselRef.current.style.transform = `translateX(-${cardWidth}px)`;
@@ -66,7 +73,9 @@ function ValoresMobile() {
     if (isSliding) return;
 
     setIsSliding(true);
-    setActiveIndex((prevIndex) => (prevIndex - 1 + cards.length) % cards.length); 
+    setActiveIndex(
+      (prevIndex) => (prevIndex - 1 + cards.length) % cards.length
+    );
 
     setCards((prevCards) => [
       prevCards[prevCards.length - 1],
@@ -158,7 +167,7 @@ function ValoresMobile() {
                   style={{
                     alignItems: "flex-start",
                     width: "232px",
-                    height: "155px",
+                    height: "200px",
                     margin: "0 20px",
                     background: "#00942C",
                     borderRadius: "14px",
@@ -171,7 +180,7 @@ function ValoresMobile() {
                       display: "flex",
                       alignItems: "center",
                       marginBottom: "10px",
-                      marginLeft: "10px"
+                      marginLeft: "10px",
                     }}
                   >
                     <img
@@ -203,7 +212,7 @@ function ValoresMobile() {
                       fontWeight: 400,
                       textAlign: "center",
                       padding: "0 10px",
-                      textAlign: "left"
+                      textAlign: "left",
                     }}
                   >
                     {card.description}

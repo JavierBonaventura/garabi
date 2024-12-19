@@ -29,20 +29,27 @@ function ContactanosMobile() {
         />
 
         {/* Contenedor de botones sobre la imagen */}
-        <div className="absolute mt-8 left-10 top-[65%] flex space-x-4">
+        <div className="absolute mt-8 left-5 top-[65%] flex flex-col space-y-4">
           {/* Primer botón - Email */}
-          <button className="w-[99px] h-[26.322px] rounded-[5px] bg-[#00942C] flex items-center justify-center">
+          <a
+            href="mailto:contacto@grupogarabi.com.ar"
+            className="w-[350px] h-[26.322px] rounded-[5px] bg-[#00942C] flex items-center justify-center"
+          >
             <span className="text-white font-fira-sans text-[12px] font-normal text-center tracking-[4px] uppercase">
-              Email
+              contacto@grupogarabi.com.ar
             </span>
-          </button>
+          </a>
 
           {/* Segundo botón - WSP */}
-          <button className="w-[99px] h-[26.322px] rounded-[5px] bg-white border-[1px] border-[#00942C] flex items-center justify-center">
+          <a
+            href="https://api.whatsapp.com/send?phone=541130254376"
+            target="_blank"
+            className="w-[150px] h-[26.322px] rounded-[5px] bg-white border-[1px] border-[#00942C] flex items-center justify-center"
+          >
             <span className="text-[#00942C] font-fira-sans text-[12px] font-normal text-center tracking-[4px] uppercase">
-              WSP
+              11-3025-4376
             </span>
-          </button>
+          </a>
         </div>
       </div>
     </div>

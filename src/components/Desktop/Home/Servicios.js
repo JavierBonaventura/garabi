@@ -59,7 +59,7 @@ function Servicios() {
                 {/* Botón debajo del texto */}
                 <button className="w-[217px] h-[50px] rounded-[5px]  absolute top-[370px] left-1/2  flex justify-center items-center bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5 transform translate-x-[-50%]">
                   <span className="text-white text-center font-fira-sans text-[14px] font-normal tracking-[4px] uppercase">
-                    VER MAS
+                    VER MÁS
                   </span>
                 </button>
               </div>
@@ -89,7 +89,7 @@ function Servicios() {
                 {/* Botón debajo del texto */}
                 <button className="w-[217px] h-[50px] rounded-[5px]  absolute top-[370px] left-1/2  flex justify-center items-center bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5 transform translate-x-[-50%]">
                   <span className="text-white text-center font-fira-sans text-[14px] font-normal tracking-[4px] uppercase">
-                    VER MAS
+                    VER MÁS
                   </span>
                 </button>
               </div>

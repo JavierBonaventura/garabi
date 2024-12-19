@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import fondoMobile from "../../../images/Mobile/fondoMobile.png";
-import logoNuestraHistoria from "../../../images/Desktop/logoNuestraHistoria.png"; 
+import logoNuestraHistoria from "../../../images/Desktop/logoNuestraHistoria.png";
 import arbolesProyectos from "../../../images/Mobile/arbolesProyectos.png";
 
 function NuestraHistoriaMobile() {
@@ -14,16 +14,16 @@ function NuestraHistoriaMobile() {
 
   const handleTouchStart = (e) => {
     startY.current = e.touches[0].clientY;
-    document.body.style.overflow = "hidden"; 
+    document.body.style.overflow = "hidden";
   };
 
   const handleTouchMove = (e) => {
-    e.preventDefault(); 
+    e.preventDefault();
     endY.current = e.touches[0].clientY;
   };
 
   const handleTouchEnd = () => {
-    document.body.style.overflow = "auto"; 
+    document.body.style.overflow = "auto";
     if (startY.current - endY.current > 50) {
       handleNext();
     } else if (endY.current - startY.current > 50) {
@@ -66,6 +66,62 @@ function NuestraHistoriaMobile() {
     }
   };
 
+  // Agregar este objeto con los datos históricos
+  const historicalData = [
+    {
+      year: 1976,
+      description:
+        "Grupo Garabí comienza su actividad con la administración de dos establecimientos forestales, las localidades de Loreto y Santa Rosa.",
+    },
+    {
+      year: 1983,
+      description:
+        "La empresa incorpora a su administración dos nuevas sociedades en la localidad de Gobernador Virasoro. Cabe destacar que tres de estas empresas continúan bajo la administración de GG.",
+    },
+    {
+      year: 2002,
+      description:
+        "Primeros proyectos productivos en conjunto con el grupo Eidico en la zona de Virasoro.",
+    },
+    {
+      year: 2007,
+      description: "Gestión de nuevos emprendimiento de  inversores locales.",
+    },
+    {
+      year: 2012,
+      description:
+        "Captación de los primeros proyectos “family funds” de origen europeo y primeros clientes con administración integral por parte de grupo Garabi.",
+    },
+    {
+      year: 2014,
+      description:
+        "Alianza con establecimiento Las Marías y primeros proyectos de plantación de yerba mate.",
+    },
+    {
+      year: 2015,
+      description:
+        "Gran crecimiento de administraciones de la mano de clientes europeos.",
+    },
+    {
+      year: 2018,
+      description: "Incorporación socio belga a Grupo Garabi.",
+    },
+    {
+      year: 2021,
+      description:
+        "Alianza estratégica con grupo industrial austriaco - belga.",
+    },
+    {
+      year: 2021,
+      description:
+        "Se duplica la superficie administrada con el ingreso de un grupo austriaco a GG.",
+    },
+    {
+      year: 2023,
+      description:
+        "Alianza estratégica con grupo industrial de origen francés y belga.",
+    },
+  ];
 
   return (
     <div style={{ overflow: "hidden" }}>
@@ -80,8 +136,8 @@ function NuestraHistoriaMobile() {
             backgroundSize: "cover",
           }}
         >
-            {/* Centered text container */}
-            <div
+          {/* Centered text container */}
+          <div
             style={{
               width: "216px",
               height: "30px",
@@ -109,7 +165,7 @@ function NuestraHistoriaMobile() {
               fontSize: "12px",
               fontStyle: "normal",
               fontWeight: 400,
-              lineHeight: "17px" ,
+              lineHeight: "17px",
               margin: "0 auto",
               marginTop: "20px",
             }}
@@ -136,6 +192,7 @@ function NuestraHistoriaMobile() {
               margin: "0 auto",
               marginTop: "20px",
               marginBottom: "10px",
+              display: "none",
             }}
           >
             ver video
@@ -169,7 +226,7 @@ function NuestraHistoriaMobile() {
                   alignItems: "center",
                 }}
               >
-                {[2009, 2010, 2011, 2012].map((year, index) => {
+                {historicalData.map((item, index) => {
                   const opacity = index === activeIndex ? 1 : 0.5;
                   return (
                     <div
@@ -209,7 +266,7 @@ function NuestraHistoriaMobile() {
                             lineHeight: "20px",
                           }}
                         >
-                          {year}
+                          {item.year}
                         </span>
                         <p
                           style={{
@@ -223,8 +280,7 @@ function NuestraHistoriaMobile() {
                             lineHeight: "17px",
                           }}
                         >
-                          Esto es lo que hicimos en el año y los logros que
-                          conseguimos.
+                          {item.description}
                         </p>
                       </div>
                     </div>
@@ -258,7 +314,7 @@ function NuestraHistoriaMobile() {
                     height: "6px",
                     borderRadius: "50%",
                     border: "1px solid #00942C",
-                    backgroundColor: index === activeIndex ? "#00942C" : "#FFF", 
+                    backgroundColor: index === activeIndex ? "#00942C" : "#FFF",
                   }}
                 />
               ))}
@@ -282,9 +338,9 @@ function NuestraHistoriaMobile() {
                 flexShrink: 0,
                 background:
                   "linear-gradient(90deg, #dfe8e0 0%, rgba(237, 242, 232, 0.00) 100%)",
-                top: "0%", 
-                left: "100%", 
-                transformOrigin: "top left", 
+                top: "0%",
+                left: "100%",
+                transformOrigin: "top left",
               }}
             />
 
@@ -300,13 +356,14 @@ function NuestraHistoriaMobile() {
                   fontSize: "24px",
                   fontWeight: "700",
                   lineHeight: "27px",
-                  maxWidth: "379px", 
+                  maxWidth: "379px",
                 }}
               >
                 Contáctanos ahora para darle forma a tu futuro verde
               </div>
 
-              <button
+              <a
+                href="/contacto"
                 className="mt-6 flex justify-center items-center bg-white cursor-pointer transition-transform duration-500 ease-out hover:bg-[#D1D1D1] hover:-translate-y-0.5"
                 style={{
                   width: "158px",
@@ -329,10 +386,9 @@ function NuestraHistoriaMobile() {
                 >
                   Contáctanos
                 </span>
-              </button>
+              </a>
             </div>
           </div>
-
         </div>
       </div>
     </div>

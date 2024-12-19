@@ -37,11 +37,14 @@ function NavBarMobile({ menuAbierto, toggleMenu }) {
       >
         {/* Encabezado del menú con logo y botón de cierre */}
         <div className="flex items-center justify-between px-4 py-2 border-b border-gray-300">
-          <img
-            src={logoGarabi}
-            alt="Logo Garabi"
-            className="w-[110px] h-[47.689px] flex-shrink-0"
-          />
+          <a href="/">
+            <img
+              src={logoGarabi}
+              alt="Logo Garabi"
+              className="w-[110px] h-[47.689px] flex-shrink-0"
+            />
+          </a>
+
           <img
             src={iconoX}
             alt="Cerrar"
@@ -55,7 +58,7 @@ function NavBarMobile({ menuAbierto, toggleMenu }) {
           <div
             className="flex items-center mt-6 px-4"
             style={{
-              background: "linear-gradient(270deg, #B6BCB2 0%, #D9DED4 100%)", 
+              background: "linear-gradient(270deg, #B6BCB2 0%, #D9DED4 100%)",
               width: "257px",
               height: "51px",
               flexShrink: 0,
@@ -81,11 +84,11 @@ function NavBarMobile({ menuAbierto, toggleMenu }) {
           </div>
         </Link>
 
-        <Link to="/proyectos">
+        <Link to="/nosotros">
           <div
             className="flex items-center mt-[9px] px-6"
             style={{
-              background: "linear-gradient(270deg, #B6BCB2 0%, #D9DED4 100%)", 
+              background: "linear-gradient(270deg, #B6BCB2 0%, #D9DED4 100%)",
               width: "257px",
               height: "51px",
               flexShrink: 0,
@@ -106,16 +109,16 @@ function NavBarMobile({ menuAbierto, toggleMenu }) {
                 marginBottom: "-3px",
               }}
             >
-              Projects
+              Nosotros
             </span>
           </div>
         </Link>
 
-        <Link to="/servicios">
+        <Link to="/proyectos">
           <div
             className="flex items-center mt-[9px] px-6"
             style={{
-              background: "linear-gradient(270deg, #B6BCB2 0%, #D9DED4 100%)", 
+              background: "linear-gradient(270deg, #B6BCB2 0%, #D9DED4 100%)",
               width: "257px",
               height: "51px",
               flexShrink: 0,
@@ -136,7 +139,7 @@ function NavBarMobile({ menuAbierto, toggleMenu }) {
                 marginBottom: "-3px",
               }}
             >
-              Services
+              Proyectos
             </span>
           </div>
         </Link>
@@ -145,7 +148,7 @@ function NavBarMobile({ menuAbierto, toggleMenu }) {
           <div
             className="flex items-center mt-[9px] px-4"
             style={{
-              background: "linear-gradient(270deg, #B6BCB2 0%, #D9DED4 100%)", 
+              background: "linear-gradient(270deg, #B6BCB2 0%, #D9DED4 100%)",
               width: "257px",
               height: "51px",
               flexShrink: 0,
@@ -166,16 +169,16 @@ function NavBarMobile({ menuAbierto, toggleMenu }) {
                 marginBottom: "-3px",
               }}
             >
-              Impact
+              Impacto
             </span>
           </div>
         </Link>
 
-        <Link to="/nosotros">
+        <Link to="/servicios">
           <div
             className="flex items-center mt-[9px] px-[20px]"
             style={{
-              background: "linear-gradient(270deg, #B6BCB2 0%, #D9DED4 100%)", 
+              background: "linear-gradient(270deg, #B6BCB2 0%, #D9DED4 100%)",
               width: "257px",
               height: "51px",
               flexShrink: 0,
@@ -196,7 +199,7 @@ function NavBarMobile({ menuAbierto, toggleMenu }) {
                 marginBottom: "-3px",
               }}
             >
-              About Us
+              Servicios
             </span>
           </div>
         </Link>
@@ -205,7 +208,7 @@ function NavBarMobile({ menuAbierto, toggleMenu }) {
           <div
             className="flex items-center mt-[9px] px-4"
             style={{
-              background: "linear-gradient(270deg, #B6BCB2 0%, #D9DED4 100%)", 
+              background: "linear-gradient(270deg, #B6BCB2 0%, #D9DED4 100%)",
               width: "257px",
               height: "51px",
               flexShrink: 0,
@@ -256,25 +259,7 @@ function NavBarMobile({ menuAbierto, toggleMenu }) {
           </div>
 
           {/* Línea horizontal debajo de los íconos */}
-          <div
-           
-          />
-
-          {/* Texto de dirección */}
-          <div
-            className="mt-2 text-center text-black"
-            style={{
-              width: "261px",
-              fontFamily: "Fira Sans",
-              fontSize: "5.977px",
-              fontWeight: 500,
-              lineHeight: "normal",
-              letterSpacing: "1.708px",
-              textTransform: "uppercase",
-            }}
-          >
-            CHUBUT 991, SAN ISIDRO, BUENOS AIRES
-          </div>
+          <div />
         </div>
       </div>
     </>

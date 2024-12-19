@@ -14,7 +14,7 @@ function ProyectosActivosMobile() {
 
   return (
     <div>
-      <div className="w-full h-[1420px] relative">
+      <div className="w-full h-[1820px] relative">
         {" "}
         <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
         <img
@@ -57,7 +57,7 @@ function ProyectosActivosMobile() {
             Proyectos activos
           </div>
         </div>
-        {/* Tarjeta superpuesta 1 */}
+        {/* Tarjeta 1 */}
         <Link
           to="/proyectosimple"
           className="absolute z-30"
@@ -93,8 +93,7 @@ function ProyectosActivosMobile() {
 
               {/* Segundo contenedor - Texto */}
               <div className="mt-4 w-[114px] h-[47px] text-[#464646] font-fira-sans text-[12px] font-[400] leading-[14px] tracking-[-0.382px] mb-[17px]">
-                Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit
-                praesent ornare eu.
+                Forestación y Yerba Mate
               </div>
 
               {/* Tercer contenedor - Botón */}
@@ -111,7 +110,7 @@ function ProyectosActivosMobile() {
             </div>
           </div>
         </Link>
-        {/* Tarjeta superpuesta foto derecha 2*/}
+        {/* Tarjeta 2*/}
         <Link
           to="/proyectosimple"
           className="absolute z-30"
@@ -130,13 +129,12 @@ function ProyectosActivosMobile() {
             >
               {/* Primer contenedor - Título */}
               <div className="flex items-center mt-6 w-[114px] h-[37px] text-[#464646] font-fira-sans text-[17px] font-[700] leading-[16px] tracking-[-0.382px]">
-                Fideicomiso San Antonio
+                Fideicomiso Garavi Eidico
               </div>
 
               {/* Segundo contenedor - Texto */}
               <div className="mt-4 w-[114px] h-[47px] text-[#464646] font-fira-sans text-[12px] font-[400] leading-[14px] tracking-[-0.382px] mb-[17px]">
-                Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit
-                praesent ornare eu.
+                Forestación
               </div>
 
               {/* Tercer contenedor - Botón */}
@@ -159,7 +157,7 @@ function ProyectosActivosMobile() {
                 alt="Tarjeta Proyectos"
                 className="object-cover"
                 style={{
-                  borderRadius: "0 6px 6px 0", 
+                  borderRadius: "0 6px 6px 0",
                   height: "100%",
                   width: "100%",
                   objectFit: "cover",
@@ -168,7 +166,7 @@ function ProyectosActivosMobile() {
             </div>
           </div>
         </Link>
-        {/* Tarjeta superpuesta 3 */}
+        {/* Tarjeta 3 */}
         <Link
           to="/proyectosimple"
           className="absolute z-30"
@@ -202,13 +200,12 @@ function ProyectosActivosMobile() {
             >
               {/* Primer contenedor - Título */}
               <div className="flex items-center mt-6 w-[114px] h-[37px] text-[#464646] font-fira-sans text-[17px] font-[700] leading-[16px] tracking-[-0.382px]">
-                Fideicomiso San Antonio
+                Forestal San Vicente
               </div>
 
               {/* Segundo contenedor - Texto */}
               <div className="mt-4 w-[114px] h-[47px] text-[#464646] font-fira-sans text-[12px] font-[400] leading-[14px] tracking-[-0.382px] mb-[17px]">
-                Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit
-                praesent ornare eu.
+                Forestación
               </div>
 
               {/* Tercer contenedor - Botón */}
@@ -225,7 +222,7 @@ function ProyectosActivosMobile() {
             </div>
           </div>
         </Link>
-        {/* Tarjeta superpuesta foto derecha 4*/}
+        {/* Tarjeta 4*/}
         <Link
           to="/proyectosimple"
           className="absolute z-30"
@@ -244,13 +241,12 @@ function ProyectosActivosMobile() {
             >
               {/* Primer contenedor - Título */}
               <div className="flex items-center mt-6 w-[114px] h-[37px] text-[#464646] font-fira-sans text-[17px] font-[700] leading-[16px] tracking-[-0.382px]">
-                Fideicomiso San Antonio
+                Fideicomiso Sylvestree
               </div>
 
               {/* Segundo contenedor - Texto */}
               <div className="mt-4 w-[114px] h-[47px] text-[#464646] font-fira-sans text-[12px] font-[400] leading-[14px] tracking-[-0.382px] mb-[17px]">
-                Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit
-                praesent ornare eu.
+                Forestación
               </div>
 
               {/* Tercer contenedor - Botón */}
@@ -273,7 +269,7 @@ function ProyectosActivosMobile() {
                 alt="Tarjeta Proyectos"
                 className="object-cover"
                 style={{
-                  borderRadius: "0 6px 6px 0", 
+                  borderRadius: "0 6px 6px 0",
                   height: "100%",
                   width: "100%",
                   objectFit: "cover",
@@ -282,7 +278,7 @@ function ProyectosActivosMobile() {
             </div>
           </div>
         </Link>
-        {/* Tarjeta superpuesta foto derecha 5*/}
+        {/* Tarjeta 5*/}
         <Link
           to="/proyectosimple"
           className="absolute z-30"
@@ -316,13 +312,124 @@ function ProyectosActivosMobile() {
             >
               {/* Primer contenedor - Título */}
               <div className="flex items-center mt-6 w-[114px] h-[37px] text-[#464646] font-fira-sans text-[17px] font-[700] leading-[16px] tracking-[-0.382px]">
-                Fideicomiso San Antonio
+                Fideicomiso Ecoyerba
               </div>
 
               {/* Segundo contenedor - Texto */}
               <div className="mt-4 w-[114px] h-[47px] text-[#464646] font-fira-sans text-[12px] font-[400] leading-[14px] tracking-[-0.382px] mb-[17px]">
-                Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit
-                praesent ornare eu.
+                Yerba Mate
+              </div>
+
+              {/* Tercer contenedor - Botón */}
+              <div
+                className="flex items-center cursor-pointer mt-2 mb-6 text-[#000] font-fira-sans text-[12px] font-[300] leading-[16px] tracking-[-0.382px] underline"
+                style={{
+                  width: "68px",
+                  height: "16px",
+                  flexShrink: 0,
+                }}
+              >
+                Ver proyecto
+              </div>
+            </div>
+          </div>
+        </Link>
+        {/* Tarjeta 6*/}
+        <Link
+          to="/proyectosimple"
+          className="absolute z-30"
+          style={{
+            top: "1210px",
+            left: "50%",
+            transform: "translateX(-50%)",
+          }}
+        >
+          {/* Centra la tarjeta horizontalmente */}
+          <div className="flex w-[326px] h-[177px] shrink-0 rounded-[6.15px] bg-[#DAD8CB] shadow-[3.822px_3.822px_6.688px_1.911px_rgba(2,2,2,0.30)] relative">
+            {/* Parte derecha con texto */}
+            <div
+              className="flex flex-col justify-center w-1/2 px-6"
+              style={{ borderRadius: "21.323px 0 0 21.323px" }}
+            >
+              {/* Primer contenedor - Título */}
+              <div className="flex items-center mt-6 w-[114px] h-[37px] text-[#464646] font-fira-sans text-[17px] font-[700] leading-[16px] tracking-[-0.382px]">
+                Rincón Chico
+              </div>
+
+              {/* Segundo contenedor - Texto */}
+              <div className="mt-4 w-[114px] h-[47px] text-[#464646] font-fira-sans text-[12px] font-[400] leading-[14px] tracking-[-0.382px] mb-[17px]">
+                Forestación, Yerba Mate, Arroz y Ganadería
+              </div>
+
+              {/* Tercer contenedor - Botón */}
+              <div
+                className="flex items-center cursor-pointer mt-2 mb-6 text-[#000] font-fira-sans text-[12px] font-[300] leading-[16px] tracking-[-0.382px] underline"
+                style={{
+                  width: "68px",
+                  height: "16px",
+                  flexShrink: 0,
+                }}
+              >
+                Ver proyecto
+              </div>
+            </div>
+
+            {/* Parte derecha con imagen */}
+            <div className="flex items-center justify-center w-1/2">
+              <img
+                src={tarjetaProyectos4}
+                alt="Tarjeta Proyectos"
+                className="object-cover"
+                style={{
+                  borderRadius: "0 6px 6px 0",
+                  height: "100%",
+                  width: "100%",
+                  objectFit: "cover",
+                }}
+              />
+            </div>
+          </div>
+        </Link>
+        {/* Tarjeta 7*/}
+        <Link
+          to="/proyectosimple"
+          className="absolute z-30"
+          style={{
+            top: "1410px",
+            left: "50%",
+            transform: "translateX(-50%)",
+          }}
+        >
+          {/* Centra la tarjeta horizontalmente */}
+          <div className="flex w-[326px] h-[177px] shrink-0 rounded-[6.15px] bg-[#DAD8CB] shadow-[3.822px_3.822px_6.688px_1.911px_rgba(2,2,2,0.30)] relative">
+            {/* Parte izquierda con imagen */}
+            <div className="flex items-center justify-center w-1/2">
+              <img
+                src={tarjetaProyectos5}
+                alt="Tarjeta Proyectos"
+                className="object-cover"
+                style={{
+                  borderRadius: "6px 0 0 6px",
+                  height: "100%",
+                  width: "100%",
+                  objectFit: "cover",
+                }}
+              />
+            </div>
+
+            {/* Parte derecha con texto */}
+            <div
+              className="flex flex-col justify-center w-1/2 px-6"
+              style={{ borderRadius: "0 21.323px 21.323px 0" }}
+            >
+              {/* Primer contenedor - Título */}
+              <div className="flex items-center mt-6 w-[114px] h-[37px] text-[#464646] font-fira-sans text-[17px] font-[700] leading-[16px] tracking-[-0.382px]">
+                Fideicomiso Agrogarabi
+              </div>
+
+              {/* Segundo contenedor - Texto */}
+              <div className="mt-4 w-[114px] h-[47px] text-[#464646] font-fira-sans text-[12px] font-[400] leading-[14px] tracking-[-0.382px] mb-[17px]">
+                Yerba Mate
               </div>
 
               {/* Tercer contenedor - Botón */}
@@ -340,7 +447,7 @@ function ProyectosActivosMobile() {
           </div>
         </Link>
         {/* Imagen de árboles con texto y botón debajo */}
-        <div className="absolute z-10 w-full" style={{ top: "1140px" }}>
+        <div className="absolute z-10 w-full" style={{ top: "1540px" }}>
           <img
             src={arbolesProyectos}
             alt="Árboles Proyectos"

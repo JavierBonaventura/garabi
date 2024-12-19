@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import imagenCurvaImpacto from "../../../images/Desktop/imagenCurvaImpacto.png";
 import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
+import Politicas from "../Home/Politicas";
 
 import tarjetaImpacto1a from "../../../images/Desktop/tarjetaImpacto1.png";
 import tarjetaImpacto1b from "../../../images/Desktop/tarjetaImpacto1.png";
@@ -456,7 +457,7 @@ function Imapcto() {
               </div>
             </div>
             {/* Contenido adicional, botones, etc. */}
-
+            <Politicas />
             <div className="relative w-full pb-20 mt-[-4%]">
               {/* Gradiente superior */}
               <div

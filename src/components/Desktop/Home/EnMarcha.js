@@ -41,17 +41,24 @@ function EnMarcha() {
             className="flex mt-[40px] gap-4 z-20"
             style={{ marginLeft: `12%` }}
           >
-            <button className="w-[245.25px] h-[50px] rounded-[5px] bg-[#00942C] flex justify-center items-center cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5">
+            <a
+              href="mailto:contacto@grupogarabi.com.ar"
+              className="w-[350px] h-[50px] rounded-[5px] bg-[#00942C] flex justify-center items-center cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5"
+            >
               <span className="text-white font-fira-sans text-[14px] font-normal tracking-[4px] uppercase">
-                email
+                contacto@grupogarabi.com.ar
               </span>
-            </button>
+            </a>
 
-            <button className="w-[245.25px] h-[50px] rounded-[5px] border border-[#00942C] bg-[#FFF] flex justify-center items-center cursor-pointer transition-transform duration-500 ease-out hover:bg-[#D1D1D1] hover:-translate-y-0.5">
+            <a
+              href="https://api.whatsapp.com/send?phone=541130254376"
+              target="_blank"
+              className="w-[245.25px] h-[50px] rounded-[5px] border border-[#00942C] bg-[#FFF] flex justify-center items-center cursor-pointer transition-transform duration-500 ease-out hover:bg-[#D1D1D1] hover:-translate-y-0.5"
+            >
               <span className="text-[#00942C] font-fira-code text-[14px] font-normal tracking-[4px] uppercase">
-                011 xxx xxxx
+                11-3025-4376
               </span>
-            </button>
+            </a>
           </div>
         </div>
       </div>

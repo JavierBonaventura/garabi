@@ -145,7 +145,7 @@ function AlgunosNumeros() {
               />
               <div className="w-[219px] h-[130.083px] flex-shrink-0 flex flex-col justify-center items-center pt-[55px]">
                 <div className="text-[#00942C] text-center font-fira-sans text-[62.133px] font-extrabold leading-[41.422px] pt-12">
-                  {count3} M.
+                  {count3}
                 </div>
                 <div className="text-[#000] text-center font-fira-sans text-[20.711px] font-medium tracking-[5.178px] uppercase pt-[20px] leading-none">
                   hectáreas con yerba mate

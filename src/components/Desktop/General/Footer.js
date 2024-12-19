@@ -43,17 +43,20 @@ function Footer() {
             {/* Segunda columna */}
             <div className="flex flex-col top-20px mt-16">
               <div className="text-black font-fira-sans text-[14px] font-medium uppercase tracking-[4px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
-                HOME
+                <a href="/"> HOME</a>
               </div>
               <div className="w-[133.714px] h-[139px] text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-[20px]">
                 <p className="mb-[10px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
-                  Nosotros
+                  <a href="/nosotros">Nosotros</a>
                 </p>
                 <p className="mb-[10px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
-                  Proyectos
+                  <a href="/proyetos">Proyectos</a>
+                </p>
+                <p className="mb-[10px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
+                  <a href="/impacto">Impacto</a>
                 </p>
                 <p className="hover:cursor-pointer hover:scale-105 transition-transform duration-200">
-                  Medio Ambiente
+                  <a href="/servicios">Servicios</a>
                 </p>
               </div>
             </div>
@@ -61,7 +64,7 @@ function Footer() {
             {/* Tercera columna */}
             <div className="flex flex-col top-20px mt-16">
               <div className="text-black font-fira-sans text-[14px] font-medium uppercase tracking-[4px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
-                SERVICIOS
+                <a href="/servicios">SERVICIOS</a>
               </div>
               <div className="w-[133.714px] h-[139px] text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-[20px]">
                 <p className="mb-[10px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
@@ -79,7 +82,7 @@ function Footer() {
             {/* Cuarta columna */}
             <div className="flex flex-col top-20px mt-16">
               <div className="text-black font-fira-sans text-[14px] font-medium uppercase tracking-[4px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
-                CONTACTO
+                <a href="/contacto">CONTACTO</a>
               </div>
               <div className="w-[350px] h-[139px] text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-[20px]">
                 <a

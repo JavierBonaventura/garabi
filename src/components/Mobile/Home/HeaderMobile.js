@@ -28,7 +28,13 @@ function HeaderMobile() {
           backgroundSize: "cover",
         }}
       >
-        <img src={logoGarabi} alt="Logo Garabi" className="h-[64px] w-auto ml-4" />
+        <a href="/">
+          <img
+            src={logoGarabi}
+            alt="Logo Garabi"
+            className="h-[64px] w-auto ml-4"
+          />
+        </a>
 
         <img
           src={hamburguesa}

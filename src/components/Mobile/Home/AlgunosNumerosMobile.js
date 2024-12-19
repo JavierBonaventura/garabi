@@ -12,10 +12,10 @@ function AlgunosNumerosMobile() {
   const [count4, setCount4] = useState(0);
   const ref = useRef(null);
 
-  const finalCount1 = 35500;
-  const finalCount2 = 7204;
-  const finalCount3 = 437;
-  const finalCount4 = 123;
+  const finalCount1 = 47865;
+  const finalCount2 = 25926;
+  const finalCount3 = 1840;
+  const finalCount4 = 150;
 
   const totalDuration = 2000; // 2 segundos
 
@@ -139,10 +139,10 @@ function AlgunosNumerosMobile() {
                   onClick={() => resetCounter(setCount3, finalCount3)}
                 />
                 <div className="mt-2 text-[#00942C] text-center font-fira-sans text-[30px] font-extrabold leading-[35px]">
-                  {count3} M.
+                  {count3}
                 </div>
                 <div className="w-[127px] text-black text-center font-fira-sans text-[12px] font-medium uppercase pt-[5px]">
-                  USD en activos administrados
+                  hectáreas con yerba mate
                 </div>
               </div>
 
@@ -161,7 +161,7 @@ function AlgunosNumerosMobile() {
                   onClick={() => resetCounter(setCount4, finalCount4)}
                 />
                 <div className="mt-2 text-[#00942C] text-center font-fira-sans text-[30px] font-extrabold leading-[35px]">
-                  {count4}
+                  + {count4}
                 </div>
                 <div className="w-[167px] text-black text-center font-fira-sans text-[12px] font-medium uppercase pt-[5px]">
                   EMPLEADOS DIRECTOS E INDIRECTOS

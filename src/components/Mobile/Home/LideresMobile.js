@@ -17,7 +17,7 @@ function LideresMobile() {
       <div className="relative z-10">
         {/* Primer div para "Líderes en forestación" */}
         <div className="ml-8 mt-12 w-[274px] h-[88px] text-white font-fira-sans text-[41px] font-extrabold leading-[39px] flex items-center justify-center">
-        Generamos valor creando <br /> un mundo más verde
+          Generamos valor creando <br /> un mundo más verde
         </div>
 
         {/* Segundo div para el texto adicional */}
@@ -33,14 +33,20 @@ function LideresMobile() {
           }}
         >
           {/* Primer botón */}
-          <button className="w-[104.608px] h-[36.322px] flex justify-center items-center rounded-[5px] bg-[#00942C] text-white font-fira-sans text-[12px] font-normal tracking-[4px] uppercase">
+          <a
+            href="/nosotros"
+            className="w-[104.608px] pl-1 text-center h-[36.322px] flex justify-center items-center rounded-[5px] bg-[#00942C] text-white font-fira-sans text-[12px] font-normal tracking-[4px] uppercase"
+          >
             Nosotros
-          </button>
+          </a>
 
           {/* Segundo botón */}
-          <button className="w-[112.608px] h-[36.322px] flex justify-center items-center rounded-[5px] bg-white text-[#00942C] font-fira-sans text-[12px] font-normal tracking-[4px] uppercase">
+          <a
+            href="proyectos"
+            className="w-[112.608px] pl-1 h-[36.322px] flex justify-center items-center rounded-[5px] bg-white text-[#00942C] font-fira-sans text-[12px] font-normal tracking-[4px] uppercase"
+          >
             Proyectos
-          </button>
+          </a>
         </div>
       </div>
     </div>

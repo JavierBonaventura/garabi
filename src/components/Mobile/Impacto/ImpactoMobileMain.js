@@ -3,7 +3,7 @@ import fondoMobile from "../../../images/Mobile/fondoMobile.png";
 import imagenCurvaImpacto from "../../../images/Mobile/imagenCurvaImpacto.png";
 import botonIzquierda from "../../../images/Desktop/botonIzquierda.png";
 import botonDerecha from "../../../images/Desktop/botonDerecha.png";
-
+import Politicas from "../../Desktop/Home/Politicas";
 import medioAmbiente1 from "../../../images/Mobile/medioAmbiente.png";
 import medioAmbiente2 from "../../../images/Mobile/medioAmbiente.png";
 import medioAmbiente3 from "../../../images/Mobile/medioAmbiente.png";
@@ -21,21 +21,25 @@ const cardsData = [
     title: "Medio ambiente",
     content: (
       <>
-        <p>
-          Preservación y promoción de especies nativas y bosques naturales
-          (fotos de bosques nativos + fotos de viveros de árboles)
-        </p>
         <ul className="list-disc pl-5 mt-2">
           <li>
-            Preservación y promoción del entorno natural de la fauna local
+            Preservación y promoción de especies nativas y bosques naturales.
           </li>
           <li>
-            Captura de carbón, como consecuencia de las plantaciones continuas
-            de bosques para uso comercial y bosques naturales
+            Preservación y promoción del entorno natural de la fauna local.
           </li>
           <li>
-            Diseño de un sistema de gestión de residuos y optimización del uso
-            de productos residuales en nuevas industrias
+            Implementar sistemas de prevención y control de incendios, como la
+            creación de cortafuegos, monitoreos y campañas de sensibilización en
+            las comunidades locales sobre cómo prevenir incendios.
+          </li>
+          <li>
+            Diseño de un sistema de gestión de residuos Conservación de fuentes
+            de agua: Crear zonas de protección alrededor de ríos, arroyos y
+            lagos dentro del bosque, protegiendo las cuencas hidrográficas de la
+            contaminación y el sobreuso. Estas áreas pueden ser declaradas
+            "zonas de conservación" donde no se permite la actividad comercial
+            intensiva.
           </li>
         </ul>
       </>
@@ -45,25 +49,53 @@ const cardsData = [
   {
     title: "Económico",
     content: (
-      <p>
-        Es nuestro fin de aportar al crecimiento económico en la zona y en el
-        país, creando operaciones con un alto valor agregado y un potencial
-        importante de exportación así contribuyendo a la apertura del país al
-        resto del mundo.
-      </p>
+      <ul className="list-disc pl-5 mt-2">
+        <li>
+          Creación de empleos directos e indirectos: La empresa puede contratar
+          a trabajadores locales para actividades que requieran los diferentes
+          proyectos.
+        </li>
+        <li>
+          La empresa puede contribuir a la sostenibilidad económica mediante la
+          diversificación de productos forestales, el impulso a la economía
+          circular y la creación de cadenas de valor que generen ingresos de
+          manera responsable. Además, puede establecer acuerdos comerciales que
+          promuevan el uso eficiente de los recursos, la reducción de residuos y
+          el apoyo a prácticas que fortalezcan la viabilidad económica a largo
+          plazo, sin comprometer la salud de los ecosistemas.
+        </li>
+      </ul>
     ),
     images: [economico1, economico2, economico3],
   },
   {
     title: "Social",
     content: (
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl
-        augue, finibus sed magna varius, egestas varius ex. Lorem ipsum dolor
-        sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed
-        magna varius, egestas varius ex. Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Donec nisl augue.
-      </p>
+      <ul className="list-disc pl-5 mt-2">
+        <li>
+          Consultas comunitarias y participación: Involucrar a las comunidades
+          locales en la toma de decisiones sobre la gestión del bosque, mediante
+          consultas públicas o la creación de comités de gestión comunitarios,
+          para que las actividades forestales estén alineadas con sus intereses
+          y necesidades.
+        </li>
+        <li>
+          Colaboración establecimientos educativos de diferentes maneras:
+          mediante el dictado de cursos, capacitaciones en ciertos temas,
+          colaboración en algunos proyectos particulares, ofrecer posibilidad de
+          pasantías.
+        </li>
+        <li>
+          Promoción de salud y seguridad: Asegurar que los trabajadores
+          forestales reciban capacitación en seguridad laboral, uso de equipos
+          de protección y primeros auxilios.
+        </li>
+        <li>
+          Establecer alianzas con organizaciones no gubernamentales locales para
+          apoyar iniciativas que beneficien a las comunidades, como proyectos
+          educativos, de salud o de desarrollo económico
+        </li>
+      </ul>
     ),
     images: [social1, social2, social3],
   },
@@ -232,10 +264,12 @@ function ImpactoMobileMain() {
             Impacto
           </div>
 
-          <div className="w-[315px] h-[72px] flex-shrink-0 mt-[136px] text-black font-fira-sans text-[12px] font-normal leading-[17px] tracking-[-1px] mx-auto">
-            Descubrí cómo nuestra empresa se enfoca en reducir su impacto
-            ambiental y fomentar un cambio positivo para el medio ambiente y la
-            comunidad, desde lo económico hasta lo social
+          <div className="w-[315px] h-[100px] flex-shrink-0 mt-[136px] text-black font-fira-sans text-[12px] font-normal leading-[17px] tracking-[-1px] mx-auto">
+            En Grupo Garabí, buscamos gestionar proyectos forestales que
+            promuevan la conservación del medio ambiente, fomenten la
+            biodiversidad y generen un impacto positivo y sostenible en las
+            comunidades locales. Hacemos foco en estos tres pilares de la
+            siguiente manera
           </div>
 
           <div className="flex flex-col mt-2">
@@ -249,6 +283,7 @@ function ImpactoMobileMain() {
             ))}
           </div>
         </div>
+        <Politicas />
       </div>
     </div>
   );

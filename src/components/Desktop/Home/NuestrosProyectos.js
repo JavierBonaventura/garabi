@@ -39,11 +39,11 @@ function Servicios() {
       image: gallery1,
     },
     {
-      id: 1,
-      title: "Proyectos Forestales",
+      id: 2,
+      title: "Proyectos Yerbatero/Forestal",
       description:
-        "Plantaciones de pino y/o eucaliptus en campos propios o arrendados. Con la posibilidad de incorporar hacienda propia o de terceros como complemento.",
-      image: gallery1,
+        "Se trata de proyectos de plantaciones de pino y/o eucaliptus combinado con yerba mate en las lomas coloradas.",
+      image: gallery2,
     },
   ];
 

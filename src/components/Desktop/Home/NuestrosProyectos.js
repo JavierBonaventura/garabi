@@ -39,11 +39,31 @@ function Servicios() {
       image: gallery1,
     },
     {
+      id: 1,
+      title: "Proyectos Forestales",
+      description:
+        "Plantaciones de pino y/o eucaliptus en campos propios o arrendados. Con la posibilidad de incorporar hacienda propia o de terceros como complemento.",
+      image: gallery1,
+    },
+    {
       id: 2,
       title: "Proyectos Yerbatero/Forestal",
       description:
         "Se trata de proyectos de plantaciones de pino y/o eucaliptus combinado con yerba mate en las lomas coloradas.",
       image: gallery2,
+    },
+    {
+      id: 3,
+      title: "Proyectos Yerba Mate",
+      description: "Son 100% plantaciones de yerba mate.",
+      image: gallery3,
+    },
+    {
+      id: 4,
+      title: "Proyectos Mixtos",
+      description:
+        "De acuerdo a las características propias del campo y del suelo se pueden incorporar más actividades además de la forestación y la yerba, como el arroz y la ganadería.",
+      image: gallery1,
     },
   ];
 
@@ -146,8 +166,7 @@ function Servicios() {
             {/* Contenedor para las tarjetas */}
             <div
               ref={carouselRef}
-              className={`flex gap-[160px] transition-transform duration-500 ease-in-out z-20`}
-              style={{ transform: `translateX(0px)` }}
+              className="flex gap-[160px] transition-transform duration-500 ease-in-out z-20 ml-[569.7px]"
             >
               {cards.map((card, index) => (
                 <div

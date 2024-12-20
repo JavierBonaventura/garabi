@@ -154,7 +154,7 @@ function ValoresMobile() {
           >
             <div
               ref={carouselRef}
-              className="flex"
+              className="flex -ml-[270px]"
               style={{
                 width: `${cards.length * cardWidth}px`,
                 transition: "transform 0.5s ease-in-out",

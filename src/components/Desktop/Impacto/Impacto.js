@@ -173,6 +173,13 @@ function Imapcto() {
           }}
         />
         <div
+          id="verlo"
+          className="absolute z-[20] w-[100px] h-[100vw] bg-gradient-to-r from-transparent to-[#dfe8e0] rotate-90 top-[3215px] left-[100%] "
+          style={{
+            transformOrigin: "top left",
+          }}
+        />
+        <div
           className="relative z-10 flex flex-col h-full "
           style={{
             backgroundImage: `url(${imagenFondo})`,
@@ -478,7 +485,7 @@ function Imapcto() {
 
               {/* Gradiente inferior */}
               <div
-                className="absolute top-0 right-0 w-full h-[300px] origin-top-left"
+                className="absolute top-16 right-0 w-full h-[300px] origin-top-left "
                 style={{
                   background:
                     "linear-gradient(00deg, rgba(237, 242, 232, 0.00) 0%, #dfe8e0 100%)",

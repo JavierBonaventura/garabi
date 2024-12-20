@@ -7,7 +7,6 @@ function NuestraHistoriaMobile() {
   const carouselRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(1);
   const cardHeight = 103;
-  const totalCards = 4;
 
   const startY = useRef(0);
   const endY = useRef(0);
@@ -122,6 +121,8 @@ function NuestraHistoriaMobile() {
         "Alianza estratégica con grupo industrial de origen francés y belga.",
     },
   ];
+
+  const totalCards = historicalData.length;
 
   return (
     <div style={{ overflow: "hidden" }}>
@@ -260,7 +261,7 @@ function NuestraHistoriaMobile() {
                           style={{
                             color: "#000",
                             fontFamily: "Fira Sans",
-                            fontSize: "13px",
+                            fontSize: "12px",
                             fontStyle: "normal",
                             fontWeight: 500,
                             lineHeight: "20px",
@@ -270,14 +271,15 @@ function NuestraHistoriaMobile() {
                         </span>
                         <p
                           style={{
-                            width: "169px",
+                            marginBottom: "30px",
+                            width: "190px",
                             height: "30px",
                             color: "#000",
                             fontFamily: "Fira Sans",
-                            fontSize: "11px",
+                            fontSize: "9px",
                             fontStyle: "normal",
                             fontWeight: 400,
-                            lineHeight: "17px",
+                            lineHeight: "11px",
                           }}
                         >
                           {item.description}
@@ -294,7 +296,7 @@ function NuestraHistoriaMobile() {
             style={{
               position: "absolute",
               right: "7%",
-              top: "45%",
+              top: "34%",
               transform: "translateY(-50%)",
             }}
           >
@@ -303,7 +305,7 @@ function NuestraHistoriaMobile() {
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
-                height: "75px",
+                height: "140px",
               }}
             >
               {[...Array(totalCards)].map((_, index) => (

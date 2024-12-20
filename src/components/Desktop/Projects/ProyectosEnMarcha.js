@@ -140,7 +140,7 @@ function ProyectosEnMarcha() {
                 <img
                   src={tarjeta.imageSrc}
                   alt="Tarjeta Proyectos"
-                  className="object-cover h-full w-full rounded-l-[21.323px]"
+                  className="object-cover h-full w-full "
                 />
               </div>
 

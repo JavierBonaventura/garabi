@@ -1,33 +1,98 @@
-import React, { useState } from "react";
-import fondoServicios from "../../images/fondoServicios.png";
-// Asegúrate de que estas imágenes existan
-import gallery1 from "../../images/gallery1.png";
-import gallery2 from "../../images/gallery2.png";
-import gallery3 from "../../images/gallery3.png";
+import React, { useState, useRef, useEffect } from "react";
+import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
+
+import gallery1 from "../../../images/Desktop/gallery1.png";
+import gallery2 from "../../../images/Desktop/gallery2.png";
+import gallery3 from "../../../images/Desktop/gallery3.png";
 
 function Servicios() {
-  const cardWidth = 569.736; // Ancho de cada tarjeta
-  const positions = [0, cardWidth, cardWidth * 2]; // Posiciones iniciales: 0px, 569px, 1139px
+  const [isTransitioning, setIsTransitioning] = useState(false);
+  const [buttonZIndex, setButtonZIndex] = useState(30);
+  const carouselRef = useRef(null);
 
-  // Estado para las posiciones de las tarjetas
-  const [cardPositions, setCardPositions] = useState(positions);
+  const cards = [
+    {
+      id: 1,
+      title: "Proyectos Forestales",
+      description:
+        "Plantaciones de pino y/o eucaliptus en campos propios o arrendados. Con la posibilidad de incorporar hacienda propia o de terceros como complemento.",
+      image: gallery1,
+    },
+    {
+      id: 2,
+      title: "Proyectos Yerbatero/Forestal",
+      description:
+        "Se trata de proyectos de plantaciones de pino y/o eucaliptus combinado con yerba mate en las lomas coloradas.",
+      image: gallery2,
+    },
+    {
+      id: 3,
+      title: "Proyectos Yerba Mate",
+      description: "Son 100% plantaciones de yerba mate.",
+      image: gallery3,
+    },
+    {
+      id: 4,
+      title: "Proyectos Mixtos",
+      description:
+        "De acuerdo a las características propias del campo y del suelo se pueden incorporar más actividades además de la forestación y la yerba, como el arroz y la ganadería.",
+      image: gallery1,
+    },
+    
+  
+  ];
 
-  const handleLeftClick = () => {
-    // Mover las posiciones hacia la izquierda, de forma circular
-    setCardPositions((prev) => [
-      prev[2], // La tarjeta en la posición 3 se mueve a la posición 1
-      prev[0], // La tarjeta en la posición 1 se mueve a la posición 2
-      prev[1], // La tarjeta en la posición 2 se mueve a la posición 3
-    ]);
+  const cardWidth = 409.736 + 160;
+
+  useEffect(() => {
+    const carousel = carouselRef.current;
+    if (carousel) {
+      carousel.insertBefore(carousel.lastChild, carousel.firstChild);
+    }
+  }, []);
+
+  const handleNext = () => {
+    if (isTransitioning) return;
+    setIsTransitioning(true);
+    animateButtons();
+
+    const carousel = carouselRef.current;
+    carousel.style.transition = "transform 0.5s ease-in-out";
+    carousel.style.transform = `translateX(-${cardWidth}px)`;
+
+    setTimeout(() => {
+      carousel.style.transition = "none";
+      carousel.style.transform = "translateX(0)";
+      carousel.appendChild(carousel.firstChild);
+      setIsTransitioning(false);
+    }, 500);
   };
 
-  const handleRightClick = () => {
-    // Mover las posiciones hacia la derecha, de forma circular
-    setCardPositions((prev) => [
-      prev[1], // La tarjeta en la posición 2 se mueve a la posición 1
-      prev[2], // La tarjeta en la posición 3 se mueve a la posición 2
-      prev[0], // La tarjeta en la posición 1 se mueve a la posición 3
-    ]);
+  const handlePrev = () => {
+    if (isTransitioning) return;
+    setIsTransitioning(true);
+    animateButtons();
+
+    const carousel = carouselRef.current;
+    carousel.style.transition = "none";
+    carousel.style.transform = `translateX(-${cardWidth}px)`;
+
+    carousel.insertBefore(carousel.lastChild, carousel.firstChild);
+
+    setTimeout(() => {
+      carousel.style.transition = "transform 0.5s ease-in-out";
+      carousel.style.transform = "translateX(0)";
+      setTimeout(() => {
+        setIsTransitioning(false);
+      }, 500);
+    }, 10);
+  };
+
+  const animateButtons = () => {
+    setButtonZIndex(10);
+    setTimeout(() => {
+      setButtonZIndex(30);
+    }, 500);
   };
 
   return (
@@ -35,433 +100,117 @@ function Servicios() {
       <div className="w-full h-[852px] overflow-hidden relative">
         <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
         <div
-          className="relative z-10 flex flex-col items-center justify-center h-full px-4"
+          className="relative  flex flex-col items-center justify-center h-full px-4"
           style={{
-            backgroundImage: `url(${fondoServicios}), linear-gradient(rgba(0, 148, 44, 0.08), rgba(0, 148, 44, 0.08))`,
-            backgroundPosition: "0px -300.596px",
-            backgroundSize: "100% 143.058%",
-            backgroundBlendMode: "overlay",
-            backgroundRepeat: "no-repeat",
+            backgroundImage: `url(${imagenFondo})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
           }}
         >
-          <div
-            className="w-[624px] h-[76px] flex-shrink-0 mt-[-50px]"
-            style={{
-              color: "#000",
-              fontFamily: "Fira Sans",
-              fontSize: "60px",
-              fontWeight: "900",
-              lineHeight: "60px",
-              letterSpacing: "-1px",
-              fontFeatureSettings: "'liga' off, 'clig' off",
-              textAlign: "center",
-            }}
-          >
+          <div className="w-[624px] h-[76px] flex-shrink-0 mt-[-30px] text-center text-[#000] font-fira-sans text-[60px] font-extrabold leading-[60px] tracking-[-1px]">
             Nuestros proyectos
           </div>
-
-          <div
-            className="w-[535px] h-[70px] flex-shrink-0 mt-[15px]"
-            style={{
-              color: "#000",
-              fontFamily: "Fira Sans",
-              fontSize: "24px",
-              fontWeight: "400",
-              lineHeight: "32px",
-              letterSpacing: "-1px",
-              fontFeatureSettings: "'liga' off, 'clig' off",
-              textAlign: "center",
-            }}
-          >
+          <div className="w-[535px] h-[70px] flex-shrink-0 mt-[15px] text-center text-[#000] font-fira-sans text-[24px] font-normal leading-[32px] tracking-[-1px]">
             Esta es una selección de todos los proyectos en los cuales venimos
             trabajando hace más de 40 años.
           </div>
           {/* Contenedor para los botones y las tarjetas */}
-          <div className="flex items-center justify-center mt-[50px] relative">
+          <div className="flex items-center justify-center mt-[50px] relative z-10">
             {/* Botón de navegación izquierda */}
-            <button 
-  onClick={handleLeftClick}
-  className="absolute left-[450px] w-[40px] h-[40px] flex items-center justify-center rounded-full text-white z-20 bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5 transform"
->
-<svg xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.86213 1.54581C9.5431 1.21738 9.02661 1.21738 8.70839 1.54581L1.96137 8.50935C1.32331 9.16705 1.32331 10.234 1.96137 10.8917L8.75735 17.9066C9.07312 18.2317 9.58308 18.2359 9.90293 17.9151C10.2293 17.5875 10.2334 17.0477 9.91191 16.715L3.69198 10.2963C3.37295 9.96707 3.37295 9.434 3.69198 9.10473L9.86213 2.73657C10.1812 2.40814 10.1812 1.87508 9.86213 1.54581Z" fill="white"/>
-</svg>
-</button>
-
+            <button
+              className=" absolute left-1/2 top-[255px] transform -translate-x-[300px] w-[40px] h-[40px] flex items-center justify-center rounded-full text-white  bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5"
+              onClick={handlePrev}
+              style={{ zIndex: buttonZIndex }}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="20"
+                viewBox="0 0 12 20"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M9.86213 1.54581C9.5431 1.21738 9.02661 1.21738 8.70839 1.54581L1.96137 8.50935C1.32331 9.16705 1.32331 10.234 1.96137 10.8917L8.75735 17.9066C9.07312 18.2317 9.58308 18.2359 9.90293 17.9151C10.2293 17.5875 10.2334 17.0477 9.91191 16.715L3.69198 10.2963C3.37295 9.96707 3.37295 9.434 3.69198 9.10473L9.86213 2.73657C10.1812 2.40814 10.1812 1.87508 9.86213 1.54581Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
 
             {/* Contenedor para las tarjetas */}
-            <div className="flex gap-[160px]">
-              {/* Tarjeta 1 */}
-              <div
-                className="transition-transform duration-500"
-                style={{ transform: `translateX(${cardPositions[0]}px)` }}
-              >
+            <div
+              ref={carouselRef}
+              className={`flex gap-[160px] transition-transform duration-500 ease-in-out z-20`}
+              style={{ transform: `translateX(0px)` }}
+            >
+              {cards.map((card, index) => (
                 <div
-                  className="w-[409.736px] h-[514.89px] flex-shrink-0"
+                  key={index}
+                  className="relative w-[409.736px] h-[520px] flex-shrink-0 transition-transform duration-500"
                   style={{
                     borderRadius: "28.132px",
                     background: "#DAD8CB",
                     boxShadow:
                       "17.583px 17.583px 30.77px 8.791px rgba(2, 2, 2, 0.30)",
                   }}
-                ></div>
-                <div
-                  className="w-[409.736px] h-[259.258px] rounded-t-[28.132px] bg-[#F7FFF1]  absolute top-0 left-0"
-                  style={{
-                    backgroundImage: `url(${gallery1})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    borderRadius: "28.132px 28.132px 0px 0px",
-                  }}
-                />
-                <div
-                  style={{
-                    color: "#464646",
-                    textAlign: "center",
-                    fontFamily: "Fira Sans",
-                    fontSize: "30px",
-                    fontWeight: "400",
-                    lineHeight: "21.323px",
-                    position: "absolute",
-                    top: "220px",
-                    width: "100%",
-                  }}
-                ></div>
-
-                {/* Descripción de la tarjeta */}
-                <div
-                  style={{
-                    width: "389.793px",
-                    height: "65.268px",
-                    flexShrink: 0,
-                    color: "#464646",
-                    textAlign: "center",
-                    fontFeatureSettings: "'liga' off, 'clig' off",
-                    fontFamily: "TT Norms Pro",
-                    fontSize: "28.132px",
-                    fontStyle: "normal",
-                    fontWeight: 450,
-                    lineHeight: "28.132px",
-                    letterSpacing: "-1.758px",
-                    position: "absolute",
-                    top: "280px",
-                    width: "100%",
-                  }}
                 >
-                  Proyecto Ciriaco Agro Alba
-                </div>
-
-                {/* Segunda descripción */}
-                <div
-                  style={{
-                    paddingLeft: "20px",
-                    paddingRight: "20px",
-                    width: "351.72px",
-                    height: "70.707px",
-                    flexShrink: 0,
-                    color: "#464646",
-                    textAlign: "center",
-                    fontFeatureSettings: "'liga' off, 'clig' off",
-                    fontFamily: "TT Norms Pro",
-                    fontSize: "17.583px",
-                    fontStyle: "normal",
-                    fontWeight: 400,
-                    lineHeight: "22.858px",
-                    letterSpacing: "-1.758px",
-                    position: "absolute",
-                    top: "330px",
-                    width: "100%",
-                  }}
-                >
-                  Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit praesent ornare eu. Vehicula feugiat vel porttitor pretium nisl facilisi. Pellentesque pharetra id placerat.
-                </div>
-
-                {/* Botón */}
-                <div
-                  className="bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5 transform translate-x-[-50%]"
-                  style={{
-                    width: "217px",
-                    height: "50px",
-                    flexShrink: 0,
-                    borderRadius: "5px",
-                    position: "absolute",
-                    bottom: "30px",
-                    left: "50%",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
+                  {/* Imagen de la tarjeta */}
                   <div
+                    className="w-[409.736px] h-[259.258px] rounded-t-[28.132px] bg-[#F7FFF1] absolute top-0 left-0 "
                     style={{
-                      color: "#FFF",
-                      textAlign: "center",
-                      fontFamily: "Fira Sans",
-                      fontSize: "14px",
-                      fontStyle: "normal",
-                      fontWeight: 400,
-                      lineHeight: "normal",
-                      letterSpacing: "4px",
-                      textTransform: "uppercase",
+                      backgroundImage: `url(${card.image})`,
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                      borderRadius: "28.132px 28.132px 0px 0px",
                     }}
-                  >
-                    ver más
+                  />
+
+                  {/* Título de la tarjeta */}
+                  <div className="absolute top-[280px] w-full text-center text-[#464646] font-tt-norms-pro text-[28.132px]  leading-[28.132px] tracking-[-1.758px]">
+                    <span className="font-[450]">
+                      {card.title.split(" ")[0]}
+                    </span>
+                    <div className="font-[600]">
+                      {card.title.split(" ").slice(1).join(" ")}
+                    </div>
+                  </div>
+
+                  {/* Descripción de la tarjeta */}
+                  <div className="absolute top-[350px] w-full text-center text-[#464646] font-tt-norms-pro text-[17.583px] font-[400] leading-[22.858px] tracking-[-1.758px] px-[20px]">
+                    {card.description}
+                  </div>
+
+                  {/* Botón de la tarjeta */}
+                  <div className="absolute bottom-[20px] left-[50%] transform -translate-x-[50%] w-[217px] h-[50px] bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5 flex justify-center items-center rounded-[5px]">
+                    <div className="text-white text-center font-fira-sans text-[14px] font-normal tracking-[4px] uppercase">
+                      ver más
+                    </div>
                   </div>
                 </div>
-              </div>
-              {/* Tarjeta 2 */}
-              <div
-                className="transition-transform duration-500"
-                style={{ transform: `translateX(${cardPositions[1] - 569}px)` }}
-              >
-                <div
-                  className="w-[409.736px] h-[514.89px] flex-shrink-0"
-                  style={{
-                    borderRadius: "28.132px",
-                    background: "#DAD8CB",
-                    boxShadow:
-                      "17.583px 17.583px 30.77px 8.791px rgba(2, 2, 2, 0.30)",
-                  }}
-                ></div>
-                <div
-                  className="w-[409.736px] h-[259.258px] rounded-t-[28.132px] bg-[#F7FFF1]  absolute top-0 left-0"
-                  style={{
-                    backgroundImage: `url(${gallery2})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    borderRadius: "28.132px 28.132px 0px 0px",
-                  }}
-                />
-                <div
-                  style={{
-                    color: "#464646",
-                    textAlign: "center",
-                    fontFamily: "Fira Sans",
-                    fontSize: "30px",
-                    fontWeight: "400",
-                    lineHeight: "21.323px",
-                    position: "absolute",
-                    top: "220px",
-                    width: "100%",
-                  }}
-                ></div>
-
-                {/* Descripción de la tarjeta */}
-                <div
-                  style={{
-                    width: "389.793px",
-                    height: "65.268px",
-                    flexShrink: 0,
-                    color: "#464646",
-                    textAlign: "center",
-                    fontFeatureSettings: "'liga' off, 'clig' off",
-                    fontFamily: "TT Norms Pro",
-                    fontSize: "28.132px",
-                    fontStyle: "normal",
-                    fontWeight: 450,
-                    lineHeight: "28.132px",
-                    letterSpacing: "-1.758px",
-                    position: "absolute",
-                    top: "280px",
-                    width: "100%",
-                  }}
-                >
-                  Proyecto Fideicomiso San Antonio.
-                </div>
-
-                {/* Segunda descripción */}
-                <div
-                  style={{
-                    paddingLeft: "20px",
-                    paddingRight: "20px",
-                    width: "351.72px",
-                    height: "70.707px",
-                    flexShrink: 0,
-                    color: "#464646",
-                    textAlign: "center",
-                    fontFeatureSettings: "'liga' off, 'clig' off",
-                    fontFamily: "TT Norms Pro",
-                    fontSize: "17.583px",
-                    fontStyle: "normal",
-                    fontWeight: 400,
-                    lineHeight: "22.858px",
-                    letterSpacing: "-1.758px",
-                    position: "absolute",
-                    top: "330px",
-                    width: "100%",
-                  }}
-                >
-                  Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit
-                  praesent ornare eu. Vehicula feugiat vel porttitor pretium
-                  nisl facilisi. Pellentesque pharetra id placerat.
-                </div>
-
-                {/* Botón */}
-                <div
-                  className="bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5 transform translate-x-[-50%]"
-                  style={{
-                    width: "217px",
-                    height: "50px",
-                    flexShrink: 0,
-                    borderRadius: "5px",
-                    position: "absolute",
-                    bottom: "30px",
-                    left: "50%",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  <div
-                    style={{
-                      color: "#FFF",
-                      textAlign: "center",
-                      fontFamily: "Fira Sans",
-                      fontSize: "14px",
-                      fontStyle: "normal",
-                      fontWeight: 400,
-                      lineHeight: "normal",
-                      letterSpacing: "4px",
-                      textTransform: "uppercase",
-                    }}
-                  >
-                    ver más
-                  </div>
-                </div>
-              </div>
-              {/* Tarjeta 3 */}
-              <div
-                className="transition-transform duration-500"
-                style={{
-                  transform: `translateX(${cardPositions[2] - 1139}px)`,
-                }}
-              >
-                <div
-                  className="w-[409.736px] h-[514.89px] flex-shrink-0"
-                  style={{
-                    borderRadius: "28.132px",
-                    background: "#DAD8CB",
-                    boxShadow:
-                      "17.583px 17.583px 30.77px 8.791px rgba(2, 2, 2, 0.30)",
-                  }}
-                ></div>
-                <div
-                  className="w-[409.736px] h-[259.258px] rounded-t-[28.132px] bg-[#F7FFF1]  absolute top-0 left-0"
-                  style={{
-                    backgroundImage: `url(${gallery3})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    borderRadius: "28.132px 28.132px 0px 0px",
-                  }}
-                />
-                <div
-                  style={{
-                    color: "#464646",
-                    textAlign: "center",
-                    fontFamily: "Fira Sans",
-                    fontSize: "30px",
-                    fontWeight: "400",
-                    lineHeight: "21.323px",
-                    position: "absolute",
-                    top: "220px",
-                    width: "100%",
-                  }}
-                ></div>
-
-                {/* Descripción de la tarjeta */}
-                <div
-                  style={{
-                    width: "389.793px",
-                    height: "65.268px",
-                    flexShrink: 0,
-                    color: "#464646",
-                    textAlign: "center",
-                    fontFeatureSettings: "'liga' off, 'clig' off",
-                    fontFamily: "TT Norms Pro",
-                    fontSize: "28.132px",
-                    fontStyle: "normal",
-                    fontWeight: 450,
-                    lineHeight: "28.132px",
-                    letterSpacing: "-1.758px",
-                    position: "absolute",
-                    top: "280px",
-                    width: "100%",
-                  }}
-                >
-                  Proyecto Biocor.
-                </div>
-
-                {/* Segunda descripción */}
-                <div
-                  style={{
-                    paddingLeft: "20px",
-                    paddingRight: "20px",
-                    width: "351.72px",
-                    height: "70.707px",
-                    flexShrink: 0,
-                    color: "#464646",
-                    textAlign: "center",
-                    fontFeatureSettings: "'liga' off, 'clig' off",
-                    fontFamily: "TT Norms Pro",
-                    fontSize: "17.583px",
-                    fontStyle: "normal",
-                    fontWeight: 400,
-                    lineHeight: "22.858px",
-                    letterSpacing: "-1.758px",
-                    position: "absolute",
-                    top: "330px",
-                    width: "100%",
-                  }}
-                >
-                  Lorem ipsum dolor sit amet consectetur. Faucibus urna at sit
-                  praesent ornare eu. Vehicula feugiat vel porttitor pretium
-                  nisl facilisi. Pellentesque pharetra id placerat.
-                </div>
-
-                {/* Botón */}
-                <div
-                  className="bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5 transform translate-x-[-50%]"
-                  style={{
-                    width: "217px",
-                    height: "50px",
-                    flexShrink: 0,
-                    borderRadius: "5px",
-                    position: "absolute",
-                    bottom: "30px",
-                    left: "50%",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  <div
-                    style={{
-                      color: "#FFF",
-                      textAlign: "center",
-                      fontFamily: "Fira Sans",
-                      fontSize: "14px",
-                      fontStyle: "normal",
-                      fontWeight: 400,
-                      lineHeight: "normal",
-                      letterSpacing: "4px",
-                      textTransform: "uppercase",
-                    }}
-                  >
-                    ver más
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
 
             {/* Botón de navegación derecha */}
             <button
-              onClick={handleRightClick}
-              className="absolute right-[450px] w-[40px] h-[40px] flex items-center justify-center rounded-full text-white z-20 bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5 transform "
-
+              className=" absolute left-1/2 top-[255px] transform -translate-x-[-260px] w-[40px] h-[40px] flex items-center justify-center rounded-full text-white  bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5"
+              onClick={handleNext}
+              style={{ zIndex: buttonZIndex }}
             >
-      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="20" viewBox="0 0 11 20" fill="none">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.66033 17.9067C1.97936 18.2351 2.49585 18.2351 2.81407 17.9067L9.56109 10.9432C10.1992 10.2855 10.1992 9.21849 9.56109 8.56079L2.76511 1.54588C2.44934 1.22082 1.93938 1.21661 1.61953 1.53746C1.29315 1.86505 1.28907 2.40485 1.61055 2.73749L7.83048 9.15617C8.14951 9.48545 8.14951 10.0185 7.83048 10.3478L1.66033 16.7159C1.34129 17.0444 1.34129 17.5774 1.66033 17.9067Z" fill="white"/>
-</svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="11"
+                height="20"
+                viewBox="0 0 11 20"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.66033 17.9067C1.97936 18.2351 2.49585 18.2351 2.81407 17.9067L9.56109 10.9432C10.1992 10.2855 10.1992 9.21849 9.56109 8.56079L2.76511 1.54588C2.44934 1.22082 1.93938 1.21661 1.61953 1.53746C1.29315 1.86505 1.28907 2.40485 1.61055 2.73749L7.83048 9.15617C8.14951 9.48545 8.14951 10.0185 7.83048 10.3478L1.66033 16.7159C1.34129 17.0444 1.34129 17.5774 1.66033 17.9067Z"
+                  fill="white"
+                />
+              </svg>
             </button>
           </div>
         </div>

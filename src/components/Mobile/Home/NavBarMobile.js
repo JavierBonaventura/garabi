@@ -234,7 +234,7 @@ function NavBarMobile({ menuAbierto, toggleMenu }) {
           </div>
         </Link>
 
-        <div className="absolute bottom-0 left-0 w-full flex flex-col items-center mb-4">
+        <div className="absolute bottom-0 left-0 w-full flex flex-col items-center mb-4 hidden">
           {/* Íconos de LinkedIn e Instagram */}
           <div className="flex items-center justify-center mb-2">
             <img

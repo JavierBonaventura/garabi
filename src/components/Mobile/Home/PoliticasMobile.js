@@ -7,19 +7,22 @@ import botonDerecho from "../../../images/Mobile/botonDerecho.png";
 function ServiciosMobile() {
   const initialCards = [
     {
-      image: null,
-      testimonial: "  lorem ipsum",
-      name: "Políticas de",
+      image: "https://blog.idrsolutions.com/app/uploads/2020/10/pdf-1.png",
+      testimonial:
+        "La política promueve la igualdad de género en el trabajo, empoderando a las mujeres y combatiendo la discriminación sexual.",
+      name: "Políticas de género",
     },
     {
-      image: null,
-      testimonial: "  lorem ipsum",
-      name: "Políticas de",
+      image: "https://blog.idrsolutions.com/app/uploads/2020/10/pdf-1.png",
+      testimonial:
+        "Describe el proceso para resolver controversias y comunicaciones del Grupo Garabi, creando un canal formal con los grupos de interés.",
+      name: "Procedimiento de comunicación",
     },
     {
-      image: null,
-      testimonial: "  lorem ipsum",
-      name: "Políticas de",
+      image: "https://blog.idrsolutions.com/app/uploads/2020/10/pdf-1.png",
+      testimonial:
+        "El plan de manejo forestal resume actividades, equilibrio entre lo productivo, social y ambiental, y compromiso con una comunicación transparente.",
+      name: "Plan de manejo forestal",
     },
   ];
 
@@ -131,7 +134,7 @@ function ServiciosMobile() {
                         className="relative ml-[20px] flex flex-col items-center mx-auto flex-shrink-0"
                         style={{
                           width: "258px",
-                          height: "296px",
+                          height: "333px",
                           borderRadius: "10px",
                           background: "#DAD8CB",
                           boxShadow:
@@ -156,7 +159,7 @@ function ServiciosMobile() {
                         </div>
 
                         {/* Descripción */}
-                        <div className="mt-0 flex-shrink-0 text-center w-[230px] h-[52px] text-[#000] font-fira-sans text-[14px] font-normal leading-[24px] tracking-[-1px]">
+                        <div className="mt-0 mb-10 flex-shrink-0 text-center w-[230px] h-[52px] text-[#000] font-fira-sans text-[14px] font-normal leading-[24px] tracking-[-1px]">
                           {card.testimonial}
                         </div>
 

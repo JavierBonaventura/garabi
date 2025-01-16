@@ -7,6 +7,8 @@ import tarjeta2Proyectos2 from "../../../images/Desktop/tarjeta2-proyectos.png";
 import tarjeta3Proyectos3 from "../../../images/Desktop/tarjeta3-proyectos.png";
 import tarjeta4Proyectos4 from "../../../images/Desktop/tarjeta4-proyectos.png";
 import tarjeta5Proyectos5 from "../../../images/Desktop/tarjeta5-proyectos.png";
+import tarjeta6Proyectos6 from "../../../images/Desktop/tarjeta6-proyectos.jpg";
+import tarjeta7Proyectos7 from "../../../images/Desktop/tarjeta7-proyectos.jpg";
 import arbolesProyectos from "../../../images/Desktop/arboles-proyectos.png";
 
 const tarjetas = [
@@ -58,7 +60,7 @@ const tarjetas = [
 
   {
     id: 6,
-    imageSrc: tarjeta5Proyectos5,
+    imageSrc: tarjeta6Proyectos6,
     title: "Rincón Chico",
     description: "Forestación, Yerba Mate, Arroz y Ganadería",
     buttonText: "Ver Proyecto",
@@ -67,7 +69,7 @@ const tarjetas = [
   },
   {
     id: 7,
-    imageSrc: tarjeta5Proyectos5,
+    imageSrc: tarjeta7Proyectos7,
     title: "Fideicomiso Agrogarabi",
     description: "Yerba Mate",
     buttonText: "Ver Proyecto",
@@ -161,7 +163,7 @@ function ProyectosEnMarcha() {
                   {tarjeta.description}
                 </div>
                 <Link to={tarjeta.route}>
-                  <button className="mt-6 flex justify-center items-center w-[217px] h-[50px] bg-[#00942C] rounded-[5px] flex-shrink-0 cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5">
+                  <button className="mt-6 hidden flex justify-center items-center w-[217px] h-[50px] bg-[#00942C] rounded-[5px] flex-shrink-0 cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5">
                     <span className="text-white text-center font-[400] text-[14px] tracking-[4px] uppercase font-fira-sans">
                       {tarjeta.buttonText}
                     </span>

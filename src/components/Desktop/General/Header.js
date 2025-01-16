@@ -87,7 +87,7 @@ function Header() {
         </nav>
 
         {/* Contenedor de iconos sociales */}
-        <div className="absolute top-[36px] right-[5vw] flex items-center gap-4">
+        <div className="absolute top-[36px] right-[5vw] flex items-center gap-4 hidden">
           <a
             href="https://www.linkedin.com/"
             target="_blank"

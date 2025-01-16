@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import fondoMobile from "../../../images/Mobile/fondoMobile.png";
 import servicios from "../../../images/Mobile/servicios.png";
-import recuadroUno from "../../../images/Desktop/asesoramiento-integral.jpg";
+import recuadroUno from "../../../images/Desktop/asesoramiento-integral-2.jpg";
 import recuadroDos from "../../../images/Desktop/asesoramiento-productivo.jpg";
 import botonIzquierdo from "../../../images/Mobile/botonIzquierdo.png";
 import botonDerecho from "../../../images/Mobile/botonDerecho.png";
@@ -192,11 +192,14 @@ function ServiciosMobile() {
                         </div>
 
                         {/* Botón "VER" */}
-                        <button className="mt-8 flex items-center justify-center w-[99px] h-[26px] rounded-[5px] bg-[#00942C]">
+                        <a
+                          href="/servicios"
+                          className="mt-8 flex items-center justify-center w-[99px] h-[26px] rounded-[5px] bg-[#00942C]"
+                        >
                           <span className="text-[#FFF] text-center font-fira-sans text-[12px] font-normal tracking-[4px] uppercase">
                             VER MÁS
                           </span>
-                        </button>
+                        </a>
                       </div>
                     </div>
                   ))}

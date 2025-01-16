@@ -2,7 +2,8 @@ import React from "react";
 import fondoMobile from "../../../images/Mobile/fondoMobile.png";
 import imagenCurva from "../../../images/Desktop/imagenCurva.png";
 import imagenCurvaContacto from "../../../images/Mobile/imagenCurvaContacto.png"; // New image
-import mapa from "../../../images/Mobile/mapa.png"; // New image
+import mapa1 from "../../../images/Desktop/ifram-san-isidro.jpg"; // New image
+import mapa2 from "../../../images/Desktop/ifram-corrientes.jpg"; // New image
 
 function QuedemosEnContactoMobile() {
   return (
@@ -232,6 +233,7 @@ function QuedemosEnContactoMobile() {
                   DIRECCIÓN
                 </div>
                 <div
+                  className="mb-2"
                   style={{
                     width: "329px",
                     color: "#000",
@@ -242,9 +244,31 @@ function QuedemosEnContactoMobile() {
                     lineHeight: "28px",
                   }}
                 >
-                  Chubut 991, San Isidro, Buenos Aires
+                  <a
+                    href="https://maps.app.goo.gl/KHjo3FYKxGPH9TVi7"
+                    target="_blank"
+                  >
+                    Dardo Rocha 986, Oficina 104, Martinez, Buenos Aires
+                  </a>
                 </div>
-
+                <div
+                  style={{
+                    width: "329px",
+                    color: "#000",
+                    fontFamily: "Fira Sans",
+                    fontSize: "18px",
+                    fontStyle: "normal",
+                    fontWeight: "400",
+                    lineHeight: "28px",
+                  }}
+                >
+                  <a
+                    href="https://maps.app.goo.gl/N6hgiDiaTxGXaurc6"
+                    target="_blank"
+                  >
+                    Ruta Nac. 120 - Km 2, Gobernador Virasoro - Corrientes
+                  </a>
+                </div>
                 <div
                   style={{
                     width: "115px",
@@ -321,14 +345,14 @@ function QuedemosEnContactoMobile() {
 
           {/* Mapa */}
           <a
-            href="https://www.google.com/maps?q=Chubut+991,+San+Isidro,+Buenos+Aires"
+            href="https://maps.app.goo.gl/KHjo3FYKxGPH9TVi7"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img
-              src={mapa}
+              src={mapa1}
               alt="Mapa"
-              className="w-[146px] mx-auto"
+              className="w-[146px] mx-auto rounded-xl"
               style={{
                 position: "absolute",
                 bottom: "314px",
@@ -360,7 +384,7 @@ function QuedemosEnContactoMobile() {
                 lineHeight: "14.891px",
               }}
             >
-              Oficina Central
+              Grupo Garabí
             </div>
 
             {/* Dirección */}
@@ -374,22 +398,20 @@ function QuedemosEnContactoMobile() {
                 marginTop: "12px", // Pequeño espacio entre los textos
               }}
             >
-              Chubut 991
-              <br></br>
-              San Isidro, Buenos Aires
+              Dardo Rocha 986, Oficina 104, Martinez, Buenos Aires
             </div>
           </div>
 
           {/* Mapa */}
           <a
-            href="https://www.google.com/maps?q=Chubut+991,+San+Isidro,+Buenos+Aires"
+            href="https://maps.app.goo.gl/N6hgiDiaTxGXaurc6"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img
-              src={mapa}
+              src={mapa2}
               alt="Mapa"
-              className="w-[146px] mx-auto"
+              className="w-[146px] mx-auto rounded-xl"
               style={{
                 position: "absolute",
                 bottom: "77px",
@@ -421,7 +443,7 @@ function QuedemosEnContactoMobile() {
                 lineHeight: "14.891px",
               }}
             >
-              Oficina Central
+              Grupo Garabí
             </div>
 
             {/* Dirección */}
@@ -435,9 +457,7 @@ function QuedemosEnContactoMobile() {
                 marginTop: "12px", // Pequeño espacio entre los textos
               }}
             >
-              Chubut 991
-              <br></br>
-              San Isidro, Buenos Aires
+              Ruta Nac. 120 - Km 2, Gobernador Virasoro - Corrientes
             </div>
           </div>
         </div>

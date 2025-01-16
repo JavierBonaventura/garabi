@@ -7,6 +7,8 @@ import tarjetaProyectos2 from "../../../images/Mobile/tarjetaProyectos2.png";
 import tarjetaProyectos3 from "../../../images/Mobile/tarjetaProyectos3.png";
 import tarjetaProyectos4 from "../../../images/Mobile/tarjetaProyectos4.png";
 import tarjetaProyectos5 from "../../../images/Mobile/tarjetaProyectos5.png";
+import tarjetaProyectos6 from "../../../images/Desktop/tarjeta6-proyectos.jpg";
+import tarjetaProyectos7 from "../../../images/Desktop/tarjeta7-proyectos.jpg";
 import arbolesProyectos from "../../../images/Mobile/arbolesProyectos.png";
 
 function ProyectosActivosMobile() {
@@ -98,7 +100,7 @@ function ProyectosActivosMobile() {
 
               {/* Tercer contenedor - Botón */}
               <div
-                className="flex items-center cursor-pointer mt-2 mb-6 text-[#000] font-fira-sans text-[12px] font-[300] leading-[16px] tracking-[-0.382px] underline"
+                className="hidden flex items-center cursor-pointer mt-2 mb-6 text-[#000] font-fira-sans text-[12px] font-[300] leading-[16px] tracking-[-0.382px] underline"
                 style={{
                   width: "68px",
                   height: "16px",
@@ -139,7 +141,7 @@ function ProyectosActivosMobile() {
 
               {/* Tercer contenedor - Botón */}
               <div
-                className="flex items-center cursor-pointer mt-2 mb-6 text-[#000] font-fira-sans text-[12px] font-[300] leading-[16px] tracking-[-0.382px] underline"
+                className="hidden flex items-center cursor-pointer mt-2 mb-6 text-[#000] font-fira-sans text-[12px] font-[300] leading-[16px] tracking-[-0.382px] underline"
                 style={{
                   width: "68px",
                   height: "16px",
@@ -210,7 +212,7 @@ function ProyectosActivosMobile() {
 
               {/* Tercer contenedor - Botón */}
               <div
-                className="flex items-center cursor-pointer mt-2 mb-6 text-[#000] font-fira-sans text-[12px] font-[300] leading-[16px] tracking-[-0.382px] underline"
+                className="hidden flex items-center cursor-pointer mt-2 mb-6 text-[#000] font-fira-sans text-[12px] font-[300] leading-[16px] tracking-[-0.382px] underline"
                 style={{
                   width: "68px",
                   height: "16px",
@@ -251,7 +253,7 @@ function ProyectosActivosMobile() {
 
               {/* Tercer contenedor - Botón */}
               <div
-                className="flex items-center cursor-pointer mt-2 mb-6 text-[#000] font-fira-sans text-[12px] font-[300] leading-[16px] tracking-[-0.382px] underline"
+                className="hidden flex items-center cursor-pointer mt-2 mb-6 text-[#000] font-fira-sans text-[12px] font-[300] leading-[16px] tracking-[-0.382px] underline"
                 style={{
                   width: "68px",
                   height: "16px",
@@ -322,7 +324,7 @@ function ProyectosActivosMobile() {
 
               {/* Tercer contenedor - Botón */}
               <div
-                className="flex items-center cursor-pointer mt-2 mb-6 text-[#000] font-fira-sans text-[12px] font-[300] leading-[16px] tracking-[-0.382px] underline"
+                className="hidden flex items-center cursor-pointer mt-2 mb-6 text-[#000] font-fira-sans text-[12px] font-[300] leading-[16px] tracking-[-0.382px] underline"
                 style={{
                   width: "68px",
                   height: "16px",
@@ -363,7 +365,7 @@ function ProyectosActivosMobile() {
 
               {/* Tercer contenedor - Botón */}
               <div
-                className="flex items-center cursor-pointer mt-2 mb-6 text-[#000] font-fira-sans text-[12px] font-[300] leading-[16px] tracking-[-0.382px] underline"
+                className="hidden flex items-center cursor-pointer mt-2 mb-6 text-[#000] font-fira-sans text-[12px] font-[300] leading-[16px] tracking-[-0.382px] underline"
                 style={{
                   width: "68px",
                   height: "16px",
@@ -377,7 +379,7 @@ function ProyectosActivosMobile() {
             {/* Parte derecha con imagen */}
             <div className="flex items-center justify-center w-1/2">
               <img
-                src={tarjetaProyectos4}
+                src={tarjetaProyectos6}
                 alt="Tarjeta Proyectos"
                 className="object-cover"
                 style={{
@@ -405,7 +407,7 @@ function ProyectosActivosMobile() {
             {/* Parte izquierda con imagen */}
             <div className="flex items-center justify-center w-1/2">
               <img
-                src={tarjetaProyectos5}
+                src={tarjetaProyectos7}
                 alt="Tarjeta Proyectos"
                 className="object-cover"
                 style={{
@@ -434,7 +436,7 @@ function ProyectosActivosMobile() {
 
               {/* Tercer contenedor - Botón */}
               <div
-                className="flex items-center cursor-pointer mt-2 mb-6 text-[#000] font-fira-sans text-[12px] font-[300] leading-[16px] tracking-[-0.382px] underline"
+                className="hidden flex items-center cursor-pointer mt-2 mb-6 text-[#000] font-fira-sans text-[12px] font-[300] leading-[16px] tracking-[-0.382px] underline"
                 style={{
                   width: "68px",
                   height: "16px",

@@ -31,27 +31,15 @@ const cards = [
   },
   {
     logo: logoCandado,
-    title: "GESTIÓN FORESTAL SOSTENIBLE",
+    title: "TRANSPARENCIA Y HONESTIDAD",
     description:
-      "La empresa prioriza prácticas sostenibles que garanticen la salud y la productividad a largo plazo de los bosques.",
+      "La empresa se compromete con la transparencia en sus operaciones, incluida la divulgación de información sobre sus prácticas forestales, impactos ambientales e iniciativas sociales.",
   },
   {
     logo: logoVision,
-    title: "CONSERVACIÓN AMBIENTAL",
+    title: "COMPROMISO CON LA CALIDAD",
     description:
-      "La empresa tiene como objetivo proteger la biodiversidad, preservar los ecosistemas y mitigar el cambio climático a través de sus buenas prácticas forestales.",
-  },
-  {
-    logo: logoTrayectoria,
-    title: "DESARROLLO LOCAL",
-    description:
-      "La empresa da prioridad al bienestar de las comunidades locales, los pueblos originarios y los trabajadores involucrados en las operaciones forestales. ",
-  },
-  {
-    logo: logoCandado,
-    title: "INNOVACIÓN",
-    description:
-      "Estar a la vanguardia en cuanto a nuevas técnicas y tecnologías de gestión forestal. Buscar siempre mejorar la eficiencia y efectividad de los proyectos a través de la innovación y la implementación de prácticas modernas.",
+      "Asegurar que todos los proyectos se lleven a cabo con los más altos estándares de calidad, desde la planificación hasta la ejecución, para garantizar resultados exitosos y duraderos.",
   },
 ];
 

@@ -171,7 +171,7 @@ function Servicios() {
               {cards.map((card, index) => (
                 <div
                   key={index}
-                  className="relative w-[409.736px] h-[520px] flex-shrink-0 transition-transform duration-500"
+                  className="relative w-[409.736px] h-[480px] flex-shrink-0 transition-transform duration-500"
                   style={{
                     borderRadius: "28.132px",
                     background: "#DAD8CB",
@@ -206,7 +206,7 @@ function Servicios() {
                   </div>
 
                   {/* Botón de la tarjeta */}
-                  <div className="absolute bottom-[20px] left-[50%] transform -translate-x-[50%] w-[217px] h-[50px] bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5 flex justify-center items-center rounded-[5px]">
+                  <div className="hidden absolute bottom-[20px] left-[50%] transform -translate-x-[50%] w-[217px] h-[50px] bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5 flex justify-center items-center rounded-[5px]">
                     <div className="text-white text-center font-fira-sans text-[14px] font-normal tracking-[4px] uppercase">
                       ver más
                     </div>

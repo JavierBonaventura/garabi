@@ -103,9 +103,22 @@ function ContactoForm() {
                 <p class="text-black font-fira-sans text-[14px] font-extrabold tracking-[4px] uppercase mb-2">
                   Dirección
                 </p>
-                <p class="w-[216px] text-black font-fira-sans text-[18px] font-normal leading-[28px]">
-                  Chubut 991, San Isidro, Buenos Aires
-                </p>
+                <a
+                  href="https://maps.app.goo.gl/b4E5DYbGraA1kZqw8"
+                  target="_blank"
+                >
+                  <p class="w-[216px] text-black font-fira-sans text-[18px] font-normal leading-[28px] mb-5">
+                    Dardo Rocha 986, Oficina 104, Martinez, Buenos Aires
+                  </p>
+                </a>
+                <a
+                  href="https://maps.app.goo.gl/N6hgiDiaTxGXaurc6"
+                  target="_blank"
+                >
+                  <p class="w-[216px] text-black font-fira-sans text-[18px] font-normal leading-[28px]">
+                    Ruta Nac. 120 - Km 2, Gobernador Virasoro - Corrientes
+                  </p>
+                </a>
               </div>
 
               {/* Texto 2 - Teléfono */}
@@ -146,20 +159,20 @@ function ContactoForm() {
             style={{
               display: "flex",
               justifyContent: "center",
-              marginTop: "-70px",
+              marginTop: "-100px",
             }}
           >
             {/* Primer Mapa */}
             <div className="text-center mr-[20px]">
               <a
-                href="https://www.google.com/maps?q=Chubut+991,+San+Isidro,+Buenos+Aires"
+                href="https://maps.app.goo.gl/b4E5DYbGraA1kZqw8"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img
-                  src={require("../../../images/Desktop/mapa.png")}
+                  src={require("../../../images/Desktop/ifram-san-isidro.jpg")}
                   alt="Mapa"
-                  className="relative -top-[260px] w-[519px] h-[262px] flex-shrink-0 cursor-pointer"
+                  className="relative -top-[260px] w-[519px] h-[262px] flex-shrink-0 cursor-pointer object-cover rounded-xl"
                 />
               </a>
               <div className="mt-[-240px]">
@@ -167,10 +180,10 @@ function ContactoForm() {
                   Grupo Garabí
                 </div>
                 <div className="w-[216.933px] mx-auto text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-[10px]">
-                  Chubut 991
+                  Dardo Rocha 986
                 </div>
                 <div className="w-[237.926px] mx-auto text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-[10px]">
-                  San Isidro, Buenos Aires
+                  Martinez, Buenos Aires
                 </div>
               </div>
             </div>
@@ -178,14 +191,14 @@ function ContactoForm() {
             {/* Segundo Mapa */}
             <div className="text-center">
               <a
-                href="https://www.google.com/maps?q=Chubut+991,+San+Isidro,+Buenos+Aires"
+                href="https://maps.app.goo.gl/N6hgiDiaTxGXaurc6"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img
-                  src={require("../../../images/Desktop/mapa.png")}
+                  src={require("../../../images/Desktop/ifram-corrientes.jpg")}
                   alt="Mapa"
-                  className="relative -top-[260px] w-[519px] h-[262px] flex-shrink-0 cursor-pointer"
+                  className="relative -top-[260px] w-[519px] h-[262px] flex-shrink-0 cursor-pointer object-cover rounded-xl"
                 />
               </a>
               <div className="mt-[-240px]">
@@ -193,10 +206,10 @@ function ContactoForm() {
                   Grupo Garabí
                 </div>
                 <div className="w-[216.933px] mx-auto text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-[10px]">
-                  Chubut 991
+                  Ruta Nac. 120 - Km 2
                 </div>
                 <div className="w-[237.926px] mx-auto text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-[10px]">
-                  San Isidro, Buenos Aires
+                  Gobernador Virasoro - Corrientes
                 </div>
               </div>
             </div>

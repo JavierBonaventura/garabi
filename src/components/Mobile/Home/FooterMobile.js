@@ -57,7 +57,7 @@ function FooterMobile() {
           </div>
         </div>
         {/* Column 2: Servicios */}
-        <div className="text-center">
+        <div className="text-center hidden">
           <div className="text-black font-fira-sans text-[12px] font-medium tracking-[2.409px] uppercase mb-1 text-left">
             <Link to="/services" className="mt-2 block cursor-pointer">
               Servicios
@@ -70,7 +70,7 @@ function FooterMobile() {
           </div>
         </div>{" "}
         {/* Column 3: Redes */}
-        <div className="text-center">
+        <div className="text-center hidden">
           <div className="text-black font-fira-sans text-[12px] font-medium tracking-[2.409px] uppercase mb-1">
             <Link to="/contact" className="mt-2 block cursor-pointer">
               Redes
@@ -118,11 +118,11 @@ function FooterMobile() {
                 contacto@grupogarabi.com.ar
               </p>{" "}
               <a
-                href="https://maps.app.goo.gl/ZweJ6Q1BHQyBzHFW6"
+                href="https://maps.app.goo.gl/b4E5DYbGraA1kZqw8"
                 target="_blank"
               >
                 <p className="mb-[5px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
-                  Dardo Rocha 986, Oficina 104, Martinez
+                  Dardo Rocha 986, Oficina 104, Martinez, Buenos Aires
                 </p>
               </a>
               <a

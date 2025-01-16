@@ -62,7 +62,7 @@ function Footer() {
             </div>
 
             {/* Tercera columna */}
-            <div className="flex flex-col top-20px mt-16">
+            <div className="flex flex-col top-20px mt-16 hidden">
               <div className="text-black font-fira-sans text-[14px] font-medium uppercase tracking-[4px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
                 <a href="/servicios">SERVICIOS</a>
               </div>
@@ -97,11 +97,11 @@ function Footer() {
                   contacto@grupogarabi.com.ar
                 </p>
                 <a
-                  href="https://maps.app.goo.gl/ZweJ6Q1BHQyBzHFW6"
+                  href="https://maps.app.goo.gl/b4E5DYbGraA1kZqw8"
                   target="_blank"
                 >
                   <p className="mb-[10px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
-                    Dardo Rocha 986, Oficina 104, Martinez
+                    Dardo Rocha 986, Oficina 104, Martinez, Buenos Aires
                   </p>
                 </a>
 
@@ -149,7 +149,7 @@ function Footer() {
           </div>
 
           {/* Línea centrada */}
-          <div className="w-[90%] h-[1px] bg-black mt-[40px] mb-6 mx-auto"></div>
+          <div className="w-[90%] h-[1px] bg-black mt-[75px] mb-6 mx-auto"></div>
 
           {/* Texto centrado */}
           <div className="w-[522.514px] text-black font-[Fira Sans] text-[14px] font-medium tracking-[4px] uppercase text-center mx-auto">

@@ -1,6 +1,6 @@
 import React from "react";
 import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
-import recuadroUno from "../../../images/Desktop/asesoramiento-integral.jpg";
+import recuadroUno from "../../../images/Desktop/asesoramiento-integral-2.jpg";
 import recuadroDos from "../../../images/Desktop/asesoramiento-productivo.jpg";
 
 function Servicios() {
@@ -57,11 +57,14 @@ function Servicios() {
                 </div>
 
                 {/* Botón debajo del texto */}
-                <button className="w-[217px] h-[50px] rounded-[5px]  absolute top-[370px] left-1/2  flex justify-center items-center bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5 transform translate-x-[-50%]">
+                <a
+                  href="/servicios"
+                  className="w-[217px] h-[50px] rounded-[5px]  absolute top-[370px] left-1/2  flex justify-center items-center bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5 transform translate-x-[-50%]"
+                >
                   <span className="text-white text-center font-fira-sans text-[14px] font-normal tracking-[4px] uppercase">
                     VER MÁS
                   </span>
-                </button>
+                </a>
               </div>
 
               {/* Segundo rectángulo */}
@@ -87,11 +90,14 @@ function Servicios() {
                 </div>
 
                 {/* Botón debajo del texto */}
-                <button className="w-[217px] h-[50px] rounded-[5px]  absolute top-[370px] left-1/2  flex justify-center items-center bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5 transform translate-x-[-50%]">
+                <a
+                  href="/servicios"
+                  className="w-[217px] h-[50px] rounded-[5px]  absolute top-[370px] left-1/2  flex justify-center items-center bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5 transform translate-x-[-50%]"
+                >
                   <span className="text-white text-center font-fira-sans text-[14px] font-normal tracking-[4px] uppercase">
                     VER MÁS
                   </span>
-                </button>
+                </a>
               </div>
             </div>
           </div>

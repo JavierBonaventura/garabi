@@ -1,6 +1,9 @@
 import React from "react";
 import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
 import PoliticasMobile from "../../Mobile/Home/PoliticasMobile";
+import Genero from "../../../pdf/politica-genero.pdf";
+import Comunicacion from "../../../pdf/comunicacion.pdf";
+import Manejo from "../../../pdf/plan-manejo.pdf";
 function Politicas() {
   return (
     <div className="">
@@ -28,7 +31,7 @@ function Politicas() {
           </div>
           <div className="hidden lg:grid grid-cols-1  lg:grid-cols-3 gap-x-10">
             <div
-              className="relative w-[300px] h-[340px]  lg:w-[409.736px] lg:h-[424.89px] flex-shrink-0 transition-transform duration-500"
+              className="relative w-[300px] h-[340px]  lg:w-[409.736px] lg:h-[474.89px] flex-shrink-0 transition-transform duration-500"
               style={{
                 borderRadius: "28.132px",
                 background: "#DAD8CB",
@@ -40,7 +43,7 @@ function Politicas() {
               <div
                 className="w-[300px] h-[240px] lg:w-[409.736px] lg:h-[259.258px] rounded-t-[28.132px] bg-[#F7FFF1] absolute top-0 left-0 "
                 style={{
-                  backgroundImage: `url(dsa)`,
+                  backgroundImage: `url(https://blog.idrsolutions.com/app/uploads/2020/10/pdf-1.png)`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                   borderRadius: "28.132px 28.132px 0px 0px",
@@ -49,23 +52,27 @@ function Politicas() {
 
               {/* Título de la tarjeta */}
               <div className="absolute top-[280px] w-full text-center text-[#464646] font-tt-norms-pro text-[28.132px]  leading-[28.132px] tracking-[-1.758px]">
-                <div className="font-[600]">Políticas de</div>
+                <div className="font-[600]">Política de género</div>
               </div>
 
               {/* Descripción de la tarjeta */}
-              <div className="absolute top-[320px] w-full text-center text-[#464646] font-tt-norms-pro text-[17.583px] font-[400] leading-[22.858px] tracking-[-1.758px] px-[20px]">
-                lorem ipsum
+              <div className="absolute top-[320px]  w-full text-center text-[#464646] font-tt-norms-pro text-[17.583px] font-[400] leading-[22.858px] tracking-[-1.758px] px-[20px]">
+                La política promueve la igualdad de género en el trabajo,
+                empoderando a las mujeres y combatiendo la discriminación
+                sexual.
               </div>
 
               {/* Botón de la tarjeta */}
               <div className="absolute bottom-[20px] left-[50%] transform -translate-x-[50%] w-[217px] h-[50px] bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5 flex justify-center items-center rounded-[5px]">
                 <div className="text-white text-center font-fira-sans text-[14px] font-normal tracking-[4px] uppercase">
-                  Descargar PDF
+                  <a href={Genero} target="_blank">
+                    Descargar PDF
+                  </a>
                 </div>
               </div>
             </div>
             <div
-              className="relative w-[300px] h-[340px]  lg:w-[409.736px] lg:h-[424.89px] flex-shrink-0 transition-transform duration-500"
+              className="relative w-[300px] h-[340px]  lg:w-[409.736px] lg:h-[474.89px] flex-shrink-0 transition-transform duration-500"
               style={{
                 borderRadius: "28.132px",
                 background: "#DAD8CB",
@@ -77,7 +84,7 @@ function Politicas() {
               <div
                 className="w-[300px] h-[240px] lg:w-[409.736px] lg:h-[259.258px] rounded-t-[28.132px] bg-[#F7FFF1] absolute top-0 left-0 "
                 style={{
-                  backgroundImage: `url(dsa)`,
+                  backgroundImage: `url(https://blog.idrsolutions.com/app/uploads/2020/10/pdf-1.png)`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                   borderRadius: "28.132px 28.132px 0px 0px",
@@ -86,23 +93,27 @@ function Politicas() {
 
               {/* Título de la tarjeta */}
               <div className="absolute top-[280px] w-full text-center text-[#464646] font-tt-norms-pro text-[28.132px]  leading-[28.132px] tracking-[-1.758px]">
-                <div className="font-[600]">Políticas de</div>
+                <div className="font-[600]">Procedimiento de comunicación</div>
               </div>
 
               {/* Descripción de la tarjeta */}
               <div className="absolute top-[320px] w-full text-center text-[#464646] font-tt-norms-pro text-[17.583px] font-[400] leading-[22.858px] tracking-[-1.758px] px-[20px]">
-                lorem ipsum
+                Describe el proceso para resolver controversias y comunicaciones
+                del Grupo Garabi, creando un canal formal con los grupos de
+                interés.
               </div>
 
               {/* Botón de la tarjeta */}
               <div className="absolute bottom-[20px] left-[50%] transform -translate-x-[50%] w-[217px] h-[50px] bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5 flex justify-center items-center rounded-[5px]">
                 <div className="text-white text-center font-fira-sans text-[14px] font-normal tracking-[4px] uppercase">
-                  Descargar PDF
+                  <a href={Comunicacion} target="_blank">
+                    Descargar PDF
+                  </a>
                 </div>
               </div>
             </div>
             <div
-              className="relative w-[300px] h-[340px]  lg:w-[409.736px] lg:h-[424.89px] flex-shrink-0 transition-transform duration-500"
+              className="relative w-[300px] h-[340px]  lg:w-[409.736px] lg:h-[474.89px] flex-shrink-0 transition-transform duration-500"
               style={{
                 borderRadius: "28.132px",
                 background: "#DAD8CB",
@@ -114,7 +125,7 @@ function Politicas() {
               <div
                 className="w-[300px] h-[240px] lg:w-[409.736px] lg:h-[259.258px] rounded-t-[28.132px] bg-[#F7FFF1] absolute top-0 left-0 "
                 style={{
-                  backgroundImage: `url(dsa)`,
+                  backgroundImage: `url(https://blog.idrsolutions.com/app/uploads/2020/10/pdf-1.png)`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                   borderRadius: "28.132px 28.132px 0px 0px",
@@ -123,18 +134,22 @@ function Politicas() {
 
               {/* Título de la tarjeta */}
               <div className="absolute top-[280px] w-full text-center text-[#464646] font-tt-norms-pro text-[28.132px]  leading-[28.132px] tracking-[-1.758px]">
-                <div className="font-[600]">Políticas de</div>
+                <div className="font-[600]">Plan de manejo forestal</div>
               </div>
 
               {/* Descripción de la tarjeta */}
               <div className="absolute top-[320px] w-full text-center text-[#464646] font-tt-norms-pro text-[17.583px] font-[400] leading-[22.858px] tracking-[-1.758px] px-[20px]">
-                lorem ipsum
+                El plan de manejo forestal resume actividades, equilibrio entre
+                lo productivo, social y ambiental, y compromiso con una
+                comunicación transparente.
               </div>
 
               {/* Botón de la tarjeta */}
               <div className="absolute bottom-[20px] left-[50%] transform -translate-x-[50%] w-[217px] h-[50px] bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5 flex justify-center items-center rounded-[5px]">
                 <div className="text-white text-center font-fira-sans text-[14px] font-normal tracking-[4px] uppercase">
-                  Descargar PDF
+                  <a href={Manejo} target="_blank">
+                    Descargar PDF
+                  </a>
                 </div>
               </div>
             </div>

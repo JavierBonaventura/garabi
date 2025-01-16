@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import imagenCurvaServicios from "../../../images/Desktop/imagenCurvaServicios.png";
-import tarjetaServicios from "../../../images/Desktop/tarjetaServicios.png";
+import tarjetaServicios from "../../../images/Desktop/asesoramiento-integral-2.jpg";
 import arbolesProyectos from "../../../images/Desktop/arboles-proyectos.png";
+import tarjetaServicios1 from "../../../images/Desktop/asesoramiento-productivo.jpg";
+import tarjetaServicios2 from "../../../images/Desktop/tarjetaServicios.png";
 import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
 
 function ServiciosOfrecidos() {
@@ -21,7 +23,7 @@ function ServiciosOfrecidos() {
       titulo: "Asesoramiento productivo",
       descripcion:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. ",
-      imagen: tarjetaServicios,
+      imagen: tarjetaServicios1,
     },
     {
       titulo: "Asesoramiento integral",
@@ -33,7 +35,7 @@ function ServiciosOfrecidos() {
       titulo: "Desarrollo de producto",
       descripcion:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. ",
-      imagen: tarjetaServicios,
+      imagen: tarjetaServicios2,
     },
   ];
 
@@ -123,7 +125,7 @@ function ServiciosOfrecidos() {
             >
               {/* Columna izquierda: título y descripción según la selección */}
               <div className="mr-4" style={{ width: "468.214px" }}>
-              <div className="w-[468.214px] h-[32px] flex-shrink-0 text-black font-fira-sans text-[24px] font-semibold leading-[32px]">
+                <div className="w-[468.214px] h-[32px] flex-shrink-0 text-black font-fira-sans text-[24px] font-semibold leading-[32px]">
                   {contenidoServicios[selectedIndex].titulo}
                 </div>
                 <div className="w-[526px] h-[206px] flex-shrink-0 text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-8">
@@ -133,11 +135,11 @@ function ServiciosOfrecidos() {
 
               {/* Columna derecha: imagen según la selección */}
               <div style={{ width: "528px" }}>
-              <img
-  src={contenidoServicios[selectedIndex].imagen}
-  alt="Imagen del Servicio"
-  className="w-[528px] h-[352px] rounded-[20px]"
-/>
+                <img
+                  src={contenidoServicios[selectedIndex].imagen}
+                  alt="Imagen del Servicio"
+                  className="w-[528px] h-[352px] rounded-[20px] object-cover"
+                />
               </div>
             </div>
           </div>

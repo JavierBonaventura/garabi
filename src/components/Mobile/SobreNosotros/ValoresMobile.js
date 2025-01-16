@@ -31,12 +31,11 @@ function ValoresMobile() {
         "Estar a la vanguardia en cuanto a nuevas técnicas y tecnologías de gestión forestal. Buscar siempre mejorar la eficiencia y efectividad de los proyectos a través de la innovación y la implementación de prácticas modernas.",
     },
     {
-      logo: logoVision,
+      logo: logoCandado,
       title: "TRANSPARENCIA Y HONESTIDAD",
       description:
         "La empresa se compromete con la transparencia en sus operaciones, incluida la divulgación de información sobre sus prácticas forestales, impactos ambientales e iniciativas sociales.",
     },
-
     {
       logo: logoVision,
       title: "COMPROMISO CON LA CALIDAD",

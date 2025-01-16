@@ -4,14 +4,14 @@ import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
 import Politicas from "../Home/Politicas";
 
 import tarjetaImpacto1a from "../../../images/Desktop/tarjetaImpacto1.png";
-import tarjetaImpacto1b from "../../../images/Desktop/tarjetaImpacto1.png";
-import tarjetaImpacto1c from "../../../images/Desktop/tarjetaImpacto1.png";
-import tarjetaImpacto2a from "../../../images/Desktop/tarjetaImpacto2.png";
-import tarjetaImpacto2b from "../../../images/Desktop/tarjetaImpacto2.png";
+import tarjetaImpacto1b from "../../../images/Desktop/tarjetaImpacto2.png";
+import tarjetaImpacto1c from "../../../images/Desktop/tarjetaImpacto3.png";
+import tarjetaImpacto2a from "../../../images/Desktop/tarjetaImpacto3.png";
+import tarjetaImpacto2b from "../../../images/Desktop/tarjetaImpacto1.png";
 import tarjetaImpacto2c from "../../../images/Desktop/tarjetaImpacto2.png";
-import tarjetaImpacto3a from "../../../images/Desktop/tarjetaImpacto3.png";
+import tarjetaImpacto3a from "../../../images/Desktop/tarjetaImpacto2.png";
 import tarjetaImpacto3b from "../../../images/Desktop/tarjetaImpacto3.png";
-import tarjetaImpacto3c from "../../../images/Desktop/tarjetaImpacto3.png";
+import tarjetaImpacto3c from "../../../images/Desktop/tarjetaImpacto1.png";
 
 import arbolesProyectos from "../../../images/Desktop/arboles-proyectos.png";
 
@@ -174,7 +174,7 @@ function Imapcto() {
         />
         <div
           id="verlo"
-          className="absolute z-[20] w-[100px] h-[100vw] bg-gradient-to-r from-transparent to-[#dfe8e0] rotate-90 top-[3215px] left-[100%] "
+          className="absolute z-[20] w-[100px] h-[100vw] bg-gradient-to-r from-transparent to-[#dfe8e0] rotate-90 top-[3300px] left-[100%] "
           style={{
             transformOrigin: "top left",
           }}

@@ -121,7 +121,7 @@ function Card({ title, content, images }) {
       carouselRef.current.style.transition = "none";
       carouselRef.current.style.transform = "translateX(0)";
       setIsSliding(false);
-    }, 500);
+    }, 800);
   };
 
   const handlePrev = () => {

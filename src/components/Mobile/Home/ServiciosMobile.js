@@ -146,7 +146,7 @@ function ServiciosMobile() {
               <img src={botonIzquierdo}></img>
             </button>
 
-            <div className="relative w-[393px] overflow-x-hidden">
+            <div className="relative w-[371px] overflow-x-hidden">
               <div className="py-12">
                 <div
                   ref={carouselRef}

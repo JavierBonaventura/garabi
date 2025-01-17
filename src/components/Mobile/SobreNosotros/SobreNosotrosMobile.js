@@ -29,7 +29,7 @@ function SobreNosotrosMobile() {
         >
           {/* Texto "Quedemos en contacto" */}
           <div
-            className="ml-8 w-[346px] h-[58px] flex-shrink-0 mt-[10px]"
+            className="ml-8 w-[340px] h-[58px] flex-shrink-0 mt-[10px]"
             style={{
               
               color: "#000",

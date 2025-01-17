@@ -1,14 +1,24 @@
 import React, { useState } from "react";
 import fondoMobile from "../../../images/Mobile/fondoMobile.png";
-import imagenAsesoramiento from "../../../images/Mobile/imagenAsesoramiento.png";
+import tarjetaServicios1 from "../../../images/Desktop/asesoramiento-integral-2.jpg";
+import tarjetaServicios2 from "../../../images/Desktop/asesoramiento-productivo.jpg";
+import tarjetaServicios3 from "../../../images/Desktop/tarjetaServicios.png";
 
 function AsesoramientoMobile() {
-
   const [activeTab, setActiveTab] = useState("ASESORAMIENTO PRODUCTIVO");
 
-  // Función para manejar el clic en las pestañas
-  const handleTabClick = (tab) => {
-    setActiveTab(tab);
+  // Determina qué imagen mostrar según el tab activo
+  const getImageForTab = (tab) => {
+    switch (tab) {
+      case "ASESORAMIENTO PRODUCTIVO":
+        return tarjetaServicios2;
+      case "ASESORAMIENTO INTEGRAL":
+        return tarjetaServicios1;
+      case "DESARROLLO DE PRODUCTO":
+        return tarjetaServicios3;
+      default:
+        return tarjetaServicios2; // Imagen por defecto
+    }
   };
 
   return (
@@ -33,7 +43,7 @@ function AsesoramientoMobile() {
               {["ASESORAMIENTO PRODUCTIVO", "ASESORAMIENTO INTEGRAL", "DESARROLLO DE PRODUCTO"].map((tab) => (
                 <div
                   key={tab}
-                  onClick={() => handleTabClick(tab)}
+                  onClick={() => setActiveTab(tab)}
                   className="flex justify-center items-center text-white text-xs font-fira-sans cursor-pointer"
                   style={{
                     width: "101px",
@@ -47,7 +57,7 @@ function AsesoramientoMobile() {
                     lineHeight: "12px",
                     letterSpacing: "2px",
                     textTransform: "uppercase",
-                    color: activeTab === tab ? "white" : "black", 
+                    color: activeTab === tab ? "white" : "black",
                   }}
                 >
                   {tab}
@@ -100,14 +110,18 @@ function AsesoramientoMobile() {
           </div>
 
           {/* Image Section */}
-          <div className="w-full flex justify-center mt-4">
+          <div className="w-full flex justify-center mt-4 ">
             <img
-              src={imagenAsesoramiento}
-              alt="Imagen Asesoramiento"
+              src={getImageForTab(activeTab)} // Usa la función para obtener la imagen correcta
+              alt={`Imagen para ${activeTab}`}
               style={{
                 width: "334px",
                 height: "219px",
                 flexShrink: 0,
+                borderRadius: "10px", 
+                objectFit: "cover",   
+                overflow: "hidden",   
+                
               }}
             />
           </div>

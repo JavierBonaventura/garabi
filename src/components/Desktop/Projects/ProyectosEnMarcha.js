@@ -133,7 +133,7 @@ function ProyectosEnMarcha() {
               (e.currentTarget.style.transform = "translateX(-50%) scale(1)")
             }
           >
-            <div className="flex w-[1074px] h-[268px] flex-shrink-0 rounded-[21.323px] bg-[#DAD8CB] shadow-[13.327px_13.327px_23.322px_6.663px_rgba(2,2,2,0.3)] relative">
+            <div className="flex w-[1074px] h-[268px] flex-shrink-0 rounded-[21.323px] overflow-hidden bg-[#DAD8CB] shadow-[13.327px_13.327px_23.322px_6.663px_rgba(2,2,2,0.3)] relative">
               <div
                 className={`flex items-center justify-center w-1/2 ${
                   tarjeta.reverseOrder ? "order-last" : ""

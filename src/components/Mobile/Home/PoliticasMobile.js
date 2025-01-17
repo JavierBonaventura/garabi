@@ -97,10 +97,10 @@ function ServiciosMobile() {
   };
 
   return (
-    <div className="w-full h-[380px] relative -mt-10">
-      <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
+    <div className="w-[370px] h-[380px] relative -mt-10 ">
+      <div className="inset-0 bg-[#F7FFF1] bg-opacity-100 "></div>
       <div
-        className="relative z-10 flex flex-col items-center justify-start h-full px-4"
+        className="relative z-10 flex flex-col items-center justify-start h-full px-4 "
         style={{
           backgroundImage: `url(${fondoMobile})`,
           backgroundSize: "cover",
@@ -110,15 +110,15 @@ function ServiciosMobile() {
         onTouchEnd={handleTouchEnd}
       >
         <div>
-          <div className="relative w-full flex items-center justify-center ">
+          <div className="relative w-[370px] flex items-center justify-center ">
             <button
               onClick={handlePrev}
-              className="absolute left-[10px] w-[26px] h-[26px] flex items-center justify-center  z-10  "
+              className="absolute left-[10px] w-[26px] h-[26px] flex items-center justify-center  z-10 "
             >
               <img src={botonIzquierdo}></img>
             </button>
 
-            <div className="relative w-[393px] overflow-x-hidden">
+            <div className="relative w-[393px] overflow-x-hidden ">
               <div className="py-12">
                 <div
                   ref={carouselRef}
@@ -128,10 +128,11 @@ function ServiciosMobile() {
                   {cards.map((card, index) => (
                     <div
                       key={index}
-                      className="flex-shrink-0 flex items-center justify-center mr-[50px] ml-[50px]"
+                      // aca
+                      className="flex-shrink-0 flex items-center justify-center mr-[50px] ml-[30px] "
                     >
                       <div
-                        className="relative ml-[20px] flex flex-col items-center mx-auto flex-shrink-0"
+                        className="relative ml-[25px] flex flex-col items-center mx-auto flex-shrink-0 "
                         style={{
                           width: "258px",
                           height: "333px",

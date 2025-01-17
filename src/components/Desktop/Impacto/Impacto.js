@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import imagenCurvaImpacto from "../../../images/Desktop/imagenCurvaImpacto.png";
 import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
 import Politicas from "../Home/Politicas";
@@ -19,19 +19,19 @@ import botonDerecha from "../../../images/Desktop/botonDerecha.png";
 import botonIzquierda from "../../../images/Desktop/botonIzquierda.png";
 
 function Imapcto() {
-  const [currentIndex1, setCurrentIndex1] = useState(0);
+  const [currentIndex1, setCurrentIndex1] = useState(1);
   const [isSliding1, setIsSliding1] = useState(false);
 
-  const [currentIndex2, setCurrentIndex2] = useState(0);
+  const [currentIndex2, setCurrentIndex2] = useState(1);
   const [isSliding2, setIsSliding2] = useState(false);
 
-  const [currentIndex3, setCurrentIndex3] = useState(0);
+  const [currentIndex3, setCurrentIndex3] = useState(1);
   const [isSliding3, setIsSliding3] = useState(false);
 
   // Arreglo de imágenes
-  const images1 = [tarjetaImpacto1a, tarjetaImpacto1b, tarjetaImpacto1c];
-  const images2 = [tarjetaImpacto2a, tarjetaImpacto2b, tarjetaImpacto2c];
-  const images3 = [tarjetaImpacto3a, tarjetaImpacto3b, tarjetaImpacto3c];
+  const images1 = [tarjetaImpacto1c, tarjetaImpacto1a, tarjetaImpacto1b, tarjetaImpacto1c, tarjetaImpacto1a];
+  const images2 = [tarjetaImpacto2c, tarjetaImpacto2a, tarjetaImpacto2b, tarjetaImpacto2c, tarjetaImpacto2a];
+  const images3 = [tarjetaImpacto3c, tarjetaImpacto3a, tarjetaImpacto3b, tarjetaImpacto3c, tarjetaImpacto3a];
 
   const carouselRef1 = useRef(null);
   const carouselRef2 = useRef(null);
@@ -39,124 +39,143 @@ function Imapcto() {
 
   const cardWidth = 528; // Ancho de cada tarjeta
 
-  // Función para mover el slider 1 a la izquierda
+//card 1
+
+  useEffect(() => {
+    // Al terminar la transición, ajusta el índice si está en un clon
+    if (!isSliding1) return;
+
+    const timeout = setTimeout(() => {
+      if (currentIndex1 === 0) {
+        carouselRef1.current.style.transition = "none";
+        setCurrentIndex1(images1.length - 2);
+      } else if (currentIndex1 === images1.length - 1) {
+        carouselRef1.current.style.transition = "none";
+        setCurrentIndex1(1);
+      }
+      setIsSliding1(false);
+    }, 500);
+
+    return () => clearTimeout(timeout);
+  }, [currentIndex1, isSliding1]);
+
+  // Efecto para sincronizar la posición del carrusel
+  useEffect(() => {
+    if (!carouselRef1.current) return;
+
+    const offset = -currentIndex1 * cardWidth;
+    carouselRef1.current.style.transform = `translateX(${offset}px)`;
+    if (!isSliding1) {
+      carouselRef1.current.style.transition = "none";
+    } else {
+      carouselRef1.current.style.transition = "transform 0.5s ease-in-out";
+    }
+  }, [currentIndex1, isSliding1]);
+
   const moveLeft1 = () => {
     if (isSliding1) return;
     setIsSliding1(true);
-
-    carouselRef1.current.style.transition = "transform 0.5s ease-in-out";
-    carouselRef1.current.style.transform = `translateX(-${cardWidth}px)`;
-
-    setTimeout(() => {
-      setCurrentIndex1((prevIndex) =>
-        prevIndex === 0 ? images1.length - 1 : prevIndex - 1
-      );
-      carouselRef1.current.style.transition = "none";
-      carouselRef1.current.style.transform = "translateX(0)";
-      setIsSliding1(false);
-    }, 500);
+    setCurrentIndex1((prevIndex) => prevIndex - 1);
   };
 
-  // Función para mover el slider 1 a la derecha
   const moveRight1 = () => {
     if (isSliding1) return;
     setIsSliding1(true);
-
-    setCurrentIndex1((prevIndex) =>
-      prevIndex === images1.length - 1 ? 0 : prevIndex + 1
-    );
-
-    carouselRef1.current.style.transition = "none";
-    carouselRef1.current.style.transform = `translateX(-${cardWidth}px)`;
-
-    setTimeout(() => {
-      carouselRef1.current.style.transition = "transform 0.5s ease-in-out";
-      carouselRef1.current.style.transform = "translateX(0)";
-    }, 50);
-
-    setTimeout(() => {
-      setIsSliding1(false);
-    }, 500);
+    setCurrentIndex1((prevIndex) => prevIndex + 1);
   };
 
-  // Función para mover el slider 2 a la izquierda
-  const moveLeft2 = () => {
-    if (isSliding2) return;
-    setIsSliding2(true);
 
-    carouselRef2.current.style.transition = "transform 0.5s ease-in-out";
-    carouselRef2.current.style.transform = `translateX(-${cardWidth}px)`;
 
-    setTimeout(() => {
-      setCurrentIndex2((prevIndex) =>
-        prevIndex === 0 ? images2.length - 1 : prevIndex - 1
-      );
-      carouselRef2.current.style.transition = "none";
-      carouselRef2.current.style.transform = "translateX(0)";
-      setIsSliding2(false);
+  //card 2
+  
+    useEffect(() => {
+      // Al terminar la transición, ajusta el índice si está en un clon
+      if (!isSliding2) return;
+  
+      const timeout = setTimeout(() => {
+        if (currentIndex2 === 0) {
+          carouselRef2.current.style.transition = "none";
+          setCurrentIndex2 (images2.length - 2);
+        } else if (currentIndex2 === images2.length - 1) {
+          carouselRef2.current.style.transition = "none";
+          setCurrentIndex2(1);
+        }
+        setIsSliding2(false);
+      }, 500);
+  
+      return () => clearTimeout(timeout);
+    }, [currentIndex2, isSliding2]);
+  
+    // Efecto para sincronizar la posición del carrusel
+    useEffect(() => {
+      if (!carouselRef2.current) return;
+  
+      const offset = -currentIndex2 * cardWidth;
+      carouselRef2.current.style.transform = `translateX(${offset}px)`;
+      if (!isSliding2) {
+        carouselRef2.current.style.transition = "none";
+      } else {
+        carouselRef2.current.style.transition = "transform 0.5s ease-in-out";
+      }
+    }, [currentIndex2, isSliding2]);
+  
+    const moveLeft2 = () => {
+      if (isSliding2) return;
+      setIsSliding2(true);
+      setCurrentIndex2((prevIndex) => prevIndex - 1);
+    };
+  
+    const moveRight2 = () => {
+      if (isSliding2) return;
+      setIsSliding2(true);
+      setCurrentIndex2((prevIndex) => prevIndex + 1);
+    };
+
+
+    
+  //card 3
+  
+  useEffect(() => {
+    // Al terminar la transición, ajusta el índice si está en un clon
+    if (!isSliding3) return;
+
+    const timeout = setTimeout(() => {
+      if (currentIndex3 === 0) {
+        carouselRef3.current.style.transition = "none";
+        setCurrentIndex3 (images3.length - 2);
+      } else if (currentIndex3 === images3.length - 1) {
+        carouselRef3.current.style.transition = "none";
+        setCurrentIndex3(1);
+      }
+      setIsSliding3(false);
     }, 500);
-  };
 
-  // Función para mover el slider 2 a la derecha
-  const moveRight2 = () => {
-    if (isSliding2) return;
-    setIsSliding2(true);
+    return () => clearTimeout(timeout);
+  }, [currentIndex3, isSliding3]);
 
-    setCurrentIndex2((prevIndex) =>
-      prevIndex === images2.length - 1 ? 0 : prevIndex + 1
-    );
+  // Efecto para sincronizar la posición del carrusel
+  useEffect(() => {
+    if (!carouselRef3.current) return;
 
-    carouselRef2.current.style.transition = "none";
-    carouselRef2.current.style.transform = `translateX(-${cardWidth}px)`;
+    const offset = -currentIndex3 * cardWidth;
+    carouselRef3.current.style.transform = `translateX(${offset}px)`;
+    if (!isSliding3) {
+      carouselRef3.current.style.transition = "none";
+    } else {
+      carouselRef3.current.style.transition = "transform 0.5s ease-in-out";
+    }
+  }, [currentIndex3, isSliding3]);
 
-    setTimeout(() => {
-      carouselRef2.current.style.transition = "transform 0.5s ease-in-out";
-      carouselRef2.current.style.transform = "translateX(0)";
-    }, 50);
-
-    setTimeout(() => {
-      setIsSliding2(false);
-    }, 500);
-  };
-
-  // Función para mover el slider 3 a la izquierda
   const moveLeft3 = () => {
     if (isSliding3) return;
-    setIsSliding1(true);
-
-    carouselRef3.current.style.transition = "transform 0.5s ease-in-out";
-    carouselRef3.current.style.transform = `translateX(-${cardWidth}px)`;
-
-    setTimeout(() => {
-      setCurrentIndex3((prevIndex) =>
-        prevIndex === 0 ? images3.length - 1 : prevIndex - 1
-      );
-      carouselRef3.current.style.transition = "none";
-      carouselRef3.current.style.transform = "translateX(0)";
-      setIsSliding1(false);
-    }, 500);
+    setIsSliding3(true);
+    setCurrentIndex3((prevIndex) => prevIndex - 1);
   };
 
-  // Función para mover el slider 1 a la derecha
   const moveRight3 = () => {
     if (isSliding3) return;
     setIsSliding3(true);
-
-    setCurrentIndex3((prevIndex) =>
-      prevIndex === images3.length - 1 ? 0 : prevIndex + 1
-    );
-
-    carouselRef3.current.style.transition = "none";
-    carouselRef3.current.style.transform = `translateX(-${cardWidth}px)`;
-
-    setTimeout(() => {
-      carouselRef3.current.style.transition = "transform 0.5s ease-in-out";
-      carouselRef3.current.style.transform = "translateX(0)";
-    }, 50);
-
-    setTimeout(() => {
-      setIsSliding3(false);
-    }, 500);
+    setCurrentIndex3((prevIndex) => prevIndex + 1);
   };
 
   return (

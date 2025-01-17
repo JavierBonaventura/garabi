@@ -3,16 +3,19 @@ import logoCandado from "../../../images/Desktop/logoCandado.png";
 import logoVision from "../../../images/Desktop/logoVision.png";
 import logoTrayectoria from "../../../images/Desktop/logoTrayectoria.png";
 import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
+import logoCheck from "../../../images/Mobile/list-check-solid.svg"
+import logoLamp from "../../../images/Mobile/lightbulb-regular.svg"
+import logoReciclado from "../../../images/Mobile/recycle-solid.svg"
 
 const cards = [
   {
-    logo: logoCandado,
+    logo: logoCheck,
     title: "GESTIÓN FORESTAL SOSTENIBLE",
     description:
       "La empresa prioriza prácticas sostenibles que garanticen la salud y la productividad a largo plazo de los bosques.",
   },
   {
-    logo: logoVision,
+    logo: logoReciclado,
     title: "CONSERVACIÓN AMBIENTAL",
     description:
       "La empresa tiene como objetivo proteger la biodiversidad, preservar los ecosistemas y mitigar el cambio climático a través de sus buenas prácticas forestales.",
@@ -24,7 +27,7 @@ const cards = [
       "La empresa da prioridad al bienestar de las comunidades locales, los pueblos originarios y los trabajadores involucrados en las operaciones forestales. ",
   },
   {
-    logo: logoCandado,
+    logo: logoLamp,
     title: "INNOVACIÓN",
     description:
       "Estar a la vanguardia en cuanto a nuevas técnicas y tecnologías de gestión forestal. Buscar siempre mejorar la eficiencia y efectividad de los proyectos a través de la innovación y la implementación de prácticas modernas.",

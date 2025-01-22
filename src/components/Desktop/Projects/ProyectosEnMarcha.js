@@ -114,9 +114,11 @@ function ProyectosEnMarcha() {
 
           {/* Contenedor de texto */}
           <div className="w-[452px] h-[64px] flex-shrink-0 mt-[20px] ml-[12%] text-black font-fira-sans text-[24px] font-normal leading-[28px] tracking-[-1px]">
-            Enter dark mode. Oft referred to as night mode, high contrast, or
-            inverted colors, the setting has grown popular with those who claim
-            to experience eye fatigue from a deluge of white.
+            Estamos comprometidos con el desarrollo de iniciativas innovadoras y
+            estratégicas. Cada proyecto activo refleja nuestro enfoque en la
+            calidad, la eficiencia y el cumplimiento de objetivos, trabajando de
+            la mano con nuestros clientes para generar resultados que marquen la
+            diferencia.
           </div>
         </div>
 

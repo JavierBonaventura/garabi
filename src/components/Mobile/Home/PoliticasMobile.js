@@ -30,9 +30,10 @@ function ServiciosMobile() {
   const carouselRef = useRef(null);
   const [isSliding, setIsSliding] = useState(false);
 
-  const cardWidth = 378;
+  const cardWidth = 363;
 
   const handleNext = () => {
+    console.log("se ejecuto el next")
     if (isSliding) return;
 
     setIsSliding(true);
@@ -45,34 +46,88 @@ function ServiciosMobile() {
       carouselRef.current.style.transition = "none";
       carouselRef.current.style.transform = "translateX(0)";
       setIsSliding(false);
-    }, 500);
+    }, 800);
   };
 
-  const handlePrev = () => {
+  
+  const handleNextSwipe = () => {
+    console.log("se ejecuto el next")
     if (isSliding) return;
 
     setIsSliding(true);
 
-    // Mover la última tarjeta al inicio antes de iniciar la animación
+    carouselRef.current.style.transition = "transform 0.5s ease-in-out";
+    carouselRef.current.style.transform = `translateX(-${cardWidth}px)`;
+
+    setTimeout(() => {
+      setCards((prevCards) => [...prevCards.slice(1), prevCards[0]]);
+      carouselRef.current.style.transition = "none";
+      carouselRef.current.style.transform = "translateX(0)";
+      setIsSliding(false);
+    }, 800);
+  };
+
+
+
+  const handlePrev = () => {
+    console.log("se ejecuto el prev")
+    if (isSliding) return;
+  
+    setIsSliding(true);
+  
+    // Reorganizar tarjetas antes de la transición
     setCards((prevCards) => [
       prevCards[prevCards.length - 1],
       ...prevCards.slice(0, -1),
     ]);
-
-    // Posicionar el carrusel al final (en -cardWidth) sin transición
+  
+    // Mover carrusel a la posición inicial (-cardWidth)
     carouselRef.current.style.transition = "none";
     carouselRef.current.style.transform = `translateX(-${cardWidth}px)`;
-
-    // Esperar un ciclo para aplicar la transición hacia 0
+  
+    // Esperar antes de animar hacia la posición original (0)
     setTimeout(() => {
       carouselRef.current.style.transition = "transform 0.5s ease-in-out";
       carouselRef.current.style.transform = "translateX(0)";
     }, 50);
-
+  
+    // Resetear el estado después de la animación
     setTimeout(() => {
       setIsSliding(false);
     }, 500);
   };
+  
+
+
+  
+  const handlePrevSwipe = () => {
+    console.log("se ejecuto el prev")
+    if (isSliding) return;
+  
+    setIsSliding(true);
+  
+    // Reorganizar tarjetas antes de la transición
+    setCards((prevCards) => [
+      prevCards[prevCards.length - 1],
+      ...prevCards.slice(0, -1),
+    ]);
+  
+    // Mover carrusel a la posición inicial (-cardWidth)
+    carouselRef.current.style.transition = "none";
+    carouselRef.current.style.transform = `translateX(-${cardWidth}px)`;
+  
+    // Esperar antes de animar hacia la posición original (0)
+    setTimeout(() => {
+      carouselRef.current.style.transition = "transform 0.5s ease-in-out";
+      carouselRef.current.style.transform = "translateX(0)";
+    }, 50);
+  
+    // Resetear el estado después de la animación
+    setTimeout(() => {
+      setIsSliding(false);
+    }, 500);
+  };
+  
 
   // Swipe detection variables
   const startX = useRef(0);
@@ -88,11 +143,12 @@ function ServiciosMobile() {
 
   const handleTouchEnd = () => {
     if (startX.current - endX.current > 50) {
+      
       // Swipe left
-      handleNext();
+      handleNextSwipe();
     } else if (endX.current - startX.current > 50) {
       // Swipe right
-      handlePrev();
+      handlePrevSwipe();
     }
   };
 
@@ -105,9 +161,7 @@ function ServiciosMobile() {
           backgroundImage: `url(${fondoMobile})`,
           backgroundSize: "cover",
         }}
-        onTouchStart={handleTouchStart}
-        onTouchMove={handleTouchMove}
-        onTouchEnd={handleTouchEnd}
+
       >
         <div>
           <div className="relative w-[370px] flex items-center justify-center ">
@@ -118,12 +172,15 @@ function ServiciosMobile() {
               <img src={botonIzquierdo}></img>
             </button>
 
-            <div className="relative w-[393px] overflow-x-hidden ">
+            <div className="relative w-[393px] overflow-x-hidden  ">
               <div className="py-12">
                 <div
                   ref={carouselRef}
                   className="flex"
                   style={{ width: `${cards.length * cardWidth}px` }}
+                  onTouchStart={handleTouchStart}
+                  onTouchMove={handleTouchMove}
+                  onTouchEnd={handleTouchEnd}
                 >
                   {cards.map((card, index) => (
                     <div
@@ -178,7 +235,7 @@ function ServiciosMobile() {
             </div>
             <button
               onClick={handleNext}
-              className="absolute right-[10px] w-[26px] h-[26px] flex items-center justify-center z-10 "
+              className="absolute right-[10px] w-[26px] h-[26px] flex items-center justify-center z-10"
             >
               <img src={botonDerecho}></img>
             </button>

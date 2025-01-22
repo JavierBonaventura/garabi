@@ -22,7 +22,7 @@ function ProyectosActivosMobile() {
         <img
           src={imagenCurva}
           alt="Curva"
-          className="absolute top-0 left-0 w-full h-auto z-20 max-h-[250px]" // Ajusta el z-index aquí (menor que la tarjeta)
+          className="absolute mt-[170px] top-0 left-0 w-full h-auto z-20 max-h-[250px]" // Ajusta el z-index aquí (menor que la tarjeta)
           style={{
             mixBlendMode: "normal", // No aplicar ningún filtro o mezcla
             top: "30px",
@@ -58,12 +58,37 @@ function ProyectosActivosMobile() {
           <div className="w-[250px] h-[88px] flex-shrink-0 mt-[50px] ml-[2%] text-black font-fira-sans text-[36px] font-[900] leading-[41px] tracking-[-1px]">
             Proyectos activos
           </div>
+
+
+
+          <div
+            className="ml-[2%] w-[290px] mt-4 flex-shrink-0 "
+            style={{
+              color: "#000",
+              fontFamily: "Fira Sans",
+              fontSize: "12px",
+              fontWeight: "400",
+              lineHeight: "17px",
+              letterSpacing: "-1px",
+            }}
+          >
+         
+            <p>
+            Estamos comprometidos con el desarrollo de iniciativas innovadoras y
+            estratégicas. Cada proyecto activo refleja nuestro enfoque en la
+            calidad, la eficiencia y el cumplimiento de objetivos, trabajando de
+            la mano con nuestros clientes para generar resultados que marquen la
+            diferencia.
+            </p>
+          </div>
+
+
         </div>
         {/* Tarjeta 1 */}
         <Link
           to="/proyectosimple"
           className="absolute z-30"
-          style={{ top: "210px", left: "50%", transform: "translateX(-50%)" }}
+          style={{ top: "370px", left: "50%", transform: "translateX(-50%)" }}
         >
           {" "}
           {/* Centra la tarjeta horizontalmente */}
@@ -117,7 +142,7 @@ function ProyectosActivosMobile() {
           to="/proyectosimple"
           className="absolute z-30"
           style={{
-            top: "410px",
+            top: "570px",
             left: "50%",
             transform: "translateX(-50%)",
           }}
@@ -173,7 +198,7 @@ function ProyectosActivosMobile() {
           to="/proyectosimple"
           className="absolute z-30"
           style={{
-            top: "610px",
+            top: "770px",
             left: "50%",
             transform: "translateX(-50%)",
           }}
@@ -229,7 +254,7 @@ function ProyectosActivosMobile() {
           to="/proyectosimple"
           className="absolute z-30"
           style={{
-            top: "810px",
+            top: "970px",
             left: "50%",
             transform: "translateX(-50%)",
           }}
@@ -285,7 +310,7 @@ function ProyectosActivosMobile() {
           to="/proyectosimple"
           className="absolute z-30"
           style={{
-            top: "1010px",
+            top: "1170px",
             left: "50%",
             transform: "translateX(-50%)",
           }}
@@ -341,7 +366,7 @@ function ProyectosActivosMobile() {
           to="/proyectosimple"
           className="absolute z-30"
           style={{
-            top: "1210px",
+            top: "1370px",
             left: "50%",
             transform: "translateX(-50%)",
           }}
@@ -397,7 +422,7 @@ function ProyectosActivosMobile() {
           to="/proyectosimple"
           className="absolute z-30"
           style={{
-            top: "1410px",
+            top: "1570px",
             left: "50%",
             transform: "translateX(-50%)",
           }}
@@ -449,7 +474,7 @@ function ProyectosActivosMobile() {
           </div>
         </Link>
         {/* Imagen de árboles con texto y botón debajo */}
-        <div className="absolute z-10 w-full" style={{ top: "1540px" }}>
+        <div className="absolute z-10 w-full" style={{ top: "1710px" }}>
           <img
             src={arbolesProyectos}
             alt="Árboles Proyectos"

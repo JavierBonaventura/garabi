@@ -5,7 +5,17 @@ import tarjetaServicios2 from "../../../images/Desktop/asesoramiento-productivo.
 import tarjetaServicios3 from "../../../images/Desktop/tarjetaServicios.png";
 
 function AsesoramientoMobile() {
-  const [activeTab, setActiveTab] = useState("ASESORAMIENTO PRODUCTIVO");
+  const [activeTab, setActiveTab] = useState("Asesoramiento productivo");
+
+  // Descripciones para cada pestaña
+  const descriptions = {
+    "Asesoramiento productivo":
+    "Asesoramos a nuestros clientes a la hora de estudiar sus inversiones, optimizando el rendimiento del capital en base a nuestro conocimiento sobre el campo y a nuestra experiencia en explotaciones agropecuarias.",
+    "Administracion integral":
+    "Los emprendimientos de manera integral, eficiente y dinámica. La flexibilidad y agilidad de nuestra organización, sumado a la ventaja de estar en la zona de mayor crecimiento forestal del país, nos permiten garantizar un servicio de alta calidad.",
+    "Experiencia":
+    "Más de 40 años de servicio. Agroforestal Garabí SRL, administra un total de 50778.53 Ha. De las cuales 21500 están comprometidas actualmente al proceso de certificación (FGF Santa María y Rudaco SA).",
+  };
 
   // Determina qué imagen mostrar según el tab activo
   const getImageForTab = (tab) => {
@@ -99,7 +109,7 @@ function AsesoramientoMobile() {
 
           {/* Description */}
           <div
-            className="ml-8 w-[327px] h-[51px] flex-shrink-0 mt-4"
+            className="ml-8 w-[327px] h-[auto] flex-shrink-0 mt-4"
             style={{
               color: "#000",
               fontFamily: "Fira Sans",
@@ -109,9 +119,7 @@ function AsesoramientoMobile() {
               letterSpacing: "-1px",
             }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            interdum erat nec commodo imperdiet. Duis libero nisi, mollis quis
-            urna ornare, feugiat egestas nunc.
+            {descriptions[activeTab]}
           </div>
 
           {/* Image Section */}

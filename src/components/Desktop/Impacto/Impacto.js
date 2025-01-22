@@ -6,12 +6,12 @@ import Politicas from "../Home/Politicas";
 import tarjetaImpacto1a from "../../../images/Desktop/tarjetaImpacto1.png";
 import tarjetaImpacto1b from "../../../images/Desktop/tarjetaImpacto2.png";
 import tarjetaImpacto1c from "../../../images/Desktop/tarjetaImpacto3.png";
-import tarjetaImpacto2a from "../../../images/Desktop/tarjetaImpacto3.png";
-import tarjetaImpacto2b from "../../../images/Desktop/tarjetaImpacto1.png";
-import tarjetaImpacto2c from "../../../images/Desktop/tarjetaImpacto2.png";
-import tarjetaImpacto3a from "../../../images/Desktop/tarjetaImpacto2.png";
-import tarjetaImpacto3b from "../../../images/Desktop/tarjetaImpacto3.png";
-import tarjetaImpacto3c from "../../../images/Desktop/tarjetaImpacto1.png";
+import tarjetaImpacto2a from "../../../images/Desktop/tarjetaImpacto4.png";
+import tarjetaImpacto2b from "../../../images/Desktop/tarjetaImpacto5.png";
+import tarjetaImpacto2c from "../../../images/Desktop/tarjetaImpacto6.png";
+import tarjetaImpacto3a from "../../../images/Desktop/tarjetaImpacto7.png";
+import tarjetaImpacto3b from "../../../images/Desktop/tarjetaImpacto8.png";
+import tarjetaImpacto3c from "../../../images/Desktop/tarjetaImpacto9.png";
 
 import arbolesProyectos from "../../../images/Desktop/arboles-proyectos.png";
 
@@ -29,9 +29,27 @@ function Imapcto() {
   const [isSliding3, setIsSliding3] = useState(false);
 
   // Arreglo de imágenes
-  const images1 = [tarjetaImpacto1c, tarjetaImpacto1a, tarjetaImpacto1b, tarjetaImpacto1c, tarjetaImpacto1a];
-  const images2 = [tarjetaImpacto2c, tarjetaImpacto2a, tarjetaImpacto2b, tarjetaImpacto2c, tarjetaImpacto2a];
-  const images3 = [tarjetaImpacto3c, tarjetaImpacto3a, tarjetaImpacto3b, tarjetaImpacto3c, tarjetaImpacto3a];
+  const images1 = [
+    tarjetaImpacto1c,
+    tarjetaImpacto1a,
+    tarjetaImpacto1b,
+    tarjetaImpacto1c,
+    tarjetaImpacto1a,
+  ];
+  const images2 = [
+    tarjetaImpacto2c,
+    tarjetaImpacto2a,
+    tarjetaImpacto2b,
+    tarjetaImpacto2c,
+    tarjetaImpacto2a,
+  ];
+  const images3 = [
+    tarjetaImpacto3c,
+    tarjetaImpacto3a,
+    tarjetaImpacto3b,
+    tarjetaImpacto3c,
+    tarjetaImpacto3a,
+  ];
 
   const carouselRef1 = useRef(null);
   const carouselRef2 = useRef(null);
@@ -39,7 +57,7 @@ function Imapcto() {
 
   const cardWidth = 528; // Ancho de cada tarjeta
 
-//card 1
+  //card 1
 
   useEffect(() => {
     // Al terminar la transición, ajusta el índice si está en un clon
@@ -84,57 +102,53 @@ function Imapcto() {
     setCurrentIndex1((prevIndex) => prevIndex + 1);
   };
 
-
-
   //card 2
-  
-    useEffect(() => {
-      // Al terminar la transición, ajusta el índice si está en un clon
-      if (!isSliding2) return;
-  
-      const timeout = setTimeout(() => {
-        if (currentIndex2 === 0) {
-          carouselRef2.current.style.transition = "none";
-          setCurrentIndex2 (images2.length - 2);
-        } else if (currentIndex2 === images2.length - 1) {
-          carouselRef2.current.style.transition = "none";
-          setCurrentIndex2(1);
-        }
-        setIsSliding2(false);
-      }, 500);
-  
-      return () => clearTimeout(timeout);
-    }, [currentIndex2, isSliding2]);
-  
-    // Efecto para sincronizar la posición del carrusel
-    useEffect(() => {
-      if (!carouselRef2.current) return;
-  
-      const offset = -currentIndex2 * cardWidth;
-      carouselRef2.current.style.transform = `translateX(${offset}px)`;
-      if (!isSliding2) {
+
+  useEffect(() => {
+    // Al terminar la transición, ajusta el índice si está en un clon
+    if (!isSliding2) return;
+
+    const timeout = setTimeout(() => {
+      if (currentIndex2 === 0) {
         carouselRef2.current.style.transition = "none";
-      } else {
-        carouselRef2.current.style.transition = "transform 0.5s ease-in-out";
+        setCurrentIndex2(images2.length - 2);
+      } else if (currentIndex2 === images2.length - 1) {
+        carouselRef2.current.style.transition = "none";
+        setCurrentIndex2(1);
       }
-    }, [currentIndex2, isSliding2]);
-  
-    const moveLeft2 = () => {
-      if (isSliding2) return;
-      setIsSliding2(true);
-      setCurrentIndex2((prevIndex) => prevIndex - 1);
-    };
-  
-    const moveRight2 = () => {
-      if (isSliding2) return;
-      setIsSliding2(true);
-      setCurrentIndex2((prevIndex) => prevIndex + 1);
-    };
+      setIsSliding2(false);
+    }, 500);
 
+    return () => clearTimeout(timeout);
+  }, [currentIndex2, isSliding2]);
 
-    
+  // Efecto para sincronizar la posición del carrusel
+  useEffect(() => {
+    if (!carouselRef2.current) return;
+
+    const offset = -currentIndex2 * cardWidth;
+    carouselRef2.current.style.transform = `translateX(${offset}px)`;
+    if (!isSliding2) {
+      carouselRef2.current.style.transition = "none";
+    } else {
+      carouselRef2.current.style.transition = "transform 0.5s ease-in-out";
+    }
+  }, [currentIndex2, isSliding2]);
+
+  const moveLeft2 = () => {
+    if (isSliding2) return;
+    setIsSliding2(true);
+    setCurrentIndex2((prevIndex) => prevIndex - 1);
+  };
+
+  const moveRight2 = () => {
+    if (isSliding2) return;
+    setIsSliding2(true);
+    setCurrentIndex2((prevIndex) => prevIndex + 1);
+  };
+
   //card 3
-  
+
   useEffect(() => {
     // Al terminar la transición, ajusta el índice si está en un clon
     if (!isSliding3) return;
@@ -142,7 +156,7 @@ function Imapcto() {
     const timeout = setTimeout(() => {
       if (currentIndex3 === 0) {
         carouselRef3.current.style.transition = "none";
-        setCurrentIndex3 (images3.length - 2);
+        setCurrentIndex3(images3.length - 2);
       } else if (currentIndex3 === images3.length - 1) {
         carouselRef3.current.style.transition = "none";
         setCurrentIndex3(1);

@@ -31,7 +31,7 @@ function Politicas() {
           </div>
           <div className="hidden lg:grid grid-cols-1  lg:grid-cols-3 gap-x-10">
             <div
-              className="relative w-[300px] h-[340px]  lg:w-[409.736px] lg:h-[474.89px] flex-shrink-0 transition-transform duration-500"
+              className="relative w-[300px] h-[340px]  lg:w-[409.736px] lg:h-[500px] flex-shrink-0 transition-transform duration-500"
               style={{
                 borderRadius: "28.132px",
                 background: "#DAD8CB",
@@ -56,7 +56,7 @@ function Politicas() {
               </div>
 
               {/* Descripción de la tarjeta */}
-              <div className="absolute top-[320px]  w-full text-center text-[#464646] font-tt-norms-pro text-[17.583px] font-[400] leading-[22.858px] tracking-[-1.758px] px-[20px]">
+              <div className="absolute top-[350px]  w-full text-center text-[#464646] font-tt-norms-pro text-[17.583px] font-[400] leading-[22.858px] tracking-[-1.758px] px-[20px]">
                 La política promueve la igualdad de género en el trabajo,
                 empoderando a las mujeres y combatiendo la discriminación
                 sexual.
@@ -72,7 +72,7 @@ function Politicas() {
               </div>
             </div>
             <div
-              className="relative w-[300px] h-[340px]  lg:w-[409.736px] lg:h-[474.89px] flex-shrink-0 transition-transform duration-500"
+              className="relative w-[300px] h-[340px]  lg:w-[409.736px] lg:h-[500px] flex-shrink-0 transition-transform duration-500"
               style={{
                 borderRadius: "28.132px",
                 background: "#DAD8CB",
@@ -97,7 +97,7 @@ function Politicas() {
               </div>
 
               {/* Descripción de la tarjeta */}
-              <div className="absolute top-[320px] w-full text-center text-[#464646] font-tt-norms-pro text-[17.583px] font-[400] leading-[22.858px] tracking-[-1.758px] px-[20px]">
+              <div className="absolute top-[350px] w-full text-center text-[#464646] font-tt-norms-pro text-[17.583px] font-[400] leading-[22.858px] tracking-[-1.758px] px-[20px]">
                 Describe el proceso para resolver controversias y comunicaciones
                 del Grupo Garabi, creando un canal formal con los grupos de
                 interés.
@@ -113,7 +113,7 @@ function Politicas() {
               </div>
             </div>
             <div
-              className="relative w-[300px] h-[340px]  lg:w-[409.736px] lg:h-[474.89px] flex-shrink-0 transition-transform duration-500"
+              className="relative w-[300px] h-[340px]  lg:w-[409.736px] lg:h-[500px] flex-shrink-0 transition-transform duration-500"
               style={{
                 borderRadius: "28.132px",
                 background: "#DAD8CB",
@@ -134,11 +134,13 @@ function Politicas() {
 
               {/* Título de la tarjeta */}
               <div className="absolute top-[280px] w-full text-center text-[#464646] font-tt-norms-pro text-[28.132px]  leading-[28.132px] tracking-[-1.758px]">
-                <div className="font-[600]">Plan de manejo forestal</div>
+                <div className="font-[600]">
+                  Resumen público del plan de manejo forestal y monitoreo
+                </div>
               </div>
 
               {/* Descripción de la tarjeta */}
-              <div className="absolute top-[320px] w-full text-center text-[#464646] font-tt-norms-pro text-[17.583px] font-[400] leading-[22.858px] tracking-[-1.758px] px-[20px]">
+              <div className="absolute top-[350px] w-full text-center text-[#464646] font-tt-norms-pro text-[17.583px] font-[400] leading-[22.858px] tracking-[-1.758px] px-[20px]">
                 El plan de manejo forestal resume actividades, equilibrio entre
                 lo productivo, social y ambiental, y compromiso con una
                 comunicación transparente.

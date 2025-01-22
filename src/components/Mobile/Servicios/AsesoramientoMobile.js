@@ -10,11 +10,11 @@ function AsesoramientoMobile() {
   // Determina qué imagen mostrar según el tab activo
   const getImageForTab = (tab) => {
     switch (tab) {
-      case "ASESORAMIENTO PRODUCTIVO":
+      case "Asesoramiento productivo":
         return tarjetaServicios2;
-      case "ASESORAMIENTO INTEGRAL":
+      case "Administracion integral":
         return tarjetaServicios1;
-      case "DESARROLLO DE PRODUCTO":
+      case "Experiencia":
         return tarjetaServicios3;
       default:
         return tarjetaServicios2; // Imagen por defecto
@@ -40,7 +40,11 @@ function AsesoramientoMobile() {
           <div className="w-[327px] mx-auto mt-4 flex flex-col items-center">
             <div className="flex space-x-[13px]">
               {/* Pestañas */}
-              {["ASESORAMIENTO PRODUCTIVO", "ASESORAMIENTO INTEGRAL", "DESARROLLO DE PRODUCTO"].map((tab) => (
+              {[
+                "Asesoramiento productivo",
+                "Administracion integral",
+                "Experiencia",
+              ].map((tab) => (
                 <div
                   key={tab}
                   onClick={() => setActiveTab(tab)}
@@ -49,7 +53,8 @@ function AsesoramientoMobile() {
                     width: "101px",
                     height: "38px",
                     borderRadius: "7px 7px 0 0",
-                    backgroundColor: activeTab === tab ? "#00942C" : "transparent",
+                    backgroundColor:
+                      activeTab === tab ? "#00942C" : "transparent",
                     opacity: activeTab === tab ? 1 : 0.24,
                     textAlign: "center",
                     fontWeight: 400,
@@ -118,10 +123,9 @@ function AsesoramientoMobile() {
                 width: "334px",
                 height: "219px",
                 flexShrink: 0,
-                borderRadius: "10px", 
-                objectFit: "cover",   
-                overflow: "hidden",   
-                
+                borderRadius: "10px",
+                objectFit: "cover",
+                overflow: "hidden",
               }}
             />
           </div>

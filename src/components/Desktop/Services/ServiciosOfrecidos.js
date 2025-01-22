@@ -13,8 +13,8 @@ function ServiciosOfrecidos() {
 
   const servicios = [
     "Asesoramiento productivo",
-    "Asesoramiento integral",
-    "Desarrollo de producto",
+    "Administracion integral",
+    "Experiencia",
   ];
 
   // Contenido para cada servicio (puedes modificar el contenido para cada servicio aquí)
@@ -22,19 +22,19 @@ function ServiciosOfrecidos() {
     {
       titulo: "Asesoramiento productivo",
       descripcion:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. ",
+        "Asesoramos a nuestros clientes a la hora de estudiar sus inversiones, optimizando el rendimiento del capital en base a nuestro conocimiento sobre el campo y a nuestra experiencia en explotaciones agropecuarias.",
       imagen: tarjetaServicios1,
     },
     {
-      titulo: "Asesoramiento integral",
+      titulo: "Administracion integral",
       descripcion:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. ",
+        "Los emprendimientos de manera integral, eficiente y dinámica. La flexibilidad y agilidad de nuestra organización, sumado a la ventaja de estar en la zona de mayor crecimiento forestal del país, nos permiten garantizar un servicio de alta calidad.",
       imagen: tarjetaServicios,
     },
     {
-      titulo: "Desarrollo de producto",
+      titulo: "Experiencia",
       descripcion:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl augue, finibus sed magna varius, egestas varius ex. ",
+        "Más de 40 años de servicio. Agroforestal Garabí SRL, administra un total de 50778.53 Ha. De las cuales 21500 están comprometidas actualmente al proceso de certificación (FGF Santa María y Rudaco SA).",
       imagen: tarjetaServicios2,
     },
   ];
@@ -49,7 +49,7 @@ function ServiciosOfrecidos() {
           className="absolute top-0 left-0 w-full h-auto z-20"
           style={{
             mixBlendMode: "normal",
-            top: "50px",
+            top: "120px",
             maxHeight: "650px",
           }}
         />
@@ -65,10 +65,11 @@ function ServiciosOfrecidos() {
             Servicios ofrecidos
           </div>
 
-          <div className="w-[452px] h-[64px] flex-shrink-0 mt-[20px] ml-[12%] text-[#000] font-fira-sans text-[24px] font-normal leading-[28px] tracking-[-1px] [font-feature-settings:'liga_off','clig_off']">
-            Enter dark mode. Oft referred to as night mode, high contrast, or
-            inverted colors, the setting has grown popular with those who claim
-            to experience eye fatigue from a deluge of white.
+          <div className="w-[452px] h-[180px] flex-shrink-0 mt-[20px] ml-[12%] text-[#000] font-fira-sans text-[24px] font-normal leading-[28px] tracking-[-1px] [font-feature-settings:'liga_off','clig_off']">
+            Nuestros servicios se basan en tres pilares: Asesoramiento
+            Productivo, Administración Integral y una Basta Experiencia, para
+            ofrecerte soluciones estratégicas y efectivas adaptadas a tus
+            necesidades.
           </div>
 
           <div

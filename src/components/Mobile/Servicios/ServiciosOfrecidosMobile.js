@@ -48,7 +48,6 @@ function ServiciosOfrecidosMobile() {
           <div
             className="ml-8 w-[327px] h-[51px] flex-shrink-0 mt-36"
             style={{
-              
               color: "#000",
               fontFamily: "Fira Sans",
               fontSize: "12px",
@@ -57,7 +56,10 @@ function ServiciosOfrecidosMobile() {
               letterSpacing: "-1px",
             }}
           >
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum erat nec commodo imperdiet. Duis libero nisi, mollis quis urna ornare, feugiat egestas nunc.
+            Nuestros servicios se basan en tres pilares: Asesoramiento
+            Productivo, Administración Integral y una Basta Experiencia, para
+            ofrecerte soluciones estratégicas y efectivas adaptadas a tus
+            necesidades.
           </div>
         </div>
       </div>

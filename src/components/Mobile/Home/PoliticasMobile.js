@@ -22,7 +22,7 @@ function ServiciosMobile() {
       image: "https://blog.idrsolutions.com/app/uploads/2020/10/pdf-1.png",
       testimonial:
         "El plan de manejo forestal resume actividades, equilibrio entre lo productivo, social y ambiental, y compromiso con una comunicación transparente.",
-      name: "Plan de manejo forestal",
+      name: "Resumen público del plan de manejo forestal y monitoreo",
     },
   ];
 
@@ -135,7 +135,7 @@ function ServiciosMobile() {
                         className="relative ml-[25px] flex flex-col items-center mx-auto flex-shrink-0 "
                         style={{
                           width: "258px",
-                          height: "333px",
+                          height: "380px",
                           borderRadius: "10px",
                           background: "#DAD8CB",
                           boxShadow:
@@ -155,7 +155,7 @@ function ServiciosMobile() {
                         />
 
                         {/* Texto de "Asesoramiento Productivo" */}
-                        <div className="mt-2 flex-shrink-0 text-center w-[246.069px] h-[36.393px] text-[#464646] font-fira-sans text-[22px] font-normal leading-[21.323px] tracking-[-1.333px]">
+                        <div className="mt-2 flex-shrink-0 text-center w-[246.069px] h-[75px] text-[#464646] font-fira-sans text-[22px] font-normal leading-[21.323px] tracking-[-1.333px]">
                           {card.name}
                         </div>
 

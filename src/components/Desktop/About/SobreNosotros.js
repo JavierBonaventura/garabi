@@ -5,7 +5,7 @@ import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
 function SobreNosotros() {
   return (
     <div>
-      <div className="w-full h-[720px] relative">
+      <div className="w-full h-[1200px] relative">
         {/* Fondo principal */}
         <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
 
@@ -13,7 +13,7 @@ function SobreNosotros() {
         <img
           src={imagenCurvaSobreNosotros}
           alt="Curva"
-          className="absolute top-[-10px] left-0 w-full h-auto z-20 max-h-[900px] mix-blend-normal"
+          className="absolute top-[420px] xl:top-[346px] left-0 w-full h-auto z-20 max-h-[900px] mix-blend-normal"
         />
 
         {/* Contenedor con imagen de fondo y texto */}
@@ -30,12 +30,26 @@ function SobreNosotros() {
 
           {/* Texto debajo del título */}
           <div className="w-[452px] h-[64px] flex-shrink-0 mt-[28px] ml-[12%] text-black font-fira-sans text-[24px] font-normal leading-[28px] tracking-[-1px] font-feature-settings='liga' off, 'clig' off">
-            Enter dark mode. Oft referred to as night mode, high contrast, or
-            inverted colors, the setting has grown popular with those who claim
-            to experience eye fatigue from a deluge of white.
+            <h2>Administramos lo nuestro y lo suyo</h2>
+            <br />
+            <p>
+              Empezamos en 1976 como empresa familiar dedicada a la
+              administración de forestaciones y actividades agrícolas en la zona
+              Noreste de la Argentina.
+              <br />
+              <br /> En 2010 un grupo de capitales belgas, dueños de una extensa
+              experiencia en America Latina en materia de forestaciones de
+              rápido crecimiento y el manejo de campos agrícolas, entroó en el
+              capital para acompañar a nuestra empresa en su crecimiento
+              exponencial. <br />
+              <br />
+              Juntos garantizamos un manejo profesional, creativo, expansivo y
+              totalmente transparente. Nuestro lema es CREAR VALOR y CRECER de
+              forma sustentable.
+            </p>
           </div>
 
-          <div className="mr-[8%]">
+          <div className="mr-[8%] pt-96 hidden">
             <div className="ml-auto w-[338px] h-[142px] mt-[238px] text-black font-fira-sans text-[60px] font-semibold leading-[70px] tracking-[-1px] text-right">
               Lorem ipsum dolor
             </div>

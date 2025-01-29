@@ -8,7 +8,7 @@ function ContactoForm() {
       <div className="w-full h-[1348px]">
         <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
         <div
-          className="relative z-10 flex flex-col h-full "
+          className="relative z-10 flex flex-col h-full pt-32"
           style={{
             backgroundImage: `url(${imagenFondo})`,
             backgroundSize: "contain",

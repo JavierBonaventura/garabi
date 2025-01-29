@@ -33,7 +33,7 @@ function Header() {
   }, [location]);
 
   return (
-    <header className="relative w-full h-[94px] bg-[#F7FFF1] bg-opacity-100">
+    <header className=" w-full h-[80px] bg-[#F7FFF1] bg-opacity-100 fixed z-50 shadow-2xl">
       {/* Contenedor principal con fondo de imagen */}
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -43,7 +43,7 @@ function Header() {
       {/* Contenido dentro del Header */}
       <div className="relative z-10 flex flex-col h-full px-4">
         {/* Logo Garabi */}
-        <div className="absolute top-2 left-[13%] md:left-[12%]">
+        <div className="absolute top-0 left-[13%] md:left-[12%]">
           <Link to="/">
             <img
               src={logoGarabi}
@@ -54,11 +54,10 @@ function Header() {
         </div>
 
         {/* Menú de navegación */}
-        <nav className="absolute top-[38px] left-[29.3%] flex items-center gap-8">
+        <nav className="absolute top-[25px] left-[33%] flex items-center gap-8">
           {[
             { text: "HOME", to: "/" },
             { text: "NOSOTROS", to: "/nosotros" },
-            { text: "PROYECTOS", to: "/proyectos" },
             { text: "IMPACTO", to: "/impacto" },
             { text: "SERVICIOS", to: "/servicios" },
             { text: "CONTACTO", to: "/contacto" },

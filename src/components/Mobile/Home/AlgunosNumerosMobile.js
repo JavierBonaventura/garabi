@@ -12,8 +12,8 @@ function AlgunosNumerosMobile() {
   const [count4, setCount4] = useState(0);
   const ref = useRef(null);
 
-  const finalCount1 = 47865;
-  const finalCount2 = 25926;
+  const finalCount1 = 47.865;
+  const finalCount2 = 25.926;
   const finalCount3 = 1840;
   const finalCount4 = 150;
 

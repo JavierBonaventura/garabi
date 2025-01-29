@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Video from "../../../images/Desktop/hero-garabi-alta.mp4";
 import videoSobreNosotros from "../../../images/Desktop/videoSobreNosotrosSinBoton.png";
 
 function SobreNosotrosVideo() {
@@ -74,11 +73,17 @@ function SobreNosotrosVideo() {
               ✕
             </button>
 
-            {/* Contenedor del video */}
-            <video controls autoPlay className="max-w-[80vw] max-h-[80vh]">
-              <source src={Video} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            {/* Contenedor del iframe para el video de YouTube */}
+            <iframe
+              width="1100"
+              height="600"
+              src="https://www.youtube.com/embed/in3WqWBq5qw"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="max-w-[80vw] max-h-[80vh]"
+            ></iframe>
           </div>
         </div>
       )}

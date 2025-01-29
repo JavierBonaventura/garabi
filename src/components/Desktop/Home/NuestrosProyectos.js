@@ -28,7 +28,7 @@ function Servicios() {
     {
       id: 3,
       title: "Proyectos Yerba Mate",
-      description: "Son 100% plantaciones de yerba mate.",
+      description: "Plantaciones de yerba mate en loma colorada",
       image: gallery3,
     },
     {
@@ -55,7 +55,7 @@ function Servicios() {
     {
       id: 3,
       title: "Proyectos Yerba Mate",
-      description: "Son 100% plantaciones de yerba mate.",
+      description: "Plantaciones de yerba mate en loma colorada",
       image: gallery3,
     },
     {
@@ -201,7 +201,7 @@ function Servicios() {
                   </div>
 
                   {/* Descripción de la tarjeta */}
-                  <div className="absolute top-[350px] w-full text-center text-[#464646] font-tt-norms-pro text-[17.583px] font-[400] leading-[22.858px] tracking-[-1.758px] px-[20px]">
+                  <div className="absolute top-[350px] w-full text-center text-[#464646] font-tt-norms-pro text-[20px] font-[400] leading-[22.858px] tracking-[-1.758px] px-[20px]">
                     {card.description}
                   </div>
 

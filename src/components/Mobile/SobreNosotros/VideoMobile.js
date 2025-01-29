@@ -1,34 +1,31 @@
 import React, { useState, useEffect } from "react";
-import Video from "../../../images/Desktop/hero-garabi-alta.mp4";
 import videoSobreNosotros from "../../../images/Desktop/videoSobreNosotrosSinBoton.png";
 
-
 function VideoMobile() {
-    const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-    
-      useEffect(() => {
-        if (isModalOpen) {
-          document.body.style.overflow = "hidden";
-        } else {
-          document.body.style.overflow = "auto";
-        }
-        return () => {
-          document.body.style.overflow = "auto"; // Limpieza al desmontar el componente
-        };
-      }, [isModalOpen]);
-    
-      const openModal = () => {
-        setIsModalOpen(true);
-      };
-    
-      const closeModal = () => {
-        setIsModalOpen(false);
-      };
-  
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto"; // Limpieza al desmontar el componente
+    };
+  }, [isModalOpen]);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div className="relative flex flex-col items-center">
-   <img
+      <img
         src={videoSobreNosotros}
         alt="Sobre Nosotros"
         className="object-cover w-full h-full z-10"
@@ -76,11 +73,16 @@ function VideoMobile() {
               ✕
             </button>
 
-            {/* Contenedor del video */}
-            <video controls autoPlay className="max-w-[100vw] max-h-[100vh]">
-              <source src={Video} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            {/* Contenedor del iframe para el video de YouTube */}
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/in3WqWBq5qw"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       )}

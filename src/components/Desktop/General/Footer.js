@@ -49,9 +49,7 @@ function Footer() {
                 <p className="mb-[10px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
                   <a href="/nosotros">Nosotros</a>
                 </p>
-                <p className="mb-[10px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
-                  <a href="/proyetos">Proyectos</a>
-                </p>
+
                 <p className="mb-[10px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
                   <a href="/impacto">Impacto</a>
                 </p>
@@ -84,7 +82,7 @@ function Footer() {
               <div className="text-black font-fira-sans text-[14px] font-medium uppercase tracking-[4px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
                 <a href="/contacto">CONTACTO</a>
               </div>
-              <div className="w-[350px] h-[139px] text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-[20px]">
+              <div className="w-[355px] h-[139px] text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-[20px]">
                 <a
                   href="https://api.whatsapp.com/send?phone=541130254376"
                   target="_blank"
@@ -110,7 +108,7 @@ function Footer() {
                   target="_blank"
                 >
                   <p className="mb-[10px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
-                    Ruta Nac. 120 - Km 2, Gobernador Virasoro - Corrientes
+                    Ruta Nac. 120 - Km 2, Gobernador Virasoro , Corrientes
                   </p>
                 </a>
                 <div className="absolute flex items-center hidden">
@@ -152,8 +150,8 @@ function Footer() {
           <div className="w-[90%] h-[1px] bg-black mt-[75px] mb-6 mx-auto"></div>
 
           {/* Texto centrado */}
-          <div className="w-[522.514px] text-black font-[Fira Sans] text-[14px] font-medium tracking-[4px] uppercase text-center mx-auto">
-            © 2024 AW visual studio. All rights reserved.
+          <div className="w-[570px] text-black font-[Fira Sans] text-[14px] font-medium tracking-[4px] uppercase text-center mx-auto">
+            © 2025 Todos los derechos reservados. By Fellow.
           </div>
         </div>
       </div>

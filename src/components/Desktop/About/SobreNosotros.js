@@ -13,12 +13,12 @@ function SobreNosotros() {
         <img
           src={imagenCurvaSobreNosotros}
           alt="Curva"
-          className="absolute top-[420px] xl:top-[346px] left-0 w-full h-auto z-20 max-h-[900px] mix-blend-normal"
+          className="absolute top-[420px] lg:top-[600px] xl:top-[460px] left-0 w-full h-auto z-20 max-h-[900px] mix-blend-normal"
         />
 
         {/* Contenedor con imagen de fondo y texto */}
         <div
-          className="relative z-10 flex flex-col h-full px-4 bg-cover bg-center"
+          className="relative z-10 flex flex-col h-full px-4 bg-cover bg-center pt-28"
           style={{
             backgroundImage: `url(${imagenFondo})`,
           }}

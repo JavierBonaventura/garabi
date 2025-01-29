@@ -202,7 +202,7 @@ function Imapcto() {
           className="absolute top-0 left-0 w-full h-auto z-20 max-h-[850px]"
           style={{
             mixBlendMode: "normal",
-            top: "30px",
+            top: "200px",
           }}
         />
         <div
@@ -213,7 +213,7 @@ function Imapcto() {
           }}
         />
         <div
-          className="relative z-10 flex flex-col h-full "
+          className="relative z-10 flex flex-col h-full pt-32"
           style={{
             backgroundImage: `url(${imagenFondo})`,
             backgroundSize: "contain",

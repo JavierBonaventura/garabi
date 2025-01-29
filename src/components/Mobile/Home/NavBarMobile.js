@@ -114,7 +114,7 @@ function NavBarMobile({ menuAbierto, toggleMenu }) {
           </div>
         </Link>
 
-        <Link to="/proyectos">
+        <Link to="/proyectos" className="hidden">
           <div
             className="flex items-center mt-[9px] px-6"
             style={{
@@ -229,7 +229,7 @@ function NavBarMobile({ menuAbierto, toggleMenu }) {
                 marginBottom: "-3px",
               }}
             >
-              Contact
+              Contacto
             </span>
           </div>
         </Link>

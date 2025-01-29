@@ -42,7 +42,7 @@ function FooterMobile() {
             <Link to="/nosotros" className="mt-2 block cursor-pointer">
               Nosotros
             </Link>
-            <Link to="/proyectos" className="mt-2 block cursor-pointer">
+            <Link to="/proyectos" className="mt-2 block cursor-pointer hidden">
               Proyectos
             </Link>
             <Link to="/impacto" className="mt-2 block cursor-pointer">
@@ -116,7 +116,7 @@ function FooterMobile() {
               </a>
               <p className="mb-[5px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
                 contacto@grupogarabi.com.ar
-              </p>{" "}
+              </p>
               <a
                 href="https://maps.app.goo.gl/b4E5DYbGraA1kZqw8"
                 target="_blank"
@@ -130,7 +130,7 @@ function FooterMobile() {
                 target="_blank"
               >
                 <p className="mb-[5px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
-                  Ruta Nac. 120 - Km 2, Gobernador Virasoro - Corrientes
+                  Ruta Nac. 120 - Km 2, Gobernador Virasoro, Corrientes
                 </p>
               </a>
             </div>
@@ -142,7 +142,7 @@ function FooterMobile() {
       <div className="w-4/5 h-[1px] bg-black my-4"></div>
 
       {/* Copyright Section */}
-      <div className="text-black font-fira-sans text-[5.977px] font-medium tracking-[1.708px] uppercase text-center">
+      <div className="text-black font-fira-sans text-xs font-medium tracking-[1.708px] uppercase text-center">
         © 2024 AW Visual Studio. All rights reserved.
       </div>
     </div>

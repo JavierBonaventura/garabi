@@ -49,12 +49,12 @@ function ServiciosOfrecidos() {
           className="absolute top-0 left-0 w-full h-auto z-20"
           style={{
             mixBlendMode: "normal",
-            top: "120px",
+            top: "200px",
             maxHeight: "650px",
           }}
         />
         <div
-          className="relative z-10 flex flex-col h-full"
+          className="relative z-10 flex flex-col h-full pt-32"
           style={{
             backgroundImage: `url(${imagenFondo})`,
             backgroundSize: "contain",

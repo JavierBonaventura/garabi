@@ -15,7 +15,7 @@ function AlgunosNumeros() {
 
   const finalCount1 = 47.865;
   const finalCount2 = 25.926;
-  const finalCount3 = 1840;
+  const finalCount3 = 1.840;
   const finalCount4 = 150;
 
   // Tiempo total de referencia (en milisegundos)
@@ -63,7 +63,7 @@ function AlgunosNumeros() {
 
   return (
     <div ref={ref}>
-      <div className="w-full h-[700px]">
+      <div className="w-full h-[700px] overflow-hidden">
         <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
         <div
           className="relative z-10 flex h-full"
@@ -120,7 +120,7 @@ function AlgunosNumeros() {
                 onClick={() => resetCounter(setCount2, finalCount2)} // Reinicia el contador al hacer clic
               />
               <div className="w-[219px] h-[130.083px] flex-shrink-0 flex flex-col justify-center items-center pt-[55px]">
-                <div className="text-[#00942C] text-center font-fira-sans text-[62.133px] font-extrabold leading-[41.422px] pt-8">
+                <div className="text-[#00942C] text-center font-fira-sans text-[62.133px] font-extrabold leading-[41.422px] pt-8 ">
                   {count2}
                 </div>
                 <div className="text-[#000] text-center font-fira-sans text-[20.711px] font-medium tracking-[5.178px] uppercase pt-[20px] leading-none">
@@ -144,8 +144,8 @@ function AlgunosNumeros() {
                 onClick={() => resetCounter(setCount3, finalCount3)} // Reinicia el contador al hacer clic
               />
               <div className="w-[219px] h-[130.083px] flex-shrink-0 flex flex-col justify-center items-center pt-[55px]">
-                <div className="text-[#00942C] text-center font-fira-sans text-[62.133px] font-extrabold leading-[41.422px] pt-12">
-                  {count3}
+                <div className="text-[#00942C] text-center font-fira-sans text-[62.133px] font-extrabold leading-[41.422px] pt-8 ">
+                {count3.toFixed(3)}
                 </div>
                 <div className="text-[#000] text-center font-fira-sans text-[20.711px] font-medium tracking-[5.178px] uppercase pt-[20px] leading-none">
                   hectáreas con yerba mate
@@ -168,7 +168,7 @@ function AlgunosNumeros() {
                 onClick={() => resetCounter(setCount4, finalCount4)} // Reinicia el contador al hacer clic
               />
               <div className="w-[219px] h-[130.083px] flex-shrink-0 flex flex-col justify-center items-center pt-[55px]">
-                <div className="text-[#00942C] text-center font-fira-sans text-[62.133px] font-extrabold leading-[41.422px] pt-12">
+                <div className="text-[#00942C] text-center font-fira-sans text-[62.133px] font-extrabold leading-[41.422px] pt-8">
                   + {count4}
                 </div>
                 <div className="text-[#000] text-center font-fira-sans text-[20.711px] font-medium tracking-[5.178px] uppercase pt-[20px] leading-none">

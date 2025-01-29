@@ -14,7 +14,7 @@ function AlgunosNumerosMobile() {
 
   const finalCount1 = 47.865;
   const finalCount2 = 25.926;
-  const finalCount3 = 1840;
+  const finalCount3 = 1.840;
   const finalCount4 = 150;
 
   const totalDuration = 2000; // 2 segundos
@@ -139,7 +139,7 @@ function AlgunosNumerosMobile() {
                   onClick={() => resetCounter(setCount3, finalCount3)}
                 />
                 <div className="mt-2 text-[#00942C] text-center font-fira-sans text-[30px] font-extrabold leading-[35px]">
-                  {count3}
+                {count3.toFixed(3)}
                 </div>
                 <div className="w-[127px] text-black text-center font-fira-sans text-[12px] font-medium uppercase pt-[5px]">
                   hectáreas con yerba mate

@@ -10,7 +10,7 @@ function NuestrosPoyectosMobile() {
   // Array con los datos de los proyectos (imagen y nombre)
   const proyectos = [
     { img: proyectos1, name: "Proyectos Forestales" },
-    { img: proyectos2, name: "Proyectos Yerbatero/Forestal" },
+    { img: proyectos2, name: "Proyectos Yerbatero / Forestal" },
     { img: proyectos3, name: "Proyectos Yerba Mate" },
     { img: proyectos4, name: "Proyectos Mixtos" },
   ];
@@ -38,9 +38,9 @@ function NuestrosPoyectosMobile() {
           </div>
 
           {/* Contenedor de imágenes con gradiente */}
-          <div className="flex justify-center mt-12">
+          <div className="flex justify-center mt-12 ">
             {proyectos.map((proyecto, index) => (
-              <div key={index} className="relative" style={{ width: "25%" }}>
+              <div key={index} className="relative " style={{ width: "25%" }}>
                 <img
                   src={proyecto.img}
                   alt={`Proyecto ${index + 1}`}
@@ -60,7 +60,7 @@ function NuestrosPoyectosMobile() {
                   }}
                 >
                   {/* Texto sobre el degradado */}
-                  <div className="w-[105px] h-[16px] flex-shrink-0 text-white text-center font-fira-sans text-[14px] font-light leading-[20px] absolute bottom-[45px] left-1/2 transform -translate-x-1/2">
+                  <div className="w-[90px] flex-shrink-0 text-white text-center font-fira-sans text-[14px] font-light leading-[20px] absolute bottom-[35px] left-1/2 transform -translate-x-1/2">
                     {proyecto.name}
                   </div>
 

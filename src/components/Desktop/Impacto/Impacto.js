@@ -205,13 +205,13 @@ function Imapcto() {
             top: "200px",
           }}
         />
-        <div
+        {/* <div
           id="verlo"
-          className="absolute z-[20] w-[100px] h-[100vw] bg-gradient-to-r from-transparent to-[#dfe8e0] rotate-90 top-[3300px] left-[100%] "
+          className="absolute z-[20] w-[100px] h-[100vw] bg-gradient-to-r from-transparent to-[#dfe8e0] rotate-90 top-[3450px] left-[100%] border-2 border-black "
           style={{
             transformOrigin: "top left",
           }}
-        />
+        /> */}
         <div
           className="relative z-10 flex flex-col h-full pt-32"
           style={{
@@ -500,10 +500,10 @@ function Imapcto() {
             <Politicas />
             <div className="relative w-full pb-20 mt-[-4%]">
               {/* Gradiente superior */}
+
               <div
-                className="absolute z-20 w-full h-[21%] top-[-20%] left-0 origin-top-left"
+                className="z-20  absolute top-[0%] right-0 w-full h-[8%] origin-top-left "
                 style={{
-                  zIndex: "1",
                   background:
                     "linear-gradient(00deg, #dfe8e0 0%, rgba(237, 242, 232, 0.00) 100%)",
                 }}
@@ -518,7 +518,7 @@ function Imapcto() {
 
               {/* Gradiente inferior */}
               <div
-                className="absolute top-16 right-0 w-full h-[300px] origin-top-left "
+                className="z-20 absolute top-[8%] right-0 w-full h-[40%] origin-top-left "
                 style={{
                   background:
                     "linear-gradient(00deg, rgba(237, 242, 232, 0.00) 0%, #dfe8e0 100%)",

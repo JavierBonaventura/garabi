@@ -4,6 +4,10 @@ import fondoMobile from "../../../images/Mobile/fondoMobile.png";
 import botonIzquierdo from "../../../images/Mobile/botonIzquierdo.png";
 import botonDerecho from "../../../images/Mobile/botonDerecho.png";
 
+import Genero from "../../../pdf/politica-genero.pdf";
+import Comunicacion from "../../../pdf/comunicacion.pdf";
+import Manejo from "../../../pdf/plan-manejo.pdf";
+
 function ServiciosMobile() {
   const initialCards = [
     {
@@ -11,18 +15,21 @@ function ServiciosMobile() {
       testimonial:
         "La política promueve la igualdad de género en el trabajo, empoderando a las mujeres y combatiendo la discriminación sexual.",
       name: "Políticas de género",
+      pdf: Genero,
     },
     {
       image: "https://blog.idrsolutions.com/app/uploads/2020/10/pdf-1.png",
       testimonial:
         "Describe el proceso para resolver controversias y comunicaciones del Grupo Garabi, creando un canal formal con los grupos de interés.",
       name: "Procedimiento de comunicación",
+      pdf: Comunicacion,
     },
     {
       image: "https://blog.idrsolutions.com/app/uploads/2020/10/pdf-1.png",
       testimonial:
         "El plan de manejo forestal resume actividades, equilibrio entre lo productivo, social y ambiental, y compromiso con una comunicación transparente.",
       name: "Resumen público del plan de manejo forestal y monitoreo",
+      pdf: Manejo,
     },
   ];
 
@@ -33,7 +40,7 @@ function ServiciosMobile() {
   const cardWidth = 363;
 
   const handleNext = () => {
-    console.log("se ejecuto el next")
+    console.log("se ejecuto el next");
     if (isSliding) return;
 
     setIsSliding(true);
@@ -49,9 +56,8 @@ function ServiciosMobile() {
     }, 800);
   };
 
-  
   const handleNextSwipe = () => {
-    console.log("se ejecuto el next")
+    console.log("se ejecuto el next");
     if (isSliding) return;
 
     setIsSliding(true);
@@ -66,68 +72,62 @@ function ServiciosMobile() {
       setIsSliding(false);
     }, 800);
   };
-
-
 
   const handlePrev = () => {
-    console.log("se ejecuto el prev")
+    console.log("se ejecuto el prev");
     if (isSliding) return;
-  
+
     setIsSliding(true);
-  
+
     // Reorganizar tarjetas antes de la transición
     setCards((prevCards) => [
       prevCards[prevCards.length - 1],
       ...prevCards.slice(0, -1),
     ]);
-  
+
     // Mover carrusel a la posición inicial (-cardWidth)
     carouselRef.current.style.transition = "none";
     carouselRef.current.style.transform = `translateX(-${cardWidth}px)`;
-  
+
     // Esperar antes de animar hacia la posición original (0)
     setTimeout(() => {
       carouselRef.current.style.transition = "transform 0.5s ease-in-out";
       carouselRef.current.style.transform = "translateX(0)";
     }, 50);
-  
+
     // Resetear el estado después de la animación
     setTimeout(() => {
       setIsSliding(false);
     }, 500);
   };
-  
 
-
-  
   const handlePrevSwipe = () => {
-    console.log("se ejecuto el prev")
+    console.log("se ejecuto el prev");
     if (isSliding) return;
-  
+
     setIsSliding(true);
-  
+
     // Reorganizar tarjetas antes de la transición
     setCards((prevCards) => [
       prevCards[prevCards.length - 1],
       ...prevCards.slice(0, -1),
     ]);
-  
+
     // Mover carrusel a la posición inicial (-cardWidth)
     carouselRef.current.style.transition = "none";
     carouselRef.current.style.transform = `translateX(-${cardWidth}px)`;
-  
+
     // Esperar antes de animar hacia la posición original (0)
     setTimeout(() => {
       carouselRef.current.style.transition = "transform 0.5s ease-in-out";
       carouselRef.current.style.transform = "translateX(0)";
     }, 50);
-  
+
     // Resetear el estado después de la animación
     setTimeout(() => {
       setIsSliding(false);
     }, 500);
   };
-  
 
   // Swipe detection variables
   const startX = useRef(0);
@@ -143,13 +143,16 @@ function ServiciosMobile() {
 
   const handleTouchEnd = () => {
     if (startX.current - endX.current > 50) {
-      
       // Swipe left
       handleNextSwipe();
     } else if (endX.current - startX.current > 50) {
       // Swipe right
       handlePrevSwipe();
     }
+  };
+
+  const handleDownloadPDF = (pdfUrl) => {
+    window.open(pdfUrl, "_blank");
   };
 
   return (
@@ -161,7 +164,6 @@ function ServiciosMobile() {
           backgroundImage: `url(${fondoMobile})`,
           backgroundSize: "cover",
         }}
-
       >
         <div>
           <div className="relative w-[370px] flex items-center justify-center ">
@@ -178,9 +180,9 @@ function ServiciosMobile() {
                   ref={carouselRef}
                   className="flex"
                   style={{ width: `${cards.length * cardWidth}px` }}
-                  onTouchStart={handleTouchStart}
-                  onTouchMove={handleTouchMove}
-                  onTouchEnd={handleTouchEnd}
+                  // onTouchStart={handleTouchStart}
+                  // onTouchMove={handleTouchMove}
+                  // onTouchEnd={handleTouchEnd}
                 >
                   {cards.map((card, index) => (
                     <div
@@ -209,20 +211,36 @@ function ServiciosMobile() {
                             borderTopLeftRadius: "10px",
                             borderTopRightRadius: "10px",
                           }}
+                          onTouchStart={handleTouchStart}
+                          onTouchMove={handleTouchMove}
+                          onTouchEnd={handleTouchEnd}
                         />
 
                         {/* Texto de "Asesoramiento Productivo" */}
-                        <div className="mt-2 flex-shrink-0 text-center w-[246.069px] h-[75px] text-[#464646] font-fira-sans text-[22px] font-normal leading-[21.323px] tracking-[-1.333px]">
+                        <div
+                          className=" mt-2 flex-shrink-0 text-center w-[246.069px] h-[75px] text-[#464646] font-fira-sans text-[22px] font-normal leading-[21.323px] tracking-[-1.333px]"
+                          onTouchStart={handleTouchStart}
+                          onTouchMove={handleTouchMove}
+                          onTouchEnd={handleTouchEnd}
+                        >
                           {card.name}
                         </div>
 
                         {/* Descripción */}
-                        <div className="mt-0 mb-10 flex-shrink-0 text-center w-[230px] h-[52px] text-[#000] font-fira-sans text-[14px] font-normal leading-[24px] tracking-[-1px]">
+                        <div
+                          className="mt-0 mb-10 flex-shrink-0 text-center w-[230px] h-[52px] text-[#000] font-fira-sans text-[14px] font-normal leading-[24px] tracking-[-1px]"
+                          onTouchStart={handleTouchStart}
+                          onTouchMove={handleTouchMove}
+                          onTouchEnd={handleTouchEnd}
+                        >
                           {card.testimonial}
                         </div>
 
                         {/* Botón "VER" */}
-                        <button className="mt-2 flex items-center justify-center w-[150px] h-[26px] rounded-[5px] bg-[#00942C]">
+                        <button
+                          onClick={() => handleDownloadPDF(card.pdf)}
+                          className="mt-2 flex items-center justify-center w-[150px] h-[26px] rounded-[5px] bg-[#00942C]"
+                        >
                           <span className="text-[#FFF] text-center font-fira-sans text-[12px] font-normal tracking-[4px] uppercase">
                             Descargar PDF
                           </span>

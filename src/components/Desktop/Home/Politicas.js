@@ -19,7 +19,7 @@ function Politicas() {
         >
           <div className="w-full lg:w-1/2 mx-auto flex gap-y-10 flex-col">
             <h1 className="text-black lg:text-[#443838] font-fira-sans text-[41px] lg:text-[60px] font-bold leading-[39px] lg:leading-[50px] text-center">
-              Nuestra políticas
+              Nuestras políticas
             </h1>
             <p className="text-black font-fira-sans text-[20px] lg:text-[24px] font-normal leading-[28px] lg:text-center">
               Las políticas del Grupo Garabí definen su compromiso con la

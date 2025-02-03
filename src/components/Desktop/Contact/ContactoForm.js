@@ -103,20 +103,24 @@ function ContactoForm() {
                 <p class="text-black font-fira-sans text-[14px] font-extrabold tracking-[4px] uppercase mb-2">
                   Dirección
                 </p>
+
                 <a
                   href="https://maps.app.goo.gl/b4E5DYbGraA1kZqw8"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <p class="w-[216px] text-black font-fira-sans text-[18px] font-normal leading-[28px] mb-5">
+                  <p class=" text-black font-fira-sans text-[18px] font-normal leading-[28px] mb-5">
                     Dardo Rocha 986, Oficina 104, Martinez, Buenos Aires
                   </p>
                 </a>
+
                 <a
                   href="https://maps.app.goo.gl/N6hgiDiaTxGXaurc6"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <p class="w-[216px] text-black font-fira-sans text-[18px] font-normal leading-[28px]">
-                    Ruta Nac. 120 - Km 2, Gobernador Virasoro - Corrientes
+                  <p class=" text-black font-fira-sans text-[18px] font-normal leading-[28px]">
+                    Ruta Nac. 120 Km 2, Gobernador Virasoro, Corrientes
                   </p>
                 </a>
               </div>
@@ -127,7 +131,7 @@ function ContactoForm() {
                   Teléfono
                 </p>
                 <p class="w-[216px] text-black font-fira-sans text-[18px] font-normal leading-[28px]">
-                  +54 11 4723 6967
+                  +54 11 3025-4376
                 </p>
               </div>
 
@@ -159,11 +163,11 @@ function ContactoForm() {
             style={{
               display: "flex",
               justifyContent: "center",
-              marginTop: "-100px",
+              marginTop: "-230px",
             }}
           >
             {/* Primer Mapa */}
-            <div className="text-center mr-[20px]">
+            <div className="text-center mr-[20px] z-50">
               <a
                 href="https://maps.app.goo.gl/b4E5DYbGraA1kZqw8"
                 target="_blank"

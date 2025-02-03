@@ -5,7 +5,7 @@ import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
 function EnMarcha() {
   return (
     <div>
-      <div className="w-full h-[56vw] relative">
+      <div className="w-full h-[65vw] relative">
         {/* Fondo de color */}
         <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
 

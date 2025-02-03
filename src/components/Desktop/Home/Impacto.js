@@ -9,7 +9,7 @@ import medioAmbiente from "../../../images/Desktop/medioAmbiente.png"; // Imagen
 function Impacto() {
   return (
     <div>
-      <div className="w-full h-[852px] ">
+      <div className="w-full h-[1200px] ">
         <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
         <div
           className="relative z-10 flex flex-col items-center justify-center h-full px-4"
@@ -19,7 +19,7 @@ function Impacto() {
             backgroundPosition: "center", // Centra la imagen
           }}
         >
-          <div className="w-[804px] h-[76px] flex-shrink-0 mt-[-8px] text-[#443838] font-fira-sans text-[60px] font-bold leading-[50px] text-center">
+          <div className="w-[804px] h-[76px] flex-shrink-0 mt-[-8px] text-black font-fira-sans text-[60px] font-bold leading-[50px] text-center">
             Impacto Medio Ambiente
           </div>
 
@@ -39,12 +39,12 @@ function Impacto() {
           ></div>
 
           {/* Contenedor para las tarjetas */}
-          <div className="flex items-center justify-center mt-[77px] space-x-6 ml-[-200px]">
+          <div className="flex items-center justify-center mt-[77px]  space-x-6 ">
             {/* Tarjeta 1 - Sustentabilidad */}
-            <div className="w-[340px] h-[150px] bg-transparent  rounded-lg flex ">
+            <div className="w-[340px] h-[150px] bg-transparent  rounded-lg flex flex-col gap-y-5 ">
               <div className="flex flex-col items-end w-1/2 border-r">
                 <div
-                  className="w-[59.778px] h-[67px] bg-cover bg-center"
+                  className="w-24 h-24  bg-contain bg-no-repeat bg-center"
                   style={{
                     backgroundImage: `url(${sustentabilidad})`,
                   }}
@@ -63,10 +63,10 @@ function Impacto() {
             </div>
 
             {/* Tarjeta 2 - Seguridad */}
-            <div className="w-[340px] h-[150px] bg-transparent  rounded-lg flex">
+            <div className="w-[340px] h-[150px] bg-transparent  rounded-lg flex flex-col gap-y-5">
               <div className="flex flex-col items-end w-1/2 border-r">
                 <div
-                  className="w-[58px] h-[67px] bg-cover bg-center"
+                  className="w-24 h-24  bg-contain bg-no-repeat bg-center"
                   style={{
                     backgroundImage: `url(${seguridad})`,
                   }}
@@ -84,10 +84,10 @@ function Impacto() {
             </div>
 
             {/* Tarjeta 3 - Comunidad */}
-            <div className="w-[340px] h-[150px] bg-transparent  rounded-lg flex">
+            <div className="w-[340px] h-[150px] bg-transparent  rounded-lg flex flex-col gap-y-5">
               <div className="flex flex-col items-end w-1/2 border-r">
                 <div
-                  className="w-[58px] h-[68px] bg-cover bg-center"
+                  className="w-24 h-24  bg-contain bg-no-repeat bg-center"
                   style={{
                     backgroundImage: `url(${comunidad})`,
                   }}

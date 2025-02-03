@@ -1,5 +1,6 @@
 import React from "react";
 import Video from "../../../images/Desktop/hero-garabi-alta.mp4";
+import { Link } from "react-router-dom";
 
 function Lideres() {
   return (
@@ -24,11 +25,36 @@ function Lideres() {
         </h1>
       </div>
 
-      <div className="absolute inset-0 flex items-center justify-center">
-        <h1 className="text-white font-fira-sans text-[72px] font-black leading-[85px] tracking-[-1px] text-center uppercase">
+      <div className="absolute inset-0 flex items-center justify-center flex-col gap-y-10">
+        <h1 className="text-white font-fira-sans text-[80px] font-black leading-[85px] tracking-[-1px] text-center ">
           Generamos valor creando <br /> un mundo más verde
         </h1>
+        <p className="text-white text-2xl text-center w-1/2 font-fira-sans">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+          quae. Totam, quibusdam quaerat.
+        </p>
       </div>
+
+      <a
+        href="#servicios"
+        className="absolute bottom-24 left-1/2 -translate-x-1/2 "
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="48"
+          height="48"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#fff"
+          strokeWidth="1.75"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="lucide lucide-chevrons-down animate-bounce"
+        >
+          <path d="m7 6 5 5 5-5" />
+          <path d="m7 13 5 5 5-5" />
+        </svg>
+      </a>
 
       {/* Contenedor para el texto "Desde 1983..." */}
       <div className="absolute flex items-center justify-center w-[396px] h-[64px] left-[12%] top-[410px] hidden">

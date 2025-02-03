@@ -5,7 +5,7 @@ import recuadroDos from "../../../images/Desktop/asesoramiento-productivo.jpg";
 
 function Servicios() {
   return (
-    <div>
+    <div id="servicios">
       <div className="w-full h-[852px]">
         <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
         <div
@@ -17,14 +17,14 @@ function Servicios() {
           }}
         >
           <div>
-            <div className="relative mt-[100px] h-[76px]">
-              <div className="absolute right-1/2 transform translate-x-[12px] w-[550px] text-black text-[60px] font-fira-sans font-black leading-[60px] tracking-[-1px]">
+            <div className="relative mt-[100px] h-[76px] text-center">
+              <div className="absolute left-1/2 transform -translate-x-1/2 w-[550px] text-black text-[60px] font-fira-sans font-black leading-[60px] tracking-[-1px]">
                 Servicios
               </div>
             </div>
 
             <div className="relative mt-[15px] h-[70px]">
-              <div className="absolute right-1/2 transform translate-x-[172px] w-[711px]  text-black font-fira-sans text-[20px] font-normal leading-[28px]">
+              <div className="absolute left-1/2 transform -translate-x-1/2 w-[711px] text-black font-fira-sans text-[20px] font-normal leading-[28px]">
                 La flexibilidad, agilidad de nuestra organización sumado a la
                 experiencia de más de 40 años en el sector forestal nos permite
                 planificar y ejecutar proyectos a la medida y necesidades de

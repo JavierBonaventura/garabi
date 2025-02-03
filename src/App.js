@@ -203,7 +203,6 @@ function App() {
                   <AlgunosNumeros />
                   <NuestrosProyectos />
                   <Impacto />
-
                   <EnMarcha />
                   <Footer />
                 </>
@@ -225,6 +224,7 @@ function App() {
                 <>
                   <Header />
                   <ContactoForm />
+                  <EnMarcha />
                   <Footer />
                 </>
               }

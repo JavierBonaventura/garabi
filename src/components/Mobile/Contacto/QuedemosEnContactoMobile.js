@@ -247,8 +247,9 @@ function QuedemosEnContactoMobile() {
                   <a
                     href="https://maps.app.goo.gl/KHjo3FYKxGPH9TVi7"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    Dardo Rocha 986, Oficina 104, Martinez, Buenos Aires
+                    <p>Dardo Rocha 986, Oficina 104, Martinez, Buenos Aires</p>
                   </a>
                 </div>
                 <div
@@ -265,8 +266,9 @@ function QuedemosEnContactoMobile() {
                   <a
                     href="https://maps.app.goo.gl/N6hgiDiaTxGXaurc6"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    Ruta Nac. 120 - Km 2, Gobernador Virasoro - Corrientes
+                    <p> Ruta Nac. 120 Km 2, Gobernador Virasoro, Corrientes</p>
                   </a>
                 </div>
                 <div
@@ -326,7 +328,7 @@ function QuedemosEnContactoMobile() {
                     lineHeight: "28px",
                   }}
                 >
-                  +54 11 4723 6967
+                  +54 11 3025-4376
                 </div>
               </div>
             </div>

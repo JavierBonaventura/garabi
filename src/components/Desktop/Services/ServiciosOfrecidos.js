@@ -12,19 +12,13 @@ function ServiciosOfrecidos() {
   const [hoveredIndex, setHoveredIndex] = useState(null); // Estado para el índice del hover
 
   const servicios = [
-    "Asesoramiento productivo",
     "Administracion integral",
-    "Experiencia",
+    "Asesoramiento productivo",
+    "Valores",
   ];
 
   // Contenido para cada servicio (puedes modificar el contenido para cada servicio aquí)
   const contenidoServicios = [
-    {
-      titulo: "Asesoramiento productivo",
-      descripcion:
-        "Asesoramos a nuestros clientes a la hora de estudiar sus inversiones, optimizando el rendimiento del capital en base a nuestro conocimiento sobre el campo y a nuestra experiencia en explotaciones agropecuarias.",
-      imagen: tarjetaServicios1,
-    },
     {
       titulo: "Administracion integral",
       descripcion:
@@ -32,7 +26,14 @@ function ServiciosOfrecidos() {
       imagen: tarjetaServicios,
     },
     {
-      titulo: "Experiencia",
+      titulo: "Asesoramiento productivo",
+      descripcion:
+        "Asesoramos a nuestros clientes a la hora de estudiar sus inversiones, optimizando el rendimiento del capital en base a nuestro conocimiento sobre el campo y a nuestra experiencia en explotaciones agropecuarias.",
+      imagen: tarjetaServicios1,
+    },
+
+    {
+      titulo: "Valores",
       descripcion:
         "Más de 40 años de servicio. Agroforestal Garabí SRL, administra un total de 50778.53 Ha. De las cuales 21500 están comprometidas actualmente al proceso de certificación (FGF Santa María y Rudaco SA).",
       imagen: tarjetaServicios2,

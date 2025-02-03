@@ -112,7 +112,7 @@ function ServiciosMobile() {
   };
 
   return (
-    <div className="w-full h-[650px] relative">
+    <div id="serviciosMob" className="w-full h-[650px] relative">
       <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
       <div
         className="relative z-10 flex flex-col items-center justify-start h-full px-4"

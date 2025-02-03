@@ -16,9 +16,35 @@ function LideresMobile() {
       {/* Contenido superpuesto al video */}
       <div className="relative z-10">
         {/* Primer div para "Líderes en forestación" */}
-        <div className=" text-white font-fira-sans text-center px-10 text-[41px] font-extrabold leading-[39px] flex items-center justify-center w-full h-full">
-          Generamos valor creando un mundo más verde
+        <div className=" text-white font-fira-sans text-center px-10 flex items-center justify-center w-full h-full flex-col gap-y-5">
+          <h1 className=" text-[36px] font-extrabold leading-[39px]">
+            Generamos valor creando un mundo más verde
+          </h1>{" "}
+          <p className="text-white text-base text-center font-fira-sans">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+            quae. Totam, quibusdam quaerat.
+          </p>
         </div>
+        <a
+          href="#serviciosMob"
+          className="absolute -bottom-20 left-1/2 -translate-x-1/2 "
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#fff"
+            strokeWidth="1.75"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="lucide lucide-chevrons-down animate-bounce"
+          >
+            <path d="m7 6 5 5 5-5" />
+            <path d="m7 13 5 5 5-5" />
+          </svg>
+        </a>
 
         <div className="ml-8 mt-12 w-[274px] h-[88px] text-white font-fira-sans text-[41px] font-extrabold leading-[39px] flex items-center justify-center hidden">
           Generamos valor creando <br /> un mundo más verde

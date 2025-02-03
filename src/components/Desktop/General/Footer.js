@@ -34,7 +34,7 @@ function Footer() {
                 />
               </Link>
 
-              <div className="w-[304.457px] text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-[20px]">
+              <div className="w-[305px] text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-[20px]">
                 Especialistas en Forestación. Administramos y asesoramos
                 proyectos forestales de nuestros clientes.
               </div>
@@ -42,20 +42,44 @@ function Footer() {
 
             {/* Segunda columna */}
             <div className="flex flex-col top-20px mt-16">
-              <div className="text-black font-fira-sans text-[14px] font-medium uppercase tracking-[4px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
-                <a href="/"> HOME</a>
-              </div>
-              <div className="w-[133.714px] h-[139px] text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-[20px]">
-                <p className="mb-[10px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
-                  <a href="/nosotros">Nosotros</a>
-                </p>
+              <p className="text-black font-fira-sans text-[14px] font-medium uppercase tracking-[4px] ">
+                Secciones
+              </p>
+              <div className="w-[133.714px] h-[139px] text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-[20px] flex flex-col">
+                <a
+                  className="mb-[10px] hover:cursor-pointer hover:scale-105 transition-transform duration-200"
+                  href="/"
+                >
+                  Inicio
+                </a>
 
-                <p className="mb-[10px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
-                  <a href="/impacto">Impacto</a>
-                </p>
-                <p className="hover:cursor-pointer hover:scale-105 transition-transform duration-200">
-                  <a href="/servicios">Servicios</a>
-                </p>
+                <a
+                  className="mb-[10px] hover:cursor-pointer hover:scale-105 transition-transform duration-200"
+                  href="/nosotros"
+                >
+                  Nosotros
+                </a>
+
+                <a
+                  className="mb-[10px] hover:cursor-pointer hover:scale-105 transition-transform duration-200"
+                  href="/impacto"
+                >
+                  Impacto
+                </a>
+
+                <a
+                  className="mb-[10px] hover:cursor-pointer hover:scale-105 transition-transform duration-200"
+                  href="/servicios"
+                >
+                  Servicios
+                </a>
+
+                <a
+                  className="mb-[10px] hover:cursor-pointer hover:scale-105 transition-transform duration-200"
+                  href="/contacto"
+                >
+                  Contacto
+                </a>
               </div>
             </div>
 
@@ -80,12 +104,13 @@ function Footer() {
             {/* Cuarta columna */}
             <div className="flex flex-col top-20px mt-16">
               <div className="text-black font-fira-sans text-[14px] font-medium uppercase tracking-[4px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
-                <a href="/contacto">CONTACTO</a>
+                <a href="/contacto">INFORMACIÓN</a>
               </div>
               <div className="w-[355px] h-[139px] text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-[20px]">
                 <a
                   href="https://api.whatsapp.com/send?phone=541130254376"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <p className="mb-[10px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
                     +54 9 11 3025-4376
@@ -97,6 +122,7 @@ function Footer() {
                 <a
                   href="https://maps.app.goo.gl/b4E5DYbGraA1kZqw8"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <p className="mb-[10px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
                     Dardo Rocha 986, Oficina 104, Martinez, Buenos Aires
@@ -106,9 +132,10 @@ function Footer() {
                 <a
                   href="https://maps.app.goo.gl/qvvduCztbkSRDXUv6"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <p className="mb-[10px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
-                    Ruta Nac. 120 - Km 2, Gobernador Virasoro , Corrientes
+                    Ruta Nac. 120 Km 2, Gobernador Virasoro, Corrientes
                   </p>
                 </a>
                 <div className="absolute flex items-center hidden">
@@ -150,8 +177,9 @@ function Footer() {
           <div className="w-[90%] h-[1px] bg-black mt-[75px] mb-6 mx-auto"></div>
 
           {/* Texto centrado */}
-          <div className="w-[570px] text-black font-[Fira Sans] text-[14px] font-medium tracking-[4px] uppercase text-center mx-auto">
-            © 2025 Todos los derechos reservados. By Fellow.
+          <div className=" text-black font-[Fira Sans] text-[14px] font-medium tracking-[4px] uppercase text-center mx-auto">
+            © 2025 Todos los derechos reservados. Desarrollado por Digital
+            Fellow.
           </div>
         </div>
       </div>

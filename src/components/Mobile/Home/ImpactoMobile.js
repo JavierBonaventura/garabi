@@ -91,7 +91,7 @@ function ImpactoMobile() {
                       className=" w-32 h-[30px] flex-shrink-0 text-[#443838] font-fira-sans text-[16px] font-semibold leading-[32px]"
                       style={{
                         textAlign: image.textAlign,
-                        marginLeft: image.marginLeftTitle
+                        marginLeft: image.marginLeftTitle,
                       }}
                     >
                       {image.name.charAt(0).toUpperCase() + image.name.slice(1)}

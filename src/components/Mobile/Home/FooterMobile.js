@@ -33,18 +33,17 @@ function FooterMobile() {
       <div className="w-full flex mt-8 justify-around px-2">
         {/* Column 1: Home */}
         <div className="text-center">
-          <div className="text-black font-fira-sans text-[12px] font-medium tracking-[2.409px] uppercase mb-1 text-left">
+          <p className="text-black font-fira-sans text-[12px] font-medium tracking-[2.409px] uppercase mb-1 text-left">
+            Secciones
+          </p>
+          <div className="mt-2 text-black font-fira-sans text-[10.841px] font-normal leading-[16.864px] text-center">
             <Link to="/" className="mt-2 block cursor-pointer">
-              Home
+              Inicio
             </Link>
-          </div>
-          <div className="mt-2 text-black font-fira-sans text-[10.841px] font-normal leading-[16.864px] text-left">
             <Link to="/nosotros" className="mt-2 block cursor-pointer">
               Nosotros
             </Link>
-            <Link to="/proyectos" className="mt-2 block cursor-pointer hidden">
-              Proyectos
-            </Link>
+
             <Link to="/impacto" className="mt-2 block cursor-pointer">
               Impacto
             </Link>
@@ -98,11 +97,9 @@ function FooterMobile() {
       <div className="w-full flex mt-8 justify-around px-2">
         {/* Column 4: Contacto */}
         <div className="text-center">
-          <div className="text-black font-fira-sans text-[12px] font-medium tracking-[2.409px] uppercase mb-1">
-            <Link to="/contacto" className="mt-2 block cursor-pointer">
-              Contacto
-            </Link>
-          </div>
+          <p className="text-black font-fira-sans text-[12px] font-medium tracking-[2.409px] uppercase mb-1 text-center">
+            Información
+          </p>
           <div className="flex flex-col items-center space-y-2 mt-2">
             {/* First row of icons */}
             <div className="flex flex-col space-x-4 text-xs">
@@ -120,6 +117,7 @@ function FooterMobile() {
               <a
                 href="https://maps.app.goo.gl/b4E5DYbGraA1kZqw8"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <p className="mb-[5px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
                   Dardo Rocha 986, Oficina 104, Martinez, Buenos Aires
@@ -128,6 +126,7 @@ function FooterMobile() {
               <a
                 href="https://maps.app.goo.gl/qvvduCztbkSRDXUv6"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <p className="mb-[5px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
                   Ruta Nac. 120 - Km 2, Gobernador Virasoro, Corrientes
@@ -143,7 +142,7 @@ function FooterMobile() {
 
       {/* Copyright Section */}
       <div className="text-black font-fira-sans text-xs font-medium tracking-[1.708px] uppercase text-center">
-        © 2024 AW Visual Studio. All rights reserved.
+        © 2025 Todos los derechos reservados. Desarrollado por Digital Fellow.
       </div>
     </div>
   );

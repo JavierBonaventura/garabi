@@ -66,7 +66,7 @@ function Header() {
               key={index}
               to={item.to}
               onClick={() => setSelected(item.to)} // Actualiza el estado al hacer clic
-              className="relative text-[#00942C] text-center font-medium uppercase tracking-[0.2em] transition duration-300 group"
+              className="relative text-black hover:text-[#00942C] text-center font-medium uppercase tracking-[0.2em] transition duration-300 group"
               style={{
                 fontSize: `${fontSize}px`,
                 letterSpacing: `${letterSpacing}px`,
@@ -75,7 +75,7 @@ function Header() {
               {item.text}
               {/* Subrayado animado */}
               <div
-                className={`absolute bottom-[-4px] left-[-3px] w-full h-[3px] bg-[#00942C] transform transition-all duration-300 origin-left ${
+                className={`absolute bottom-[-4px] left-[-3px] w-full h-[3px] text-[#00942C] bg-[#00942C] transform transition-all duration-300 origin-left ${
                   selected === item.to
                     ? "scale-x-100"
                     : "scale-x-0 group-hover:scale-x-100"

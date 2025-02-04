@@ -150,3 +150,11 @@ code {
 .paragraph-arbol-nosotros {
   @apply text-black text-lg 2xl:text-xl font-fira-sans;
 }
+
+.title-mapa-contact {
+  @apply text-black font-fira-sans text-[22px] font-semibold leading-[32px];
+}
+
+.span-mapa-contact {
+  @apply text-black font-fira-sans text-[18px] font-normal leading-[28px];
+}

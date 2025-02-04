@@ -1,11 +1,28 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import videoSobreNosotros from "../../../images/Desktop/videoSobreNosotrosSinBoton.png";
 
 const VideoPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const iframeRef = useRef(null);
+
+  // Función para recargar el componente después de 57 segundos
+  useEffect(() => {
+    let timer;
+    if (isPlaying) {
+      // Establecer un temporizador para recargar el componente después de 57 segundos
+      timer = setTimeout(() => {
+        setIsPlaying(false);
+        iframeRef.current.src = ""; // Detener el video al quitar la fuente
+        iframeRef.current.src =
+          "https://www.youtube.com/embed/in3WqWBq5qw?controls=0&showinfo=0&rel=0"; // Reestablecer la fuente
+      }, 57000); // 57 segundos
+    }
+
+    // Limpiar el temporizador cuando el componente se desmonte o se detenga la reproducción
+    return () => clearTimeout(timer);
+  }, [isPlaying]);
 
   const handlePlay = () => {
     if (iframeRef.current) {

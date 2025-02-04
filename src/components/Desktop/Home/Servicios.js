@@ -30,7 +30,7 @@ function Servicios() {
           {/* Contenedor de los dos rectángulos centrados horizontalmente */}
           <div className="flex justify-center  space-x-[30px]">
             {/* Primer rectángulo */}
-            <div className="relative w-[527px] h-[450px] flex-shrink-0 rounded-[21.323px] bg-[#DAD8CB] shadow-[13.327px_13.327px_23.322px_6.663px_rgba(2,2,2,0.30)] ">
+            <div className="relative w-[527px] h-[450px] flex-shrink-0 rounded-[21.323px] bg-[#DAD8CB]  transform transition ease-in-out duration-300 hover:-translate-y-1 hover:shadow-[13.327px_13.327px_23.322px_6.663px_rgba(2,2,2,0.30)] shadow-2xl">
               {/* Imagen en la parte superior del rectángulo */}
               <img
                 src={recuadroUno}
@@ -58,7 +58,7 @@ function Servicios() {
             </div>
 
             {/* Segundo rectángulo */}
-            <div className="relative w-[527px] h-[450px] flex-shrink-0 rounded-[21.323px] bg-[#DAD8CB] shadow-[13.327px_13.327px_23.322px_6.663px_rgba(2,2,2,0.30)] ">
+            <div className="relative w-[527px] h-[450px] flex-shrink-0 rounded-[21.323px] bg-[#DAD8CB]  transform transition ease-in-out duration-300 hover:-translate-y-1 hover:shadow-[13.327px_13.327px_23.322px_6.663px_rgba(2,2,2,0.30)] shadow-2xl">
               {/* Imagen en la parte superior del rectángulo */}
               <img
                 src={recuadroDos}

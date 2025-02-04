@@ -82,3 +82,71 @@ code {
 .sombra-menu {
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
+
+.title-section {
+  @apply text-black text-[60px] font-fira-sans font-black leading-[60px] tracking-[-1px] text-center w-full;
+}
+
+.paragraph-section {
+  @apply text-center text-black font-fira-sans text-[20px] font-normal leading-[28px] w-full;
+}
+
+.gap-title-paragraph {
+  @apply space-y-5;
+}
+
+.padding-section {
+  @apply py-20 2xl:py-28;
+}
+
+.padding-section-2 {
+  @apply pb-20 pt-28 2xl:pb-28 2xl:pt-36;
+}
+
+.title-card-servicios {
+  @apply text-black text-center font-fira-sans text-[28px] font-normal leading-[21.323px] tracking-[-1.333px];
+}
+
+.paragraph-card-servicios {
+  @apply text-black text-center text-[20px] font-normal leading-[23px] tracking-[-1.333px];
+}
+
+.btn-card-servicios {
+  @apply text-white text-center font-fira-sans text-[14px] font-normal tracking-[4px] uppercase w-[217px] h-[50px] rounded-[5px]  absolute top-[372px] left-1/2  flex justify-center items-center bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5 transform translate-x-[-50%];
+}
+
+.numbers {
+  @apply text-[#00942C] text-center font-fira-sans text-5xl 2xl:text-[60px] font-extrabold leading-[41.422px];
+}
+
+.title-numbers {
+  @apply text-[#000] text-center font-fira-sans text-lg 2xl:text-[21px] font-medium tracking-[5.178px] uppercase leading-none;
+}
+
+.img-cards-impacto {
+  @apply w-24 h-24 bg-contain bg-no-repeat bg-center mx-auto;
+}
+
+.title-cards-impacto {
+  @apply text-black text-lg 2xl:text-2xl font-fira-sans font-semibold tracking-tight text-center;
+}
+
+.paragraph-cards-impacto {
+  @apply text-black text-sm 2xl:text-lg font-fira-sans font-normal text-center;
+}
+
+.btn-prefooter-1 {
+  @apply rounded-[5px] bg-[#00942C] flex justify-center items-center cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5 text-white font-fira-sans text-[14px] font-normal tracking-[4px] py-2 px-5;
+}
+
+.btn-prefooter-2 {
+  @apply rounded-[5px] border border-[#00942C] bg-[#FFF] flex justify-center items-center cursor-pointer transition-transform duration-500 ease-out hover:bg-[#D1D1D1] hover:-translate-y-0.5 text-[#00942C]  text-[14px] font-normal tracking-[4px] py-2 px-5;
+}
+
+.title-arbol-nosotros {
+  @apply text-4xl 2xl:text-5xl font-medium font-fira-sans text-black;
+}
+
+.paragraph-arbol-nosotros {
+  @apply text-black text-lg 2xl:text-xl font-fira-sans;
+}

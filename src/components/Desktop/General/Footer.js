@@ -8,11 +8,11 @@ import logoLinkedin from "../../../images/Desktop/linkedinNegra.png";
 function Footer() {
   return (
     <div>
-      <div className="w-full h-[380px] relative">
+      <div className="w-full  relative">
         {/* Fondo y contenedor principal */}
         <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
         <div
-          className="relative z-10 flex flex-col h-full px-4"
+          className="relative z-10 flex flex-col h-full py-14"
           style={{
             backgroundImage: `url(${imagenFondo})`,
             backgroundSize: "contain",
@@ -42,7 +42,7 @@ function Footer() {
 
             {/* Segunda columna */}
             <div className="flex flex-col top-20px mt-16">
-              <p className="text-black font-fira-sans text-[14px] font-medium uppercase tracking-[4px] ">
+              <p className="text-black font-fira-sans text-[14px] font-medium uppercase tracking-[4px]">
                 Secciones
               </p>
               <div className="w-[133.714px] h-[139px] text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-[20px] flex flex-col">
@@ -103,9 +103,9 @@ function Footer() {
 
             {/* Cuarta columna */}
             <div className="flex flex-col top-20px mt-16">
-              <div className="text-black font-fira-sans text-[14px] font-medium uppercase tracking-[4px] hover:cursor-pointer hover:scale-105 transition-transform duration-200">
-                <a href="/contacto">INFORMACIÓN</a>
-              </div>
+              <p className="text-black font-fira-sans text-[14px] font-medium uppercase tracking-[4px]">
+                Información
+              </p>
               <div className="w-[355px] h-[139px] text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-[20px]">
                 <a
                   href="https://api.whatsapp.com/send?phone=541130254376"
@@ -174,10 +174,10 @@ function Footer() {
           </div>
 
           {/* Línea centrada */}
-          <div className="w-[90%] h-[1px] bg-black mt-[75px] mb-6 mx-auto"></div>
+          <div className="w-[80%] h-[1px] bg-black mt-[75px] mb-6 mx-auto"></div>
 
           {/* Texto centrado */}
-          <div className=" text-black font-[Fira Sans] text-[14px] font-medium tracking-[4px] uppercase text-center mx-auto">
+          <div className=" text-black font-[Fira Sans] text-base font-medium tracking-[4px]  text-center mx-auto pt-5">
             © 2025 Todos los derechos reservados. Desarrollado por Digital
             Fellow.
           </div>

@@ -15,7 +15,7 @@ function AlgunosNumeros() {
 
   const finalCount1 = 47.865;
   const finalCount2 = 25.926;
-  const finalCount3 = 1.840;
+  const finalCount3 = 1.84;
   const finalCount4 = 150;
 
   // Tiempo total de referencia (en milisegundos)
@@ -63,24 +63,23 @@ function AlgunosNumeros() {
 
   return (
     <div ref={ref}>
-      <div className="w-full h-[700px] overflow-hidden">
+      <div className="w-full  overflow-hidden">
         <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
         <div
-          className="relative z-10 flex h-full"
+          className="relative z-10 flex flex-col h-full padding-section space-y-24 2xl:space-y-32"
           style={{
             backgroundImage: `url(${imagenFondo})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >
-          <div className="absolute top-[70px] left-1/2 transform -translate-x-1/2 w-[648px] h-[76px] text-black text-center font-fira-sans text-[60px] font-extrabold leading-[60px] tracking-[-1px]">
-            Algunos números
+          <div className="w-full gap-title-paragraph">
+            <h1 className="title-section">Algunos números</h1>
+            <p className="paragraph-section">
+              Esto logramos en nuestros 20 años de trayectoria
+            </p>
           </div>
-          <div className="absolute top-[150px] left-1/2 transform -translate-x-1/2 w-[290px] h-[32px] text-black text-center font-fira-sans text-[24px] font-normal leading-[32px] tracking-[-1px] flex-shrink-0">
-            Esto logramos en nuestros 20 años de trayectoria
-          </div>
-
-          <div className="absolute top-[280px] left-1/2 transform -translate-x-1/2 flex gap-[100px] justify-center">
+          <div className="flex  justify-between w-[80%] 2xl:w-2/3 mx-auto">
             {/* Bloque de imagen 1 */}
             <div className="flex flex-col items-center">
               <img
@@ -96,10 +95,8 @@ function AlgunosNumeros() {
                 onClick={() => resetCounter(setCount1, finalCount1)} // Reinicia el contador al hacer clic
               />
               <div className="w-[219px] h-[130.083px] flex-shrink-0 flex flex-col justify-center items-center pt-[55px]">
-                <div className="text-[#00942C] text-center font-fira-sans text-[62.133px] font-extrabold leading-[41.422px] pt-8">
-                  {count1}
-                </div>
-                <div className="text-[#000] text-center font-fira-sans text-[20.711px] font-medium tracking-[5.178px] uppercase pt-[20px] leading-none">
+                <div className="numbers pt-8">{count1}</div>
+                <div className="title-numbers pt-[20px]">
                   hectáreas administradas
                 </div>
               </div>
@@ -120,10 +117,8 @@ function AlgunosNumeros() {
                 onClick={() => resetCounter(setCount2, finalCount2)} // Reinicia el contador al hacer clic
               />
               <div className="w-[219px] h-[130.083px] flex-shrink-0 flex flex-col justify-center items-center pt-[55px]">
-                <div className="text-[#00942C] text-center font-fira-sans text-[62.133px] font-extrabold leading-[41.422px] pt-8 ">
-                  {count2}
-                </div>
-                <div className="text-[#000] text-center font-fira-sans text-[20.711px] font-medium tracking-[5.178px] uppercase pt-[20px] leading-none">
+                <div className="numbers pt-8">{count2}</div>
+                <div className="title-numbers pt-[20px]">
                   hectáreas forestadas
                 </div>
               </div>
@@ -144,10 +139,8 @@ function AlgunosNumeros() {
                 onClick={() => resetCounter(setCount3, finalCount3)} // Reinicia el contador al hacer clic
               />
               <div className="w-[219px] h-[130.083px] flex-shrink-0 flex flex-col justify-center items-center pt-[55px]">
-                <div className="text-[#00942C] text-center font-fira-sans text-[62.133px] font-extrabold leading-[41.422px] pt-8 ">
-                {count3.toFixed(3)}
-                </div>
-                <div className="text-[#000] text-center font-fira-sans text-[20.711px] font-medium tracking-[5.178px] uppercase pt-[20px] leading-none">
+                <div className="numbers pt-8 ">{count3.toFixed(3)}</div>
+                <div className="title-numbers pt-[20px]">
                   hectáreas con yerba mate
                 </div>
               </div>
@@ -168,10 +161,8 @@ function AlgunosNumeros() {
                 onClick={() => resetCounter(setCount4, finalCount4)} // Reinicia el contador al hacer clic
               />
               <div className="w-[219px] h-[130.083px] flex-shrink-0 flex flex-col justify-center items-center pt-[55px]">
-                <div className="text-[#00942C] text-center font-fira-sans text-[62.133px] font-extrabold leading-[41.422px] pt-8">
-                  + {count4}
-                </div>
-                <div className="text-[#000] text-center font-fira-sans text-[20.711px] font-medium tracking-[5.178px] uppercase pt-[20px] leading-none">
+                <div className="numbers pt-8">+ {count4}</div>
+                <div className="title-numbers pt-[20px]">
                   empleados directos e indirectos
                 </div>
               </div>

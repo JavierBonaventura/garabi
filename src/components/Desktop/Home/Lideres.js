@@ -26,7 +26,7 @@ function Lideres() {
       </div>
 
       <div className="absolute inset-0 flex items-center justify-center flex-col gap-y-10">
-        <h1 className="text-white font-fira-sans text-[80px] font-black leading-[85px] tracking-[-1px] text-center ">
+        <h1 className="text-white font-fira-sans text-[70px] leading-none 2xl:text-[80px] font-black 2xl:leading-[85px] tracking-[-1px] text-center ">
           Generamos valor creando <br /> un mundo más verde
         </h1>
         <p className="text-white text-2xl text-center w-1/2 font-fira-sans">
@@ -37,7 +37,7 @@ function Lideres() {
 
       <a
         href="#servicios"
-        className="absolute bottom-24 left-1/2 -translate-x-1/2 "
+        className="absolute bottom-10 2xl:bottom-24 left-1/2 -translate-x-1/2 "
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

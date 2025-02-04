@@ -9,27 +9,25 @@ import medioAmbiente from "../../../images/Desktop/medioAmbiente.png"; // Imagen
 function Impacto() {
   return (
     <div>
-      <div className="w-full h-[1200px] ">
+      <div className="w-full">
         <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
         <div
-          className="relative z-10 flex flex-col items-center justify-center h-full px-4"
+          className="relative z-10 flex flex-col items-center justify-center  h-full px-4 padding-section space-y-24 2xl:space-y-32"
           style={{
             backgroundImage: `url(${imagenFondo})`,
             backgroundSize: "cover", // Asegura que la imagen cubra todo el ancho
             backgroundPosition: "center", // Centra la imagen
           }}
         >
-          <div className="w-[804px] h-[76px] flex-shrink-0 mt-[-8px] text-black font-fira-sans text-[60px] font-bold leading-[50px] text-center">
-            Impacto Medio Ambiente
+          <div className="gap-title-paragraph xl:w-2/3 2xl:w-1/2 mx-auto">
+            <h1 className="title-section">Impacto Medio Ambiente</h1>
+            <p className="paragraph-section">
+              En Grupo Garabí, buscamos gestionar proyectos forestales que
+              promuevan la conservación del medio ambiente, fomenten la
+              biodiversidad y generen un impacto positivo y sostenible en las
+              comunidades locales. Hacemos foco en estos tres pilares.
+            </p>
           </div>
-
-          <div className="w-[794px] h-[70px] flex-shrink-0 mt-[5px] text-black font-fira-sans text-[24px] font-normal leading-[28px] text-center">
-            En Grupo Garabí, buscamos gestionar proyectos forestales que
-            promuevan la conservación del medio ambiente, fomenten la
-            biodiversidad y generen un impacto positivo y sostenible en las
-            comunidades locales. Hacemos foco en estos tres pilares.
-          </div>
-
           {/* Imagen centrada */}
           <div
             className="w-[1075px] h-[349px] flex-shrink-0 mt-[65px] bg-lightgray bg-center bg-contain bg-no-repeat rounded-[31px]"
@@ -37,24 +35,20 @@ function Impacto() {
               backgroundImage: `url(${medioAmbiente})`,
             }}
           ></div>
-
           {/* Contenedor para las tarjetas */}
-          <div className="flex items-center justify-center mt-[77px]  space-x-6 ">
+          <div className="grid grid-cols-3 items-center justify-between gap-x-10 2xl:gap-x-20 w-[80%] 2xl:w-2/3">
             {/* Tarjeta 1 - Sustentabilidad */}
-            <div className="w-[340px] h-[150px] bg-transparent  rounded-lg flex flex-col gap-y-5 ">
-              <div className="flex flex-col items-end w-1/2 border-r">
-                <div
-                  className="w-24 h-24  bg-contain bg-no-repeat bg-center"
-                  style={{
-                    backgroundImage: `url(${sustentabilidad})`,
-                  }}
-                ></div>
-              </div>
-              <div className="flex flex-col w-1/2 p-2">
-                <div className="flex-shrink-0 w-[271.171px] h-[30px] text-[#443838] text-[18px] font-fira-sans font-semibold leading-[28px] tracking-tight">
-                  Medio ambiente
-                </div>
-                <div className="flex-shrink-0 mt-2 w-[270.203px] h-[112px] text-[#443838] text-[18px] font-fira-sans font-normal leading-[28px]">
+            <div className="bg-transparent rounded-lg flex flex-col gap-y-10 w-full">
+              <div
+                className="img-cards-impacto"
+                style={{
+                  backgroundImage: `url(${sustentabilidad})`,
+                }}
+              ></div>
+
+              <div className="flex flex-col gap-y-4 -mb-6 2xl:-mb-7">
+                <div className="title-cards-impacto">Medio ambiente</div>
+                <div className="paragraph-cards-impacto">
                   Implementamos prácticas de manejo forestal sostenible,
                   haciendo un uso eficiente de los recursos naturales y
                   protegiendo la biodiversidad de la zona.
@@ -63,20 +57,17 @@ function Impacto() {
             </div>
 
             {/* Tarjeta 2 - Seguridad */}
-            <div className="w-[340px] h-[150px] bg-transparent  rounded-lg flex flex-col gap-y-5">
-              <div className="flex flex-col items-end w-1/2 border-r">
-                <div
-                  className="w-24 h-24  bg-contain bg-no-repeat bg-center"
-                  style={{
-                    backgroundImage: `url(${seguridad})`,
-                  }}
-                ></div>
-              </div>
-              <div className="flex flex-col w-1/2 p-2">
-                <div className="flex-shrink-0 w-[271.171px] h-[30px] text-[#443838] text-[22px] font-fira-sans font-semibold leading-[32px]">
-                  Social
-                </div>
-                <div className="flex-shrink-0 mt-2 w-[270.203px] h-[112px] text-[#443838] text-[18px] font-fira-sans font-normal leading-[28px]">
+            <div className="bg-transparent rounded-lg flex flex-col gap-y-10 w-full">
+              <div
+                className="img-cards-impacto"
+                style={{
+                  backgroundImage: `url(${seguridad})`,
+                }}
+              ></div>
+
+              <div className="flex flex-col gap-y-4">
+                <div className="title-cards-impacto">Social</div>
+                <div className="paragraph-cards-impacto">
                   Trabajamos estrechamente con las comunidades locales,
                   promoviendo su desarrollo social y económico.
                 </div>
@@ -84,20 +75,17 @@ function Impacto() {
             </div>
 
             {/* Tarjeta 3 - Comunidad */}
-            <div className="w-[340px] h-[150px] bg-transparent  rounded-lg flex flex-col gap-y-5">
-              <div className="flex flex-col items-end w-1/2 border-r">
-                <div
-                  className="w-24 h-24  bg-contain bg-no-repeat bg-center"
-                  style={{
-                    backgroundImage: `url(${comunidad})`,
-                  }}
-                ></div>
-              </div>
-              <div className="flex flex-col w-1/2 p-2">
-                <div className="flex-shrink-0 w-[271.171px] h-[30px] text-[#443838] text-[22px] font-fira-sans font-semibold leading-[32px]">
-                  Económico
-                </div>
-                <div className="flex-shrink-0 mt-2 w-[270.203px] h-[112px] text-[#443838] text-[18px] font-fira-sans font-normal leading-[28px]">
+            <div className="bg-transparent rounded-lg flex flex-col gap-y-10 w-full">
+              <div
+                className="img-cards-impacto"
+                style={{
+                  backgroundImage: `url(${comunidad})`,
+                }}
+              ></div>
+
+              <div className="flex flex-col gap-y-4">
+                <div className="title-cards-impacto">Económico</div>
+                <div className="paragraph-cards-impacto">
                   Impulsamos la economía circular y la creación de cadenas de
                   valor que generen ingresos de manera responsable.
                 </div>

@@ -122,22 +122,22 @@ function Servicios() {
 
   return (
     <div>
-      <div className="w-full h-[852px] overflow-hidden relative">
+      <div className="w-full  overflow-hidden relative">
         <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
         <div
-          className="relative  flex flex-col items-center justify-center h-full px-4"
+          className="relative  flex flex-col items-center justify-center h-full padding-section  space-y-24 2xl:space-y-32"
           style={{
             backgroundImage: `url(${imagenFondo})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >
-          <div className="w-[624px] h-[76px] flex-shrink-0 mt-[-30px] text-center text-[#000] font-fira-sans text-[60px] font-extrabold leading-[60px] tracking-[-1px]">
-            Nuestros proyectos
-          </div>
-          <div className="w-[535px] h-[70px] flex-shrink-0 mt-[15px] text-center text-[#000] font-fira-sans text-[24px] font-normal leading-[32px] tracking-[-1px]">
-            Esta es una selección de todos los proyectos en los cuales venimos
-            trabajando hace más de 40 años.
+          <div className="gap-title-paragraph">
+            <h1 className="title-section">Nuestros proyectos</h1>
+            <p className="paragraph-section">
+              Esta es una selección de todos los proyectos en los cuales venimos
+              trabajando hace más de 40 años.
+            </p>
           </div>
           {/* Contenedor para los botones y las tarjetas */}
           <div className="flex items-center justify-center mt-[50px] relative z-10">
@@ -191,7 +191,7 @@ function Servicios() {
                   />
 
                   {/* Título de la tarjeta */}
-                  <div className="absolute top-[280px] w-full text-center text-[#464646] font-tt-norms-pro text-[28.132px]  leading-[28.132px] tracking-[-1.758px]">
+                  <div className="absolute top-[280px] title-card-servicios w-full">
                     <span className="font-[450]">
                       {card.title.split(" ")[0]}
                     </span>
@@ -201,7 +201,7 @@ function Servicios() {
                   </div>
 
                   {/* Descripción de la tarjeta */}
-                  <div className="absolute top-[350px] w-full text-center text-[#464646] font-tt-norms-pro text-[20px] font-[400] leading-[22.858px] tracking-[-1.758px] px-[20px]">
+                  <div className="absolute top-[350px] paragraph-card-servicios w-full px-10">
                     {card.description}
                   </div>
 

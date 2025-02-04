@@ -5,6 +5,7 @@ import arbolesProyectos from "../../../images/Desktop/arboles-proyectos.png";
 import tarjetaServicios1 from "../../../images/Desktop/asesoramiento-productivo.jpg";
 import tarjetaServicios2 from "../../../images/Desktop/tarjetaServicios.png";
 import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
+import Valores from "../About/SobreNosotrosValores";
 
 function ServiciosOfrecidos() {
   // Estado para el índice del tab seleccionado
@@ -145,6 +146,7 @@ function ServiciosOfrecidos() {
               </div>
             </div>
           </div>
+          <Valores />
           <div className="relative w-full pb-20 mt-[-13%]">
             {/* Gradiente superior */}
             <div

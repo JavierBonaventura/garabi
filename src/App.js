@@ -159,7 +159,7 @@ function App() {
                   <HeaderMobile />
                   <SobreNosotrosMobile />
                   <SobreNosotrosArbolMobile />
-                  <VideoMobile />
+                  <SobreNosotrosVideo />
                   <ValoresMobile />
                   <NuestraHistoriaMobile />
                   <FooterMobile />
@@ -237,7 +237,6 @@ function App() {
                   <SobreNosotros />
                   <SobreNosotrosArbol />
                   <SobreNosotrosVideo />
-                  <SobreNosotrosValores />
                   <SobreNosotrosNuestraHistoria />
                   <SobreNosotrosNuestraHistoriaArboles />
                   <Footer />

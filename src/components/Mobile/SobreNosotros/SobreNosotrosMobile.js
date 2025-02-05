@@ -54,22 +54,28 @@ function SobreNosotrosMobile() {
               letterSpacing: "-1px",
             }}
           >
-            <h2>Administramos lo nuestro y lo suyo</h2>
-            <br />
             <p>
-              Empezamos en 1976 como empresa familiar dedicada a la
-              administración de forestaciones y actividades agrícolas en la zona
-              Noreste de la Argentina.
-              <br />
-              <br /> En 2010 un grupo de capitales belgas, dueños de una extensa
-              experiencia en America Latina en materia de forestaciones de
-              rápido crecimiento y el manejo de campos agrícolas, entroó en el
-              capital para acompañar a nuestra empresa en su crecimiento
-              exponencial. <br />
-              <br />
-              Juntos garantizamos un manejo profesional, creativo, expansivo y
-              totalmente transparente. Nuestro lema es CREAR VALOR y CRECER de
-              forma sustentable.
+              Somos una empresa que comenzó como una iniciativa familiar en
+              1976, con el compromiso de ofrecer servicios de alta calidad en el
+              sector. A lo largo de los años, nos hemos consolidado como un
+              referente en el mercado, gracias al compromiso, dedicación y
+              valores que nos caracterizan como familia.
+              <br /> <br />
+              Nos encontramos radicados en uno de los polos foresto-industriales
+              y yerbateros más importantes del país, lo que nos permite contar
+              con acceso a recursos naturales de excelencia, así como estar
+              cerca de las principales actividades productivas del sector. Este
+              entorno nos ha permitido crecer de manera constante, adaptarnos a
+              los cambios del mercado y mantenernos siempre a la vanguardia de
+              la industria.
+              <br /> <br />
+              Nuestra empresa sigue impulsada por los mismos principios que nos
+              guiaron al inicio: el trabajo en equipo, la responsabilidad
+              social, la transparencia y la pasión por lo que hacemos. Con el
+              tiempo, hemos logrado fortalecer nuestras relaciones con clientes
+              y proveedores, siempre con el firme propósito de seguir brindando
+              productos y servicios que superen las expectativas de quienes
+              confían en nosotros.
             </p>
           </div>
         </div>

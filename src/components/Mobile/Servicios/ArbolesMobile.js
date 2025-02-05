@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 import arbolesProyectos from "../../../images/Mobile/arbolesProyectos.png";
 
 function ArbolesMobile() {
@@ -11,7 +10,6 @@ function ArbolesMobile() {
     <div>
       <div className="w-full h-[290px] relative">
         {" "}
-
         <div
           id="verlo"
           className="absolute "
@@ -19,16 +17,15 @@ function ArbolesMobile() {
             zIndex: "10",
             width: "100px",
             height: "100vw",
-            transform: "rotate(90deg)", 
+            transform: "rotate(90deg)",
             flexShrink: 0,
             background:
-              "linear-gradient(90deg, rgba(237, 242, 232, 0.00) 0%, #dfe8e0 100%)", 
+              "linear-gradient(90deg, rgba(237, 242, 232, 0.00) 0%, #dfe8e0 100%)",
             top: "72.5%",
-            left: "100%", 
-            transformOrigin: "top left", 
+            left: "100%",
+            transformOrigin: "top left",
           }}
         />
-
         {/* Imagen de árboles con texto y botón debajo */}
         <div className="absolute z-10 w-full" style={{ top: "0px" }}>
           <img
@@ -47,9 +44,9 @@ function ArbolesMobile() {
               flexShrink: 0,
               background:
                 "linear-gradient(90deg, #dfe8e0 0%, rgba(237, 242, 232, 0.00) 100%)",
-              top: "0%", 
-              left: "100%", 
-              transformOrigin: "top left", 
+              top: "0%",
+              left: "100%",
+              transformOrigin: "top left",
             }}
           />
 
@@ -68,7 +65,7 @@ function ArbolesMobile() {
                 maxWidth: "379px",
               }}
             >
-              Contáctanos ahora para darle forma a tu futuro verde
+              Contáctanos ahora para darle forma VERDE a tu futuro
             </div>
 
             <button

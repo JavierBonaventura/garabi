@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import fondoMobile from "../../../images/Mobile/fondoMobile.png";
 import impacto from "../../../images/Mobile/impacto.png";
 import sustentabilidad from "../../../images/Desktop/sustentabilidad.png";
-import seguridad from "../../../images/Desktop/seguridad.png";
+import economico from "../../../images/Desktop/impacto-economico.svg";
 import comunidad from "../../../images/Desktop/comunidad.png";
 
 function ImpactoMobile() {
@@ -22,8 +22,8 @@ function ImpactoMobile() {
       text: "Implementamos prácticas de manejo forestal sostenible, haciendo un uso eficiente de los recursos naturales y protegiendo la biodiversidad de la zona.",
     },
     {
-      name: "Social",
-      src: seguridad,
+      name: "Desarrollo social",
+      src: comunidad,
       marginLeft: "-70px",
       marginLeftTitle: "-25px",
 
@@ -31,8 +31,8 @@ function ImpactoMobile() {
       text: "Trabajamos estrechamente con las comunidades locales, promoviendo su desarrollo social y económico",
     },
     {
-      name: "Económico",
-      src: comunidad,
+      name: "Desarrollo económico",
+      src: economico,
       marginLeft: "-120px",
       marginLeftTitle: "-40px",
 
@@ -52,9 +52,20 @@ function ImpactoMobile() {
         }}
       >
         <div className="mt-8 w-full">
-          <div className="flex-shrink-0 ml-8 text-black font-fira-sans text-[41px] font-extrabold leading-[39px]">
-            Impacto medio ambiente
-          </div>
+          <h1 className="flex-shrink-0 ml-8 text-black font-fira-sans text-[41px] font-extrabold leading-[39px]">
+            Triple impacto
+          </h1>
+          <p className="text-base">
+            En Grupo Garabí, buscamos gestionar proyectos forestales que
+            promuevan la conservación del medio ambiente, fomenten la
+            biodiversidad y generen un impacto positivo y sostenible en las
+            comunidades locales. Hacemos foco en tres pilares fundamentales: el
+            medio ambiente, lo social y el desarrollo económico.
+            <br />
+            <br />
+            Nuestra labor se centra en estos tres pilares de la siguiente
+            manera:
+          </p>
 
           <img
             src={impacto}

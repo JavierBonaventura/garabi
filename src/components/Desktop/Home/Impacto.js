@@ -2,7 +2,7 @@ import React from "react";
 import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
 
 import sustentabilidad from "../../../images/Desktop/sustentabilidad.png"; // Imagen de sustentabilidad
-import seguridad from "../../../images/Desktop/seguridad.png"; // Imagen de seguridad
+import economico from "../../../images/Desktop/impacto-economico.svg"; // Imagen de seguridad
 import comunidad from "../../../images/Desktop/comunidad.png"; // Imagen de comunidad
 import medioAmbiente from "../../../images/Desktop/medioAmbiente.png"; // Imagen de fondo
 
@@ -20,12 +20,13 @@ function Impacto() {
           }}
         >
           <div className="gap-title-paragraph xl:w-2/3 2xl:w-1/2 mx-auto">
-            <h1 className="title-section">Impacto Medio Ambiente</h1>
+            <h1 className="title-section">Triple impacto</h1>
             <p className="paragraph-section">
               En Grupo Garabí, buscamos gestionar proyectos forestales que
               promuevan la conservación del medio ambiente, fomenten la
               biodiversidad y generen un impacto positivo y sostenible en las
-              comunidades locales. Hacemos foco en estos tres pilares.
+              comunidades locales. Hacemos foco en tres pilares fundamentales:
+              el medio ambiente, lo social y el desarrollo económico.
             </p>
           </div>
           {/* Imagen centrada */}
@@ -61,12 +62,12 @@ function Impacto() {
               <div
                 className="img-cards-impacto"
                 style={{
-                  backgroundImage: `url(${seguridad})`,
+                  backgroundImage: `url(${comunidad})`,
                 }}
               ></div>
 
               <div className="flex flex-col gap-y-4">
-                <div className="title-cards-impacto">Social</div>
+                <div className="title-cards-impacto">Desarrollo Social</div>
                 <div className="paragraph-cards-impacto">
                   Trabajamos estrechamente con las comunidades locales,
                   promoviendo su desarrollo social y económico.
@@ -79,12 +80,12 @@ function Impacto() {
               <div
                 className="img-cards-impacto"
                 style={{
-                  backgroundImage: `url(${comunidad})`,
+                  backgroundImage: `url(${economico})`,
                 }}
               ></div>
 
               <div className="flex flex-col gap-y-4">
-                <div className="title-cards-impacto">Económico</div>
+                <div className="title-cards-impacto">Desarrollo económico</div>
                 <div className="paragraph-cards-impacto">
                   Impulsamos la economía circular y la creación de cadenas de
                   valor que generen ingresos de manera responsable.

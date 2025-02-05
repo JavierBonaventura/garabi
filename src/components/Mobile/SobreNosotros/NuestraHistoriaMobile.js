@@ -108,12 +108,7 @@ function NuestraHistoriaMobile() {
     {
       year: 2021,
       description:
-        "Alianza estratégica con grupo industrial austriaco - belga.",
-    },
-    {
-      year: 2021,
-      description:
-        "Se duplica la superficie administrada con el ingreso de un grupo austriaco a GG.",
+        "Alianza estratégica con grupo industrial austriaco - belga. Se duplica la superficie administrada con el ingreso de un grupo austriaco a GG.",
     },
     {
       year: 2023,
@@ -171,9 +166,9 @@ function NuestraHistoriaMobile() {
               marginTop: "20px",
             }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            interdum erat nec commodo imperdiet. Duis libero nisi, mollis quis
-            urna ornare, feugiat egestas nunc.
+            Nuestra trayectoria, construida a lo largo de más de 40 años, ha
+            estado marcada por la innovación, el compromiso y el crecimiento
+            constante.
           </div>
           <button
             style={{

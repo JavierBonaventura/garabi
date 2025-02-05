@@ -10,7 +10,7 @@ function NuestrosPoyectosMobile() {
   // Array con los datos de los proyectos (imagen y nombre)
   const proyectos = [
     { img: proyectos1, name: "Proyectos Forestales" },
-    { img: proyectos2, name: "Proyectos Yerbatero / Forestal" },
+    { img: proyectos2, name: "Proyectos Yerbateros / Forestales" },
     { img: proyectos3, name: "Proyectos Yerba Mate" },
     { img: proyectos4, name: "Proyectos Mixtos" },
   ];
@@ -33,8 +33,8 @@ function NuestrosPoyectosMobile() {
 
           {/* Descripción de "Grupo Garabí comienza..." */}
           <div className="mt-2 flex-shrink-0 ml-8 w-[329px] h-[52px] text-black font-fira-sans text-[20px] font-normal leading-[24px] tracking-[-1px]">
-            Esta es una selección de todos los proyectos en los cuales venimos
-            trabajando hace más de 40 años.
+            A lo largo de estos años hemos desarrollado y administrado proyectos
+            a medida para cada cliente.
           </div>
 
           {/* Contenedor de imágenes con gradiente */}

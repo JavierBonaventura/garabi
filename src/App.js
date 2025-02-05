@@ -148,6 +148,7 @@ function App() {
                 <>
                   <HeaderMobile />
                   <QuedemosEnContactoMobile />
+                  <ArbolesMobile />
                   <FooterMobile />
                 </>
               }
@@ -160,7 +161,6 @@ function App() {
                   <SobreNosotrosMobile />
                   <SobreNosotrosArbolMobile />
                   <SobreNosotrosVideo />
-                  <ValoresMobile />
                   <NuestraHistoriaMobile />
                   <FooterMobile />
                 </>
@@ -173,6 +173,7 @@ function App() {
                   <HeaderMobile />
                   <ServiciosOfrecidosMobile />
                   <AsesoramientoMobile />
+                  <ValoresMobile />
                   <ArbolesMobile />
                   <FooterMobile />
                 </>
@@ -225,6 +226,7 @@ function App() {
                   <Header />
                   <ContactoForm />
                   <SobreNosotrosNuestraHistoriaArboles />
+
                   <Footer />
                 </>
               }

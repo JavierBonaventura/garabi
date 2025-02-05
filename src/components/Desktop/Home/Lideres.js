@@ -29,9 +29,9 @@ function Lideres() {
         <h1 className="text-white font-fira-sans text-[70px] leading-none 2xl:text-[80px] font-black 2xl:leading-[85px] tracking-[-1px] text-center ">
           Generamos valor creando <br /> un mundo más verde
         </h1>
-        <p className="text-white text-2xl text-center w-1/2 font-fira-sans">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-          quae. Totam, quibusdam quaerat.
+        <p className="text-white text-2xl text-center w-1/2 2xl:w-1/3 font-fira-sans">
+          Somos especialistas en Forestación.Administramos y asesoramos
+          proyectos forestales de nuestros clientes.
         </p>
       </div>
 

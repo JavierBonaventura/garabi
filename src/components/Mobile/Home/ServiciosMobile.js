@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
 import fondoMobile from "../../../images/Mobile/fondoMobile.png";
 import servicios from "../../../images/Mobile/servicios.png";
-import recuadroUno from "../../../images/Desktop/asesoramiento-integral-2.jpg";
-import recuadroDos from "../../../images/Desktop/asesoramiento-productivo.jpg";
+import recuadroUno from "../../../images/Desktop/asesoramiento-integral-3.png";
+import recuadroDos from "../../../images/Desktop/asesoramiento-productivo-2.png";
 import botonIzquierdo from "../../../images/Mobile/botonIzquierdo.png";
 import botonDerecho from "../../../images/Mobile/botonDerecho.png";
 
@@ -11,7 +11,7 @@ function ServiciosMobile() {
     {
       image: recuadroUno,
       testimonial:
-        " Nuestros clientes obtienen los beneficios de ser los dueños de las forestaciones sin ninguna de las responsabilidades de la administración y el manejo.",
+        "Nuestros clientes obtienen los beneficios de ser los dueños de las forestaciones dejando en manos de nuestro equipo todas las responsabilidades de la administración y el manejo.",
       name: "Asesoramiento Integral",
       position: "Owner of CF INVESTMENTS",
     },
@@ -19,14 +19,13 @@ function ServiciosMobile() {
       image: recuadroDos,
       testimonial:
         " Buscamos optimizar el manejo de los bosques, promoviendo el uso sostenible de los productos forestales, maximizando la rentabilidad de nuestros clientes.",
-
       name: "Asesoramiento Productivo",
       position: "Owner of CF INVESTMENTS",
     },
     {
       image: recuadroUno,
       testimonial:
-        " Nuestros clientes obtienen los beneficios de ser los dueños de las forestaciones sin ninguna de las responsabilidades de la administración y el manejo.",
+        "Nuestros clientes obtienen los beneficios de ser los dueños de las forestaciones dejando en manos de nuestro equipo todas las responsabilidades de la administración y el manejo.",
 
       name: "Asesoramiento Integral",
       position: "Owner of CF INVESTMENTS",
@@ -173,6 +172,7 @@ function ServiciosMobile() {
                         <img
                           src={card.image}
                           alt="Servicios"
+                          className="object-cover"
                           style={{
                             width: "258px",
                             height: "149px",

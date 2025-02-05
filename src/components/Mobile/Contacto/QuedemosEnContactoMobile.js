@@ -50,9 +50,10 @@ function QuedemosEnContactoMobile() {
 
           <div>
             {/* Sección de formulario */}
-            <div className="flex justify-center mt-32" style={{ gap: "26px" }}>
-              {/* Input NOMBRE */}
-              <div>
+
+            {/* Input NOMBRE */}
+            <div className="flex justify-center">
+              <div className="mt-4">
                 <label
                   htmlFor="nombre"
                   style={{
@@ -68,43 +69,14 @@ function QuedemosEnContactoMobile() {
                 >
                   Nombre
                 </label>
+
                 <input
                   type="text"
                   id="nombre"
+                  required
                   style={{
-                    width: "152.843px",
-                    height: "27.766px",
-                    borderRadius: "4px",
-                    border: "2px solid #000",
-                    background: "rgba(218, 218, 218, 0.00)",
-                    padding: "10px",
-                  }}
-                />
-              </div>
-
-              {/* Input TELÉFONO */}
-              <div>
-                <label
-                  htmlFor="telefono"
-                  style={{
-                    display: "block",
-                    color: "#000",
-                    fontFamily: "Fira Sans",
-                    fontSize: "12px",
-                    fontWeight: "500",
-                    letterSpacing: "4px",
-                    textTransform: "uppercase",
-                    marginBottom: "8px",
-                  }}
-                >
-                  Teléfono
-                </label>
-                <input
-                  type="tel"
-                  id="telefono"
-                  style={{
-                    width: "152px",
-                    height: "27.766px",
+                    width: "328px",
+                    height: "27.778px",
                     borderRadius: "4px",
                     border: "2px solid #000",
                     background: "rgba(218, 218, 218, 0.00)",
@@ -135,7 +107,78 @@ function QuedemosEnContactoMobile() {
 
                 <input
                   type="email"
+                  required
                   id="email"
+                  style={{
+                    width: "328px",
+                    height: "27.778px",
+                    borderRadius: "4px",
+                    border: "2px solid #000",
+                    background: "rgba(218, 218, 218, 0.00)",
+                    padding: "10px",
+                  }}
+                />
+              </div>
+            </div>
+
+            {/* Input ASUNTO */}
+            <div className="flex justify-center">
+              <div className="mt-4">
+                <label
+                  htmlFor="asunto"
+                  style={{
+                    display: "block",
+                    color: "#000",
+                    fontFamily: "Fira Sans",
+                    fontSize: "12px",
+                    fontWeight: "500",
+                    letterSpacing: "4px",
+                    textTransform: "uppercase",
+                    marginBottom: "8px",
+                  }}
+                >
+                  Asunto
+                </label>
+
+                <input
+                  type="text"
+                  id="asunto"
+                  required
+                  style={{
+                    width: "328px",
+                    height: "27.778px",
+                    borderRadius: "4px",
+                    border: "2px solid #000",
+                    background: "rgba(218, 218, 218, 0.00)",
+                    padding: "10px",
+                  }}
+                />
+              </div>
+            </div>
+
+            {/* Input TELEFONO */}
+            <div className="flex justify-center">
+              <div className="mt-4">
+                <label
+                  htmlFor="telefono"
+                  style={{
+                    display: "block",
+                    color: "#000",
+                    fontFamily: "Fira Sans",
+                    fontSize: "12px",
+                    fontWeight: "500",
+                    letterSpacing: "4px",
+                    textTransform: "uppercase",
+                    marginBottom: "8px",
+                  }}
+                >
+                  Teléfono
+                </label>
+
+                <input
+                  type="number"
+                  id="telefono"
+                  required
                   style={{
                     width: "328px",
                     height: "27.778px",
@@ -169,6 +212,7 @@ function QuedemosEnContactoMobile() {
 
                 <textarea
                   id="mensaje"
+                  required
                   style={{
                     width: "329px",
                     height: "75.523px",

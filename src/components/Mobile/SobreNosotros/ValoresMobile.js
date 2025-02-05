@@ -3,10 +3,9 @@ import fondoMobile from "../../../images/Mobile/fondoMobile.png";
 import logoCandado from "../../../images/Desktop/logoCandado.png";
 import logoVision from "../../../images/Desktop/logoVision.png";
 import logoTrayectoria from "../../../images/Desktop/logoTrayectoria.png";
-import logoCheck from "../../../images/Mobile/list-check-solid.svg"
-import logoLamp from "../../../images/Mobile/lightbulb-regular.svg"
-import logoReciclado from "../../../images/Mobile/recycle-solid.svg"
-
+import logoCheck from "../../../images/Mobile/list-check-solid.svg";
+import logoLamp from "../../../images/Mobile/lightbulb-regular.svg";
+import logoReciclado from "../../../images/Mobile/recycle-solid.svg";
 
 function ValoresMobile() {
   const initialCards = [
@@ -146,7 +145,7 @@ function ValoresMobile() {
               marginTop: "20px",
             }}
           >
-            Valores
+            Nuestra Manera de Trabajar
           </div>
 
           <div

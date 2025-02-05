@@ -29,17 +29,18 @@ const cardsData = [
             Preservación y promoción del entorno natural de la fauna local.
           </li>
           <li>
-            Implementar sistemas de prevención y control de incendios, como la
-            creación de cortafuegos, monitoreos y campañas de sensibilización en
-            las comunidades locales sobre cómo prevenir incendios.
+            Implementación de sistemas de prevención y control de incendios.
+            Como puede ser la creación de cortafuegos, monitoreos y campañas de
+            sensibilización en las comunidades locales sobre cómo prevenir
+            incendios.
           </li>
+          <li>Diseño de un sistema de gestión de residuos.</li>
           <li>
-            Diseño de un sistema de gestión de residuos Conservación de fuentes
-            de agua: Crear zonas de protección alrededor de ríos, arroyos y
-            lagos dentro del bosque, protegiendo las cuencas hidrográficas de la
-            contaminación y el sobreuso. Estas áreas pueden ser declaradas
-            "zonas de conservación" donde no se permite la actividad comercial
-            intensiva.
+            Conservación de fuentes de agua: Crear zonas de protección alrededor
+            de ríos, arroyos y lagos dentro del bosque, protegiendo las cuencas
+            hidrográficas de la contaminación y el sobreuso. Estas áreas pueden
+            ser declaradas "zonas de conservación" donde no se permite la
+            actividad comercial intensiva.
           </li>
         </ul>
       </>
@@ -47,7 +48,7 @@ const cardsData = [
     images: [medioAmbiente1, medioAmbiente2, medioAmbiente3],
   },
   {
-    title: "Económico",
+    title: "Desarrollo económico",
     content: (
       <ul className="list-disc pl-5 mt-2">
         <li>
@@ -69,18 +70,17 @@ const cardsData = [
     images: [economico1, economico2, economico3],
   },
   {
-    title: "Social",
+    title: "Desarrollo social",
     content: (
       <ul className="list-disc pl-5 mt-2">
         <li>
-          Consultas comunitarias y participación: Involucrar a las comunidades
-          locales en la toma de decisiones sobre la gestión del bosque, mediante
-          consultas públicas o la creación de comités de gestión comunitarios,
-          para que las actividades forestales estén alineadas con sus intereses
-          y necesidades.
+          Involucramiento con las comunidades locales en la toma de decisiones
+          sobre la gestión del bosque, mediante consultas públicas o la creación
+          de comités de gestión comunitarios, para que las actividades
+          forestales estén alineadas con sus intereses y necesidades.
         </li>
         <li>
-          Colaboración establecimientos educativos de diferentes maneras:
+          Colaboración con establecimientos educativos de diferentes maneras:
           mediante el dictado de cursos, capacitaciones en ciertos temas,
           colaboración en algunos proyectos particulares, ofrecer posibilidad de
           pasantías.
@@ -265,11 +265,10 @@ function ImpactoMobileMain() {
           </div>
 
           <div className="w-[315px] h-[100px] flex-shrink-0 mt-[136px] text-black font-fira-sans text-[12px] font-normal leading-[17px] tracking-[-1px] mx-auto">
-            En Grupo Garabí, buscamos gestionar proyectos forestales que
-            promuevan la conservación del medio ambiente, fomenten la
-            biodiversidad y generen un impacto positivo y sostenible en las
-            comunidades locales. Hacemos foco en estos tres pilares de la
-            siguiente manera
+            En Grupo Garabí, nos dedicamos a la gestión de proyectos agro
+            forestales que impulsen la conservación del medio ambiente,
+            promuevan la biodiversidad y generen un impacto positivo en las
+            comunidades locales de manera sostenible a lo largo del tiempo.
           </div>
 
           <div className="flex flex-col mt-2">

@@ -193,350 +193,323 @@ function Imapcto() {
   };
 
   return (
-    <div>
-      <div className="w-full h-[auto] relative">
-        <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
-        <img
-          src={imagenCurvaImpacto}
-          alt="Curva"
-          className="absolute top-0 left-0 w-full h-auto z-20 max-h-[850px]"
-          style={{
-            mixBlendMode: "normal",
-            top: "200px",
-          }}
-        />
-        {/* <div
-          id="verlo"
-          className="absolute z-[20] w-[100px] h-[100vw] bg-gradient-to-r from-transparent to-[#dfe8e0] rotate-90 top-[3450px] left-[100%] border-2 border-black "
-          style={{
-            transformOrigin: "top left",
-          }}
-        /> */}
-        <div
-          className="relative z-10 flex flex-col h-full pt-32"
-          style={{
-            backgroundImage: `url(${imagenFondo})`,
-            backgroundSize: "contain",
-            backgroundPosition: "center top",
-          }}
-        >
-          <div className="w-[546px] h-[72px] flex-shrink-0 mt-[40px] ml-[12%] text-black font-fira-sans text-[60px] font-extrabold leading-[60px] tracking-[-1px] [font-feature-settings:'liga' 'off','clig' 'off']">
-            Impacto
+    <div className="w-full relative ">
+      <img
+        src={imagenCurvaImpacto}
+        alt="Curva"
+        className="absolute top-0 left-0 w-full h-auto z-20 max-h-[850px]"
+        style={{
+          mixBlendMode: "normal",
+          top: "200px",
+        }}
+      />
+
+      <div
+        className="relative z-10 flex flex-col h-full padding-section-2"
+        style={{
+          backgroundImage: `url(${imagenFondo})`,
+          backgroundSize: "contain",
+          backgroundPosition: "center top",
+        }}
+      >
+        <div className="gap-title-paragraph ml-[12%]">
+          <h1 className="title-section !text-left ">Impacto</h1>
+          <p className="paragraph-section !text-left !w-1/3">
+            En Grupo Garabi, nos dedicamos a la gestión de proyectos agro
+            forestales que impulsen la conservación del medio ambiente,
+            promuevan la biodiversidad y generen un impacto positivo en las
+            comunidades locales de manera sostenible a lo largo del tiempo.
+            <br />
+            <br />
+            Nuestra labor se centra en estos tres pilares de la siguiente
+            manera:
+          </p>
+        </div>
+        <div className="relative w-full h-full">
+          {/* Bloque de fondo */}
+          <div className="relative w-full">{/* Capa de degradado */}</div>
+          {/* primer tarjeta */}
+          <div
+            className="flex mt-[450px] 2xl:mt-[650px] mx-auto w-full justify-center items-center gap-x-10 2xl:gap-x-32"
+            style={{
+              position: "relative",
+              zIndex: 10,
+            }}
+          >
+            {/* Columna izquierda */}
+            <div className="w-[528px] relative">
+              <div className="relative w-full overflow-hidden">
+                {/* Carrusel de imágenes */}
+                <div
+                  ref={carouselRef1}
+                  className="flex"
+                  style={{ width: `${images1.length * cardWidth}px` }}
+                >
+                  {images1.map((image, index) => (
+                    <div key={index} className="flex-shrink-0">
+                      <img
+                        src={image}
+                        alt={`Imagen ${index + 1}`}
+                        style={{
+                          width: "528px",
+                          height: "400px",
+                          borderRadius: "20px",
+                        }}
+                      />
+                    </div>
+                  ))}
+                </div>
+
+                {/* Botón izquierda */}
+                <img
+                  src={botonIzquierda}
+                  alt="Botón Izquierda"
+                  className="absolute top-1/2 left-[30px] transform -translate-y-1/2 w-[40px] h-[38.667px] flex-shrink-0 cursor-pointer"
+                  onClick={moveLeft1}
+                />
+
+                {/* Botón derecha */}
+                <img
+                  src={botonDerecha}
+                  alt="Botón Derecha"
+                  className="absolute top-1/2 right-[30px] transform -translate-y-1/2 w-[40px] h-[38.667px] shrink-0 cursor-pointer"
+                  onClick={moveRight1}
+                />
+              </div>
+            </div>
+
+            {/* Columna derecha */}
+            <div className="mr-4 w-[500px] 2xl:w-[600px]">
+              <h1 className="title-impacto">Medio ambiente</h1>
+              <div className="paragraph-impacto">
+                <ul className="list-disc pl-5 space-y-1 2xl:space-y-2">
+                  <li>
+                    Preservación y promoción de especies nativas y bosques
+                    naturales.
+                  </li>
+                  <li>
+                    Preservación y promoción del entorno natural de la fauna
+                    local.
+                  </li>
+                  <li>
+                    Implementación de sistemas de prevención y control de
+                    incendios. Como puede serla creación de cortafuegos,
+                    monitoreos y campañas de sensibilización en las comunidades
+                    locales sobre cómo prevenir incendios.
+                  </li>
+                  <li>Diseño de un sistema de gestión de residuos.</li>
+                  <li>
+                    Conservación de fuentes de agua: Crear zonas de protección
+                    alrededor de ríos, arroyos y lagos dentro del bosque,
+                    protegiendo las cuencas hidrográficas de la contaminación y
+                    el sobreuso. Estas áreas pueden ser declaradas "zonas de
+                    conservación" donde no se permite la actividad comercial
+                    intensiva.
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
+          {/* segunda tarjeta */}
+          <div
+            className="flex mt-[40px] 2xl:mt-[120px] mx-auto  gap-x-10 2xl:gap-x-32 justify-center"
+            style={{
+              position: "relative",
+              zIndex: 10,
+            }}
+          >
+            {/* Columna izquierda */}
 
-          <div className="w-[400px] h-[64px] flex-shrink-0 mt-[30px] ml-[12%] text-black font-fira-sans text-[24px] font-normal leading-[28px] tracking-[-1px] [font-feature-settings:'liga' 'off','clig' 'off']">
-            En Grupo Garabí, buscamos gestionar proyectos forestales que
-            promuevan la conservación del medio ambiente, fomenten la
-            biodiversidad y generen un impacto positivo y sostenible en las
-            comunidades locales. Hacemos foco en estos tres pilares de la
-            siguiente manera
+            <div className="w-[500px] 2xl:w-[600px]">
+              <div className="title-impacto">Desarrollo económico</div>
+              <div className="paragraph-impacto">
+                <ul className="list-disc pl-5  space-y-1 2xl:space-y-2">
+                  <li>
+                    Creación de empleos directos e indirectos: La empresa puede
+                    contratar a trabajadores locales para actividades que
+                    requieran los diferentes proyectos.
+                  </li>
+                  <li>
+                    La empresa puede contribuir a la sostenibilidad económica
+                    mediante la diversificación de productos forestales, el
+                    impulso a la economía circular y la creación de cadenas de
+                    valor que generen ingresos de manera responsable. Además,
+                    puede establecer acuerdos comerciales que promuevan el uso
+                    eficiente de los recursos, la reducción de residuos y el
+                    apoyo a prácticas que fortalezcan la viabilidad económica a
+                    largo plazo, sin comprometer la salud de los ecosistemas.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Columna derecha */}
+
+            <div className="w-[528px] relative">
+              <div className="relative w-full overflow-hidden">
+                <div
+                  ref={carouselRef2}
+                  className="flex"
+                  style={{ width: `${images2.length * cardWidth}px` }}
+                >
+                  {images2.map((image, index) => (
+                    <div key={index} className="flex-shrink-0">
+                      <img
+                        src={image}
+                        alt={`Imagen ${index + 1}`}
+                        style={{
+                          width: "528px",
+                          height: "400px",
+                          borderRadius: "20px",
+                        }}
+                      />
+                    </div>
+                  ))}
+                </div>
+
+                {/* Botón izquierda */}
+                <img
+                  src={botonIzquierda}
+                  alt="Botón Izquierda"
+                  className="absolute top-1/2 left-[30px] transform -translate-y-1/2 w-[40px] h-[38.667px] flex-shrink-0 cursor-pointer"
+                  onClick={moveLeft2}
+                />
+
+                {/* Botón derecha */}
+                <img
+                  src={botonDerecha}
+                  alt="Botón Derecha"
+                  className="absolute top-1/2 right-[30px] transform -translate-y-1/2 w-[40px] h-[38.667px] shrink-0 cursor-pointer"
+                  onClick={moveRight2}
+                />
+              </div>
+            </div>
           </div>
+          {/* tercera tarjeta */}
+          <div
+            className="flex mt-[40px] 2xl:mt-[120px] mx-auto gap-x-10 2xl:gap-x-32 justify-center"
+            style={{
+              position: "relative",
+              zIndex: 10,
+            }}
+          >
+            {/* Columna izquierda */}
+            <div className="w-[528px] relative">
+              <div className="relative w-full overflow-hidden">
+                {/* Carrusel de imágenes */}
+                <div
+                  ref={carouselRef3}
+                  className="flex"
+                  style={{ width: `${images3.length * cardWidth}px` }}
+                >
+                  {images3.map((image, index) => (
+                    <div key={index} className="flex-shrink-0">
+                      <img
+                        src={image}
+                        alt={`Imagen ${index + 1}`}
+                        style={{
+                          width: "528px",
+                          height: "400px",
+                          borderRadius: "20px",
+                        }}
+                      />
+                    </div>
+                  ))}
+                </div>
 
-          <div className="relative w-full h-full">
-            {/* Bloque de fondo */}
-            <div className="relative w-full" style={{ top: "1850px" }}>
-              {/* Capa de degradado */}
+                {/* Botón izquierda */}
+                <img
+                  src={botonIzquierda}
+                  alt="Botón Izquierda"
+                  className="absolute top-1/2 left-[30px] transform -translate-y-1/2 w-[40px] h-[38.667px] flex-shrink-0 cursor-pointer"
+                  onClick={moveLeft3}
+                />
+
+                {/* Botón derecha */}
+                <img
+                  src={botonDerecha}
+                  alt="Botón Derecha"
+                  className="absolute top-1/2 right-[30px] transform -translate-y-1/2 w-[40px] h-[38.667px] shrink-0 cursor-pointer"
+                  onClick={moveRight3}
+                />
+              </div>
             </div>
-            {/* primer tarjeta */}
+
+            {/* Columna derecha */}
+
+            <div className="mr-4 w-[500px] 2xl:w-[600px]">
+              <div className="title-impacto">Desarrollo social</div>
+
+              <div className="paragraph-impacto">
+                <ul className="list-disc pl-5  space-y-1 2xl:space-y-2">
+                  <li>
+                    Involucramiento con las comunidades locales en la toma de
+                    decisiones sobre la gestión del bosque, mediante consultas
+                    públicas o la creación de comités de gestión comunitarios,
+                    para que las actividades forestales estén alineadas con sus
+                    intereses y necesidades.
+                  </li>
+                  <li>
+                    Colaboración con establecimientos educativos de diferentes
+                    maneras: mediante el dictado de cursos, capacitaciones en
+                    ciertos temas, colaboración en algunos proyectos
+                    particulares, ofrecer posibilidad de pasantías.
+                  </li>
+                  <li>
+                    Promoción de salud y seguridad: Asegurar que los
+                    trabajadores forestales reciban capacitación en seguridad
+                    laboral, uso de equipos de protección y primeros auxilios.
+                  </li>
+                  <li>
+                    Establecer alianzas con organizaciones no gubernamentales
+                    locales para apoyar iniciativas que beneficien a las
+                    comunidades, como proyectos educativos, de salud o de
+                    desarrollo económico
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          {/* Contenido adicional, botones, etc. */}
+          <Politicas />
+          <div className="relative w-full pb-20 mt-[-4%]">
+            {/* Gradiente superior */}
 
             <div
-              className="flex mt-[620px] mx-auto"
+              className="z-20  absolute top-[0%] right-0 w-full h-[8%] origin-top-left "
               style={{
-                width: "1074px",
-                gap: "100px",
-                position: "relative",
-                zIndex: 10,
+                background:
+                  "linear-gradient(00deg, #dfe8e0 0%, rgba(237, 242, 232, 0.00) 100%)",
               }}
-            >
-              {/* Columna izquierda */}
-              <div style={{ width: "528px", position: "relative" }}>
-                <div className="relative w-full overflow-hidden">
-                  {/* Carrusel de imágenes */}
-                  <div
-                    ref={carouselRef1}
-                    className="flex"
-                    style={{ width: `${images1.length * cardWidth}px` }}
-                  >
-                    {images1.map((image, index) => (
-                      <div key={index} className="flex-shrink-0">
-                        <img
-                          src={image}
-                          alt={`Imagen ${index + 1}`}
-                          style={{
-                            width: "528px",
-                            height: "400px",
-                            borderRadius: "20px",
-                          }}
-                        />
-                      </div>
-                    ))}
-                  </div>
+            />
 
-                  {/* Botón izquierda */}
-                  <img
-                    src={botonIzquierda}
-                    alt="Botón Izquierda"
-                    className="absolute top-1/2 left-[30px] transform -translate-y-1/2 w-[40px] h-[38.667px] flex-shrink-0 cursor-pointer"
-                    onClick={moveLeft1}
-                  />
+            {/* Imagen */}
+            <img
+              className="z-10 w-full"
+              src={arbolesProyectos}
+              alt="Árboles Proyectos"
+            />
 
-                  {/* Botón derecha */}
-                  <img
-                    src={botonDerecha}
-                    alt="Botón Derecha"
-                    className="absolute top-1/2 right-[30px] transform -translate-y-1/2 w-[40px] h-[38.667px] shrink-0 cursor-pointer"
-                    onClick={moveRight1}
-                  />
-                </div>
-              </div>
-
-              {/* Columna derecha */}
-              <div className="mr-4" style={{ width: "468.214px" }}>
-                <div className="w-[344px] h-[32px] shrink-0 text-black font-fira-sans text-[40px] font-bold leading-[50px]">
-                  Medio ambiente
-                </div>
-                <div className="w-[464px] h-[446px] shrink-0 text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-12">
-                  <ul className="list-disc pl-5 mt-2 space-y-2">
-                    <li>
-                      Preservación y promoción de especies nativas y bosques
-                      naturales.
-                    </li>
-                    <li>
-                      Preservación y promoción del entorno natural de la fauna
-                      local.
-                    </li>
-                    <li>
-                      Implementar sistemas de prevención y control de incendios,
-                      como la creación de cortafuegos, monitoreos y campañas de
-                      sensibilización en las comunidades locales sobre cómo
-                      prevenir incendios.
-                    </li>
-                    <li>
-                      Diseño de un sistema de gestión de residuos Conservación
-                      de fuentes de agua: Crear zonas de protección alrededor de
-                      ríos, arroyos y lagos dentro del bosque, protegiendo las
-                      cuencas hidrográficas de la contaminación y el sobreuso.
-                      Estas áreas pueden ser declaradas "zonas de conservación"
-                      donde no se permite la actividad comercial intensiva.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            {/* segunda tarjeta */}
-
+            {/* Gradiente inferior */}
             <div
-              className="flex mt-[40px] mx-auto"
+              className="z-20 absolute top-[8%] right-0 w-full h-[40%] origin-top-left "
               style={{
-                width: "1074px",
-                gap: "100px",
-                position: "relative",
-                zIndex: 10,
+                background:
+                  "linear-gradient(00deg, rgba(237, 242, 232, 0.00) 0%, #dfe8e0 100%)",
               }}
-            >
-              {/* Columna izquierda */}
+            />
 
-              <div className="mr-4" style={{ width: "468.214px" }}>
-                <div className="w-[344px] h-[32px] shrink-0 text-black font-fira-sans text-[40px] font-bold leading-[50px]">
-                  Economico
-                </div>
-                <div className="w-[464px] h-[426px] shrink-0 text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-12">
-                  <ul className="list-disc pl-5 mt-2 space-y-2">
-                    <li>
-                      Creación de empleos directos e indirectos: La empresa
-                      puede contratar a trabajadores locales para actividades
-                      que requieran los diferentes proyectos.
-                    </li>
-                    <li>
-                      La empresa puede contribuir a la sostenibilidad económica
-                      mediante la diversificación de productos forestales, el
-                      impulso a la economía circular y la creación de cadenas de
-                      valor que generen ingresos de manera responsable. Además,
-                      puede establecer acuerdos comerciales que promuevan el uso
-                      eficiente de los recursos, la reducción de residuos y el
-                      apoyo a prácticas que fortalezcan la viabilidad económica
-                      a largo plazo, sin comprometer la salud de los
-                      ecosistemas.
-                    </li>
-                  </ul>
-                </div>
+            {/* Contenido central */}
+            <div className="relative flex flex-col justify-center items-center text-center">
+              <div className="text-center text-[#00942C] font-fira-sans text-[40px] font-bold leading-[50px] max-w-[615px] mt-[-40%]">
+                Contáctanos ahora para darle forma a tu futuro verde
               </div>
 
-              {/* Columna derecha */}
-
-              <div style={{ width: "528px", position: "relative" }}>
-                <div className="relative w-full overflow-hidden">
-                  <div
-                    ref={carouselRef2}
-                    className="flex"
-                    style={{ width: `${images2.length * cardWidth}px` }}
-                  >
-                    {images2.map((image, index) => (
-                      <div key={index} className="flex-shrink-0">
-                        <img
-                          src={image}
-                          alt={`Imagen ${index + 1}`}
-                          style={{
-                            width: "528px",
-                            height: "400px",
-                            borderRadius: "20px",
-                          }}
-                        />
-                      </div>
-                    ))}
-                  </div>
-
-                  {/* Botón izquierda */}
-                  <img
-                    src={botonIzquierda}
-                    alt="Botón Izquierda"
-                    className="absolute top-1/2 left-[30px] transform -translate-y-1/2 w-[40px] h-[38.667px] flex-shrink-0 cursor-pointer"
-                    onClick={moveLeft2}
-                  />
-
-                  {/* Botón derecha */}
-                  <img
-                    src={botonDerecha}
-                    alt="Botón Derecha"
-                    className="absolute top-1/2 right-[30px] transform -translate-y-1/2 w-[40px] h-[38.667px] shrink-0 cursor-pointer"
-                    onClick={moveRight2}
-                  />
-                </div>
-              </div>
-            </div>
-
-            {/* tercera tarjeta */}
-
-            <div
-              className="flex mt-[40px] mx-auto"
-              style={{
-                width: "1074px",
-                gap: "100px",
-                position: "relative",
-                zIndex: 10,
-              }}
-            >
-              {/* Columna izquierda */}
-              <div style={{ width: "528px", position: "relative" }}>
-                <div className="relative w-full overflow-hidden">
-                  {/* Carrusel de imágenes */}
-                  <div
-                    ref={carouselRef3}
-                    className="flex"
-                    style={{ width: `${images3.length * cardWidth}px` }}
-                  >
-                    {images3.map((image, index) => (
-                      <div key={index} className="flex-shrink-0">
-                        <img
-                          src={image}
-                          alt={`Imagen ${index + 1}`}
-                          style={{
-                            width: "528px",
-                            height: "400px",
-                            borderRadius: "20px",
-                          }}
-                        />
-                      </div>
-                    ))}
-                  </div>
-
-                  {/* Botón izquierda */}
-                  <img
-                    src={botonIzquierda}
-                    alt="Botón Izquierda"
-                    className="absolute top-1/2 left-[30px] transform -translate-y-1/2 w-[40px] h-[38.667px] flex-shrink-0 cursor-pointer"
-                    onClick={moveLeft3}
-                  />
-
-                  {/* Botón derecha */}
-                  <img
-                    src={botonDerecha}
-                    alt="Botón Derecha"
-                    className="absolute top-1/2 right-[30px] transform -translate-y-1/2 w-[40px] h-[38.667px] shrink-0 cursor-pointer"
-                    onClick={moveRight3}
-                  />
-                </div>
-              </div>
-
-              {/* Columna derecha */}
-
-              <div className="mr-4" style={{ width: "468.214px" }}>
-                <div className="w-[461px] h-[32px] text-black font-fira-sans text-[40px] font-extrabold leading-[50px] text-left">
-                  Social
-                </div>
-
-                <div className="w-[464px] h-[446px] shrink-0 text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-12">
-                  <ul className="list-disc pl-5 mt-2 space-y-2">
-                    <li>
-                      Consultas comunitarias y participación: Involucrar a las
-                      comunidades locales en la toma de decisiones sobre la
-                      gestión del bosque, mediante consultas públicas o la
-                      creación de comités de gestión comunitarios, para que las
-                      actividades forestales estén alineadas con sus intereses y
-                      necesidades.
-                    </li>
-                    <li>
-                      Colaboración establecimientos educativos de diferentes
-                      maneras: mediante el dictado de cursos, capacitaciones en
-                      ciertos temas, colaboración en algunos proyectos
-                      particulares, ofrecer posibilidad de pasantías.
-                    </li>
-                    <li>
-                      Promoción de salud y seguridad: Asegurar que los
-                      trabajadores forestales reciban capacitación en seguridad
-                      laboral, uso de equipos de protección y primeros auxilios.
-                    </li>
-                    <li>
-                      Establecer alianzas con organizaciones no gubernamentales
-                      locales para apoyar iniciativas que beneficien a las
-                      comunidades, como proyectos educativos, de salud o de
-                      desarrollo económico
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            {/* Contenido adicional, botones, etc. */}
-            <Politicas />
-            <div className="relative w-full pb-20 mt-[-4%]">
-              {/* Gradiente superior */}
-
-              <div
-                className="z-20  absolute top-[0%] right-0 w-full h-[8%] origin-top-left "
-                style={{
-                  background:
-                    "linear-gradient(00deg, #dfe8e0 0%, rgba(237, 242, 232, 0.00) 100%)",
-                }}
-              />
-
-              {/* Imagen */}
-              <img
-                className="z-10 w-full"
-                src={arbolesProyectos}
-                alt="Árboles Proyectos"
-              />
-
-              {/* Gradiente inferior */}
-              <div
-                className="z-20 absolute top-[8%] right-0 w-full h-[40%] origin-top-left "
-                style={{
-                  background:
-                    "linear-gradient(00deg, rgba(237, 242, 232, 0.00) 0%, #dfe8e0 100%)",
-                }}
-              />
-
-              {/* Contenido central */}
-              <div className="relative flex flex-col justify-center items-center text-center">
-                <div className="text-center text-[#00942C] font-fira-sans text-[40px] font-bold leading-[50px] max-w-[615px] mt-[-40%]">
-                  Contáctanos ahora para darle forma a tu futuro verde
-                </div>
-
-                <button className="mt-12 flex justify-center items-center bg-white border border-[#00942C] rounded-[5px] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#D1D1D1] hover:-translate-y-0.5 w-[245.25px] h-[50px]">
-                  <span className="text-[#00942C] text-center font-fira-code text-[14px] font-normal uppercase tracking-[4px]">
-                    Contáctanos
-                  </span>
-                </button>
-              </div>
+              <button className="mt-12 flex justify-center items-center bg-white border border-[#00942C] rounded-[5px] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#D1D1D1] hover:-translate-y-0.5 w-[245.25px] h-[50px]">
+                <span className="text-[#00942C] text-center font-fira-code text-[14px] font-normal uppercase tracking-[4px]">
+                  Contáctanos
+                </span>
+              </button>
             </div>
           </div>
         </div>

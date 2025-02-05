@@ -3,7 +3,6 @@ import imagenCurvaServicios from "../../../images/Desktop/imagenCurvaServicios.p
 import tarjetaServicios from "../../../images/Desktop/asesoramiento-integral-2.jpg";
 import arbolesProyectos from "../../../images/Desktop/arboles-proyectos.png";
 import tarjetaServicios1 from "../../../images/Desktop/asesoramiento-productivo.jpg";
-import tarjetaServicios2 from "../../../images/Desktop/tarjetaServicios.png";
 import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
 import Valores from "../About/SobreNosotrosValores";
 
@@ -12,32 +11,33 @@ function ServiciosOfrecidos() {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [hoveredIndex, setHoveredIndex] = useState(null); // Estado para el índice del hover
 
-  const servicios = [
-    "Administracion integral",
-    "Asesoramiento productivo",
-    "Valores",
-  ];
+  const servicios = ["Asesoramiento integral", "Asesoramiento productivo"];
 
   // Contenido para cada servicio (puedes modificar el contenido para cada servicio aquí)
   const contenidoServicios = [
     {
-      titulo: "Administracion integral",
+      titulo: "Asesoramiento integral",
       descripcion:
-        "Los emprendimientos de manera integral, eficiente y dinámica. La flexibilidad y agilidad de nuestra organización, sumado a la ventaja de estar en la zona de mayor crecimiento forestal del país, nos permiten garantizar un servicio de alta calidad.",
+        "Los proyectos que cuentan con asesoramiento integral ofrecen todas las ventajas del asesoramiento productivo, asegurando un acompañamiento completo en el desarrollo y optimización de las actividades. Estos proyectos liberan a los propietarios de la responsabilidad de gestionar tareas administrativas, legales, impositivas y de tesorería, a la vez que los mantienen informados mediante rendiciones periódicas y reportes detallados. De esta forma, pueden concentrarse exclusivamente en las áreas estratégicas y operativas del negocio, con plena transparencia sobre el estado de las gestiones realizadas.<br/><br/>" +
+        "<ul>" +
+        "<li>Gestión Administrativa de la Empresa: Asesoría legal, contable e impositiva, asegurando el cumplimiento normativo y la correcta gestión de la documentación empresarial.</li>" +
+        "<li>Consultoría Financiera y Planificación: Te ayudamos a gestionar la financiación de tu proyecto y optimizar flujos de caja.</li>" +
+        "<li>Gestión de Tesorería y Pagos: Nos encargamos de la administración de pagos, cobranzas y rendiciones de gastos, asegurando que tu flujo de caja esté siempre en orden y que las obligaciones financieras se cumplan de manera eficiente.</li>" +
+        "<li>Armado de Reportes: Elaboramos informes detallados y periódicos sobre el estado de la producción, la situación financiera y otros indicadores clave de tu empresa, facilitando la toma de decisiones informadas y estratégicas.</li>" +
+        "</ul>",
       imagen: tarjetaServicios,
     },
     {
       titulo: "Asesoramiento productivo",
       descripcion:
-        "Asesoramos a nuestros clientes a la hora de estudiar sus inversiones, optimizando el rendimiento del capital en base a nuestro conocimiento sobre el campo y a nuestra experiencia en explotaciones agropecuarias.",
+        "Ofrecemos asesoramiento y soluciones personalizadas buscando maximizar la productividad y sostenibilidad de los proyectos de nuestros clientes. Gracias a nuestra amplia experiencia en el sector sumado al respaldo de un equipo especializado, ayudamos a seleccionar las mejores prácticas y estrategias para cada proyecto, asegurando su rentabilidad y la conservación del entorno. Acompañamos a nuestros clientes en todas las etapas, desde la planificación hasta la ejecución, con un enfoque práctico y adaptado a sus necesidades.<br/><br/>" +
+        "<ul>" +
+        "<li>Asesoramiento en Manejo Agroforestal: Brindamos asesoramiento especializado en la planificación y ejecución de proyectos agroforestales, adaptados a las necesidades específicas de cada cliente.</li>" +
+        "<li>Planificación y Gestión de Proyectos: Desarrollamos planes de trabajo detallados, asegurando la correcta ejecución de las tareas y el cumplimiento de los plazos establecidos.</li>" +
+        "<li>Monitoreo y Seguimiento de la Producción: Implementamos sistemas de control para asegurar el avance de las actividades y la eficiencia de los recursos, realizando ajustes cuando sea necesario.</li>" +
+        "<li>Asesoramiento en Comercialización: Te apoyamos en la toma de decisiones sobre la comercialización de tus productos, identificando oportunidades y mejorando la cadena de valor.</li>" +
+        "</ul>",
       imagen: tarjetaServicios1,
-    },
-
-    {
-      titulo: "Valores",
-      descripcion:
-        "Más de 40 años de servicio. Agroforestal Garabí SRL, administra un total de 50778.53 Ha. De las cuales 21500 están comprometidas actualmente al proceso de certificación (FGF Santa María y Rudaco SA).",
-      imagen: tarjetaServicios2,
     },
   ];
 
@@ -67,12 +67,19 @@ function ServiciosOfrecidos() {
             Servicios ofrecidos
           </div>
 
-          <div className="w-[452px] h-[180px] flex-shrink-0 mt-[20px] ml-[12%] text-[#000] font-fira-sans text-[24px] font-normal leading-[28px] tracking-[-1px] [font-feature-settings:'liga_off','clig_off']">
-            Nuestros servicios se basan en tres pilares: Asesoramiento
-            Productivo, Administración Integral y una Basta Experiencia, para
-            ofrecerte soluciones estratégicas y efectivas adaptadas a tus
-            necesidades.
-          </div>
+          <p className="w-[452px] h-[180px] flex-shrink-0 mt-[20px] ml-[12%] text-[#000] font-fira-sans text-[24px] font-normal leading-[28px] tracking-[-1px] [font-feature-settings:'liga_off','clig_off']">
+            En Grupo Garabi nos comprometemos con el desarrollo sostenible y el
+            crecimiento eficiente de los sectores productivos del campo.
+            Ofrecemos una gama completa de servicios de administración integral
+            y asesoramiento productivo, diseñados para optimizar el rendimiento
+            de tus recursos naturales, garantizar la sostenibilidad de tu
+            proyecto y maximizar la rentabilidad a largo plazo.
+            <br />
+            Entendemos que cada proyecto agroforestal es único. Por eso, nos
+            dedicamos a ofrecer soluciones integrales que aborden las
+            necesidades específicas de cada cliente, con el objetivo de alcanzar
+            una producción eficiente, rentable y sostenible a largo plazo.
+          </p>
 
           <div
             className="flex justify-between mt-[500px] mx-auto"
@@ -131,9 +138,12 @@ function ServiciosOfrecidos() {
                 <div className="w-[468.214px] h-[32px] flex-shrink-0 text-black font-fira-sans text-[24px] font-semibold leading-[32px]">
                   {contenidoServicios[selectedIndex].titulo}
                 </div>
-                <div className="w-[526px] h-[206px] flex-shrink-0 text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-8">
-                  {contenidoServicios[selectedIndex].descripcion}
-                </div>
+                <div
+                  className="w-[526px] h-[206px] flex-shrink-0 text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-8"
+                  dangerouslySetInnerHTML={{
+                    __html: contenidoServicios[selectedIndex].descripcion,
+                  }}
+                ></div>
               </div>
 
               {/* Columna derecha: imagen según la selección */}

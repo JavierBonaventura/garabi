@@ -12,9 +12,9 @@ function AlgunosNumerosMobile() {
   const [count4, setCount4] = useState(0);
   const ref = useRef(null);
 
-  const finalCount1 = 47.865;
-  const finalCount2 = 25.926;
-  const finalCount3 = 1.840;
+  const finalCount1 = 54.036;
+  const finalCount2 = 26.925;
+  const finalCount3 = 3.696;
   const finalCount4 = 150;
 
   const totalDuration = 2000; // 2 segundos
@@ -68,10 +68,10 @@ function AlgunosNumerosMobile() {
       >
         <div className="mt-8 w-full">
           <div className="flex-shrink-0 ml-8 w-[274px] h-[88px] text-black font-fira-sans text-[41px] font-extrabold leading-[39px] tracking-normal">
-            Algunos números
+            Nuestros resultados
           </div>
 
-          <div className="mt-2 flex-shrink-0 ml-8 w-[329px] h-[52px] text-black font-fira-sans text-[20px] font-normal leading-[24px] tracking-[-1px]">
+          <div className="mt-2 flex-shrink-0 ml-8 w-[329px] h-[52px] text-black font-fira-sans text-[20px] font-normal leading-[24px] tracking-[-1px] hidden">
             Esto logramos en nuestros 20 años de trayectoria
           </div>
 
@@ -139,7 +139,7 @@ function AlgunosNumerosMobile() {
                   onClick={() => resetCounter(setCount3, finalCount3)}
                 />
                 <div className="mt-2 text-[#00942C] text-center font-fira-sans text-[30px] font-extrabold leading-[35px]">
-                {count3.toFixed(3)}
+                  {count3.toFixed(3)}
                 </div>
                 <div className="w-[127px] text-black text-center font-fira-sans text-[12px] font-medium uppercase pt-[5px]">
                   hectáreas con yerba mate

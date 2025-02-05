@@ -112,7 +112,7 @@ code {
 }
 
 .btn-card-servicios {
-  @apply text-white text-center font-fira-sans text-[14px] font-normal tracking-[4px] uppercase w-[217px] h-[50px] rounded-[5px]  absolute top-[372px] left-1/2  flex justify-center items-center bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5 transform translate-x-[-50%];
+  @apply text-white text-center font-fira-sans text-[14px] font-normal tracking-[4px] uppercase w-[217px] h-[50px] rounded-[5px]  absolute top-[390px] left-1/2  flex justify-center items-center bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5 transform translate-x-[-50%];
 }
 
 .numbers {
@@ -124,7 +124,7 @@ code {
 }
 
 .img-cards-impacto {
-  @apply w-24 h-24 bg-contain bg-no-repeat bg-center mx-auto;
+  @apply w-28 h-28 bg-contain bg-no-repeat bg-center mx-auto;
 }
 
 .title-cards-impacto {
@@ -157,4 +157,28 @@ code {
 
 .span-mapa-contact {
   @apply text-black font-fira-sans text-[18px] font-normal leading-[28px];
+}
+
+.title-impacto {
+  @apply text-black font-fira-sans text-3xl 2xl:text-[40px] font-bold;
+}
+
+.paragraph-impacto {
+  @apply text-black font-fira-sans text-sm 2xl:text-lg font-normal leading-[28px] mt-5 2xl:mt-8;
+}
+
+.title-politicas {
+  @apply w-full text-center text-black text-2xl 2xl:text-[28px]  leading-[28.132px] tracking-[-1.758px];
+}
+
+.paragraph-politicas {
+  @apply w-full text-center text-black text-lg  2xl:text-xl  leading-[22.858px] tracking-[-1.758px] px-[20px];
+}
+
+.btn-politicas {
+  @apply text-white text-center font-fira-sans text-[14px] font-normal tracking-[4px] w-fit mx-auto transform  bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5 flex justify-center items-center rounded-[5px] py-2 px-4;
+}
+
+.card-politicas {
+  @apply relative duration-300 space-y-5 p-5 h-full flex flex-col justify-between transform ease-in-out  hover:-translate-y-1 shadow-xl hover:shadow-2xl;
 }

@@ -13,9 +13,9 @@ function AlgunosNumeros() {
   const [hasStarted, setHasStarted] = useState(false);
   const ref = useRef(null);
 
-  const finalCount1 = 47.865;
-  const finalCount2 = 25.926;
-  const finalCount3 = 1.84;
+  const finalCount1 = 54.036;
+  const finalCount2 = 26.925;
+  const finalCount3 = 3.696;
   const finalCount4 = 150;
 
   // Tiempo total de referencia (en milisegundos)
@@ -74,8 +74,8 @@ function AlgunosNumeros() {
           }}
         >
           <div className="w-full gap-title-paragraph">
-            <h1 className="title-section">Algunos números</h1>
-            <p className="paragraph-section">
+            <h1 className="title-section">Nuestros resultados</h1>
+            <p className="paragraph-section hidden">
               Esto logramos en nuestros 20 años de trayectoria
             </p>
           </div>

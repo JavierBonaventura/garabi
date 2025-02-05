@@ -1,9 +1,11 @@
 import React, { useState, useRef, useEffect } from "react";
 import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
 
-import gallery1 from "../../../images/Desktop/gallery1.png";
-import gallery2 from "../../../images/Desktop/gallery2.png";
-import gallery3 from "../../../images/Desktop/gallery3.png";
+import ProyectosMixtos from "../../../images/Desktop/gallery1.png";
+import ProyectosYerbateros from "../../../images/Desktop/gallery2.png";
+import ProyectosYerbaMate from "../../../images/Desktop/gallery3.png";
+import ProyectosForestales from "../../../images/Desktop/gallery4.png";
+import ProyectosAgricolas from "../../../images/Desktop/gallery5.png";
 
 function Servicios() {
   const [isTransitioning, setIsTransitioning] = useState(false);
@@ -16,54 +18,68 @@ function Servicios() {
       title: "Proyectos Forestales",
       description:
         "Plantaciones de pino y/o eucaliptus en campos propios o arrendados. Con la posibilidad de incorporar hacienda propia o de terceros como complemento.",
-      image: gallery1,
+      image: ProyectosForestales,
     },
     {
       id: 2,
       title: "Proyectos Yerbatero/Forestal",
       description:
         "Se trata de proyectos de plantaciones de pino y/o eucaliptus combinado con yerba mate en las lomas coloradas.",
-      image: gallery2,
+      image: ProyectosYerbateros,
     },
     {
       id: 3,
       title: "Proyectos Yerba Mate",
       description: "Plantaciones de yerba mate en loma colorada",
-      image: gallery3,
+      image: ProyectosYerbaMate,
     },
     {
       id: 4,
       title: "Proyectos Mixtos",
       description:
         "De acuerdo a las características propias del campo y del suelo se pueden incorporar más actividades además de la forestación y la yerba, como el arroz y la ganadería.",
-      image: gallery1,
+      image: ProyectosMixtos,
+    },
+    {
+      id: 5,
+      title: "Proyectos Agrícolas",
+      description:
+        "Hemos desarrollado pooles de siembra tradicionales, arándanos y olivos en otras zonas del país.",
+      image: ProyectosAgricolas,
     },
     {
       id: 1,
       title: "Proyectos Forestales",
       description:
         "Plantaciones de pino y/o eucaliptus en campos propios o arrendados. Con la posibilidad de incorporar hacienda propia o de terceros como complemento.",
-      image: gallery1,
+      image: ProyectosForestales,
     },
     {
       id: 2,
-      title: "Proyectos Yerbatero/Forestal",
+      title: "Proyectos Yerbateros/Forestales",
       description:
         "Se trata de proyectos de plantaciones de pino y/o eucaliptus combinado con yerba mate en las lomas coloradas.",
-      image: gallery2,
+      image: ProyectosYerbateros,
     },
     {
       id: 3,
       title: "Proyectos Yerba Mate",
-      description: "Plantaciones de yerba mate en loma colorada",
-      image: gallery3,
+      description: "Plantaciones de yerba mate en loma colorada.",
+      image: ProyectosYerbaMate,
     },
     {
       id: 4,
       title: "Proyectos Mixtos",
       description:
         "De acuerdo a las características propias del campo y del suelo se pueden incorporar más actividades además de la forestación y la yerba, como el arroz y la ganadería.",
-      image: gallery1,
+      image: ProyectosMixtos,
+    },
+    {
+      id: 5,
+      title: "Proyectos Agrícolas",
+      description:
+        "Hemos desarrollado pooles de siembra tradicionales, arándanos y olivos en otras zonas del país.",
+      image: ProyectosAgricolas,
     },
   ];
 
@@ -135,8 +151,8 @@ function Servicios() {
           <div className="gap-title-paragraph">
             <h1 className="title-section">Nuestros proyectos</h1>
             <p className="paragraph-section">
-              Esta es una selección de todos los proyectos en los cuales venimos
-              trabajando hace más de 40 años.
+              A lo largo de estos años hemos desarrollado y administrado
+              proyectos a medida para cada cliente.
             </p>
           </div>
           {/* Contenedor para los botones y las tarjetas */}

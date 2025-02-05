@@ -2,32 +2,40 @@ import React, { useState } from "react";
 import fondoMobile from "../../../images/Mobile/fondoMobile.png";
 import tarjetaServicios1 from "../../../images/Desktop/asesoramiento-integral-2.jpg";
 import tarjetaServicios2 from "../../../images/Desktop/asesoramiento-productivo.jpg";
-import tarjetaServicios3 from "../../../images/Desktop/tarjetaServicios.png";
 
 function AsesoramientoMobile() {
-  const [activeTab, setActiveTab] = useState("Asesoramiento productivo");
+  const [activeTab, setActiveTab] = useState("Asesoramiento integral");
 
   // Descripciones para cada pestaña
   const descriptions = {
+    "Asesoramiento integral":
+      "Los proyectos que cuentan con asesoramiento integral ofrecen todas las ventajas del asesoramiento productivo, asegurando un acompañamiento completo en el desarrollo y optimización de las actividades. Estos proyectos liberan a los propietarios de la responsabilidad de gestionar tareas administrativas, legales, impositivas y de tesorería, a la vez que los mantienen informados mediante rendiciones periódicas y reportes detallados. De esta forma, pueden concentrarse exclusivamente en las áreas estratégicas y operativas del negocio, con plena transparencia sobre el estado de las gestiones realizadas.<br/><br/>" +
+      "<ul>" +
+      "<li>Gestión Administrativa de la Empresa: Asesoría legal, contable e impositiva, asegurando el cumplimiento normativo y la correcta gestión de la documentación empresarial.</li>" +
+      "<li>Consultoría Financiera y Planificación: Te ayudamos a gestionar la financiación de tu proyecto y optimizar flujos de caja.</li>" +
+      "<li>Gestión de Tesorería y Pagos: Nos encargamos de la administración de pagos, cobranzas y rendiciones de gastos, asegurando que tu flujo de caja esté siempre en orden y que las obligaciones financieras se cumplan de manera eficiente.</li>" +
+      "<li>Armado de Reportes: Elaboramos informes detallados y periódicos sobre el estado de la producción, la situación financiera y otros indicadores clave de tu empresa, facilitando la toma de decisiones informadas y estratégicas.</li>" +
+      "</ul>",
+
     "Asesoramiento productivo":
-    "Asesoramos a nuestros clientes a la hora de estudiar sus inversiones, optimizando el rendimiento del capital en base a nuestro conocimiento sobre el campo y a nuestra experiencia en explotaciones agropecuarias.",
-    "Administracion integral":
-    "Los emprendimientos de manera integral, eficiente y dinámica. La flexibilidad y agilidad de nuestra organización, sumado a la ventaja de estar en la zona de mayor crecimiento forestal del país, nos permiten garantizar un servicio de alta calidad.",
-    "Experiencia":
-    "Más de 40 años de servicio. Agroforestal Garabí SRL, administra un total de 50778.53 Ha. De las cuales 21500 están comprometidas actualmente al proceso de certificación (FGF Santa María y Rudaco SA).",
+      "Ofrecemos asesoramiento y soluciones personalizadas buscando maximizar la productividad y sostenibilidad de los proyectos de nuestros clientes. Gracias a nuestra amplia experiencia en el sector sumado al respaldo de un equipo especializado, ayudamos a seleccionar las mejores prácticas y estrategias para cada proyecto, asegurando su rentabilidad y la conservación del entorno. Acompañamos a nuestros clientes en todas las etapas, desde la planificación hasta la ejecución, con un enfoque práctico y adaptado a sus necesidades.<br/><br/>" +
+      "<ul>" +
+      "<li>Asesoramiento en Manejo Agroforestal: Brindamos asesoramiento especializado en la planificación y ejecución de proyectos agroforestales, adaptados a las necesidades específicas de cada cliente.</li>" +
+      "<li>Planificación y Gestión de Proyectos: Desarrollamos planes de trabajo detallados, asegurando la correcta ejecución de las tareas y el cumplimiento de los plazos establecidos.</li>" +
+      "<li>Monitoreo y Seguimiento de la Producción: Implementamos sistemas de control para asegurar el avance de las actividades y la eficiencia de los recursos, realizando ajustes cuando sea necesario.</li>" +
+      "<li>Asesoramiento en Comercialización: Te apoyamos en la toma de decisiones sobre la comercialización de tus productos, identificando oportunidades y mejorando la cadena de valor.</li>" +
+      "</ul>",
   };
 
   // Determina qué imagen mostrar según el tab activo
   const getImageForTab = (tab) => {
     switch (tab) {
+      case "Asesoramiento integral":
+        return tarjetaServicios1;
       case "Asesoramiento productivo":
         return tarjetaServicios2;
-      case "Administracion integral":
-        return tarjetaServicios1;
-      case "Experiencia":
-        return tarjetaServicios3;
       default:
-        return tarjetaServicios2; // Imagen por defecto
+        return tarjetaServicios1; // Imagen por defecto
     }
   };
 
@@ -50,34 +58,32 @@ function AsesoramientoMobile() {
           <div className="w-[327px] mx-auto mt-4 flex flex-col items-center">
             <div className="flex space-x-[13px]">
               {/* Pestañas */}
-              {[
-                "Asesoramiento productivo",
-                "Administracion integral",
-                "Experiencia",
-              ].map((tab) => (
-                <div
-                  key={tab}
-                  onClick={() => setActiveTab(tab)}
-                  className="flex justify-center items-center text-white text-xs font-fira-sans cursor-pointer"
-                  style={{
-                    width: "101px",
-                    height: "38px",
-                    borderRadius: "7px 7px 0 0",
-                    backgroundColor:
-                      activeTab === tab ? "#00942C" : "transparent",
-                    opacity: activeTab === tab ? 1 : 0.24,
-                    textAlign: "center",
-                    fontWeight: 400,
-                    fontSize: "9px",
-                    lineHeight: "12px",
-                    letterSpacing: "2px",
-                    textTransform: "uppercase",
-                    color: activeTab === tab ? "white" : "black",
-                  }}
-                >
-                  {tab}
-                </div>
-              ))}
+              {["Asesoramiento integral", "Asesoramiento productivo"].map(
+                (tab) => (
+                  <div
+                    key={tab}
+                    onClick={() => setActiveTab(tab)}
+                    className="flex justify-center items-center text-white text-xs font-fira-sans cursor-pointer"
+                    style={{
+                      width: "101px",
+                      height: "38px",
+                      borderRadius: "7px 7px 0 0",
+                      backgroundColor:
+                        activeTab === tab ? "#00942C" : "transparent",
+                      opacity: activeTab === tab ? 1 : 0.24,
+                      textAlign: "center",
+                      fontWeight: 400,
+                      fontSize: "9px",
+                      lineHeight: "12px",
+                      letterSpacing: "2px",
+                      textTransform: "uppercase",
+                      color: activeTab === tab ? "white" : "black",
+                    }}
+                  >
+                    {tab}
+                  </div>
+                )
+              )}
             </div>
             {/* Línea debajo del recuadro verde */}
             <div
@@ -118,9 +124,8 @@ function AsesoramientoMobile() {
               lineHeight: "17px",
               letterSpacing: "-1px",
             }}
-          >
-            {descriptions[activeTab]}
-          </div>
+            dangerouslySetInnerHTML={{ __html: descriptions[activeTab] }}
+          />
 
           {/* Image Section */}
           <div className="w-full flex justify-center mt-4 ">

@@ -43,7 +43,7 @@ function SobreNosotrosNuestraHistoria() {
           {/* Contenido central */}
           <div className="relative flex flex-col justify-center items-center text-center">
             <div className="text-center text-[#00942C] font-fira-sans text-[40px] font-bold leading-[50px] max-w-[615px] mt-[-40%]">
-              Contáctanos ahora para darle forma a tu futuro verde
+              Contáctanos ahora para darle forma VERDE a tu futuro
             </div>
 
             <a

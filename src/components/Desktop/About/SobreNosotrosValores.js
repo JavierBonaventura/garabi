@@ -3,9 +3,9 @@ import logoCandado from "../../../images/Desktop/logoCandado.png";
 import logoVision from "../../../images/Desktop/logoVision.png";
 import logoTrayectoria from "../../../images/Desktop/logoTrayectoria.png";
 import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
-import logoCheck from "../../../images/Mobile/list-check-solid.svg"
-import logoLamp from "../../../images/Mobile/lightbulb-regular.svg"
-import logoReciclado from "../../../images/Mobile/recycle-solid.svg"
+import logoCheck from "../../../images/Mobile/list-check-solid.svg";
+import logoLamp from "../../../images/Mobile/lightbulb-regular.svg";
+import logoReciclado from "../../../images/Mobile/recycle-solid.svg";
 
 const cards = [
   {
@@ -123,7 +123,7 @@ function SobreNosotrosValores() {
         >
           <div className="mt-[85px] w-[250px] h-[50px] flex-shrink-0 text-center self-center">
             <h1 className="text-black font-sans text-[60px] font-bold leading-[50px]">
-              Valores
+              Nuestra Manera de Trabajar
             </h1>
           </div>
           <button

@@ -56,10 +56,17 @@ function ServiciosOfrecidosMobile() {
               letterSpacing: "-1px",
             }}
           >
-            Nuestros servicios se basan en tres pilares: Asesoramiento
-            Productivo, Administración Integral y una Basta Experiencia, para
-            ofrecerte soluciones estratégicas y efectivas adaptadas a tus
-            necesidades.
+            En Grupo Garabi nos comprometemos con el desarrollo sostenible y el
+            crecimiento eficiente de los sectores productivos del campo.
+            Ofrecemos una gama completa de servicios de administración integral
+            y asesoramiento productivo, diseñados para optimizar el rendimiento
+            de tus recursos naturales, garantizar la sostenibilidad de tu
+            proyecto y maximizar la rentabilidad a largo plazo.
+            <br />
+            Entendemos que cada proyecto agroforestal es único. Por eso, nos
+            dedicamos a ofrecer soluciones integrales que aborden las
+            necesidades específicas de cada cliente, con el objetivo de alcanzar
+            una producción eficiente, rentable y sostenible a largo plazo.
           </div>
         </div>
       </div>

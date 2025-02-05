@@ -30,6 +30,7 @@ function ContactoForm() {
                   <input
                     type="text"
                     id="nombre"
+                    required
                     className="w-[336.444px] h-[50px] rounded-[4px] border-2 border-black bg-transparent p-2.5 focus:outline-none focus:ring focus:ring-black focus:border-transparent transition-all duration-300"
                   />
                 </div>
@@ -44,6 +45,7 @@ function ContactoForm() {
                   </label>
                   <input
                     type="email"
+                    required
                     id="email"
                     className="w-[336.444px] h-[50px] rounded-[4px] border-2 border-black bg-transparent p-2.5 focus:outline-none focus:ring focus:ring-black focus:border-transparent transition-all duration-300"
                   />
@@ -55,11 +57,12 @@ function ContactoForm() {
                 {/* Input SERVICIO */}
                 <div>
                   <label className="block w-[336.444px] h-[16px] text-black font-fira-sans text-[14px] font-medium tracking-[4px] uppercase mb-2">
-                    Servicio
+                    Asunto
                   </label>
                   <input
                     type="text"
-                    id="servicio"
+                    required
+                    id="asunto"
                     className="w-[336.444px] h-[50px] rounded-[4px] border-2 border-black bg-transparent p-2.5 focus:outline-none focus:ring focus:ring-black focus:border-transparent transition-all duration-300"
                   />
                 </div>
@@ -70,7 +73,8 @@ function ContactoForm() {
                     Teléfono
                   </label>
                   <input
-                    type="tel"
+                    type="number"
+                    required
                     id="telefono"
                     className="w-[336.444px] h-[50px] rounded-[4px] border-2 border-black bg-transparent p-2.5 focus:outline-none focus:ring focus:ring-black focus:border-transparent transition-all duration-300"
                   />
@@ -84,6 +88,7 @@ function ContactoForm() {
                 </label>
                 <textarea
                   id="mensaje"
+                  required
                   className="w-[711px] h-[136px] rounded-[4px] border-2 border-black bg-transparent p-2.5 focus:outline-none focus:ring focus:ring-black focus:border-transparent transition-all duration-300"
                 />
               </div>

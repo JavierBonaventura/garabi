@@ -36,9 +36,11 @@ function Impacto() {
     MedioAmbiente3,
     MedioAmbiente4,
     MedioAmbiente5,
+    MedioAmbiente1,
+    MedioAmbiente2,
   ];
-  const images2 = [Economico1, Economico2, Economico3];
-  const images3 = [Social1, Social2, Social3];
+  const images2 = [Economico1, Economico2, Economico3, Economico1, Economico2];
+  const images3 = [Social1, Social2, Social3, Social1, Social2];
 
   const carouselRef1 = useRef(null);
   const carouselRef2 = useRef(null);

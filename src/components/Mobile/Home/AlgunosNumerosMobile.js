@@ -56,24 +56,22 @@ function AlgunosNumerosMobile() {
   }, []);
 
   return (
-    <div className="w-full h-[632px]">
+    <div className="w-full">
       <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
       <div
         ref={ref}
-        className="relative z-10 flex flex-col items-center justify-start h-full px-0"
+        className="relative z-10 flex flex-col items-center justify-start h-full px-0 padding-section"
         style={{
           backgroundImage: `url(${fondoMobile})`,
           backgroundSize: "cover",
         }}
       >
-        <div className="mt-8 w-full">
-          <div className="flex-shrink-0 ml-8 w-[274px] h-[88px] text-black font-fira-sans text-[41px] font-extrabold leading-[39px] tracking-normal">
-            Nuestros resultados
-          </div>
-
-          <div className="mt-2 flex-shrink-0 ml-8 w-[329px] h-[52px] text-black font-fira-sans text-[20px] font-normal leading-[24px] tracking-[-1px] hidden">
-            Esto logramos en nuestros 20 años de trayectoria
-          </div>
+        <div className="w-full space-y-8">
+          <h1 className="flex-shrink-0 mx-8 title-section !text-left !leading-9">
+            Nuestros
+            <br />
+            resultados
+          </h1>
 
           {/* Contenedor de círculos */}
           <div className="flex flex-col items-center mt-6">

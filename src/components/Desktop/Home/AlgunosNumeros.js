@@ -66,7 +66,7 @@ function AlgunosNumeros() {
       <div className="w-full  overflow-hidden">
         <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
         <div
-          className="relative z-10 flex flex-col h-full padding-section space-y-24 2xl:space-y-32"
+          className="relative z-10 flex flex-col h-full padding-section space-y-24"
           style={{
             backgroundImage: `url(${imagenFondo})`,
             backgroundSize: "cover",

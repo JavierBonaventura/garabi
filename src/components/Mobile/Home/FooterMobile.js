@@ -23,7 +23,7 @@ function FooterMobile() {
           alt="Logo Garabi"
           className="w-[162px] flex-shrink-0"
         />
-        <p className="text-black font-fira-sans text-[12px] font-normal leading-[20px] mt-[10px] text-center px-5">
+        <p className="text-black font-fira-sans text-sm font-normal leading-[20px] mt-[10px] text-center px-5">
           Especialistas en Forestación. Administramos y asesoramos proyectos
           forestales de nuestros clientes.
         </p>
@@ -33,10 +33,10 @@ function FooterMobile() {
       <div className="w-full flex mt-8 justify-around px-2">
         {/* Column 1: Home */}
         <div className="text-center">
-          <p className="text-black font-fira-sans text-[12px] font-medium tracking-[2.409px] uppercase mb-1 text-left">
+          <p className="text-black font-fira-sans text-sm font-medium tracking-[2.409px] uppercase mb-1 text-left">
             Secciones
           </p>
-          <div className="mt-2 text-black font-fira-sans text-[10.841px] font-normal leading-[16.864px] text-center">
+          <div className="mt-2 text-black font-fira-sans text-xs font-normal leading-[16.864px] text-center">
             <Link to="/" className="mt-2 block cursor-pointer">
               Inicio
             </Link>
@@ -57,12 +57,12 @@ function FooterMobile() {
         </div>
         {/* Column 2: Servicios */}
         <div className="text-center hidden">
-          <div className="text-black font-fira-sans text-[12px] font-medium tracking-[2.409px] uppercase mb-1 text-left">
+          <div className="text-black font-fira-sans text-sm font-medium tracking-[2.409px] uppercase mb-1 text-left">
             <Link to="/services" className="mt-2 block cursor-pointer">
               Servicios
             </Link>
           </div>
-          <div className="mt-2 text-black font-fira-sans text-[10.841px] font-normal leading-[16.864px] text-left">
+          <div className="mt-2 text-black font-fira-sans text-xs font-normal leading-[16.864px] text-left">
             <p className="mt-2 cursor-pointer">Servicio 01</p>
             <p className="mt-2 cursor-pointer">Servicio 02</p>
             <p className="mt-2 cursor-pointer">Servicio 03</p>
@@ -141,7 +141,7 @@ function FooterMobile() {
       <div className="w-4/5 h-[1px] bg-black my-4"></div>
 
       {/* Copyright Section */}
-      <div className="text-black font-fira-sans text-xs font-medium tracking-[1.708px] uppercase text-center">
+      <div className="text-black font-fira-sans text-sm font-medium tracking-[1.708px] text-center">
         © 2025 Todos los derechos reservados. Desarrollado por Digital Fellow.
       </div>
     </div>

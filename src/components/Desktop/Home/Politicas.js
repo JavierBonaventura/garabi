@@ -9,16 +9,16 @@ function Politicas() {
     <div className="w-full">
       <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
       <div
-        className="relative z-10 flex flex-col items-center justify-center h-full  padding-section space-y-24 2xl:space-y-32"
+        className="relative z-10 flex flex-col items-center justify-center h-full  padding-section !pb-20 space-y-12 lg:space-y-24"
         style={{
           backgroundImage: `url(${imagenFondo})`,
           backgroundSize: "cover", // Asegura que la imagen cubra todo el ancho
           backgroundPosition: "center", // Centra la imagen
         }}
       >
-        <div className="w-[80%] 2xl:w-2/3 mx-auto flex flex-col gap-title-paragraph">
-          <h1 className="title-section">Nuestras políticas</h1>
-          <p className="paragraph-section">
+        <div className="w-[80%] 2xl:w-2/3 flex flex-col gap-title-paragraph mx-auto">
+          <h1 className="title-section !text-left">Nuestras políticas</h1>
+          <p className="paragraph-section !text-left">
             Las políticas del Grupo Garabí definen su compromiso con la
             protección ambiental, el uso responsable de recursos, la
             preservación de la biodiversidad y la promoción de la seguridad
@@ -26,7 +26,7 @@ function Politicas() {
             garantizar la sostenibilidad de sus actividades.
           </p>
         </div>
-        <div className="hidden lg:grid grid-cols-1 lg:grid-cols-3 gap-x-10 w-[80%] 2xl:w-2/3 mx-auto justify-between items-end h-full">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 w-[80%] 2xl:w-2/3 mx-auto justify-between items-end h-full">
           <div
             className="card-politicas"
             style={{
@@ -35,7 +35,7 @@ function Politicas() {
             }}
           >
             {/* Título de la tarjeta */}
-            <div className=" title-politicas">
+            <div className="title-politicas">
               <h1>Política de género</h1>
             </div>
 
@@ -108,9 +108,6 @@ function Politicas() {
               </a>
             </div>
           </div>
-        </div>
-        <div className="lg:hidden">
-          <PoliticasMobile />
         </div>
       </div>
     </div>

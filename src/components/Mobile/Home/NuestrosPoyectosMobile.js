@@ -19,22 +19,24 @@ function NuestrosPoyectosMobile() {
     <div className="w-full h-auto">
       <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
       <div
-        className="relative z-10 flex flex-col items-center justify-start h-full px-0"
+        className="relative z-10 flex flex-col items-center justify-start h-full px-0 padding-section"
         style={{
           backgroundImage: `url(${fondoMobile})`,
           backgroundSize: "cover",
         }}
       >
         {/* Contenedor de texto alineado en la parte superior */}
-        <div className="-mt-2 w-full">
-          <div className="flex-shrink-0 ml-8 w-[274px] h-[88px] text-black font-fira-sans text-[41px] font-extrabold leading-[39px]">
-            Nuestros proyectos
-          </div>
+        <div className="w-full space-y-8">
+          <div className="gap-title-paragraph mx-8">
+            <h1 className="title-section !text-left !leading-9">
+              Nuestros proyectos
+            </h1>
 
-          {/* Descripción de "Grupo Garabí comienza..." */}
-          <div className="mt-2 flex-shrink-0 ml-8 w-[329px] h-[52px] text-black font-fira-sans text-[20px] font-normal leading-[24px] tracking-[-1px]">
-            A lo largo de estos años hemos desarrollado y administrado proyectos
-            a medida para cada cliente.
+            {/* Descripción de "Grupo Garabí comienza..." */}
+            <p className="paragraph-section !text-left">
+              A lo largo de estos años hemos desarrollado y administrado
+              proyectos a medida para cada cliente.
+            </p>
           </div>
 
           {/* Contenedor de imágenes con gradiente */}

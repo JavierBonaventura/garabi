@@ -111,10 +111,10 @@ function ServiciosMobile() {
   };
 
   return (
-    <div id="serviciosMob" className="w-full h-[650px] relative">
+    <div id="serviciosMob" className="w-full  relative">
       <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
       <div
-        className="relative z-10 flex flex-col items-center justify-start h-full px-4"
+        className="relative z-10 flex flex-col items-center justify-start h-full px-4 padding-section !pt-12"
         style={{
           backgroundImage: `url(${fondoMobile})`,
           backgroundSize: "cover",
@@ -123,18 +123,20 @@ function ServiciosMobile() {
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
       >
-        <div className="mt-8">
-          {/* Div principal con layout y tipografía para "Servicios" */}
-          <div className="flex-shrink-0 ml-8 w-[274px] h-[48px] text-black font-fira-sans text-[41px] font-extrabold leading-[39px]">
-            Servicios
-          </div>
+        <div className=" space-y-8">
+          <div className="gap-title-paragraph">
+            {/* Div principal con layout y tipografía para "Servicios" */}
+            <h1 className="flex-shrink-0 mx-8 w-[274px] text-black font-fira-sans text-[41px] font-extrabold leading-[39px]">
+              Servicios
+            </h1>
 
-          {/* Div secundario con layout y tipografía para el texto debajo */}
-          <div className="mt-4 flex-shrink-0 ml-8 w-[329px] h-[130px] text-black font-fira-sans text-[20px] font-normal leading-[24px] tracking-[-1px]">
-            La flexibilidad, agilidad de nuestra organización sumado a la
-            experiencia de más de 40 años en el sector forestal nos permite
-            planificar y ejecutar proyectos a la medida y necesidades de cada
-            uno de nuestros clientes.
+            {/* Div secundario con layout y tipografía para el texto debajo */}
+            <p className="mx-8 !w-[329px]  paragraph-section !text-left">
+              La flexibilidad, agilidad de nuestra organización sumado a la
+              experiencia de más de 40 años en el sector forestal nos permite
+              planificar y ejecutar proyectos a la medida y necesidades de cada
+              uno de nuestros clientes.
+            </p>
           </div>
 
           <div className="relative w-full flex items-center justify-center">
@@ -145,67 +147,66 @@ function ServiciosMobile() {
               <img src={botonIzquierdo}></img>
             </button>
 
-            <div className="relative w-[371px] overflow-x-hidden">
-              <div className="py-12">
-                <div
-                  ref={carouselRef}
-                  className="flex"
-                  style={{ width: `${cards.length * cardWidth}px` }}
-                >
-                  {cards.map((card, index) => (
+            <div className="relative w-[371px] overflow-x-hidden pb-10">
+              <div
+                ref={carouselRef}
+                className="flex"
+                style={{ width: `${cards.length * cardWidth}px` }}
+              >
+                {cards.map((card, index) => (
+                  <div
+                    key={index}
+                    className="flex-shrink-0 flex items-center justify-center mr-[50px] ml-[40px]"
+                  >
                     <div
-                      key={index}
-                      className="flex-shrink-0 flex items-center justify-center mr-[50px] ml-[50px]"
+                      className="relative ml-[20px] flex flex-col items-center mx-auto flex-shrink-0"
+                      style={{
+                        width: "258px",
+                        height: "330px",
+                        borderRadius: "10px",
+                        background: "#DAD8CB",
+                        boxShadow:
+                          "13.327px 13.327px 23.322px 6.663px rgba(2, 2, 2, 0.30)",
+                      }}
                     >
-                      <div
-                        className="relative ml-[20px] flex flex-col items-center mx-auto flex-shrink-0"
+                      {/* Imagen en la parte superior de la tarjeta */}
+                      <img
+                        src={card.image}
+                        alt="Servicios"
+                        className="object-cover"
                         style={{
                           width: "258px",
-                          height: "310px",
-                          borderRadius: "10px",
-                          background: "#DAD8CB",
-                          boxShadow:
-                            "13.327px 13.327px 23.322px 6.663px rgba(2, 2, 2, 0.30)",
+                          height: "150px",
+                          borderTopLeftRadius: "10px",
+                          borderTopRightRadius: "10px",
                         }}
-                      >
-                        {/* Imagen en la parte superior de la tarjeta */}
-                        <img
-                          src={card.image}
-                          alt="Servicios"
-                          className="object-cover"
-                          style={{
-                            width: "258px",
-                            height: "149px",
-                            borderTopLeftRadius: "10px",
-                            borderTopRightRadius: "10px",
-                          }}
-                        />
+                      />
 
-                        {/* Texto de "Asesoramiento Productivo" */}
-                        <div className="mt-2 flex-shrink-0 text-center w-[246.069px] h-[36.393px] text-[#464646] font-fira-sans text-[22px] font-normal leading-[21.323px] tracking-[-1.333px]">
-                          {card.name}
-                        </div>
-
-                        {/* Descripción */}
-                        <div className="-mt-2 flex-shrink-0 text-center w-[230px] h-[52px] text-[#000] font-fira-sans text-[14px] font-normal leading-[20px] tracking-[-1px]">
-                          {card.testimonial}
-                        </div>
-
-                        {/* Botón "VER" */}
-                        <a
-                          href="/servicios"
-                          className="mt-8 flex items-center justify-center w-[99px] h-[26px] rounded-[5px] bg-[#00942C]"
-                        >
-                          <span className="text-[#FFF] text-center font-fira-sans text-[12px] font-normal tracking-[4px] uppercase">
-                            VER MÁS
-                          </span>
-                        </a>
+                      {/* Texto de "Asesoramiento Productivo" */}
+                      <div className="mt-2 w-[246.069px] h-[36.393px] title-card-servicios">
+                        {card.name}
                       </div>
+
+                      {/* Descripción */}
+                      <div className="-mt-2 w-[230px] h-[80px] paragraph-card-servicios">
+                        {card.testimonial}
+                      </div>
+
+                      {/* Botón "VER" */}
+                      <a
+                        href="/servicios"
+                        className="mt-7 flex items-center justify-center w-[99px] h-[26px] rounded-[5px] bg-[#00942C]"
+                      >
+                        <span className="text-[#FFF] text-center font-fira-sans text-[12px] font-normal tracking-[4px] uppercase ">
+                          VER MÁS
+                        </span>
+                      </a>
                     </div>
-                  ))}
-                </div>
+                  </div>
+                ))}
               </div>
             </div>
+
             <button
               onClick={handleNext}
               className="absolute right-[10px] w-[26px] h-[26px] flex items-center justify-center z-10 "

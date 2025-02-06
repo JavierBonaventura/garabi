@@ -3,22 +3,23 @@ import imagenCurvaImpacto from "../../../images/Desktop/imagenCurvaImpacto.png";
 import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
 import Politicas from "../Home/Politicas";
 
-import tarjetaImpacto1a from "../../../images/Desktop/tarjetaImpacto1.png";
-import tarjetaImpacto1b from "../../../images/Desktop/tarjetaImpacto2.png";
-import tarjetaImpacto1c from "../../../images/Desktop/tarjetaImpacto3.png";
-import tarjetaImpacto2a from "../../../images/Desktop/tarjetaImpacto4.png";
-import tarjetaImpacto2b from "../../../images/Desktop/tarjetaImpacto5.png";
-import tarjetaImpacto2c from "../../../images/Desktop/tarjetaImpacto6.png";
-import tarjetaImpacto3a from "../../../images/Desktop/tarjetaImpacto7.png";
-import tarjetaImpacto3b from "../../../images/Desktop/tarjetaImpacto8.png";
-import tarjetaImpacto3c from "../../../images/Desktop/tarjetaImpacto9.png";
+import MedioAmbiente1 from "../../../images/Desktop/slide-medio-ambiente-1.jpg";
+import MedioAmbiente2 from "../../../images/Desktop/slide-medio-ambiente-2.jpg";
+import MedioAmbiente3 from "../../../images/Desktop/slide-medio-ambiente-3.jpg";
+import MedioAmbiente4 from "../../../images/Desktop/slide-medio-ambiente-4.jpg";
+import MedioAmbiente5 from "../../../images/Desktop/slide-medio-ambiente-5.jpg";
+import Economico1 from "../../../images/Desktop/slide-economico-1.jpg";
+import Economico2 from "../../../images/Desktop/slide-economico-2.jpg";
+import Economico3 from "../../../images/Desktop/slide-economico-3.jpg";
+import Social1 from "../../../images/Desktop/slide-social-1.jpg";
+import Social2 from "../../../images/Desktop/slide-social-2.jpg";
+import Social3 from "../../../images/Desktop/slide-social-3.jpg";
 
 import arbolesProyectos from "../../../images/Desktop/arboles-proyectos.png";
-
 import botonDerecha from "../../../images/Desktop/botonDerecha.png";
 import botonIzquierda from "../../../images/Desktop/botonIzquierda.png";
 
-function Imapcto() {
+function Impacto() {
   const [currentIndex1, setCurrentIndex1] = useState(1);
   const [isSliding1, setIsSliding1] = useState(false);
 
@@ -30,26 +31,14 @@ function Imapcto() {
 
   // Arreglo de imágenes
   const images1 = [
-    tarjetaImpacto1c,
-    tarjetaImpacto1a,
-    tarjetaImpacto1b,
-    tarjetaImpacto1c,
-    tarjetaImpacto1a,
+    MedioAmbiente1,
+    MedioAmbiente2,
+    MedioAmbiente3,
+    MedioAmbiente4,
+    MedioAmbiente5,
   ];
-  const images2 = [
-    tarjetaImpacto2c,
-    tarjetaImpacto2a,
-    tarjetaImpacto2b,
-    tarjetaImpacto2c,
-    tarjetaImpacto2a,
-  ];
-  const images3 = [
-    tarjetaImpacto3c,
-    tarjetaImpacto3a,
-    tarjetaImpacto3b,
-    tarjetaImpacto3c,
-    tarjetaImpacto3a,
-  ];
+  const images2 = [Economico1, Economico2, Economico3];
+  const images3 = [Social1, Social2, Social3];
 
   const carouselRef1 = useRef(null);
   const carouselRef2 = useRef(null);
@@ -518,4 +507,4 @@ function Imapcto() {
   );
 }
 
-export default Imapcto;
+export default Impacto;

@@ -9,7 +9,7 @@ import Footer from "./components/Desktop/General/Footer";
 // home
 import Lideres from "./components/Desktop/Home/Lideres";
 import Servicios from "./components/Desktop/Home/Servicios";
-import Desde1976 from "./components/Desktop/Home/Desde1976";
+import NewDesde from "./components/Desktop/Home/NewDesde";
 import AlgunosNumeros from "./components/Desktop/Home/AlgunosNumeros";
 import NuestrosProyectos from "./components/Desktop/Home/NuestrosProyectos";
 import Historias from "./components/Desktop/Home/Historias";
@@ -107,17 +107,17 @@ function App() {
             <Route
               path="/"
               element={
-                <>
+                <div className=" overflow-x-hidden">
                   <HeaderMobile />
                   <LideresMobile />
                   <ServiciosMobile />
-                  <DesdeMobile />
+                  <NewDesde />
                   <AlgunosNumerosMobile />
                   <NuestrosPoyectosMobile />
                   <ImpactoMobile />
                   <ContactanosMobile />
                   <FooterMobile />
-                </>
+                </div>
               }
             />
             <Route
@@ -200,7 +200,7 @@ function App() {
                   <Header />
                   <Lideres />
                   <Servicios />
-                  <Desde1976 />
+                  <NewDesde />
                   <AlgunosNumeros />
                   <NuestrosProyectos />
                   <Impacto />
@@ -226,7 +226,6 @@ function App() {
                   <Header />
                   <ContactoForm />
                   <SobreNosotrosNuestraHistoriaArboles />
-
                   <Footer />
                 </>
               }

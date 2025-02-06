@@ -6,25 +6,20 @@ import fondoMobile from "../../../images/Mobile/fondoMobile.png";
 function SobreNosotrosArbolMobile() {
   return (
     <div>
-      <div className="w-full h-[424px] relative ">
+      <div className="w-full relative ">
         {/* Fondo principal */}
         <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
 
         {/* Contenedor con imagen de fondo y texto */}
         <div
-          className="relative z-10 flex flex-col h-full px-4 "
+          className="relative z-10 flex flex-col h-full px-4 padding-section  !pt-32"
           style={{
             backgroundImage: `url(${fondoMobile})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >
-          <div
-            className="flex flex-col items-center justify-center "
-            style={{
-              marginTop: "-26px",
-            }}
-          >
+          <div className="flex flex-col items-center justify-center ">
             {/* Contenedor del árbol */}
             <div className="relative flex flex-col items-center w-[100%]">
               <img
@@ -94,7 +89,7 @@ function SobreNosotrosArbolMobile() {
                   fontSize: "20px",
                   fontStyle: "normal",
                   fontWeight: 500,
-                  top: "37%",
+                  top: "45%",
                   lineHeight: "32px",
                   textAlign: "right",
                 }}
@@ -110,7 +105,7 @@ function SobreNosotrosArbolMobile() {
                   lineHeight: "12pxw",
                   width: "172px",
                   fontFeatureSettings: "'liga' off, 'clig' off",
-                  top: "49%",
+                  top: "54%",
                   fontWeight: "400",
                   height: "72px",
                   lineHeight: "12px",
@@ -127,7 +122,7 @@ function SobreNosotrosArbolMobile() {
               <div
                 className="absolute right-[-13.5vw] w-[44vw] h-[1px] bg-[#00942C]  transform -translate-y-1/2 mt-14 "
                 style={{
-                  top: "42%",
+                  top: "49%",
                   left: "52%",
                 }}
               ></div>

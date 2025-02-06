@@ -15,7 +15,7 @@ function Servicios() {
           backgroundPosition: "center",
         }}
       >
-        <div className="space-y-24 2xl:space-y-32">
+        <div className="space-y-24">
           <div className="gap-title-paragraph  w-2/3 2xl:w-1/2 mx-auto">
             <h1 className="title-section">Servicios</h1>
 

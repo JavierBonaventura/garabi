@@ -141,7 +141,7 @@ function Servicios() {
       <div className="w-full  overflow-hidden relative">
         <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
         <div
-          className="relative  flex flex-col items-center justify-center h-full padding-section  space-y-24 2xl:space-y-32"
+          className="relative  flex flex-col items-center justify-center h-full padding-section  space-y-24"
           style={{
             backgroundImage: `url(${imagenFondo})`,
             backgroundSize: "cover",

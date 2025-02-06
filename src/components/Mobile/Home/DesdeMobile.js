@@ -17,11 +17,11 @@ function DesdeMobile() {
         <div className="-mt-2 w-full">
           {" "}
           {/* Título "Desde 1973" */}
-          <div className="flex-shrink-0 ml-8 text-black font-fira-sans text-[41px] font-extrabold leading-[39px]">
+          <div className="flex-shrink-0 mx-8 text-black font-fira-sans text-[41px] font-extrabold leading-[39px]">
             Desde 1973
           </div>
           {/* Descripción de "Grupo Garabí comienza..." */}
-          <div className="mt-4 flex-shrink-0 ml-8 text-black font-fira-sans text-[20px] font-normal leading-[24px] tracking-[-1px] h-[620px] w-[329px]">
+          <div className="mt-4 flex-shrink-0 mx-8 text-black font-fira-sans text-[20px] font-normal leading-[24px] tracking-[-1px] h-[620px] w-[329px]">
             Grupo Garabí comienza su actividad en la provincia de Corrientes con
             la administración de dos establecimientos forestales ubicados en el
             centro norte de la provincia, en las localidades de Loreto y Santa

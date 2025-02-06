@@ -42,30 +42,30 @@ function ImpactoMobile() {
   ];
 
   return (
-    <div className="w-full h-[580px]">
+    <div className="w-full h-[900px]">
       <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
       <div
-        className="relative z-10 flex flex-col items-center justify-start h-full px-0"
+        className="relative z-10 flex flex-col items-center justify-start h-full px-0 padding-section "
         style={{
           backgroundImage: `url(${fondoMobile})`,
           backgroundSize: "cover",
         }}
       >
-        <div className="mt-8 w-full">
-          <h1 className="flex-shrink-0 ml-8 text-black font-fira-sans text-[41px] font-extrabold leading-[39px]">
-            Triple impacto
-          </h1>
-          <p className="text-base">
-            En Grupo Garabí, buscamos gestionar proyectos forestales que
-            promuevan la conservación del medio ambiente, fomenten la
-            biodiversidad y generen un impacto positivo y sostenible en las
-            comunidades locales. Hacemos foco en tres pilares fundamentales: el
-            medio ambiente, lo social y el desarrollo económico.
-            <br />
-            <br />
-            Nuestra labor se centra en estos tres pilares de la siguiente
-            manera:
-          </p>
+        <div className="space-y-8">
+          <div className="gap-title-paragraph mx-8">
+            <h1 className="title-section !text-left">Triple impacto</h1>
+            <p className="paragraph-section !text-left">
+              En Grupo Garabí, buscamos gestionar proyectos forestales que
+              promuevan la conservación del medio ambiente, fomenten la
+              biodiversidad y generen un impacto positivo y sostenible en las
+              comunidades locales. Hacemos foco en tres pilares fundamentales:
+              el medio ambiente, lo social y el desarrollo económico.
+              <br />
+              <br />
+              Nuestra labor se centra en estos tres pilares de la siguiente
+              manera:
+            </p>
+          </div>
 
           <img
             src={impacto}
@@ -77,7 +77,7 @@ function ImpactoMobile() {
             }}
           />
 
-          <div className="flex justify-around mt-8">
+          <div className="flex justify-around ">
             {images.map((image) => (
               <div
                 key={image.name}
@@ -99,7 +99,7 @@ function ImpactoMobile() {
                 {selectedImage === image.name && (
                   <div className="absolute mt-4 w-full -ml-4">
                     <div
-                      className=" w-32 h-[30px] flex-shrink-0 text-[#443838] font-fira-sans text-[16px] font-semibold leading-[32px]"
+                      className=" w-32 h-[30px] flex-shrink-0 text-black font-fira-sans text-sm font-semibold leading-[32px] whitespace-nowrap"
                       style={{
                         textAlign: image.textAlign,
                         marginLeft: image.marginLeftTitle,
@@ -109,13 +109,13 @@ function ImpactoMobile() {
                     </div>
 
                     <div
-                      className="mt-2"
+                      className="mt-2 "
                       style={{
                         marginLeft: image.marginLeft,
                         width: "213.35px",
                         height: "45px",
                         flexShrink: 0,
-                        color: "#443838",
+                        color: "black",
                         fontFeatureSettings: "'liga' off, 'clig' off",
                         fontFamily: "Fira Sans",
                         fontSize: "12px",

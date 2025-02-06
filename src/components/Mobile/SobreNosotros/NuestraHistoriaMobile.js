@@ -123,7 +123,7 @@ function NuestraHistoriaMobile() {
     <div style={{ overflow: "hidden" }}>
       <div className="w-full h-[790px] relative">
         <div
-          className="relative z-10 flex flex-col h-full"
+          className="relative z-10 flex flex-col h-full padding-section"
           style={{
             zIndex: "10",
             backgroundImage: `url(${fondoMobile})`,
@@ -133,66 +133,14 @@ function NuestraHistoriaMobile() {
           }}
         >
           {/* Centered text container */}
-          <div
-            style={{
-              width: "216px",
-              height: "30px",
-              flexShrink: 0,
-              color: "#000",
-              textAlign: "center",
-              fontFamily: "Fira Sans",
-              fontSize: "24px",
-              fontStyle: "normal",
-              fontWeight: 700,
-              lineHeight: "30px",
-              margin: "0 auto",
-            }}
-          >
-            Nuestra historia
+          <div className="mx-8 gap-title-paragraph">
+            <h1 className="title-section !text-left">Nuestra historia</h1>
+            <p className="paragraph-section !text-left">
+              Nuestra trayectoria, construida a lo largo de más de 40 años, ha
+              estado marcada por la innovación, el compromiso y el crecimiento
+              constante.
+            </p>
           </div>
-          <div
-            style={{
-              width: "329px",
-              height: "51px",
-              flexShrink: 0,
-              color: "#000",
-              textAlign: "center",
-              fontFamily: "Fira Sans",
-              fontSize: "12px",
-              fontStyle: "normal",
-              fontWeight: 400,
-              lineHeight: "17px",
-              margin: "0 auto",
-              marginTop: "20px",
-            }}
-          >
-            Nuestra trayectoria, construida a lo largo de más de 40 años, ha
-            estado marcada por la innovación, el compromiso y el crecimiento
-            constante.
-          </div>
-          <button
-            style={{
-              width: "177px",
-              height: "50px",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              borderRadius: "5px",
-              background: "#00942C",
-              color: "#FFF",
-              fontFamily: "Fira Sans",
-              fontSize: "14px",
-              fontWeight: 500,
-              letterSpacing: "4px",
-              textTransform: "uppercase",
-              margin: "0 auto",
-              marginTop: "20px",
-              marginBottom: "10px",
-              display: "none",
-            }}
-          >
-            ver video
-          </button>
 
           <div
             style={{
@@ -291,7 +239,7 @@ function NuestraHistoriaMobile() {
             style={{
               position: "absolute",
               right: "7%",
-              top: "34%",
+              top: "45%",
               transform: "translateY(-50%)",
             }}
           >
@@ -318,7 +266,7 @@ function NuestraHistoriaMobile() {
             </div>
           </div>
 
-          <div className="absolute z-10 w-full" style={{ top: "490px" }}>
+          <div className="absolute z-10 w-full" style={{ top: "520px" }}>
             <img
               src={arbolesProyectos}
               alt="Árboles Proyectos"

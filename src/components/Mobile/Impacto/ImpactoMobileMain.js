@@ -4,24 +4,26 @@ import imagenCurvaImpacto from "../../../images/Mobile/imagenCurvaImpacto.png";
 import botonIzquierda from "../../../images/Desktop/botonIzquierda.png";
 import botonDerecha from "../../../images/Desktop/botonDerecha.png";
 import Politicas from "../../Desktop/Home/Politicas";
-import medioAmbiente1 from "../../../images/Mobile/medioAmbiente.png";
-import medioAmbiente2 from "../../../images/Mobile/medioAmbiente.png";
-import medioAmbiente3 from "../../../images/Mobile/medioAmbiente.png";
+import medioAmbiente1 from "../../../images/Desktop/slide-medio-ambiente-1.jpg";
+import medioAmbiente2 from "../../../images/Desktop/slide-medio-ambiente-2.jpg";
+import medioAmbiente3 from "../../../images/Desktop/slide-medio-ambiente-3.jpg";
+import medioAmbiente4 from "../../../images/Desktop/slide-medio-ambiente-4.jpg";
+import medioAmbiente5 from "../../../images/Desktop/slide-medio-ambiente-5.jpg";
 
-import economico1 from "../../../images/Mobile/economico.png";
-import economico2 from "../../../images/Mobile/economico.png";
-import economico3 from "../../../images/Mobile/economico.png";
+import economico1 from "../../../images/Desktop/slide-economico-1.jpg";
+import economico2 from "../../../images/Desktop/slide-economico-2.jpg";
+import economico3 from "../../../images/Desktop/slide-economico-3.jpg";
 
-import social1 from "../../../images/Mobile/social.png";
-import social2 from "../../../images/Mobile/social.png";
-import social3 from "../../../images/Mobile/social.png";
+import social1 from "../../../images/Desktop/slide-social-1.jpg";
+import social2 from "../../../images/Desktop/slide-social-2.jpg";
+import social3 from "../../../images/Desktop/slide-social-3.jpg";
 
 const cardsData = [
   {
     title: "Medio ambiente",
     content: (
       <>
-        <ul className="list-disc pl-5 mt-2">
+        <ul className="list-disc pl-5 mt-2 space-y-4">
           <li>
             Preservación y promoción de especies nativas y bosques naturales.
           </li>
@@ -45,12 +47,18 @@ const cardsData = [
         </ul>
       </>
     ),
-    images: [medioAmbiente1, medioAmbiente2, medioAmbiente3],
+    images: [
+      medioAmbiente1,
+      medioAmbiente2,
+      medioAmbiente3,
+      medioAmbiente4,
+      medioAmbiente5,
+    ],
   },
   {
     title: "Desarrollo económico",
     content: (
-      <ul className="list-disc pl-5 mt-2">
+      <ul className="list-disc pl-5 mt-2 space-y-4">
         <li>
           Creación de empleos directos e indirectos: La empresa puede contratar
           a trabajadores locales para actividades que requieran los diferentes
@@ -72,7 +80,7 @@ const cardsData = [
   {
     title: "Desarrollo social",
     content: (
-      <ul className="list-disc pl-5 mt-2">
+      <ul className="list-disc pl-5 mt-2 space-y-4">
         <li>
           Involucramiento con las comunidades locales en la toma de decisiones
           sobre la gestión del bosque, mediante consultas públicas o la creación
@@ -167,14 +175,14 @@ function Card({ title, content, images }) {
   };
 
   return (
-    <div>
+    <div className="mb-10">
       {/* Título */}
-      <div className="w-[327px] h-[30px] flex-shrink-0 text-black font-fira-sans text-[24px] font-[700] leading-[50px] tracking-[-1px] mx-auto">
+      <div className="w-[327px] h-[30px] flex-shrink-0 text-black font-fira-sans text-2xl font-[700] leading-[50px] tracking-[-1px] mx-auto">
         {title}
       </div>
 
       {/* Contenido */}
-      <div className="w-[329px] h-auto flex-shrink-0 text-black font-fira-sans text-[12px] font-normal leading-[17px] mx-auto mt-[20px]">
+      <div className="w-[329px] h-auto flex-shrink-0 text-black font-fira-sans text-sm font-normal leading-[17px] mx-auto mt-[20px]">
         {content}
       </div>
 
@@ -210,7 +218,7 @@ function Card({ title, content, images }) {
                   <img
                     src={card.image}
                     alt={`Tarjeta ${title} ${index + 1}`}
-                    className="w-[329px] h-[143px] rounded-[8px] mt-[40px]"
+                    className="w-[329px] h-[200px] rounded-[8px] mt-[40px] object-cover"
                   />
                 </div>
               ))}
@@ -245,32 +253,32 @@ function ImpactoMobileMain() {
           className="absolute top-0 left-0 w-full h-auto z-20 max-h-[250px]"
           style={{
             mixBlendMode: "normal",
-            top: "26px",
+            top: "260px",
             maxHeight: "222px",
           }}
         />
 
         <div
-          className="relative z-10 flex flex-col h-full"
+          className="relative z-10 flex flex-col h-full padding-section"
           style={{
             zIndex: "10",
             backgroundImage: `url(${fondoMobile})`,
             backgroundPosition: "top center",
             backgroundRepeat: "repeat-y",
-            backgroundSize: "cover",
+            backgroundSize: "contain",
           }}
         >
-          <div className="ml-8 w-[260px] h-[88px] flex-shrink-0 mt-[30px] text-black font-fira-sans text-[36px] font-[900] leading-[32px] tracking-[-1px]">
-            Impacto
-          </div>
+          {" "}
+          <div className="gap-title-paragraph mx-8 pb-64">
+            <h1 className="title-section !text-left">Impacto</h1>
 
-          <div className="w-[315px] h-[100px] flex-shrink-0 mt-[136px] text-black font-fira-sans text-[12px] font-normal leading-[17px] tracking-[-1px] mx-auto">
-            En Grupo Garabí, nos dedicamos a la gestión de proyectos agro
-            forestales que impulsen la conservación del medio ambiente,
-            promuevan la biodiversidad y generen un impacto positivo en las
-            comunidades locales de manera sostenible a lo largo del tiempo.
+            <p className="paragraph-section !text-left">
+              En Grupo Garabí, nos dedicamos a la gestión de proyectos agro
+              forestales que impulsen la conservación del medio ambiente,
+              promuevan la biodiversidad y generen un impacto positivo en las
+              comunidades locales de manera sostenible a lo largo del tiempo.
+            </p>
           </div>
-
           <div className="flex flex-col mt-2">
             {cardsData.map((card, index) => (
               <Card

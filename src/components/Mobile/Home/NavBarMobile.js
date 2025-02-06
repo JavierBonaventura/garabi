@@ -79,7 +79,7 @@ function NavBarMobile({ menuAbierto, toggleMenu }) {
                 marginBottom: "-3px",
               }}
             >
-              Home
+              Inicio
             </span>
           </div>
         </Link>

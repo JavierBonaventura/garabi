@@ -5,20 +5,20 @@ import imagenCurvaSobreNosotros from "../../../images/Mobile/imagenCurvaSobreNos
 function SobreNosotrosMobile() {
   return (
     <div>
-      <div className="w-full h-[450px] relative">
+      <div className="w-full relative">
         <img
           src={imagenCurvaSobreNosotros}
           alt="Curva"
           className="absolute  left-0 w-full h-auto z-20 max-h-[250px]"
           style={{
             mixBlendMode: "normal",
-            top: "250px",
+            top: "800px",
             maxHeight: "176px",
           }}
         />
 
         <div
-          className="relative z-10 flex flex-col h-full "
+          className="relative z-10 flex flex-col h-full padding-section"
           style={{
             zIndex: "10",
             backgroundImage: `url(${fondoMobile})`,
@@ -27,34 +27,10 @@ function SobreNosotrosMobile() {
             backgroundSize: "cover",
           }}
         >
-          {/* Texto "Quedemos en contacto" */}
-          <div
-            className="ml-8 w-[340px] h-[58px] flex-shrink-0 mt-[10px]"
-            style={{
-              color: "#000",
-              fontFamily: "Fira Sans",
-              fontSize: "36px",
-              fontWeight: "900",
-              lineHeight: "32px",
-              letterSpacing: "-1px",
-              fontFeatureSettings: "'liga' off, 'clig' off",
-            }}
-          >
-            Sobre nosotros
-          </div>
-
-          <div
-            className="ml-8 w-[329px] h-[74px] flex-shrink-0 "
-            style={{
-              color: "#000",
-              fontFamily: "Fira Sans",
-              fontSize: "12px",
-              fontWeight: "400",
-              lineHeight: "17px",
-              letterSpacing: "-1px",
-            }}
-          >
-            <p>
+          <div className="gap-title-paragraph mx-8">
+            {/* Texto "Quedemos en contacto" */}
+            <h1 className="title-section !text-left">Sobre nosotros</h1>
+            <p className="paragraph-section !text-left">
               Somos una empresa que comenzó como una iniciativa familiar en
               1976, con el compromiso de ofrecer servicios de alta calidad en el
               sector. A lo largo de los años, nos hemos consolidado como un
@@ -70,12 +46,14 @@ function SobreNosotrosMobile() {
               la industria.
               <br /> <br />
               Nuestra empresa sigue impulsada por los mismos principios que nos
-              guiaron al inicio: el trabajo en equipo, la responsabilidad
-              social, la transparencia y la pasión por lo que hacemos. Con el
-              tiempo, hemos logrado fortalecer nuestras relaciones con clientes
-              y proveedores, siempre con el firme propósito de seguir brindando
-              productos y servicios que superen las expectativas de quienes
-              confían en nosotros.
+              guiaron al inicio:
+              <br />
+              <br /> El trabajo en equipo, la responsabilidad social, la
+              transparencia y la pasión por lo que hacemos. Con el tiempo, hemos
+              logrado fortalecer nuestras relaciones con clientes y proveedores,
+              siempre con el firme propósito de seguir brindando productos y
+              servicios que superen las expectativas de quienes confían en
+              nosotros.
             </p>
           </div>
         </div>

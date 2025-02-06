@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import logoCandado from "../../../images/Desktop/logoCandado.png";
+import logoTransparencia from "../../../images/Desktop/valor-transparencia.svg";
 import logoVision from "../../../images/Desktop/logoVision.png";
 import logoTrayectoria from "../../../images/Desktop/logoTrayectoria.png";
 import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
@@ -33,7 +33,7 @@ const cards = [
       "Estar a la vanguardia en cuanto a nuevas técnicas y tecnologías de gestión forestal. Buscar siempre mejorar la eficiencia y efectividad de los proyectos a través de la innovación y la implementación de prácticas modernas.",
   },
   {
-    logo: logoCandado,
+    logo: logoTransparencia,
     title: "TRANSPARENCIA Y HONESTIDAD",
     description:
       "La empresa se compromete con la transparencia en sus operaciones, incluida la divulgación de información sobre sus prácticas forestales, impactos ambientales e iniciativas sociales.",
@@ -114,20 +114,16 @@ function SobreNosotrosValores() {
       <div className="w-full h-auto overflow-x-hidden">
         <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
         <div
-          className="relative flex flex-col h-full "
+          className="relative flex flex-col h-full padding-section"
           style={{
             backgroundImage: `url(${imagenFondo})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >
-          <div className="mt-[85px] w-[250px] h-[50px] flex-shrink-0 text-center self-center">
-            <h1 className="text-black font-sans text-[60px] font-bold leading-[50px]">
-              Nuestra Manera de Trabajar
-            </h1>
-          </div>
+          <h1 className="title-section">Nuestra Manera de Trabajar</h1>
           <button
-            className=" absolute left-1/2 top-[94px] transform -translate-x-[300px] w-[40px] h-[40px] flex items-center justify-center rounded-full text-white  bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5"
+            className=" absolute left-28 2xl:left-96 top-[91px] 2xl:top-[123px] transform  w-[40px] h-[40px] flex items-center justify-center rounded-full text-white  bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5"
             onClick={handlePrev}
             style={{ zIndex: buttonZIndex }}
           >
@@ -161,11 +157,11 @@ function SobreNosotrosValores() {
                   className="absolute top-[15px] left-[34px] w-[41px] h-[47px] fill-white"
                 />
 
-                <div className="absolute top-[12px] left-[109px] w-[250px] h-[32px] text-white font-sans text-[22px] font-medium leading-[32px]">
+                <div className="absolute top-[12px] left-[109px] w-[250px] h-[32px] text-white font-sans text-lg 2xl:text-[22px] font-medium leading-[32px]">
                   {card.title}
                 </div>
 
-                <div className="absolute top-[80px] left-[34px] w-[350px] h-[84px] text-white font-sans text-[18px] font-normal leading-[24px]">
+                <div className="absolute top-[80px] left-[34px] w-[350px] h-[84px] text-white font-sans text-base 2xl:text-[18px] font-normal leading-[24px]">
                   {card.description}
                 </div>
               </div>
@@ -184,7 +180,7 @@ function SobreNosotrosValores() {
             </div>
           </div>
           <button
-            className=" absolute left-1/2 top-[94px] transform -translate-x-[-260px] w-[40px] h-[40px] flex items-center justify-center rounded-full text-white  bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5"
+            className=" absolute right-28 2xl:right-96 top-[91px] 2xl:top-[123px] transform w-[40px] h-[40px] flex items-center justify-center rounded-full text-white  bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5"
             onClick={handleNext}
             style={{ zIndex: buttonZIndex }}
           >

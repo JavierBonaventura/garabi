@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import fondoMobile from "../../../images/Mobile/fondoMobile.png";
-import logoCandado from "../../../images/Desktop/logoCandado.png";
+import logoTransparencia from "../../../images/Desktop/valor-transparencia.svg";
 import logoVision from "../../../images/Desktop/logoVision.png";
 import logoTrayectoria from "../../../images/Desktop/logoTrayectoria.png";
 import logoCheck from "../../../images/Mobile/list-check-solid.svg";
@@ -34,7 +34,7 @@ function ValoresMobile() {
         "Estar a la vanguardia en cuanto a nuevas técnicas y tecnologías de gestión forestal. Buscar siempre mejorar la eficiencia y efectividad de los proyectos a través de la innovación y la implementación de prácticas modernas.",
     },
     {
-      logo: logoCandado,
+      logo: logoTransparencia,
       title: "TRANSPARENCIA Y HONESTIDAD",
       description:
         "La empresa se compromete con la transparencia en sus operaciones, incluida la divulgación de información sobre sus prácticas forestales, impactos ambientales e iniciativas sociales.",
@@ -121,7 +121,7 @@ function ValoresMobile() {
     <div style={{ overflow: "hidden" }}>
       <div className="w-full h-auto relative">
         <div
-          className="relative z-10 flex flex-col h-full"
+          className="relative z-10 flex flex-col h-full padding-section !pt-16"
           style={{
             zIndex: "10",
             backgroundImage: `url(${fondoMobile})`,
@@ -131,22 +131,7 @@ function ValoresMobile() {
             paddingBottom: "30px",
           }}
         >
-          <div
-            style={{
-              width: "150px",
-              height: "30px",
-              flexShrink: 0,
-              color: "#000",
-              textAlign: "center",
-              fontFamily: "Fira Sans",
-              fontSize: "24px",
-              fontWeight: 700,
-              margin: "0 auto",
-              marginTop: "20px",
-            }}
-          >
-            Nuestra Manera de Trabajar
-          </div>
+          <h1 className="title-section">Nuestra Manera de Trabajar</h1>
 
           <div
             className="relative w-full flex items-center justify-center overflow-hidden mt-8"

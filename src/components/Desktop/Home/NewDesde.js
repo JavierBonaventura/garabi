@@ -14,13 +14,12 @@ function Desde1976() {
         }}
       >
         <div className="space-y-10 md:space-y-24">
-          <div className="gap-title-paragraph ml-8 lg:ml-0 ">
-            <h1 className="title-section !text-left lg:!text-center">
-              Desde 1976
-            </h1>
-            <p className="paragraph-section !text-left lg:!text-center">
-              Administrando y asesorando proyectos en uno de los polos foresto
-              industriales más importantes del país
+          <div className="gap-title-paragraph mx-8 lg:ml-0 ">
+            <h1 className="title-section">Desde 1976</h1>
+            <p className="paragraph-section">
+              Administrando y asesorando proyectos en uno de los polos
+              <br className="hidden lg:block" /> foresto industriales más
+              importantes del país
             </p>
           </div>
           <div className="">

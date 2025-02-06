@@ -124,14 +124,12 @@ function ServiciosMobile() {
         onTouchEnd={handleTouchEnd}
       >
         <div className=" space-y-8">
-          <div className="gap-title-paragraph">
+          <div className="gap-title-paragraph mx-8">
             {/* Div principal con layout y tipografía para "Servicios" */}
-            <h1 className="flex-shrink-0 mx-8 w-[274px] text-black font-fira-sans text-[41px] font-extrabold leading-[39px]">
-              Servicios
-            </h1>
+            <h1 className="title-section">Servicios</h1>
 
             {/* Div secundario con layout y tipografía para el texto debajo */}
-            <p className="mx-8 !w-[329px]  paragraph-section !text-left">
+            <p className="paragraph-section">
               La flexibilidad, agilidad de nuestra organización sumado a la
               experiencia de más de 40 años en el sector forestal nos permite
               planificar y ejecutar proyectos a la medida y necesidades de cada

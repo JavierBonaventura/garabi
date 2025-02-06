@@ -67,10 +67,9 @@ function AlgunosNumerosMobile() {
         }}
       >
         <div className="w-full space-y-8">
-          <h1 className="flex-shrink-0 mx-8 title-section !text-left !leading-9">
+          <h1 className="title-section !leading-9">
             Nuestros
-            <br />
-            resultados
+            <br /> resultados
           </h1>
 
           {/* Contenedor de círculos */}

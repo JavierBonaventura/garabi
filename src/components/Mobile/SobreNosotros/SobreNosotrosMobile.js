@@ -29,8 +29,8 @@ function SobreNosotrosMobile() {
         >
           <div className="gap-title-paragraph mx-8">
             {/* Texto "Quedemos en contacto" */}
-            <h1 className="title-section !text-left">Sobre nosotros</h1>
-            <p className="paragraph-section !text-left">
+            <h1 className="title-section">Sobre nosotros</h1>
+            <p className="paragraph-section">
               Somos una empresa que comenzó como una iniciativa familiar en
               1976, con el compromiso de ofrecer servicios de alta calidad en el
               sector. A lo largo de los años, nos hemos consolidado como un

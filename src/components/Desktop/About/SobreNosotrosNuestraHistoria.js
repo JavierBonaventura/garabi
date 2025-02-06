@@ -131,7 +131,7 @@ function SobreNosotrosNuestraHistoria() {
         <div className="flex justify-center items-center h-full padding-section">
           <div className="grid grid-cols-2 w-[80%] 2xl:w-2/3 mx-auto">
             {/* Columna izquierda */}
-            <div className="flex flex-col items-start gap-title-paragraph">
+            <div className="flex flex-col items-start gap-title-paragraph mt-40">
               <h1 className="title-section !text-left">Nuestra historia</h1>
 
               <p className="paragraph-section !text-left">
@@ -140,35 +140,40 @@ function SobreNosotrosNuestraHistoria() {
                 constante.
               </p>
             </div>
-            <div className=" h-[580px] mt-[-80px] "
-             onWheel={handleScroll}
-             onMouseDown={handleMouseDown}
-             onMouseMove={handleMouseMove}
-             onMouseUp={handleMouseUp}
-             onMouseLeave={handleMouseUp}
-            >
             <div
-              id="cardContainer"
-              style={{
-                margin: 0,
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-             
+              className=" h-[580px] mt-[-80px] "
+              onWheel={handleScroll}
+              onMouseDown={handleMouseDown}
+              onMouseMove={handleMouseMove}
+              onMouseUp={handleMouseUp}
+              onMouseLeave={handleMouseUp}
             >
-              <div className="mt-[80px]"
+              <div
+                id="cardContainer"
                 style={{
-                  position: "relative",
-                  width: "427px",
-                  height: "460px",
-                  overflow: "hidden",
+                  margin: 0,
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
                 }}
-
               >
-                <div ref={carouselRef} className="flex flex-col space-y-8 z-20">
-                  {[1976, 1983, 2002, 2007, 2012, 2014, 2015, 2018, 2021, 2023].map(
-                    (year, index) => {
+                <div
+                  className="mt-[80px]"
+                  style={{
+                    position: "relative",
+                    width: "427px",
+                    height: "460px",
+                    overflow: "hidden",
+                  }}
+                >
+                  <div
+                    ref={carouselRef}
+                    className="flex flex-col space-y-8 z-20"
+                  >
+                    {[
+                      1976, 1983, 2002, 2007, 2012, 2014, 2015, 2018, 2021,
+                      2023,
+                    ].map((year, index) => {
                       const opacity = index === activeIndex ? 1 : 0.5;
 
                       // Define los textos por año
@@ -210,33 +215,33 @@ function SobreNosotrosNuestraHistoria() {
                           </div>
                         </div>
                       );
-                    }
-                  )}
+                    })}
+                  </div>
+                </div>
+                <div
+                  className="absolute right-6 top-1/2 transform -translate-y-1/2"
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "space-between",
+                    height: "200px",
+                  }}
+                >
+                  {[...Array(totalCards)].map((_, index) => (
+                    <div
+                      key={index}
+                      style={{
+                        width: "10px",
+                        height: "10px",
+                        borderRadius: "50%",
+                        border: "2px solid #00942C",
+                        backgroundColor:
+                          index === activeIndex ? "#00942C" : "#FFF",
+                      }}
+                    />
+                  ))}
                 </div>
               </div>
-              <div
-                className="absolute right-6 top-1/2 transform -translate-y-1/2"
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "space-between",
-                  height: "200px",
-                }}
-              >
-                {[...Array(totalCards)].map((_, index) => (
-                  <div
-                    key={index}
-                    style={{
-                      width: "10px",
-                      height: "10px",
-                      borderRadius: "50%",
-                      border: "2px solid #00942C",
-                      backgroundColor: index === activeIndex ? "#00942C" : "#FFF",
-                    }}
-                  />
-                ))}
-              </div>
-            </div>
             </div>
           </div>
         </div>

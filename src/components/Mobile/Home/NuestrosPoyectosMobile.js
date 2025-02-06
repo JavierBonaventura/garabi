@@ -28,12 +28,10 @@ function NuestrosPoyectosMobile() {
         {/* Contenedor de texto alineado en la parte superior */}
         <div className="w-full space-y-8">
           <div className="gap-title-paragraph mx-8">
-            <h1 className="title-section !text-left !leading-9">
-              Nuestros proyectos
-            </h1>
+            <h1 className="title-section !leading-9">Nuestros proyectos</h1>
 
             {/* Descripción de "Grupo Garabí comienza..." */}
-            <p className="paragraph-section !text-left">
+            <p className="paragraph-section">
               A lo largo de estos años hemos desarrollado y administrado
               proyectos a medida para cada cliente.
             </p>

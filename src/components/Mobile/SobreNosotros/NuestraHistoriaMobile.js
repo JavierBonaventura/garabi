@@ -134,8 +134,8 @@ function NuestraHistoriaMobile() {
         >
           {/* Centered text container */}
           <div className="mx-8 gap-title-paragraph">
-            <h1 className="title-section !text-left">Nuestra historia</h1>
-            <p className="paragraph-section !text-left">
+            <h1 className="title-section">Nuestra historia</h1>
+            <p className="paragraph-section">
               Nuestra trayectoria, construida a lo largo de más de 40 años, ha
               estado marcada por la innovación, el compromiso y el crecimiento
               constante.

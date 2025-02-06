@@ -491,7 +491,7 @@ function Impacto() {
             {/* Contenido central */}
             <div className="relative flex flex-col justify-center items-center text-center">
               <div className="text-center text-[#00942C] font-fira-sans text-[40px] font-bold leading-[50px] max-w-[615px] mt-[-40%]">
-                Contáctanos ahora para darle forma a tu futuro verde
+                Contáctanos ahora para darle forma VERDE a tu futuro
               </div>
 
               <button className="mt-12 flex justify-center items-center bg-white border border-[#00942C] rounded-[5px] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#D1D1D1] hover:-translate-y-0.5 w-[245.25px] h-[50px]">

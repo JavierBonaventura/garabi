@@ -53,8 +53,8 @@ function ImpactoMobile() {
       >
         <div className="space-y-8">
           <div className="gap-title-paragraph mx-8">
-            <h1 className="title-section !text-left">Triple impacto</h1>
-            <p className="paragraph-section !text-left">
+            <h1 className="title-section">Triple impacto</h1>
+            <p className="paragraph-section">
               En Grupo Garabí, buscamos gestionar proyectos forestales que
               promuevan la conservación del medio ambiente, fomenten la
               biodiversidad y generen un impacto positivo y sostenible en las

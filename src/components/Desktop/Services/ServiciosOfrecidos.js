@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import imagenCurvaServicios from "../../../images/Desktop/imagenCurvaServicios.png";
-import tarjetaServicios from "../../../images/Desktop/asesoramiento-integral-2.jpg";
+import recuadroUno from "../../../images/Desktop/asesoramiento-integral-3.png";
+import recuadroDos from "../../../images/Desktop/asesoramiento-productivo-2.png";
 import arbolesProyectos from "../../../images/Desktop/arboles-proyectos.png";
-import tarjetaServicios1 from "../../../images/Desktop/asesoramiento-productivo.jpg";
 import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
 import Valores from "../About/SobreNosotrosValores";
 
@@ -18,26 +18,26 @@ function ServiciosOfrecidos() {
     {
       titulo: "Asesoramiento integral",
       descripcion:
-        "Los proyectos que cuentan con asesoramiento integral ofrecen todas las ventajas del asesoramiento productivo, asegurando un acompañamiento completo en el desarrollo y optimización de las actividades. Estos proyectos liberan a los propietarios de la responsabilidad de gestionar tareas administrativas, legales, impositivas y de tesorería, a la vez que los mantienen informados mediante rendiciones periódicas y reportes detallados. De esta forma, pueden concentrarse exclusivamente en las áreas estratégicas y operativas del negocio, con plena transparencia sobre el estado de las gestiones realizadas.<br/><br/>" +
+        "Los proyectos que cuentan con asesoramiento integral ofrecen todas las ventajas del asesoramiento productivo, asegurando un acompañamiento completo en el desarrollo y optimización de las actividades.<br/><br/> Estos proyectos liberan a los propietarios de la responsabilidad de gestionar tareas administrativas, legales, impositivas y de tesorería, a la vez que los mantienen informados mediante rendiciones periódicas y reportes detallados. De esta forma, pueden concentrarse exclusivamente en las áreas estratégicas y operativas del negocio, con plena transparencia sobre el estado de las gestiones realizadas.<br/><br/>" +
         "<ul>" +
-        "<li>Gestión Administrativa de la Empresa: Asesoría legal, contable e impositiva, asegurando el cumplimiento normativo y la correcta gestión de la documentación empresarial.</li>" +
-        "<li>Consultoría Financiera y Planificación: Te ayudamos a gestionar la financiación de tu proyecto y optimizar flujos de caja.</li>" +
-        "<li>Gestión de Tesorería y Pagos: Nos encargamos de la administración de pagos, cobranzas y rendiciones de gastos, asegurando que tu flujo de caja esté siempre en orden y que las obligaciones financieras se cumplan de manera eficiente.</li>" +
-        "<li>Armado de Reportes: Elaboramos informes detallados y periódicos sobre el estado de la producción, la situación financiera y otros indicadores clave de tu empresa, facilitando la toma de decisiones informadas y estratégicas.</li>" +
+        "<li><span class='font-bold'>Gestión Administrativa de la Empresa:</span><br/> Asesoría legal, contable e impositiva, asegurando el cumplimiento normativo y la correcta gestión de la documentación empresarial.</li><br/>" +
+        "<li><span class='font-bold'>Consultoría Financiera y Planificación:</span><br/> Te ayudamos a gestionar la financiación de tu proyecto y optimizar flujos de caja.</li><br/>" +
+        "<li><span class='font-bold'>Gestión de Tesorería y Pagos:</span><br/> Nos encargamos de la administración de pagos, cobranzas y rendiciones de gastos, asegurando que tu flujo de caja esté siempre en orden y que las obligaciones financieras se cumplan de manera eficiente.</li><br/>" +
+        "<li><span class='font-bold'>Armado de Reportes:</span><br/> Elaboramos informes detallados y periódicos sobre el estado de la producción, la situación financiera y otros indicadores clave de tu empresa, facilitando la toma de decisiones informadas y estratégicas.</li>" +
         "</ul>",
-      imagen: tarjetaServicios,
+      imagen: recuadroUno,
     },
     {
       titulo: "Asesoramiento productivo",
       descripcion:
-        "Ofrecemos asesoramiento y soluciones personalizadas buscando maximizar la productividad y sostenibilidad de los proyectos de nuestros clientes. Gracias a nuestra amplia experiencia en el sector sumado al respaldo de un equipo especializado, ayudamos a seleccionar las mejores prácticas y estrategias para cada proyecto, asegurando su rentabilidad y la conservación del entorno. Acompañamos a nuestros clientes en todas las etapas, desde la planificación hasta la ejecución, con un enfoque práctico y adaptado a sus necesidades.<br/><br/>" +
+        "Ofrecemos asesoramiento y soluciones personalizadas buscando maximizar la productividad y sostenibilidad de los proyectos de nuestros clientes.<br/><br/>Gracias a nuestra amplia experiencia en el sector sumado al respaldo de un equipo especializado, ayudamos a seleccionar las mejores prácticas y estrategias para cada proyecto, asegurando su rentabilidad y la conservación del entorno. Acompañamos a nuestros clientes en todas las etapas, desde la planificación hasta la ejecución, con un enfoque práctico y adaptado a sus necesidades.<br/><br/>" +
         "<ul>" +
-        "<li>Asesoramiento en Manejo Agroforestal: Brindamos asesoramiento especializado en la planificación y ejecución de proyectos agroforestales, adaptados a las necesidades específicas de cada cliente.</li>" +
-        "<li>Planificación y Gestión de Proyectos: Desarrollamos planes de trabajo detallados, asegurando la correcta ejecución de las tareas y el cumplimiento de los plazos establecidos.</li>" +
-        "<li>Monitoreo y Seguimiento de la Producción: Implementamos sistemas de control para asegurar el avance de las actividades y la eficiencia de los recursos, realizando ajustes cuando sea necesario.</li>" +
-        "<li>Asesoramiento en Comercialización: Te apoyamos en la toma de decisiones sobre la comercialización de tus productos, identificando oportunidades y mejorando la cadena de valor.</li>" +
+        "<li><span class='font-bold'>Asesoramiento en Manejo Agroforestal:</span><br/>Brindamos asesoramiento especializado en la planificación y ejecución de proyectos agroforestales, adaptados a las necesidades específicas de cada cliente.</li><br/>" +
+        "<li><span class='font-bold'>Planificación y Gestión de Proyectos:</span><br/>Desarrollamos planes de trabajo detallados, asegurando la correcta ejecución de las tareas y el cumplimiento de los plazos establecidos.</li><br/>" +
+        "<li><span class='font-bold'>Monitoreo y Seguimiento de la Producción:</span> Implementamos sistemas de control para asegurar el avance de las actividades y la eficiencia de los recursos, realizando ajustes cuando sea necesario.</li><br/>" +
+        "<li><span class='font-bold'>Asesoramiento en Comercialización:</span> Te apoyamos en la toma de decisiones sobre la comercialización de tus productos, identificando oportunidades y mejorando la cadena de valor.</li>" +
         "</ul>",
-      imagen: tarjetaServicios1,
+      imagen: recuadroDos,
     },
   ];
 
@@ -51,38 +51,39 @@ function ServiciosOfrecidos() {
           className="absolute top-0 left-0 w-full h-auto z-20"
           style={{
             mixBlendMode: "normal",
-            top: "200px",
+            top: "400px",
             maxHeight: "650px",
           }}
         />
         <div
-          className="relative z-10 flex flex-col h-full pt-32"
+          className="relative z-10 flex flex-col h-full padding-section-2"
           style={{
             backgroundImage: `url(${imagenFondo})`,
             backgroundSize: "contain",
             backgroundPosition: "center top",
           }}
         >
-          <div className="w-[546px] h-[72px] flex-shrink-0 mt-[50px] ml-[12%] text-[#000] font-fira-sans text-[60px] font-black leading-[60px] tracking-[-1px] [font-feature-settings:'liga_off','clig_off']">
-            Servicios ofrecidos
+          <div className="gap-title-paragraph w-2/3 2xl:w-1/2 mx-auto">
+            <h1 className="title-section">Servicios ofrecidos</h1>
+
+            <p className="paragraph-section">
+              En Grupo Garabi nos comprometemos con el desarrollo sostenible y
+              el crecimiento eficiente de los sectores productivos del campo.
+              Ofrecemos una gama completa de servicios de administración
+              integral y asesoramiento productivo, diseñados para optimizar el
+              rendimiento de tus recursos naturales, garantizar la
+              sostenibilidad de tu proyecto y maximizar la rentabilidad a largo
+              plazo.
+              <br /> <br />
+              Entendemos que cada proyecto agroforestal es único. Por eso, nos
+              dedicamos a ofrecer soluciones integrales que aborden las
+              necesidades específicas de cada cliente, con el objetivo de
+              alcanzar una producción eficiente, rentable y sostenible a largo
+              plazo.
+            </p>
           </div>
-
-          <p className="w-[452px] h-[180px] flex-shrink-0 mt-[20px] ml-[12%] text-[#000] font-fira-sans text-[24px] font-normal leading-[28px] tracking-[-1px] [font-feature-settings:'liga_off','clig_off']">
-            En Grupo Garabi nos comprometemos con el desarrollo sostenible y el
-            crecimiento eficiente de los sectores productivos del campo.
-            Ofrecemos una gama completa de servicios de administración integral
-            y asesoramiento productivo, diseñados para optimizar el rendimiento
-            de tus recursos naturales, garantizar la sostenibilidad de tu
-            proyecto y maximizar la rentabilidad a largo plazo.
-            <br />
-            Entendemos que cada proyecto agroforestal es único. Por eso, nos
-            dedicamos a ofrecer soluciones integrales que aborden las
-            necesidades específicas de cada cliente, con el objetivo de alcanzar
-            una producción eficiente, rentable y sostenible a largo plazo.
-          </p>
-
           <div
-            className="flex justify-between mt-[500px] mx-auto"
+            className="flex justify-between mt-[550px] 2xl:mt-[700px] mx-auto"
             style={{
               width: "1074px",
             }}
@@ -106,7 +107,6 @@ function ServiciosOfrecidos() {
               </div>
             ))}
           </div>
-
           <div
             className="mx-auto mt-4"
             style={{
@@ -117,7 +117,6 @@ function ServiciosOfrecidos() {
               flexShrink: 0,
             }}
           ></div>
-
           {/* Aquí comienza la sección de dos columnas */}
           <div className="relative w-full h-full">
             {/* Bloque de fondo que se debe mostrar detrás */}
@@ -134,12 +133,9 @@ function ServiciosOfrecidos() {
               }}
             >
               {/* Columna izquierda: título y descripción según la selección */}
-              <div className="mr-4" style={{ width: "468.214px" }}>
-                <div className="w-[468.214px] h-[32px] flex-shrink-0 text-black font-fira-sans text-[24px] font-semibold leading-[32px]">
-                  {contenidoServicios[selectedIndex].titulo}
-                </div>
+              <div style={{ width: "468.214px" }}>
                 <div
-                  className="w-[526px] h-[206px] flex-shrink-0 text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-8"
+                  className="w-[526px] flex-shrink-0 text-black font-fira-sans text-[18px] font-normal leading-[28px] "
                   dangerouslySetInnerHTML={{
                     __html: contenidoServicios[selectedIndex].descripcion,
                   }}
@@ -157,7 +153,7 @@ function ServiciosOfrecidos() {
             </div>
           </div>
           <Valores />
-          <div className="relative w-full pb-20 mt-[-13%]">
+          <div className="relative w-full pb-20 mt-16">
             {/* Gradiente superior */}
             <div
               className="absolute z-20 w-full h-[21%] top-[-20%] left-0 origin-top-left"
@@ -187,7 +183,7 @@ function ServiciosOfrecidos() {
             {/* Contenido central */}
             <div className="relative flex flex-col justify-center items-center text-center">
               <div className="text-center text-[#00942C] font-fira-sans text-[40px] font-bold leading-[50px] max-w-[615px] mt-[-40%]">
-                Contáctanos ahora para darle forma a tu futuro verde
+                Contáctanos ahora para darle forma VERDE a tu futuro
               </div>
 
               <button className="mt-12 flex justify-center items-center bg-white border border-[#00942C] rounded-[5px] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#D1D1D1] hover:-translate-y-0.5 w-[245.25px] h-[50px]">

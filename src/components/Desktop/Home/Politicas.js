@@ -17,8 +17,8 @@ function Politicas() {
         }}
       >
         <div className="w-[80%] 2xl:w-2/3 flex flex-col gap-title-paragraph mx-auto">
-          <h1 className="title-section !text-left">Nuestras políticas</h1>
-          <p className="paragraph-section !text-left">
+          <h1 className="title-section">Nuestras políticas</h1>
+          <p className="paragraph-section">
             Las políticas del Grupo Garabí definen su compromiso con la
             protección ambiental, el uso responsable de recursos, la
             preservación de la biodiversidad y la promoción de la seguridad

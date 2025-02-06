@@ -177,7 +177,7 @@ function Card({ title, content, images }) {
   return (
     <div className="mb-10">
       {/* Título */}
-      <div className="w-[327px] h-[30px] flex-shrink-0 text-black font-fira-sans text-2xl font-[700] leading-[50px] tracking-[-1px] mx-auto">
+      <div className="w-[327px] h-[30px] flex-shrink-0 text-black font-fira-sans text-2xl font-[700] leading-[50px] tracking-[-1px] mx-auto text-center">
         {title}
       </div>
 
@@ -253,7 +253,7 @@ function ImpactoMobileMain() {
           className="absolute top-0 left-0 w-full h-auto z-20 max-h-[250px]"
           style={{
             mixBlendMode: "normal",
-            top: "260px",
+            top: "280px",
             maxHeight: "222px",
           }}
         />
@@ -269,10 +269,10 @@ function ImpactoMobileMain() {
           }}
         >
           {" "}
-          <div className="gap-title-paragraph mx-8 pb-64">
-            <h1 className="title-section !text-left">Impacto</h1>
+          <div className="gap-title-paragraph mx-8 pb-64 pt-5">
+            <h1 className="title-section">Impacto</h1>
 
-            <p className="paragraph-section !text-left">
+            <p className="paragraph-section">
               En Grupo Garabí, nos dedicamos a la gestión de proyectos agro
               forestales que impulsen la conservación del medio ambiente,
               promuevan la biodiversidad y generen un impacto positivo en las

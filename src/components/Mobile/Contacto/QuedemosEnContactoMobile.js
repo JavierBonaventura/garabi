@@ -75,13 +75,13 @@ function QuedemosEnContactoMobile() {
                   type="text"
                   id="nombre"
                   required
+                  className="py-5 px-2"
                   style={{
                     width: "328px",
                     height: "27.778px",
                     borderRadius: "4px",
                     border: "2px solid #000",
                     background: "rgba(218, 218, 218, 0.00)",
-                    padding: "10px",
                   }}
                 />
               </div>
@@ -110,13 +110,13 @@ function QuedemosEnContactoMobile() {
                   type="email"
                   required
                   id="email"
+                  className="py-5 px-2"
                   style={{
                     width: "328px",
                     height: "27.778px",
                     borderRadius: "4px",
                     border: "2px solid #000",
                     background: "rgba(218, 218, 218, 0.00)",
-                    padding: "10px",
                   }}
                 />
               </div>
@@ -145,13 +145,13 @@ function QuedemosEnContactoMobile() {
                   type="text"
                   id="asunto"
                   required
+                  className="py-5 px-2"
                   style={{
                     width: "328px",
                     height: "27.778px",
                     borderRadius: "4px",
                     border: "2px solid #000",
                     background: "rgba(218, 218, 218, 0.00)",
-                    padding: "10px",
                   }}
                 />
               </div>
@@ -180,13 +180,13 @@ function QuedemosEnContactoMobile() {
                   type="number"
                   id="telefono"
                   required
+                  className="py-5 px-2"
                   style={{
                     width: "328px",
                     height: "27.778px",
                     borderRadius: "4px",
                     border: "2px solid #000",
                     background: "rgba(218, 218, 218, 0.00)",
-                    padding: "10px",
                   }}
                 />
               </div>
@@ -389,7 +389,7 @@ function QuedemosEnContactoMobile() {
               maxHeight: "228px",
             }}
           />
-          <div className="pt-96">
+          <div className="pt-[36rem]">
             <a
               href="https://maps.app.goo.gl/KHjo3FYKxGPH9TVi7"
               target="_blank"
@@ -403,7 +403,7 @@ function QuedemosEnContactoMobile() {
                   className="w-[250px] h-[150px] object-cover mx-auto rounded-xl"
                   style={{
                     position: "absolute",
-                    bottom: "220px",
+                    bottom: "430px",
                     left: "50%",
                     transform: "translateX(-50%)",
                     zIndex: 1,
@@ -415,7 +415,7 @@ function QuedemosEnContactoMobile() {
               <div
                 style={{
                   position: "absolute",
-                  bottom: "260px", // Ajusta para posicionar justo debajo del mapa
+                  bottom: "340px", // Ajusta para posicionar justo debajo del mapa
                   left: "50%",
                   transform: "translateX(-50%)",
                   textAlign: "center",
@@ -464,7 +464,7 @@ function QuedemosEnContactoMobile() {
                   className="w-[250px] h-[150px] object-cover mx-auto rounded-xl"
                   style={{
                     position: "absolute",
-                    bottom: "50px",
+                    bottom: "150px",
                     left: "50%",
                     transform: "translateX(-50%)",
                     zIndex: 1,
@@ -476,7 +476,7 @@ function QuedemosEnContactoMobile() {
               <div
                 style={{
                   position: "absolute",
-                  bottom: "90px", // Ajusta para posicionar justo debajo del mapa
+                  bottom: "45px", // Ajusta para posicionar justo debajo del mapa
                   left: "50%",
                   transform: "translateX(-50%)",
                   textAlign: "center",

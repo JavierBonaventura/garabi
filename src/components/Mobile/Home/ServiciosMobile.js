@@ -44,7 +44,7 @@ function ServiciosMobile() {
   const carouselRef = useRef(null);
   const [isSliding, setIsSliding] = useState(false);
 
-  const cardWidth = 378;
+  const cardWidth = 371;
 
   const handleNext = () => {
     if (isSliding) return;

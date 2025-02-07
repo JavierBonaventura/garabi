@@ -68,7 +68,8 @@ function ArbolesMobile() {
               Contáctanos ahora para darle forma VERDE a tu futuro
             </div>
 
-            <button
+            <a
+              href="/contacto"
               className="mt-6 flex justify-center items-center bg-white cursor-pointer transition-transform duration-500 ease-out hover:bg-[#D1D1D1] hover:-translate-y-0.5"
               style={{
                 width: "158px",
@@ -91,7 +92,7 @@ function ArbolesMobile() {
               >
                 Contáctanos
               </span>
-            </button>
+            </a>
           </div>
         </div>
       </div>

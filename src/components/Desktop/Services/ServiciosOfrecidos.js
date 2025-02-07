@@ -186,11 +186,14 @@ function ServiciosOfrecidos() {
                 Contáctanos ahora para darle forma VERDE a tu futuro
               </div>
 
-              <button className="mt-12 flex justify-center items-center bg-white border border-[#00942C] rounded-[5px] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#D1D1D1] hover:-translate-y-0.5 w-[245.25px] h-[50px]">
+              <a
+                href="/contacto"
+                className="mt-12 flex justify-center items-center bg-white border border-[#00942C] rounded-[5px] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#D1D1D1] hover:-translate-y-0.5 w-[245.25px] h-[50px]"
+              >
                 <span className="text-[#00942C] text-center font-fira-code text-[14px] font-normal uppercase tracking-[4px]">
                   Contáctanos
                 </span>
-              </button>
+              </a>
             </div>
           </div>
         </div>

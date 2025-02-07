@@ -24,8 +24,8 @@ function FooterMobile() {
           className="w-[162px] flex-shrink-0"
         />
         <p className="text-black font-fira-sans text-sm font-normal leading-[20px] mt-[10px] text-center px-5">
-          Especialistas en Forestación. Administramos y asesoramos proyectos
-          forestales de nuestros clientes.
+          Somos especialistas en Forestación. Administramos y asesoramos
+          proyectos agroforestales.
         </p>
       </div>
 

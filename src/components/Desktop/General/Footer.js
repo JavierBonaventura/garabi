@@ -35,8 +35,8 @@ function Footer() {
               </Link>
 
               <div className="w-[305px] text-black font-fira-sans text-[18px] font-normal leading-[28px] mt-[20px]">
-                Especialistas en Forestación. Administramos y asesoramos
-                proyectos forestales de nuestros clientes.
+                Somos especialistas en Forestación. Administramos y asesoramos
+                proyectos agroforestales.
               </div>
             </div>
 

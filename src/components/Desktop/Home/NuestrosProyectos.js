@@ -74,16 +74,14 @@ function Servicios() {
         "De acuerdo a las características propias del campo y del suelo se pueden incorporar más actividades además de la forestación y la yerba, como el arroz y la ganadería.",
       image: ProyectosMixtos,
     },
-    {
-      id: 5,
-      title: "Proyectos Agrícolas",
-      description:
-        "Hemos desarrollado pooles de siembra tradicionales, arándanos y olivos en otras zonas del país.",
-      image: ProyectosAgricolas,
-    },
+   
   ];
 
-  const cardWidth = 409.736 + 160;
+  // const cardWidth = 409.736 + 160;
+
+  const viewportWidth = window.innerWidth;
+  const cardWidth = (31 + 11) * viewportWidth / 100; // equivale a 43% del ancho de la ventana
+  
 
   useEffect(() => {
     const carousel = carouselRef.current;
@@ -159,7 +157,7 @@ function Servicios() {
           <div className="flex items-center justify-center mt-[50px] relative z-10">
             {/* Botón de navegación izquierda */}
             <button
-              className=" absolute left-1/2 top-[255px] transform -translate-x-[300px] w-[40px] h-[40px] flex items-center justify-center rounded-full text-white  bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5"
+              className=" absolute left-1/2 top-[18vw] transform -translate-x-[22vw] w-[40px] h-[40px] flex items-center justify-center rounded-full text-white  bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5"
               onClick={handlePrev}
               style={{ zIndex: buttonZIndex }}
             >
@@ -182,12 +180,12 @@ function Servicios() {
             {/* Contenedor para las tarjetas */}
             <div
               ref={carouselRef}
-              className="flex gap-[160px] transition-transform duration-500 ease-in-out z-20 ml-[569.7px]"
+              className="flex gap-[11vw] transition-transform duration-500 ease-in-out z-20 "
             >
               {cards.map((card, index) => (
                 <div
                   key={index}
-                  className="relative w-[409.736px] h-[480px] flex-shrink-0 transition-transform duration-500"
+                  className="relative w-[31vw] h-[36vw] flex-shrink-0 transition-transform duration-500"
                   style={{
                     borderRadius: "28.132px",
                     background: "#DAD8CB",
@@ -197,7 +195,7 @@ function Servicios() {
                 >
                   {/* Imagen de la tarjeta */}
                   <div
-                    className="w-[409.736px] h-[259.258px] rounded-t-[28.132px] bg-[#F7FFF1] absolute top-0 left-0 "
+                    className="w-[31vw] h-[19vw] rounded-t-[28.132px] bg-[#F7FFF1] absolute top-0 left-0"
                     style={{
                       backgroundImage: `url(${card.image})`,
                       backgroundSize: "cover",
@@ -207,20 +205,21 @@ function Servicios() {
                   />
 
                   {/* Título de la tarjeta */}
-                  <div className="absolute top-[280px] title-card-servicios w-full">
-                    <span className="font-[450]">
+                  <div className="mt-[0.8vw] absolute top-[20vw] title-card-servicios w-full">
+                    <span className="font-[450]  text-[2vw]">
                       {card.title.split(" ")[0]}
                     </span>
-                    <div className="font-[600]">
+                    <div className="mt-[0.6vw] font-[600] text-[2vw]">
                       {card.title.split(" ").slice(1).join(" ")}
                     </div>
                   </div>
 
                   {/* Descripción de la tarjeta */}
-                  <div className="absolute top-[350px] paragraph-card-servicios w-full px-10">
+                  <div className="mt-[2vw] absolute top-[24vw] text-[2vw] paragraph-card-servicios w-full px-10">
                     {card.description}
                   </div>
 
+    
                   {/* Botón de la tarjeta */}
                   <div className="hidden absolute bottom-[20px] left-[50%] transform -translate-x-[50%] w-[217px] h-[50px] bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5 flex justify-center items-center rounded-[5px]">
                     <div className="text-white text-center font-fira-sans text-[14px] font-normal tracking-[4px] uppercase">
@@ -233,7 +232,7 @@ function Servicios() {
 
             {/* Botón de navegación derecha */}
             <button
-              className=" absolute left-1/2 top-[255px] transform -translate-x-[-260px] w-[40px] h-[40px] flex items-center justify-center rounded-full text-white  bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5"
+              className=" absolute left-1/2 top-[18vw] transform -translate-x-[-20vw] w-[40px] h-[40px] flex items-center justify-center rounded-full text-white  bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5"
               onClick={handleNext}
               style={{ zIndex: buttonZIndex }}
             >

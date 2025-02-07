@@ -1,9 +1,11 @@
 import React, { useState, useRef, useEffect } from "react";
 import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
 
-import gallery1 from "../../../images/Desktop/gallery1.png";
-import gallery2 from "../../../images/Desktop/gallery2.png";
-import gallery3 from "../../../images/Desktop/gallery3.png";
+import ProyectosMixtos from "../../../images/Desktop/gallery1.png";
+import ProyectosYerbateros from "../../../images/Desktop/gallery2.png";
+import ProyectosYerbaMate from "../../../images/Desktop/gallery3.png";
+import ProyectosForestales from "../../../images/Desktop/gallery4.png";
+import ProyectosAgricolas from "../../../images/Desktop/gallery5.png";
 
 function Servicios() {
   const [isTransitioning, setIsTransitioning] = useState(false);
@@ -16,30 +18,69 @@ function Servicios() {
       title: "Proyectos Forestales",
       description:
         "Plantaciones de pino y/o eucaliptus en campos propios o arrendados. Con la posibilidad de incorporar hacienda propia o de terceros como complemento.",
-      image: gallery1,
+      image: ProyectosForestales,
     },
     {
       id: 2,
       title: "Proyectos Yerbatero/Forestal",
       description:
         "Se trata de proyectos de plantaciones de pino y/o eucaliptus combinado con yerba mate en las lomas coloradas.",
-      image: gallery2,
+      image: ProyectosYerbateros,
     },
     {
       id: 3,
       title: "Proyectos Yerba Mate",
-      description: "Son 100% plantaciones de yerba mate.",
-      image: gallery3,
+      description: "Plantaciones de yerba mate en loma colorada",
+      image: ProyectosYerbaMate,
     },
     {
       id: 4,
       title: "Proyectos Mixtos",
       description:
         "De acuerdo a las características propias del campo y del suelo se pueden incorporar más actividades además de la forestación y la yerba, como el arroz y la ganadería.",
-      image: gallery1,
+      image: ProyectosMixtos,
     },
-    
-  
+    {
+      id: 5,
+      title: "Proyectos Agrícolas",
+      description:
+        "Hemos desarrollado pooles de siembra tradicionales, arándanos y olivos en otras zonas del país.",
+      image: ProyectosAgricolas,
+    },
+    {
+      id: 1,
+      title: "Proyectos Forestales",
+      description:
+        "Plantaciones de pino y/o eucaliptus en campos propios o arrendados. Con la posibilidad de incorporar hacienda propia o de terceros como complemento.",
+      image: ProyectosForestales,
+    },
+    {
+      id: 2,
+      title: "Proyectos Yerbateros/Forestales",
+      description:
+        "Se trata de proyectos de plantaciones de pino y/o eucaliptus combinado con yerba mate en las lomas coloradas.",
+      image: ProyectosYerbateros,
+    },
+    {
+      id: 3,
+      title: "Proyectos Yerba Mate",
+      description: "Plantaciones de yerba mate en loma colorada.",
+      image: ProyectosYerbaMate,
+    },
+    {
+      id: 4,
+      title: "Proyectos Mixtos",
+      description:
+        "De acuerdo a las características propias del campo y del suelo se pueden incorporar más actividades además de la forestación y la yerba, como el arroz y la ganadería.",
+      image: ProyectosMixtos,
+    },
+    {
+      id: 5,
+      title: "Proyectos Agrícolas",
+      description:
+        "Hemos desarrollado pooles de siembra tradicionales, arándanos y olivos en otras zonas del país.",
+      image: ProyectosAgricolas,
+    },
   ];
 
   const cardWidth = 409.736 + 160;
@@ -97,22 +138,22 @@ function Servicios() {
 
   return (
     <div>
-      <div className="w-full h-[852px] overflow-hidden relative">
+      <div className="w-full  overflow-hidden relative">
         <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
         <div
-          className="relative  flex flex-col items-center justify-center h-full px-4"
+          className="relative  flex flex-col items-center justify-center h-full padding-section  space-y-24"
           style={{
             backgroundImage: `url(${imagenFondo})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >
-          <div className="w-[624px] h-[76px] flex-shrink-0 mt-[-30px] text-center text-[#000] font-fira-sans text-[60px] font-extrabold leading-[60px] tracking-[-1px]">
-            Nuestros proyectos
-          </div>
-          <div className="w-[535px] h-[70px] flex-shrink-0 mt-[15px] text-center text-[#000] font-fira-sans text-[24px] font-normal leading-[32px] tracking-[-1px]">
-            Esta es una selección de todos los proyectos en los cuales venimos
-            trabajando hace más de 40 años.
+          <div className="gap-title-paragraph">
+            <h1 className="title-section">Nuestros proyectos</h1>
+            <p className="paragraph-section">
+              A lo largo de estos años hemos desarrollado y administrado
+              proyectos a medida para cada cliente.
+            </p>
           </div>
           {/* Contenedor para los botones y las tarjetas */}
           <div className="flex items-center justify-center mt-[50px] relative z-10">
@@ -141,13 +182,12 @@ function Servicios() {
             {/* Contenedor para las tarjetas */}
             <div
               ref={carouselRef}
-              className={`flex gap-[160px] transition-transform duration-500 ease-in-out z-20`}
-              style={{ transform: `translateX(0px)` }}
+              className="flex gap-[160px] transition-transform duration-500 ease-in-out z-20 ml-[569.7px]"
             >
               {cards.map((card, index) => (
                 <div
                   key={index}
-                  className="relative w-[409.736px] h-[520px] flex-shrink-0 transition-transform duration-500"
+                  className="relative w-[409.736px] h-[480px] flex-shrink-0 transition-transform duration-500"
                   style={{
                     borderRadius: "28.132px",
                     background: "#DAD8CB",
@@ -167,7 +207,7 @@ function Servicios() {
                   />
 
                   {/* Título de la tarjeta */}
-                  <div className="absolute top-[280px] w-full text-center text-[#464646] font-tt-norms-pro text-[28.132px]  leading-[28.132px] tracking-[-1.758px]">
+                  <div className="absolute top-[280px] title-card-servicios w-full">
                     <span className="font-[450]">
                       {card.title.split(" ")[0]}
                     </span>
@@ -177,12 +217,12 @@ function Servicios() {
                   </div>
 
                   {/* Descripción de la tarjeta */}
-                  <div className="absolute top-[350px] w-full text-center text-[#464646] font-tt-norms-pro text-[17.583px] font-[400] leading-[22.858px] tracking-[-1.758px] px-[20px]">
+                  <div className="absolute top-[350px] paragraph-card-servicios w-full px-10">
                     {card.description}
                   </div>
 
                   {/* Botón de la tarjeta */}
-                  <div className="absolute bottom-[20px] left-[50%] transform -translate-x-[50%] w-[217px] h-[50px] bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5 flex justify-center items-center rounded-[5px]">
+                  <div className="hidden absolute bottom-[20px] left-[50%] transform -translate-x-[50%] w-[217px] h-[50px] bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5 flex justify-center items-center rounded-[5px]">
                     <div className="text-white text-center font-fira-sans text-[14px] font-normal tracking-[4px] uppercase">
                       ver más
                     </div>

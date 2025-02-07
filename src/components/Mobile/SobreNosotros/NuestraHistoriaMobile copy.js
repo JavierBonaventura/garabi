@@ -159,7 +159,6 @@ function NuestraHistoriaMobile() {
                 width: "300px",
                 height: "309px",
                 overflow: "hidden",
-                touchAction: "none"
               }}
             >
               <div

@@ -44,6 +44,12 @@ const cards = [
     description:
       "Asegurar que todos los proyectos se lleven a cabo con los más altos estándares de calidad, desde la planificación hasta la ejecución, para garantizar resultados exitosos y duraderos.",
   },
+  {
+    logo: logoCheck,
+    title: "GESTIÓN FORESTAL SOSTENIBLE",
+    description:
+      "La empresa prioriza prácticas sostenibles que garanticen la salud y la productividad a largo plazo de los bosques.",
+  },
 ];
 
 function SobreNosotrosValores() {
@@ -52,7 +58,10 @@ function SobreNosotrosValores() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const carouselRef = useRef(null);
 
-  const cardWidth = 400 + 20;
+
+  const viewportWidth = window.innerWidth;
+  const cardWidth = (28 + 3) * viewportWidth / 100; 
+
 
   useEffect(() => {
     const carousel = carouselRef.current;
@@ -144,12 +153,12 @@ function SobreNosotrosValores() {
           </button>
           <div
             ref={carouselRef}
-            className="flex justify-center mt-[78px] gap-[20px] -ml-[420px] "
+            className="flex justify-center mt-[78px] gap-[3vw]  "
           >
             {cards.map((card, index) => (
               <div
                 key={index}
-                className="relative w-[400px] h-[230px] flex-shrink-0 rounded-[21px] bg-[#00942C] drop-shadow-[0px_4px_4px_rgba(0,0,0,0.25)]"
+                className="relative w-[28vw] h-[15vw] flex-shrink-0 rounded-[21px] bg-[#00942C] drop-shadow-[0px_4px_4px_rgba(0,0,0,0.25)]"
               >
                 <img
                   src={card.logo}
@@ -161,7 +170,7 @@ function SobreNosotrosValores() {
                   {card.title}
                 </div>
 
-                <div className="absolute top-[80px] left-[34px] w-[350px] h-[84px] text-white font-sans text-base 2xl:text-[18px] font-normal leading-[24px]">
+                <div className="absolute mt-[6vw] left-[34px] w-[25vw] h-[84px] text-white font-sans text-[1.1vw] 2xl:text-[1.1vw] font-normal leading-[24px]">
                   {card.description}
                 </div>
               </div>

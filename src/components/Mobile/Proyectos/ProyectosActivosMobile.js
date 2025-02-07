@@ -59,8 +59,6 @@ function ProyectosActivosMobile() {
             Proyectos activos
           </div>
 
-
-
           <div
             className="ml-[2%] w-[290px] mt-4 flex-shrink-0 "
             style={{
@@ -72,17 +70,14 @@ function ProyectosActivosMobile() {
               letterSpacing: "-1px",
             }}
           >
-         
             <p>
-            Estamos comprometidos con el desarrollo de iniciativas innovadoras y
-            estratégicas. Cada proyecto activo refleja nuestro enfoque en la
-            calidad, la eficiencia y el cumplimiento de objetivos, trabajando de
-            la mano con nuestros clientes para generar resultados que marquen la
-            diferencia.
+              Estamos comprometidos con el desarrollo de iniciativas innovadoras
+              y estratégicas. Cada proyecto activo refleja nuestro enfoque en la
+              calidad, la eficiencia y el cumplimiento de objetivos, trabajando
+              de la mano con nuestros clientes para generar resultados que
+              marquen la diferencia.
             </p>
           </div>
-
-
         </div>
         {/* Tarjeta 1 */}
         <Link
@@ -451,7 +446,7 @@ function ProyectosActivosMobile() {
             >
               {/* Primer contenedor - Título */}
               <div className="flex items-center mt-6 w-[114px] h-[37px] text-[#464646] font-fira-sans text-[17px] font-[700] leading-[16px] tracking-[-0.382px]">
-                Fideicomiso Agrogarabi
+                Fideicomiso Agrogarabí
               </div>
 
               {/* Segundo contenedor - Texto */}

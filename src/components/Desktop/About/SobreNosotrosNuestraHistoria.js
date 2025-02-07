@@ -185,7 +185,7 @@ function SobreNosotrosNuestraHistoria() {
                         2012: "Captación de los primeros proyectos “family funds” de origen europeo y primeros clientes con administración integral por parte de grupo Garabi.",
                         2014: "Alianza con establecimiento Las Marías y primeros proyectos de plantación de yerba mate.",
                         2015: "Gran crecimiento de administraciones de la mano de clientes europeos.",
-                        2018: "Incorporación socio belga a Grupo Garabi.",
+                        2018: "Incorporación socio belga a Grupo Garabí.",
                         2021: "Alianza estratégica con grupo industrial austriaco - belga. Se duplica la superficie administrada con el ingreso de un grupo austriaco a GG.",
                         2023: "Alianza estratégica con grupo industrial de origen francés y belga.",
                       };

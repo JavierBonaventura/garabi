@@ -66,7 +66,7 @@ function SobreNosotrosArbolMobile() {
                 }}
               >
                 Hace más de 40 años Grupo Garabí brinda un servicio
-                personalizado, adecuado a las necesidades de sus clientes
+                personalizado, adecuado a las necesidades de nuestros clientes
                 buscando maximizar de manera eficiente y sustentable el
                 rendimiento de sus proyectos agro forestales.
               </p>

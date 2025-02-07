@@ -28,7 +28,7 @@ function LideresMobile() {
         </h1>
         <p className="text-white text-base font-fira-sans">
           Somos especialistas en Forestación. Administramos y asesoramos
-          proyectos forestales de nuestros clientes.
+          proyectos agroforestales.
         </p>
       </div>
 

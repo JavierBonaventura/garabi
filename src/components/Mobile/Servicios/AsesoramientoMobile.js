@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import fondoMobile from "../../../images/Mobile/fondoMobile.png";
-import recuadroUno from "../../../images/Desktop/asesoramiento-integral-3.png";
-import recuadroDos from "../../../images/Desktop/asesoramiento-productivo-2.png";
+import recuadroUno from "../../../images/Desktop/asesoramiento-integral-4.png";
+import recuadroDos from "../../../images/Desktop/asesoramiento-productivo-3.png";
 
 function AsesoramientoMobile() {
   const [activeTab, setActiveTab] = useState("Asesoramiento integral");

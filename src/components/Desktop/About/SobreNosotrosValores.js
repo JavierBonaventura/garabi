@@ -44,12 +44,6 @@ const cards = [
     description:
       "Asegurar que todos los proyectos se lleven a cabo con los más altos estándares de calidad, desde la planificación hasta la ejecución, para garantizar resultados exitosos y duraderos.",
   },
-  {
-    logo: logoCheck,
-    title: "GESTIÓN FORESTAL SOSTENIBLE",
-    description:
-      "La empresa prioriza prácticas sostenibles que garanticen la salud y la productividad a largo plazo de los bosques.",
-  },
 ];
 
 function SobreNosotrosValores() {
@@ -58,10 +52,8 @@ function SobreNosotrosValores() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const carouselRef = useRef(null);
 
-
   const viewportWidth = window.innerWidth;
-  const cardWidth = (28 + 3) * viewportWidth / 100; 
-
+  const cardWidth = ((28 + 3) * viewportWidth) / 100;
 
   useEffect(() => {
     const carousel = carouselRef.current;

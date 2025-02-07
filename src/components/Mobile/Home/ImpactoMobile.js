@@ -28,7 +28,7 @@ function ImpactoMobile() {
       marginLeftTitle: "-25px",
 
       textAlign: "center",
-      text: "Trabajamos estrechamente con las comunidades locales, promoviendo su desarrollo social y económico",
+      text: "Trabajamos estrechamente con las comunidades locales, promoviendo su desarrollo social y económico.",
     },
     {
       name: "Desarrollo económico",
@@ -59,7 +59,7 @@ function ImpactoMobile() {
               promuevan la conservación del medio ambiente, fomenten la
               biodiversidad y generen un impacto positivo y sostenible en las
               comunidades locales. Hacemos foco en tres pilares fundamentales:
-              el medio ambiente, lo social y el desarrollo económico.
+              El medio ambiente, el desarrollo social y el desarrollo económico.
               <br />
               <br />
               Nuestra labor se centra en estos tres pilares de la siguiente

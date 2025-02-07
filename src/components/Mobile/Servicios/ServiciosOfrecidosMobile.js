@@ -31,7 +31,7 @@ function ServiciosOfrecidosMobile() {
               Servicios ofrecidos
             </h1>
             <p className="paragraph-section">
-              En Grupo Garabi nos comprometemos con el desarrollo sostenible y
+              En Grupo Garabí nos comprometemos con el desarrollo sostenible y
               el crecimiento eficiente de los sectores productivos del campo.
               Ofrecemos una gama completa de servicios de administración
               integral y asesoramiento productivo, diseñados para optimizar el

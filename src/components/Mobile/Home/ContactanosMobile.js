@@ -15,8 +15,8 @@ function ContactanosMobile() {
       >
         {/* Contenedor de texto alineado en la parte superior */}
         <div className="-mt-2 w-full">
-          <h1 className="flex-shrink-0 mx-8 w-[318px] h-[88px] text-black font-fira-sans text-4xl font-extrabold leading-[39px]">
-            Contactanos ahora para darle forma a tu futuro verde
+          <h1 className="flex-shrink-0 mx-8 w-[318px] h-[88px] text-black font-fira-sans text-3xl font-extrabold leading-[39px]">
+            ¿Querés poner en marcha tu proyecto? ¡Escribinos!
           </h1>
         </div>
 

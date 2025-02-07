@@ -18,8 +18,8 @@ function EnMarcha() {
           <div className="w-3/4 mx-auto space-y-12">
             {/* Título */}
             <h1 className="text-black text-5xl 2xl:text-[60px] font-fira-sans font-extrabold leading-[60px] tracking-[-1px] te">
-              Querés poner en marcha
-              <br /> tu proyecto? Escribinos!
+              ¿Querés poner en marcha
+              <br /> tu proyecto? ¡Escribinos!
             </h1>
 
             {/* Botones */}

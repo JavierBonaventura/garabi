@@ -196,7 +196,7 @@ function Impacto() {
       />
 
       <div
-        className="relative z-10 flex flex-col h-full padding-section-2"
+        className="relative z-10 flex flex-col h-full padding-section-2 !pb-0"
         style={{
           backgroundImage: `url(${imagenFondo})`,
           backgroundSize: "contain",
@@ -206,7 +206,7 @@ function Impacto() {
         <div className="gap-title-paragraph ml-[12%]">
           <h1 className="title-section !text-left ">Impacto</h1>
           <p className="paragraph-section !text-left !w-1/3">
-            En Grupo Garabi, nos dedicamos a la gestión de proyectos agro
+            En Grupo Garabí, nos dedicamos a la gestión de proyectos agro
             forestales que impulsen la conservación del medio ambiente,
             promuevan la biodiversidad y generen un impacto positivo en las
             comunidades locales de manera sostenible a lo largo del tiempo.
@@ -455,7 +455,7 @@ function Impacto() {
                     Establecer alianzas con organizaciones no gubernamentales
                     locales para apoyar iniciativas que beneficien a las
                     comunidades, como proyectos educativos, de salud o de
-                    desarrollo económico
+                    desarrollo económico.
                   </li>
                 </ul>
               </div>
@@ -463,7 +463,7 @@ function Impacto() {
           </div>
           {/* Contenido adicional, botones, etc. */}
           <Politicas />
-          <div className="relative w-full pb-20 mt-[-4%]">
+          <div className="relative w-full  mt-[-4%]">
             {/* Gradiente superior */}
 
             <div

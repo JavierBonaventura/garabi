@@ -32,8 +32,8 @@ function NuestrosPoyectosMobile() {
 
             {/* Descripción de "Grupo Garabí comienza..." */}
             <p className="paragraph-section">
-              A lo largo de estos años hemos desarrollado y administrado
-              proyectos a medida para cada cliente.
+              A lo largo de los años hemos desarrollado y administrado proyectos
+              a medida para cada cliente.
             </p>
           </div>
 

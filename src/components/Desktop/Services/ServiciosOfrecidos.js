@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import imagenCurvaServicios from "../../../images/Desktop/imagenCurvaServicios.png";
-import recuadroUno from "../../../images/Desktop/asesoramiento-integral-3.png";
-import recuadroDos from "../../../images/Desktop/asesoramiento-productivo-2.png";
+import recuadroUno from "../../../images/Desktop/asesoramiento-integral-4.png";
+import recuadroDos from "../../../images/Desktop/asesoramiento-productivo-3.png";
 import arbolesProyectos from "../../../images/Desktop/arboles-proyectos.png";
 import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
 import Valores from "../About/SobreNosotrosValores";
@@ -11,12 +11,12 @@ function ServiciosOfrecidos() {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [hoveredIndex, setHoveredIndex] = useState(null); // Estado para el índice del hover
 
-  const servicios = ["Asesoramiento integral", "Asesoramiento productivo"];
+  const servicios = ["Asesoramiento Integral", "Asesoramiento Productivo"];
 
   // Contenido para cada servicio (puedes modificar el contenido para cada servicio aquí)
   const contenidoServicios = [
     {
-      titulo: "Asesoramiento integral",
+      titulo: "Asesoramiento Integral",
       descripcion:
         "Los proyectos que cuentan con asesoramiento integral ofrecen todas las ventajas del asesoramiento productivo, asegurando un acompañamiento completo en el desarrollo y optimización de las actividades.<br/><br/> Estos proyectos liberan a los propietarios de la responsabilidad de gestionar tareas administrativas, legales, impositivas y de tesorería, a la vez que los mantienen informados mediante rendiciones periódicas y reportes detallados. De esta forma, pueden concentrarse exclusivamente en las áreas estratégicas y operativas del negocio, con plena transparencia sobre el estado de las gestiones realizadas.<br/><br/>" +
         "<ul>" +
@@ -28,7 +28,7 @@ function ServiciosOfrecidos() {
       imagen: recuadroUno,
     },
     {
-      titulo: "Asesoramiento productivo",
+      titulo: "Asesoramiento Productivo",
       descripcion:
         "Ofrecemos asesoramiento y soluciones personalizadas buscando maximizar la productividad y sostenibilidad de los proyectos de nuestros clientes.<br/><br/>Gracias a nuestra amplia experiencia en el sector sumado al respaldo de un equipo especializado, ayudamos a seleccionar las mejores prácticas y estrategias para cada proyecto, asegurando su rentabilidad y la conservación del entorno. Acompañamos a nuestros clientes en todas las etapas, desde la planificación hasta la ejecución, con un enfoque práctico y adaptado a sus necesidades.<br/><br/>" +
         "<ul>" +
@@ -56,7 +56,7 @@ function ServiciosOfrecidos() {
           }}
         />
         <div
-          className="relative z-10 flex flex-col h-full padding-section-2"
+          className="relative z-10 flex flex-col h-full padding-section-2 !pb-0"
           style={{
             backgroundImage: `url(${imagenFondo})`,
             backgroundSize: "contain",
@@ -67,7 +67,7 @@ function ServiciosOfrecidos() {
             <h1 className="title-section">Servicios ofrecidos</h1>
 
             <p className="paragraph-section">
-              En Grupo Garabi nos comprometemos con el desarrollo sostenible y
+              En Grupo Garabí nos comprometemos con el desarrollo sostenible y
               el crecimiento eficiente de los sectores productivos del campo.
               Ofrecemos una gama completa de servicios de administración
               integral y asesoramiento productivo, diseñados para optimizar el
@@ -153,7 +153,7 @@ function ServiciosOfrecidos() {
             </div>
           </div>
           <Valores />
-          <div className="relative w-full pb-20 mt-16">
+          <div className="relative w-full mt-16">
             {/* Gradiente superior */}
             <div
               className="absolute z-20 w-full h-[21%] top-[-20%] left-0 origin-top-left"

@@ -3,7 +3,7 @@ import fondoMobile from "../../../images/Mobile/fondoMobile.png";
 import imagenCirculo1 from "../../../images/Desktop/imagen-circulo-1.png";
 import imagenCirculo2 from "../../../images/Desktop/imagen-circulo-2.png";
 import imagenCirculo3 from "../../../images/Desktop/imagen-circulo-3.png";
-import imagenCirculo4 from "../../../images/Desktop/imagen-circulo-4.png";
+import imagenCirculo4 from "../../../images/Desktop/imagen-circulo-5.png";
 
 function AlgunosNumerosMobile() {
   const [count1, setCount1] = useState(0);
@@ -68,8 +68,7 @@ function AlgunosNumerosMobile() {
       >
         <div className="w-full space-y-8">
           <h1 className="title-section !leading-9">
-            Nuestros
-            <br /> resultados
+            Nuestra gestión en números
           </h1>
 
           {/* Contenedor de círculos */}
@@ -139,7 +138,7 @@ function AlgunosNumerosMobile() {
                   {count3.toFixed(3)}
                 </div>
                 <div className="w-[127px] text-black text-center font-fira-sans text-[12px] font-medium uppercase pt-[5px]">
-                  hectáreas con yerba mate
+                  hectáreas de producción agrícola
                 </div>
               </div>
 

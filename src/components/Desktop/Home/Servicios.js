@@ -20,7 +20,7 @@ function Servicios() {
             <h1 className="title-section">Servicios</h1>
 
             <p className="paragraph-section mx-auto">
-              La flexibilidad, agilidad de nuestra organización sumado a la
+              La flexibilidad, agilidad de nuestra organización sumadas a la
               experiencia de más de 40 años en el sector forestal nos permite
               planificar y ejecutar proyectos a la medida y necesidades de cada
               uno de nuestros clientes.

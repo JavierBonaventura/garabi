@@ -101,7 +101,7 @@ const cardsData = [
         <li>
           Establecer alianzas con organizaciones no gubernamentales locales para
           apoyar iniciativas que beneficien a las comunidades, como proyectos
-          educativos, de salud o de desarrollo económico
+          educativos, de salud o de desarrollo económico.
         </li>
       </ul>
     ),

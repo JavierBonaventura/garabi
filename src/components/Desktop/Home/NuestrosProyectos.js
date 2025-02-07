@@ -1,11 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
 import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
-
 import ProyectosMixtos from "../../../images/Desktop/gallery1.png";
 import ProyectosYerbateros from "../../../images/Desktop/gallery2.png";
-import ProyectosYerbaMate from "../../../images/Desktop/gallery3.png";
+import ProyectosYerbaMate from "../../../images/Desktop/gallery5.png";
 import ProyectosForestales from "../../../images/Desktop/gallery4.png";
-import ProyectosAgricolas from "../../../images/Desktop/gallery5.png";
+import ProyectosAgricolas from "../../../images/Desktop/gallery3.png";
 
 function Servicios() {
   const [isTransitioning, setIsTransitioning] = useState(false);
@@ -22,7 +21,7 @@ function Servicios() {
     },
     {
       id: 2,
-      title: "Proyectos Yerbatero/Forestal",
+      title: "Proyectos Yerbateros/Forestales",
       description:
         "Se trata de proyectos de plantaciones de pino y/o eucaliptus combinado con yerba mate en las lomas coloradas.",
       image: ProyectosYerbateros,
@@ -30,7 +29,7 @@ function Servicios() {
     {
       id: 3,
       title: "Proyectos Yerba Mate",
-      description: "Plantaciones de yerba mate en loma colorada",
+      description: "Plantaciones de yerba mate en loma colorada.",
       image: ProyectosYerbaMate,
     },
     {
@@ -74,14 +73,12 @@ function Servicios() {
         "De acuerdo a las características propias del campo y del suelo se pueden incorporar más actividades además de la forestación y la yerba, como el arroz y la ganadería.",
       image: ProyectosMixtos,
     },
-   
   ];
 
   // const cardWidth = 409.736 + 160;
 
   const viewportWidth = window.innerWidth;
-  const cardWidth = (31 + 11) * viewportWidth / 100; // equivale a 43% del ancho de la ventana
-  
+  const cardWidth = ((31 + 11) * viewportWidth) / 100; // equivale a 43% del ancho de la ventana
 
   useEffect(() => {
     const carousel = carouselRef.current;
@@ -139,7 +136,7 @@ function Servicios() {
       <div className="w-full  overflow-hidden relative">
         <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
         <div
-          className="relative  flex flex-col items-center justify-center h-full padding-section  space-y-24"
+          className="relative  flex flex-col items-center justify-center h-full padding-section  space-y-20"
           style={{
             backgroundImage: `url(${imagenFondo})`,
             backgroundSize: "cover",
@@ -149,8 +146,8 @@ function Servicios() {
           <div className="gap-title-paragraph">
             <h1 className="title-section">Nuestros proyectos</h1>
             <p className="paragraph-section">
-              A lo largo de estos años hemos desarrollado y administrado
-              proyectos a medida para cada cliente.
+              A lo largo de los años hemos desarrollado y administrado proyectos
+              a medida para cada cliente.
             </p>
           </div>
           {/* Contenedor para los botones y las tarjetas */}
@@ -219,7 +216,6 @@ function Servicios() {
                     {card.description}
                   </div>
 
-    
                   {/* Botón de la tarjeta */}
                   <div className="hidden absolute bottom-[20px] left-[50%] transform -translate-x-[50%] w-[217px] h-[50px] bg-[#00942C] cursor-pointer transition-transform duration-500 ease-out hover:bg-[#007A24] hover:-translate-y-0.5 flex justify-center items-center rounded-[5px]">
                     <div className="text-white text-center font-fira-sans text-[14px] font-normal tracking-[4px] uppercase">

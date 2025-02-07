@@ -14,7 +14,7 @@ function SobreNosotrosNuestraHistoria() {
           backgroundPosition: "center",
         }}
       >
-        <div className="relative w-full pb-20 mt-2">
+        <div className="relative w-full  mt-2">
           {/* Gradiente superior */}
           <div
             className="absolute z-30 w-full h-[18%] top-[-16%] left-0 origin-top-left"

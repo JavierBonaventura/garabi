@@ -23,7 +23,7 @@ function Lideres() {
         </h1>
         <p className="text-white text-2xl text-center w-1/2 2xl:w-1/3 font-fira-sans">
           Somos especialistas en Forestación. Administramos y asesoramos
-          proyectos forestales de nuestros clientes.
+          proyectos agroforestales.
         </p>
       </div>
 

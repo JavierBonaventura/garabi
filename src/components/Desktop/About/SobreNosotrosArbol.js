@@ -53,7 +53,7 @@ function SobreNosotrosArbol() {
               {/* Texto de descripción bajo "Trayectoria" (justificado a la derecha) */}
               <p className="absolute right-[-5vw] transform -translate-y-1/2 top-[36%] font-fira-sans translate-x-1/2 z-20 pb-2 text-black text-[1.25vw] leading-[2vw] w-[18vw] text-right">
                 Hace más de 40 años Grupo Garabí brinda un servicio
-                personalizado, adecuado a las necesidades de sus clientes
+                personalizado, adecuado a las necesidades de nuestros clientes
                 buscando maximizar de manera eficiente y sustentable el
                 rendimiento de sus proyectos agro forestales.
               </p>

@@ -19,6 +19,8 @@ import EnMarcha from "./components/Desktop/Home/EnMarcha";
 import ProyectosEnMarcha from "./components/Desktop/Projects/ProyectosEnMarcha";
 // Contact
 import ContactoForm from "./components/Desktop/Contact/ContactoForm";
+import Job from "./components/Desktop/Contact/Job";
+import JobMobile from "./components/Mobile/Contacto/JobMobile";
 // Sobre Nosotros
 import SobreNosotros from "./components/Desktop/About/SobreNosotros";
 import SobreNosotrosArbol from "./components/Desktop/About/SobreNosotrosArbol";
@@ -148,7 +150,7 @@ function App() {
                 <>
                   <HeaderMobile />
                   <QuedemosEnContactoMobile />
-                  <ArbolesMobile />
+                  <JobMobile />
                   <FooterMobile />
                 </>
               }
@@ -225,7 +227,7 @@ function App() {
                 <>
                   <Header />
                   <ContactoForm />
-                  <SobreNosotrosNuestraHistoriaArboles />
+                  <Job />
                   <Footer />
                 </>
               }

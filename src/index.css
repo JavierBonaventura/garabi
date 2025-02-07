@@ -96,7 +96,7 @@ code {
 }
 
 .padding-section {
-  @apply py-5 lg:py-20 2xl:py-28;
+  @apply py-5 lg:py-14 2xl:py-20;
 }
 
 .padding-section-2 {
@@ -180,5 +180,5 @@ code {
 }
 
 .card-politicas {
-  @apply relative duration-300 space-y-5 p-3 lg:p-5 h-full flex flex-col justify-between transform ease-in-out  hover:-translate-y-1 shadow-xl hover:shadow-2xl font-fira-sans;
+  @apply relative duration-300 space-y-5 p-3 lg:p-5 h-full  flex flex-col justify-between transform ease-in-out  hover:-translate-y-1 shadow-xl hover:shadow-2xl font-fira-sans;
 }

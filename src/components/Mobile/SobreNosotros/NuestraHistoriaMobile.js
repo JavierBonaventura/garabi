@@ -89,7 +89,7 @@ function NuestraHistoriaMobile() {
     {
       year: 2012,
       description:
-        "Captación de los primeros proyectos “family funds” de origen europeo y primeros clientes con administración integral por parte de grupo Garabi.",
+        "Captación de los primeros proyectos “family funds” de origen europeo y primeros clientes con administración integral por parte de grupo Garabí.",
     },
     {
       year: 2014,
@@ -103,7 +103,7 @@ function NuestraHistoriaMobile() {
     },
     {
       year: 2018,
-      description: "Incorporación socio belga a Grupo Garabi.",
+      description: "Incorporación socio belga a Grupo Garabí.",
     },
     {
       year: 2021,
@@ -159,7 +159,7 @@ function NuestraHistoriaMobile() {
                 width: "300px",
                 height: "309px",
                 overflow: "hidden",
-                touchAction: "none"
+                touchAction: "none",
               }}
             >
               <div

@@ -20,7 +20,7 @@ function ServiciosMobile() {
     {
       image: "https://blog.idrsolutions.com/app/uploads/2020/10/pdf-1.png",
       testimonial:
-        "Describe el proceso para resolver controversias y comunicaciones del Grupo Garabi, creando un canal formal con los grupos de interés.",
+        "Describe el proceso para resolver controversias y comunicaciones del Grupo Garabí, creando un canal formal con los grupos de interés.",
       name: "Procedimiento de comunicación",
       pdf: Comunicacion,
     },

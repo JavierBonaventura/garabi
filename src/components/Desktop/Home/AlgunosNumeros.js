@@ -3,7 +3,7 @@ import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
 import imagenCirculo1 from "../../../images/Desktop/imagen-circulo-1.png";
 import imagenCirculo2 from "../../../images/Desktop/imagen-circulo-2.png";
 import imagenCirculo3 from "../../../images/Desktop/imagen-circulo-3.png";
-import imagenCirculo4 from "../../../images/Desktop/imagen-circulo-4.png";
+import imagenCirculo4 from "../../../images/Desktop/imagen-circulo-5.png";
 
 function AlgunosNumeros() {
   const [count1, setCount1] = useState(0);
@@ -66,7 +66,7 @@ function AlgunosNumeros() {
       <div className="w-full  overflow-hidden">
         <div className="inset-0 bg-[#F7FFF1] bg-opacity-100"></div>
         <div
-          className="relative z-10 flex flex-col h-full padding-section space-y-24"
+          className="relative z-10 flex flex-col h-full padding-section space-y-20"
           style={{
             backgroundImage: `url(${imagenFondo})`,
             backgroundSize: "cover",
@@ -74,7 +74,7 @@ function AlgunosNumeros() {
           }}
         >
           <div className="w-full gap-title-paragraph">
-            <h1 className="title-section">Nuestros resultados</h1>
+            <h1 className="title-section">Nuestra gestión en números</h1>
             <p className="paragraph-section hidden">
               Esto logramos en nuestros 20 años de trayectoria
             </p>
@@ -141,7 +141,7 @@ function AlgunosNumeros() {
               <div className="w-[219px] h-[130.083px] flex-shrink-0 flex flex-col justify-center items-center pt-[55px]">
                 <div className="numbers pt-8 ">{count3.toFixed(3)}</div>
                 <div className="title-numbers pt-[20px]">
-                  hectáreas con yerba mate
+                  hectáreas de producción agrícola
                 </div>
               </div>
             </div>

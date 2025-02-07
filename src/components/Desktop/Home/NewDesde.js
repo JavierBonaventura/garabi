@@ -13,13 +13,13 @@ function Desde1976() {
           backgroundPosition: "center",
         }}
       >
-        <div className="space-y-10 md:space-y-24">
+        <div className="space-y-10 md:space-y-14">
           <div className="gap-title-paragraph mx-8 lg:ml-0 ">
             <h1 className="title-section">Desde 1976</h1>
             <p className="paragraph-section">
               Administrando y asesorando proyectos en uno de los polos
               <br className="hidden lg:block" /> foresto industriales más
-              importantes del país
+              importantes del país.
             </p>
           </div>
           <div className="">

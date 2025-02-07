@@ -23,7 +23,7 @@ function LideresMobile() {
 
       {/* Contenido superpuesto al video */}
       <div className="relative z-10 w-full flex flex-col items-center justify-center text-white text-center px-10 gap-y-5">
-        <h1 className="text-[36px] font-extrabold leading-[39px]">
+        <h1 className="text-[30px] font-black font-fira-sans leading-[35px]">
           Generamos valor creando un mundo más verde
         </h1>
         <p className="text-white text-base font-fira-sans">

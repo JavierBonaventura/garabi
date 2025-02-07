@@ -1,6 +1,5 @@
 import React from "react";
 import Video from "../../../images/Desktop/hero-garabi-alta.mp4";
-import { Link } from "react-router-dom";
 
 function Lideres() {
   return (
@@ -17,13 +16,6 @@ function Lideres() {
 
       {/* Overlay oscuro */}
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-25"></div>
-
-      {/* Contenedor para el texto "Líderes en forestación" */}
-      <div className="absolute flex items-center justify-center h-[126px] left-[12%] top-[300px] hidden">
-        <h1 className="text-white font-fira-sans text-[60px] font-black leading-[60px] tracking-[-1px] text-center uppercase">
-          Generamos valor creando <br /> un mundo más verde
-        </h1>
-      </div>
 
       <div className="absolute inset-0 flex items-center justify-center flex-col gap-y-10">
         <h1 className="text-white font-fira-sans text-[70px] leading-none 2xl:text-[80px] font-black 2xl:leading-[85px] tracking-[-1px] text-center ">

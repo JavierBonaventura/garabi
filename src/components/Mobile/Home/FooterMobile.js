@@ -102,7 +102,7 @@ function FooterMobile() {
           </p>
           <div className="flex flex-col items-center space-y-2 mt-2">
             {/* First row of icons */}
-            <div className="flex flex-col space-x-4 text-xs">
+            <div className="flex flex-col space-x-4 text-xs font-fira-sans">
               <a
                 href="https://api.whatsapp.com/send?phone=541130254376"
                 target="_blank"

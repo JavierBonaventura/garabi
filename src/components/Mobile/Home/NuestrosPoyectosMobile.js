@@ -75,6 +75,7 @@ function NuestrosPoyectosMobile() {
                   >
                     <img
                       src={flechaAbajo}
+                      className="hidden"
                       alt="Flecha hacia abajo"
                       style={{
                         width: "12.5px",

@@ -108,7 +108,7 @@ code {
 }
 
 .paragraph-card-servicios {
-  @apply text-black text-center text-sm lg:text-[20px] font-normal leading-[20px] lg:leading-[23px] tracking-[-1.333px];
+  @apply text-black text-center text-sm lg:text-[20px] font-fira-sans font-normal leading-[20px] lg:leading-[23px] tracking-[-1.333px];
 }
 
 .btn-card-servicios {

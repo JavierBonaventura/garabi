@@ -54,7 +54,7 @@ function Header() {
         </div>
 
         {/* Menú de navegación */}
-        <nav className="absolute top-[25px] left-[33%] flex items-center gap-8">
+        <nav className="absolute top-[25px] left-[33%] flex items-center gap-8 font-fira-sans">
           {[
             { text: "INICIO", to: "/" },
             { text: "NOSOTROS", to: "/nosotros" },

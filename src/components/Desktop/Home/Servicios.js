@@ -40,8 +40,7 @@ function Servicios() {
 
               {/* Texto debajo de la imagen */}
               <div className="absolute top-[220px] w-full title-card-servicios">
-                <span className="font-normal">Asesoramiento </span>
-                <span className="font-bold">Integral</span>
+                Asesoramiento <span className="font-bold">Integral</span>
               </div>
 
               {/* Texto adicional debajo de "Asesoramiento " */}
@@ -68,8 +67,7 @@ function Servicios() {
 
               {/* Texto debajo de la imagen */}
               <div className="title-card-servicios absolute top-[220px] w-full ">
-                <span className="font-normal">Asesoramiento </span>
-                <span className="font-bold">Productivo</span>
+                Asesoramiento <span className="font-bold">Productivo</span>
               </div>
 
               {/* Texto adicional debajo de "Asesoramiento " */}

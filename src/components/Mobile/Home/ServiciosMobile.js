@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import fondoMobile from "../../../images/Mobile/fondoMobile.png";
-import servicios from "../../../images/Mobile/servicios.png";
 import recuadroUno from "../../../images/Desktop/asesoramiento-integral-3.png";
 import recuadroDos from "../../../images/Desktop/asesoramiento-productivo-2.png";
 import botonIzquierdo from "../../../images/Mobile/botonIzquierdo.png";
@@ -12,14 +11,14 @@ function ServiciosMobile() {
       image: recuadroUno,
       testimonial:
         "Nuestros clientes obtienen los beneficios de ser los dueños de las forestaciones dejando en manos de nuestro equipo todas las responsabilidades de la administración y el manejo.",
-      name: "Asesoramiento Integral",
+      name: "Asesoramiento <span class='font-bold'>Integral</span>",
       position: "Owner of CF INVESTMENTS",
     },
     {
       image: recuadroDos,
       testimonial:
         " Buscamos optimizar el manejo de los bosques, promoviendo el uso sostenible de los productos forestales, maximizando la rentabilidad de nuestros clientes.",
-      name: "Asesoramiento Productivo",
+      name: "Asesoramiento <span class='font-bold'>Productivo</span>",
       position: "Owner of CF INVESTMENTS",
     },
     {
@@ -27,7 +26,7 @@ function ServiciosMobile() {
       testimonial:
         "Nuestros clientes obtienen los beneficios de ser los dueños de las forestaciones dejando en manos de nuestro equipo todas las responsabilidades de la administración y el manejo.",
 
-      name: "Asesoramiento Integral",
+      name: "Asesoramiento <span class='font-bold'>Integral</span>",
       position: "Owner of CF INVESTMENTS",
     },
     {
@@ -35,7 +34,7 @@ function ServiciosMobile() {
       testimonial:
         " Buscamos optimizar el manejo de los bosques, promoviendo el uso sostenible de los productos forestales, maximizando la rentabilidad de nuestros clientes.",
 
-      name: "Asesoramiento Productivo",
+      name: "Asesoramiento <span class='font-bold'>Productivo</span>",
       position: "Owner of CF INVESTMENTS",
     },
   ];
@@ -181,14 +180,15 @@ function ServiciosMobile() {
                       />
 
                       {/* Texto de "Asesoramiento Productivo" */}
-                      <div className="mt-2 w-[246.069px] h-[36.393px] title-card-servicios">
-                        {card.name}
-                      </div>
+                      <h1
+                        className="mt-2 w-[246.069px] h-[36.393px] title-card-servicios"
+                        dangerouslySetInnerHTML={{ __html: card.name }}
+                      ></h1>
 
                       {/* Descripción */}
-                      <div className="-mt-2 w-[230px] h-[80px] paragraph-card-servicios">
+                      <p className="-mt-2 w-[230px] h-[80px] paragraph-card-servicios">
                         {card.testimonial}
-                      </div>
+                      </p>
 
                       {/* Botón "VER" */}
                       <a

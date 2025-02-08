@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import imagenFondo from "../../../images/Desktop/imagenFondo.jpg";
 import logoNuestraHistoria from "../../../images/Desktop/logoNuestraHistoria.png";
 import arbolesProyectos from "../../../images/Desktop/arboles-proyectos-cortada.png";
@@ -39,7 +39,7 @@ function SobreNosotrosNuestraHistoria() {
   const carouselRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(1);
   const cardHeight = 162;
-  const totalCards = 9;
+  const totalCards = 10;
 
   const handleScroll = (e) => {
     e.stopPropagation(); // Evita que el evento se propague al scroll de la página.
@@ -87,6 +87,36 @@ function SobreNosotrosNuestraHistoria() {
     }
   };
 
+  // Bloquear scroll cuando el ratón está sobre las tarjetas
+  useEffect(() => {
+    const handleWheelBlock = (e) => {
+      e.preventDefault(); // Bloquea el scroll
+    };
+
+    const cardContainer = document.getElementById("cardContainer");
+
+    const handleMouseEnter = () => {
+      cardContainer.addEventListener("wheel", handleWheelBlock, {
+        passive: false,
+      });
+    };
+
+    const handleMouseLeave = () => {
+      cardContainer.removeEventListener("wheel", handleWheelBlock);
+    };
+
+    // Añadir eventos
+    cardContainer.addEventListener("mouseenter", handleMouseEnter);
+    cardContainer.addEventListener("mouseleave", handleMouseLeave);
+
+    // Limpiar eventos al desmontar
+    return () => {
+      cardContainer.removeEventListener("mouseenter", handleMouseEnter);
+      cardContainer.removeEventListener("mouseleave", handleMouseLeave);
+      cardContainer.removeEventListener("wheel", handleWheelBlock);
+    };
+  }, []);
+
   return (
     <div className="w-full h-auto">
       <div
@@ -101,7 +131,7 @@ function SobreNosotrosNuestraHistoria() {
         <div className="flex justify-center items-center h-full padding-section">
           <div className="grid grid-cols-2 w-[80%] 2xl:w-2/3 mx-auto">
             {/* Columna izquierda */}
-            <div className="flex flex-col items-start gap-title-paragraph">
+            <div className="flex flex-col items-start gap-title-paragraph mt-40">
               <h1 className="title-section !text-left">Nuestra historia</h1>
 
               <p className="paragraph-section !text-left">
@@ -110,88 +140,86 @@ function SobreNosotrosNuestraHistoria() {
                 constante.
               </p>
             </div>
-
             <div
-              className=""
-              style={{
-                margin: 0,
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-              onWheel={handleScroll}
+              className=" h-[580px] mt-[-80px] "
+         
+              onMouseDown={handleMouseDown}
+              onMouseMove={handleMouseMove}
+              onMouseUp={handleMouseUp}
+              onMouseLeave={handleMouseUp}
             >
               <div
+                id="cardContainer"
                 style={{
-                  position: "relative",
-                  width: "427px",
-                  height: "460px",
-                  overflow: "hidden",
-                }}
-                onMouseDown={handleMouseDown}
-                onMouseMove={handleMouseMove}
-                onMouseUp={handleMouseUp}
-                onMouseLeave={handleMouseUp}
-              >
-                <div ref={carouselRef} className="flex flex-col space-y-8 z-20">
-                  {[
-                    1976, 1983, 2002, 2007, 2012, 2014, 2015, 2018, 2021, 2023,
-                  ].map((year, index) => {
-                    const opacity = index === activeIndex ? 1 : 0.5;
-
-                    // Define los textos por año
-                    const yearTexts = {
-                      1976: "Grupo Garabí comienza su actividad con la administración de dos establecimientos forestales, las localidades de Loreto y Santa Rosa.",
-                      1983: "La empresa incorpora a su administración dos nuevas sociedades en la localidad de Gobernador Virasoro. Cabe destacar que tres de estas empresas continúan bajo la administración de GG.",
-                      2002: "Primeros proyectos productivos en conjunto con el grupo Eidico en la zona de Virasoro.",
-                      2007: "Gestión de nuevos emprendimiento de inversores locales.",
-                      2012: "Captación de los primeros proyectos “family funds” de origen europeo y primeros clientes con administración integral por parte de grupo Garabi.",
-                      2014: "Alianza con establecimiento Las Marías y primeros proyectos de plantación de yerba mate.",
-                      2015: "Gran crecimiento de administraciones de la mano de clientes europeos.",
-                      2018: "Incorporación socio belga a Grupo Garabi.",
-                      2021: "Alianza estratégica con grupo industrial austriaco - belga. Se duplica la superficie administrada con el ingreso de un grupo austriaco a GG.",
-                      2023: "Alianza estratégica con grupo industrial de origen francés y belga.",
-                    };
-
-                    return (
-                      <div
-                        key={index}
-                        className="w-[427.385px] h-[132px] rounded-[4px] border-2 border-[#00942C] bg-[#F5F4FF] flex items-center p-2"
-                        style={{ opacity }}
-                      >
-                        <img
-                          src={logoNuestraHistoria}
-                          alt="Logo Nuestra Historia"
-                          className="w-[79px] h-[88.545px] flex-shrink-0 mr-8"
-                        />
-                        <div
-                          className="-mt-12 -ml-6"
-                          style={{ display: "flex", flexDirection: "column" }}
-                        >
-                          <span className="text-[#000] font-fira-sans text-[16px] font-medium leading-[32px]">
-                            {year}
-                          </span>
-                          <p className="w-[320px] h-[49px] text-[#000] font-fira-sans text-[14px] font-normal leading-[20px]">
-                            {yearTexts[year] ||
-                              "Logros y actividades destacadas de este año."}
-                          </p>
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-              <div
-                className=""
-                style={{
-                  position: "absolute",
-                  right: "6%",
-                  top: "49%",
-                  transform: "translateY(-50%)",
+                  margin: 0,
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
                 }}
               >
                 <div
-                  className=""
+                  className="mt-[80px]"
+                  style={{
+                    position: "relative",
+                    width: "427px",
+                    height: "460px",
+                    overflow: "hidden",
+                  }}
+                >
+                  <div
+                    ref={carouselRef}
+                    className="flex flex-col space-y-8 z-20"
+                  >
+                    {[
+                      1976, 1983, 2002, 2007, 2012, 2014, 2015, 2018, 2021,
+                      2023,
+                    ].map((year, index) => {
+                      const opacity = index === activeIndex ? 1 : 0.5;
+
+                      // Define los textos por año
+                      const yearTexts = {
+                        1976: "Grupo Garabí comienza su actividad con la administración de dos establecimientos forestales, las localidades de Loreto y Santa Rosa.",
+                        1983: "La empresa incorpora a su administración dos nuevas sociedades en la localidad de Gobernador Virasoro. Cabe destacar que tres de estas empresas continúan bajo la administración de GG.",
+                        2002: "Primeros proyectos productivos en conjunto con el grupo Eidico en la zona de Virasoro.",
+                        2007: "Gestión de nuevos emprendimiento de inversores locales.",
+                        2012: "Captación de los primeros proyectos “family funds” de origen europeo y primeros clientes con administración integral por parte de grupo Garabi.",
+                        2014: "Alianza con establecimiento Las Marías y primeros proyectos de plantación de yerba mate.",
+                        2015: "Gran crecimiento de administraciones de la mano de clientes europeos.",
+                        2018: "Incorporación socio belga a Grupo Garabí.",
+                        2021: "Alianza estratégica con grupo industrial austriaco - belga. Se duplica la superficie administrada con el ingreso de un grupo austriaco a GG.",
+                        2023: "Alianza estratégica con grupo industrial de origen francés y belga.",
+                      };
+
+                      return (
+                        <div
+                          key={index}
+                          className="w-[427.385px] h-[132px] rounded-[4px] border-2 border-[#00942C] bg-[#F5F4FF] flex items-center p-2 cursor-pointer"
+                          style={{ opacity }}
+                        >
+                          <img
+                            src={logoNuestraHistoria}
+                            alt="Logo Nuestra Historia"
+                            className="w-[79px] h-[88.545px] flex-shrink-0 mr-8"
+                          />
+                          <div
+                            className="-mt-12 -ml-6"
+                            style={{ display: "flex", flexDirection: "column" }}
+                          >
+                            <span className="text-[#000] font-fira-sans text-[16px] font-medium leading-[32px]">
+                              {year}
+                            </span>
+                            <p className="w-[320px] h-[49px] text-[#000] font-fira-sans text-[14px] font-normal leading-[20px]">
+                              {yearTexts[year] ||
+                                "Logros y actividades destacadas de este año."}
+                            </p>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+                <div
+                  className="absolute right-24 top-1/2 transform -translate-y-1/2"
                   style={{
                     display: "flex",
                     flexDirection: "column",

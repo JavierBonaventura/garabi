@@ -83,7 +83,7 @@ function ServiciosOfrecidos() {
             </p>
           </div>
           <div
-            className="flex justify-between mt-[550px] 2xl:mt-[700px] mx-auto"
+            className="flex justify-center gap-32 mt-[550px] 2xl:mt-[700px] mx-auto"
             style={{
               width: "1074px",
             }}
@@ -99,10 +99,22 @@ function ServiciosOfrecidos() {
               >
                 {servicio}
                 {selectedIndex === index && (
-                  <div className="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 w-[361.768px] h-[5px] bg-gradient-to-t from-[#00942C] to-[#00942C]" />
+                  <div
+                    style={{
+                      left:
+                        index === 0 ? "-147px" : index === 1 ? "-65px" : "50%",
+                    }}
+                    className="absolute bottom-[-20px] w-[537px] h-[5px] bg-gradient-to-t from-[#00942C] to-[#00942C]"
+                  />
                 )}
                 {hoveredIndex === index && (
-                  <div className="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 w-[361.768px] h-[5px] bg-gradient-to-t from-[#00942C] to-[#00942C] bg-[#00942C] transition-all duration-300 ease-in-out" />
+                  <div
+                    style={{
+                      left:
+                        index === 0 ? "-147px" : index === 1 ? "-65px" : "50%",
+                    }}
+                    className="absolute bottom-[-20px] w-[537px] h-[5px] bg-gradient-to-t from-[#00942C] to-[#00942C]"
+                  />
                 )}
               </div>
             ))}
@@ -121,10 +133,11 @@ function ServiciosOfrecidos() {
           <div className="relative w-full h-full">
             {/* Bloque de fondo que se debe mostrar detrás */}
             <div className="relative w-full" style={{ top: "300px" }}></div>
-
             {/* Sección de dos columnas dinámicas */}
             <div
-              className="flex mt-24 mx-auto"
+              className={`flex mt-24 mx-auto ${
+                selectedIndex === 1 ? "flex-row-reverse" : ""
+              }`}
               style={{
                 width: "1074px",
                 gap: "100px",
@@ -132,17 +145,17 @@ function ServiciosOfrecidos() {
                 zIndex: 10,
               }}
             >
-              {/* Columna izquierda: título y descripción según la selección */}
+              {/* Columna de contenido */}
               <div style={{ width: "468.214px" }}>
                 <div
-                  className="w-[526px] flex-shrink-0 text-black font-fira-sans text-[18px] font-normal leading-[28px] "
+                  className="w-[526px] flex-shrink-0 text-black font-fira-sans text-[18px] font-normal leading-[28px]"
                   dangerouslySetInnerHTML={{
                     __html: contenidoServicios[selectedIndex].descripcion,
                   }}
                 ></div>
               </div>
 
-              {/* Columna derecha: imagen según la selección */}
+              {/* Columna de imagen */}
               <div style={{ width: "528px" }}>
                 <img
                   src={contenidoServicios[selectedIndex].imagen}
@@ -150,7 +163,7 @@ function ServiciosOfrecidos() {
                   className="w-[528px] h-[352px] rounded-[20px] object-cover"
                 />
               </div>
-            </div>
+            </div>{" "}
           </div>
           <Valores />
           <div className="relative w-full mt-16">

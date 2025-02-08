@@ -20,24 +20,68 @@ function ServiciosOfrecidos() {
       descripcion:
         "Los proyectos que cuentan con asesoramiento integral ofrecen todas las ventajas del asesoramiento productivo, asegurando un acompañamiento completo en el desarrollo y optimización de las actividades.<br/><br/> Estos proyectos liberan a los propietarios de la responsabilidad de gestionar tareas administrativas, legales, impositivas y de tesorería, a la vez que los mantienen informados mediante rendiciones periódicas y reportes detallados. De esta forma, pueden concentrarse exclusivamente en las áreas estratégicas y operativas del negocio, con plena transparencia sobre el estado de las gestiones realizadas.<br/><br/>" +
         "<ul>" +
-        "<li><span class='font-bold'>Gestión Administrativa de la Empresa:</span><br/> Asesoría legal, contable e impositiva, asegurando el cumplimiento normativo y la correcta gestión de la documentación empresarial.</li><br/>" +
-        "<li><span class='font-bold'>Consultoría Financiera y Planificación:</span><br/> Te ayudamos a gestionar la financiación de tu proyecto y optimizar flujos de caja.</li><br/>" +
-        "<li><span class='font-bold'>Gestión de Tesorería y Pagos:</span><br/> Nos encargamos de la administración de pagos, cobranzas y rendiciones de gastos, asegurando que tu flujo de caja esté siempre en orden y que las obligaciones financieras se cumplan de manera eficiente.</li><br/>" +
-        "<li><span class='font-bold'>Armado de Reportes:</span><br/> Elaboramos informes detallados y periódicos sobre el estado de la producción, la situación financiera y otros indicadores clave de tu empresa, facilitando la toma de decisiones informadas y estratégicas.</li>" +
+        // "<li><span class='font-bold'>Gestión Administrativa de la Empresa:</span><br/> Asesoría legal, contable e impositiva, asegurando el cumplimiento normativo y la correcta gestión de la documentación empresarial.</li><br/>" +
+        // "<li><span class='font-bold'>Consultoría Financiera y Planificación:</span><br/> Te ayudamos a gestionar la financiación de tu proyecto y optimizar flujos de caja.</li><br/>" +
+        // "<li><span class='font-bold'>Gestión de Tesorería y Pagos:</span><br/> Nos encargamos de la administración de pagos, cobranzas y rendiciones de gastos, asegurando que tu flujo de caja esté siempre en orden y que las obligaciones financieras se cumplan de manera eficiente.</li><br/>" +
+        // "<li><span class='font-bold'>Armado de Reportes:</span><br/> Elaboramos informes detallados y periódicos sobre el estado de la producción, la situación financiera y otros indicadores clave de tu empresa, facilitando la toma de decisiones informadas y estratégicas.</li>" +
         "</ul>",
       imagen: recuadroUno,
+      tarjetas: [
+        {
+          titulo: "Gestión Administrativa",
+          descripcion:
+            "Asesoría legal, contable e impositiva, asegurando el cumplimiento normativo y la correcta gestión de la documentación empresarial.",
+        },
+        {
+          titulo: "Consultoría Financiera y Planificación:",
+          descripcion:
+            "Te ayudamos a gestionar la financiación de tu proyecto y optimizar flujos de caja.",
+        },
+        {
+          titulo: "Gestión de Tesorería y Pagos:",
+          descripcion:
+            "Nos encargamos de la administración de pagos, cobranzas y rendiciones de gastos, asegurando que tu flujo de caja esté siempre en orden y que las obligaciones financieras se cumplan de manera eficiente.",
+        },
+        {
+          titulo: "Armado de Reportes:",
+          descripcion:
+            "Elaboramos informes detallados y periódicos sobre el estado de la producción, la situación financiera y otros indicadores clave de tu empresa, facilitando la toma de decisiones informadas y estratégicas.",
+        },
+      ],
     },
     {
       titulo: "Asesoramiento Productivo",
       descripcion:
         "Ofrecemos asesoramiento y soluciones personalizadas buscando maximizar la productividad y sostenibilidad de los proyectos de nuestros clientes.<br/><br/>Gracias a nuestra amplia experiencia en el sector sumado al respaldo de un equipo especializado, ayudamos a seleccionar las mejores prácticas y estrategias para cada proyecto, asegurando su rentabilidad y la conservación del entorno. Acompañamos a nuestros clientes en todas las etapas, desde la planificación hasta la ejecución, con un enfoque práctico y adaptado a sus necesidades.<br/><br/>" +
         "<ul>" +
-        "<li><span class='font-bold'>Asesoramiento en Manejo Agroforestal:</span><br/>Brindamos asesoramiento especializado en la planificación y ejecución de proyectos agroforestales, adaptados a las necesidades específicas de cada cliente.</li><br/>" +
-        "<li><span class='font-bold'>Planificación y Gestión de Proyectos:</span><br/>Desarrollamos planes de trabajo detallados, asegurando la correcta ejecución de las tareas y el cumplimiento de los plazos establecidos.</li><br/>" +
-        "<li><span class='font-bold'>Monitoreo y Seguimiento de la Producción:</span> Implementamos sistemas de control para asegurar el avance de las actividades y la eficiencia de los recursos, realizando ajustes cuando sea necesario.</li><br/>" +
-        "<li><span class='font-bold'>Asesoramiento en Comercialización:</span> Te apoyamos en la toma de decisiones sobre la comercialización de tus productos, identificando oportunidades y mejorando la cadena de valor.</li>" +
+        // "<li><span class='font-bold'>Asesoramiento en Manejo Agroforestal:</span><br/>Brindamos asesoramiento especializado en la planificación y ejecución de proyectos agroforestales, adaptados a las necesidades específicas de cada cliente.</li><br/>" +
+        // "<li><span class='font-bold'>Planificación y Gestión de Proyectos:</span><br/>Desarrollamos planes de trabajo detallados, asegurando la correcta ejecución de las tareas y el cumplimiento de los plazos establecidos.</li><br/>" +
+        // "<li><span class='font-bold'>Monitoreo y Seguimiento de la Producción:</span> Implementamos sistemas de control para asegurar el avance de las actividades y la eficiencia de los recursos, realizando ajustes cuando sea necesario.</li><br/>" +
+        // "<li><span class='font-bold'>Asesoramiento en Comercialización:</span> Te apoyamos en la toma de decisiones sobre la comercialización de tus productos, identificando oportunidades y mejorando la cadena de valor.</li>" +
         "</ul>",
       imagen: recuadroDos,
+      tarjetas: [
+        {
+          titulo: "Asesoramiento en Manejo Agroforestal:",
+          descripcion:
+            "Brindamos asesoramiento especializado en la planificación y ejecución de proyectos agroforestales, adaptados a las necesidades específicas de cada cliente.",
+        },
+        {
+          titulo: "Planificación y Gestión de Proyectos:",
+          descripcion:
+            "Desarrollamos planes de trabajo detallados, asegurando la correcta ejecución de las tareas y el cumplimiento de los plazos establecidos.",
+        },
+        {
+          titulo: "Monitoreo y Seguimiento de la Producción:",
+          descripcion:
+            "Implementamos sistemas de control para asegurar el avance de las actividades y la eficiencia de los recursos, realizando ajustes cuando sea necesario.",
+        },
+        {
+          titulo: "Asesoramiento en Comercialización:",
+          descripcion:
+            "Te apoyamos en la toma de decisiones sobre la comercialización de tus productos, identificando oportunidades y mejorando la cadena de valor.",
+        },
+      ],
     },
   ];
 
@@ -83,7 +127,7 @@ function ServiciosOfrecidos() {
             </p>
           </div>
           <div
-            className="flex justify-between mt-[550px] 2xl:mt-[700px] mx-auto"
+            className="flex justify-center gap-32 mt-[550px] 2xl:mt-[700px] mx-auto"
             style={{
               width: "1074px",
             }}
@@ -97,12 +141,29 @@ function ServiciosOfrecidos() {
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
-                {servicio}
+                {servicio.split(" ").map((word, i) => (
+                  <span key={i} style={{ fontWeight: i === 0 ? 400 : 900 }}>
+                    {word}{" "}
+                  </span>
+                ))}
+
                 {selectedIndex === index && (
-                  <div className="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 w-[361.768px] h-[5px] bg-gradient-to-t from-[#00942C] to-[#00942C]" />
+                  <div
+                    style={{
+                      left:
+                        index === 0 ? "-147px" : index === 1 ? "-65px" : "50%",
+                    }}
+                    className="absolute bottom-[-20px] w-[537px] h-[5px] bg-gradient-to-t from-[#00942C] to-[#00942C]"
+                  />
                 )}
                 {hoveredIndex === index && (
-                  <div className="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 w-[361.768px] h-[5px] bg-gradient-to-t from-[#00942C] to-[#00942C] bg-[#00942C] transition-all duration-300 ease-in-out" />
+                  <div
+                    style={{
+                      left:
+                        index === 0 ? "-147px" : index === 1 ? "-65px" : "50%",
+                    }}
+                    className="absolute bottom-[-20px] w-[537px] h-[5px] bg-gradient-to-t from-[#00942C] to-[#00942C]"
+                  />
                 )}
               </div>
             ))}
@@ -121,10 +182,11 @@ function ServiciosOfrecidos() {
           <div className="relative w-full h-full">
             {/* Bloque de fondo que se debe mostrar detrás */}
             <div className="relative w-full" style={{ top: "300px" }}></div>
-
             {/* Sección de dos columnas dinámicas */}
             <div
-              className="flex mt-24 mx-auto"
+              className={`flex mt-24 mx-auto ${
+                selectedIndex === 1 ? "flex-row-reverse" : ""
+              }`}
               style={{
                 width: "1074px",
                 gap: "100px",
@@ -132,17 +194,17 @@ function ServiciosOfrecidos() {
                 zIndex: 10,
               }}
             >
-              {/* Columna izquierda: título y descripción según la selección */}
+              {/* Columna de contenido */}
               <div style={{ width: "468.214px" }}>
                 <div
-                  className="w-[526px] flex-shrink-0 text-black font-fira-sans text-[18px] font-normal leading-[28px] "
+                  className="w-[526px] flex-shrink-0 text-black font-fira-sans text-[18px] font-normal leading-[28px]"
                   dangerouslySetInnerHTML={{
                     __html: contenidoServicios[selectedIndex].descripcion,
                   }}
                 ></div>
               </div>
 
-              {/* Columna derecha: imagen según la selección */}
+              {/* Columna de imagen */}
               <div style={{ width: "528px" }}>
                 <img
                   src={contenidoServicios[selectedIndex].imagen}
@@ -150,8 +212,27 @@ function ServiciosOfrecidos() {
                   className="w-[528px] h-[352px] rounded-[20px] object-cover"
                 />
               </div>
-            </div>
+            </div>{" "}
           </div>
+
+          {/* Sección de tarjetas */}
+          <div
+            className="grid grid-cols-2 gap-12 mt-8 mx-auto"
+            style={{ width: "1074px" }}
+          >
+            {contenidoServicios[selectedIndex].tarjetas.map((tarjeta, i) => (
+              <div
+                key={i}
+                className="bg-white p-6 rounded-2xl border-2 border-[#00942C] shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1 cursor-pointer"
+              >
+                <h3 className="font-bold text-xl text-gray-800">
+                  {tarjeta.titulo}
+                </h3>
+                <p className="text-gray-600 mt-2">{tarjeta.descripcion}</p>
+              </div>
+            ))}
+          </div>
+
           <Valores />
           <div className="relative w-full mt-16">
             {/* Gradiente superior */}

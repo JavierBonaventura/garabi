@@ -131,7 +131,7 @@ function SobreNosotrosNuestraHistoria() {
         <div className="flex justify-center items-center h-full padding-section ">
           <div className="grid grid-cols-2 w-[85%] 2xl:w-2/3 mx-auto">
             {/* Columna izquierda */}
-            <div className="flex flex-col items-start gap-title-paragraph mt-40">
+            <div className="flex flex-col items-start gap-title-paragraph mt-40 pr-10 2xl:pr-16">
               <h1 className="title-section !text-left">Nuestra historia</h1>
 
               <p className="paragraph-section !text-left">
@@ -148,7 +148,6 @@ function SobreNosotrosNuestraHistoria() {
               onMouseLeave={handleMouseUp}
             >
               <div
-                id="cardContainer"
                 style={{
                   margin: 0,
                   display: "flex",
@@ -192,6 +191,7 @@ function SobreNosotrosNuestraHistoria() {
                       return (
                         <div
                           key={index}
+                          id="cardContainer"
                           className="w-[427.385px] h-[132px] rounded-[4px] border-2 border-[#00942C] bg-[#F5F4FF] flex items-center p-2 cursor-pointer"
                           style={{ opacity }}
                         >
@@ -217,69 +217,70 @@ function SobreNosotrosNuestraHistoria() {
                     })}
                   </div>
                   <div className="absolute right-[00px] top-1/2 transform -translate-y-1/2 flex items-center space-x-4  ">
-                      {/* Contenedor de los botones */}
-                      <div className="flex flex-col items-center space-y-2">
-                        {/* Botón superior */}
-                        <button 
-                         onClick={handlePrev}
-                        className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center mb-[120px] mr-[3vw]">
-                          <svg
-                            className="rotate-90"
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="12"
-                            height="20"
-                            viewBox="0 0 12 20"
-                            fill="none"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              clipRule="evenodd"
-                              d="M9.86213 1.54581C9.5431 1.21738 9.02661 1.21738 8.70839 1.54581L1.96137 8.50935C1.32331 9.16705 1.32331 10.234 1.96137 10.8917L8.75735 17.9066C9.07312 18.2317 9.58308 18.2359 9.90293 17.9151C10.2293 17.5875 10.2334 17.0477 9.91191 16.715L3.69198 10.2963C3.37295 9.96707 3.37295 9.434 3.69198 9.10473L9.86213 2.73657C10.1812 2.40814 10.1812 1.87508 9.86213 1.54581Z"
-                              fill="white"
-                            />
-                          </svg>
-                        </button>
-
-                        {/* Botón inferior */}
-                        <button 
-                         onClick={handleNext}
-                        className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center mr-[3vw]">
-                          <svg
-                            className="-rotate-90"
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="12"
-                            height="20"
-                            viewBox="0 0 12 20"
-                            fill="none"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              clipRule="evenodd"
-                              d="M9.86213 1.54581C9.5431 1.21738 9.02661 1.21738 8.70839 1.54581L1.96137 8.50935C1.32331 9.16705 1.32331 10.234 1.96137 10.8917L8.75735 17.9066C9.07312 18.2317 9.58308 18.2359 9.90293 17.9151C10.2293 17.5875 10.2334 17.0477 9.91191 16.715L3.69198 10.2963C3.37295 9.96707 3.37295 9.434 3.69198 9.10473L9.86213 2.73657C10.1812 2.40814 10.1812 1.87508 9.86213 1.54581Z"
-                              fill="white"
-                            />
-                          </svg>
-                        </button>
-                      </div>
-
-                      {/* Puntos de navegación */}
-                      <div className="flex flex-col space-y-3">
-                        {[...Array(totalCards)].map((_, index) => (
-                          <div
-                            key={index}
-                            style={{
-                              width: "10px",
-                              height: "10px",
-                              borderRadius: "50%",
-                              border: "2px solid #00942C",
-                              backgroundColor:
-                                index === activeIndex ? "#00942C" : "#FFF",
-                            }}
+                    {/* Contenedor de los botones */}
+                    <div className="flex flex-col items-center space-y-2">
+                      {/* Botón superior */}
+                      <button
+                        onClick={handlePrev}
+                        className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center mb-[120px] mr-[1.8vw] 2xl:mr-[3vw]"
+                      >
+                        <svg
+                          className="rotate-90"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="12"
+                          height="20"
+                          viewBox="0 0 12 20"
+                          fill="none"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            d="M9.86213 1.54581C9.5431 1.21738 9.02661 1.21738 8.70839 1.54581L1.96137 8.50935C1.32331 9.16705 1.32331 10.234 1.96137 10.8917L8.75735 17.9066C9.07312 18.2317 9.58308 18.2359 9.90293 17.9151C10.2293 17.5875 10.2334 17.0477 9.91191 16.715L3.69198 10.2963C3.37295 9.96707 3.37295 9.434 3.69198 9.10473L9.86213 2.73657C10.1812 2.40814 10.1812 1.87508 9.86213 1.54581Z"
+                            fill="white"
                           />
-                        ))}
-                      </div>
+                        </svg>
+                      </button>
+
+                      {/* Botón inferior */}
+                      <button
+                        onClick={handleNext}
+                        className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center mr-[1.8vw] 2xl:mr-[3vw]"
+                      >
+                        <svg
+                          className="-rotate-90"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="12"
+                          height="20"
+                          viewBox="0 0 12 20"
+                          fill="none"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            d="M9.86213 1.54581C9.5431 1.21738 9.02661 1.21738 8.70839 1.54581L1.96137 8.50935C1.32331 9.16705 1.32331 10.234 1.96137 10.8917L8.75735 17.9066C9.07312 18.2317 9.58308 18.2359 9.90293 17.9151C10.2293 17.5875 10.2334 17.0477 9.91191 16.715L3.69198 10.2963C3.37295 9.96707 3.37295 9.434 3.69198 9.10473L9.86213 2.73657C10.1812 2.40814 10.1812 1.87508 9.86213 1.54581Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </button>
                     </div>
 
+                    {/* Puntos de navegación */}
+                    <div className="flex flex-col space-y-3">
+                      {[...Array(totalCards)].map((_, index) => (
+                        <div
+                          key={index}
+                          style={{
+                            width: "10px",
+                            height: "10px",
+                            borderRadius: "50%",
+                            border: "2px solid #00942C",
+                            backgroundColor:
+                              index === activeIndex ? "#00942C" : "#FFF",
+                          }}
+                        />
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

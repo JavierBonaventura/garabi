@@ -11,11 +11,11 @@ root.render(
     <a
       href="https://api.whatsapp.com/send?phone=541130254376"
       target="_blank"
-      className="fixed right-10 bottom-10 z-40"
+      className="fixed right-5 lg:right-10 bottom-10 z-40"
     >
       <img
         src={wapp}
-        className="w-16 hover:scale-110 transition-all ease-in-out duration-300"
+        className="w-12 lg:w-16 hover:scale-110 transition-all ease-in-out duration-300"
       ></img>
     </a>
     <App />

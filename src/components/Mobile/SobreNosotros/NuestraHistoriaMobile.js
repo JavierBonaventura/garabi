@@ -295,7 +295,7 @@ function NuestraHistoriaMobile() {
               style={{ width: "100%", margin: "0 auto", textAlign: "center" }}
             >
               <div
-                className="text-center"
+                className="text-center "
                 style={{
                   color: "#00942C",
                   fontFamily: "Fira Sans",

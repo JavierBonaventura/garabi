@@ -33,17 +33,17 @@ function ServiciosOfrecidos() {
             "Asesoría legal, contable e impositiva, asegurando el cumplimiento normativo y la correcta gestión de la documentación empresarial.",
         },
         {
-          titulo: "Consultoría Financiera y Planificación:",
+          titulo: "Consultoría Financiera y Planificación",
           descripcion:
             "Te ayudamos a gestionar la financiación de tu proyecto y optimizar flujos de caja.",
         },
         {
-          titulo: "Gestión de Tesorería y Pagos:",
+          titulo: "Gestión de Tesorería y Pagos",
           descripcion:
             "Nos encargamos de la administración de pagos, cobranzas y rendiciones de gastos, asegurando que tu flujo de caja esté siempre en orden y que las obligaciones financieras se cumplan de manera eficiente.",
         },
         {
-          titulo: "Armado de Reportes:",
+          titulo: "Armado de Reportes",
           descripcion:
             "Elaboramos informes detallados y periódicos sobre el estado de la producción, la situación financiera y otros indicadores clave de tu empresa, facilitando la toma de decisiones informadas y estratégicas.",
         },
@@ -62,22 +62,22 @@ function ServiciosOfrecidos() {
       imagen: recuadroDos,
       tarjetas: [
         {
-          titulo: "Asesoramiento en Manejo Agroforestal:",
+          titulo: "Asesoramiento en Manejo Agroforestal",
           descripcion:
             "Brindamos asesoramiento especializado en la planificación y ejecución de proyectos agroforestales, adaptados a las necesidades específicas de cada cliente.",
         },
         {
-          titulo: "Planificación y Gestión de Proyectos:",
+          titulo: "Planificación y Gestión de Proyectos",
           descripcion:
             "Desarrollamos planes de trabajo detallados, asegurando la correcta ejecución de las tareas y el cumplimiento de los plazos establecidos.",
         },
         {
-          titulo: "Monitoreo y Seguimiento de la Producción:",
+          titulo: "Monitoreo y Seguimiento de la Producción",
           descripcion:
             "Implementamos sistemas de control para asegurar el avance de las actividades y la eficiencia de los recursos, realizando ajustes cuando sea necesario.",
         },
         {
-          titulo: "Asesoramiento en Comercialización:",
+          titulo: "Asesoramiento en Comercialización",
           descripcion:
             "Te apoyamos en la toma de decisiones sobre la comercialización de tus productos, identificando oportunidades y mejorando la cadena de valor.",
         },
@@ -217,7 +217,7 @@ function ServiciosOfrecidos() {
 
           {/* Sección de tarjetas */}
           <div
-            className="grid grid-cols-2 gap-12 mt-8 mx-auto"
+            className="grid grid-cols-2 gap-12 mt-8 mx-auto text-center"
             style={{ width: "1074px" }}
           >
             {contenidoServicios[selectedIndex].tarjetas.map((tarjeta, i) => (
